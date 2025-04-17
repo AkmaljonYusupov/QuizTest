@@ -65,6 +65,7 @@ const langData = {
 		time: '⏰ Vaqt:',
 		score: '🏆 Ball:',
 		footerText: 'Natijalarni onlayn ko‘rish uchun QR kodni skanerlang',
+		qrCodeError: 'QR kodni yaratishda xatolik yuz berdi!',
 	},
 	en: {
 		enterName: 'Enter your first and last name',
@@ -113,6 +114,7 @@ const langData = {
 		time: '⏰ Time:',
 		score: '🏆 Score:',
 		footerText: 'Scan the QR code to view results online',
+		qrCodeError: 'Error generating QR code!',
 	},
 	ru: {
 		enterName: 'Введите свое имя и фамилию',
@@ -161,6 +163,7 @@ const langData = {
 		time: '⏰ Время:',
 		score: '🏆 Балл:',
 		footerText: 'Отсканируйте QR-код, чтобы просмотреть результаты онлайн',
+		qrCodeError: 'Ошибка при создании QR-кода!',
 	},
 }
 
@@ -226,11 +229,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 
-		// Ensure input is enabled and focusable
 		phoneInput.removeAttribute('readonly')
 		phoneInput.removeAttribute('disabled')
 
-		// Update placeholder on language change
 		document.getElementById('languageSelect').addEventListener('change', () => {
 			phoneInput.placeholder = getLangText('enterPhone')
 		})
@@ -286,34 +287,35 @@ async function startQuiz() {
 		? parseInt(questionCountInput.value)
 		: 0
 
-	// Validate username (must contain first and last name)
 	const nameParts = username.split(' ').filter(part => part.length > 0)
 	if (nameParts.length < 2) {
 		showToast(getLangText('invalidName'), 'warning')
 		return
 	}
 
-	// Validate phone number
 	const phoneRegex = /^\+998-\(\d{2}\)-\d{3}-\d{2}-\d{2}$/
 	if (!phoneRegex.test(phoneNumber)) {
 		showToast(getLangText('invalidPhone'), 'warning')
 		return
 	}
 
-	// Validate topic
 	if (!selectedTopic) {
 		showToast(getLangText('invalidTopic'), 'warning')
 		return
 	}
 
-	// Validate question count
 	if (isNaN(questionCount) || questionCount <= 0 || questionCount > 1000) {
 		showToast(getLangText('invalidCount'), 'warning')
 		return
 	}
 
 	try {
-		const res = await fetch('./questions.json')
+		const res = await fetch('/questions.json')
+		if (!res.ok) {
+			throw new Error(
+				`Failed to fetch questions.json: ${res.status} ${res.statusText}`
+			)
+		}
 		const data = await res.json()
 		allQuestions = data.filter(q => q.topic === selectedTopic)
 
@@ -341,8 +343,11 @@ async function startQuiz() {
 		if (quizSection) quizSection.classList.remove('d-none')
 		startPreparation()
 	} catch (err) {
-		console.error(err)
-		showToast('Savollarni yuklab bo‘lmadi!', 'danger')
+		console.error('Error in startQuiz:', err)
+		showToast(
+			'Savollarni yuklab bo‘lmadi! Fayllar to‘g‘ri joylashganligini tekshiring.',
+			'danger'
+		)
 	}
 }
 
@@ -559,28 +564,29 @@ function downloadPDF() {
 	const score = userAnswers.filter(
 		(ans, i) => ans === shuffledQuestions[i].correct
 	).length
-
 	const languageName = getLangText(`lang_${language}`)
 
-	// Generate QR Code
 	let qrCodeDataUrl = ''
 	if (typeof QRCode !== 'undefined') {
-		const qrCanvas = document.createElement('canvas');
-qrCanvas.width = 100;
-qrCanvas.height = 100;
-let qrCodeHtml = '<div id="qrCode" style="width:100px; height:100px;"></div>';
-if (typeof QRCode === 'undefined') {
-    console.error('QRCode library not loaded');
-    showToast(getLangText('qrCodeError'), 'danger');
-    qrCodeHtml = '<p>QR Code not available</p>';
-} else {
-    QRCode.toCanvas(qrCanvas, 'https://quiztest-uz.vercel.app/results', { width: 100, height: 100 }, (error) => {
-        if (error) {
-            console.error('QRCode generation failed:', error);
-            qrCodeHtml = '<p>QR Code not available</p>';
-        }
-    });
-}
+		const qrCanvas = document.createElement('canvas')
+		qrCanvas.width = 100
+		qrCanvas.height = 100
+		QRCode.toCanvas(
+			qrCanvas,
+			'https://quiztest-uz.vercel.app/results',
+			{ width: 100, height: 100, errorCorrectionLevel: 'H' },
+			error => {
+				if (error) {
+					console.error('QRCode generation failed:', error)
+					showToast(getLangText('qrCodeError'), 'danger')
+				}
+			}
+		)
+		qrCodeDataUrl = qrCanvas.toDataURL('image/png')
+	} else {
+		console.error('QRCode library not loaded')
+		showToast(getLangText('qrCodeError'), 'danger')
+	}
 
 	const element = document.createElement('div')
 	element.innerHTML = `
@@ -641,10 +647,10 @@ if (typeof QRCode === 'undefined') {
 
 	html2pdf()
 		.set({
-			margin: [3, 3, 3, 3], // Further reduced margins
+			margin: [3, 3, 3, 3],
 			filename: `${username}_${selectedTopic}_quiz_result.pdf`,
 			image: { type: 'jpeg', quality: 0.98 },
-			html2canvas: { scale: 3 }, // Increased scale for sharper QR code
+			html2canvas: { scale: 3 },
 			jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
 		})
 		.from(element)
