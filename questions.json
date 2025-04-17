@@ -1,0 +1,397 @@
+[
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML faylni boshlovchi asosiy teg qaysi?",
+			"en": "What is the main tag that starts an HTML file?",
+			"ru": "Какой основной тег начинает HTML файл?"
+		},
+		"options": {
+			"uz": ["&ltstart&gt", "&lthtml&gt", "&lthead&gt", "&ltmain&gt"],
+			"en": ["&ltstart&gt", "&lthtml&gt", "&lthead&gt", "&ltmain&gt"],
+			"ru": ["&ltstart&gt", "&lthtml&gt", "&lthead&gt", "&ltmain&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&lta&gt tegining vazifasi nima?",
+			"en": "What is the function of the &lta&gt tag?",
+			"ru": "Какова функция тега &lta&gt?"
+		},
+		"options": {
+			"uz": [
+				"Rasm chiqarish",
+				"Matnni bo'yash",
+				"Sahifaga havola qo'yish",
+				"Sarlavha chiqarish"
+			],
+			"en": [
+				"Display an image",
+				"Color text",
+				"Link to a page",
+				"Display a title"
+			],
+			"ru": [
+				"Вывод изображения",
+				"Раскрашивание текста",
+				"Ссылка на страницу",
+				"Заголовок"
+			]
+		},
+		"correct": 2
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "Web sahifaga rasm joylash uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to place an image on a web page?",
+			"ru": "Какой тег используется для размещения изображения на веб-странице?"
+		},
+		"options": {
+			"uz": ["&ltdiv&gt", "&ltimg&gt", "&ltsrc&gt", "&ltpicture&gt"],
+			"en": ["&ltdiv&gt", "&ltimg&gt", "&ltsrc&gt", "&ltpicture&gt"],
+			"ru": ["&ltdiv&gt", "&ltimg&gt", "&ltsrc&gt", "&ltpicture&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda jadval yaratish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to create a table in HTML?",
+			"ru": "Какой тег используется для создания таблицы в HTML?"
+		},
+		"options": {
+			"uz": ["&ltlist&gt", "&lttable&gt", "&ltgrid&gt", "&ltrow&gt"],
+			"en": ["&ltlist&gt", "&lttable&gt", "&ltgrid&gt", "&ltrow&gt"],
+			"ru": ["&ltlist&gt", "&lttable&gt", "&ltgrid&gt", "&ltrow&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda forma yaratish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to create a form in HTML?",
+			"ru": "Какой тег используется для создания формы в HTML?"
+		},
+		"options": {
+			"uz": ["&ltform&gt", "&ltinput&gt", "&ltdiv&gt", "&ltsection&gt"],
+			"en": ["&ltform&gt", "&ltinput&gt", "&ltdiv&gt", "&ltsection&gt"],
+			"ru": ["&ltform&gt", "&ltinput&gt", "&ltdiv&gt", "&ltsection&gt"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda video joylash uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to embed a video in HTML?",
+			"ru": "Какой тег используется для вставки видео в HTML?"
+		},
+		"options": {
+			"uz": ["&ltaudio&gt", "&ltmedia&gt", "&ltvideo&gt", "&ltembed&gt"],
+			"en": ["&ltaudio&gt", "&ltmedia&gt", "&ltvideo&gt", "&ltembed&gt"],
+			"ru": ["&ltaudio&gt", "&ltmedia&gt", "&ltvideo&gt", "&ltembed&gt"]
+		},
+		"correct": 2
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda sahifa kodlashini belgilash uchun qaysi meta teg ishlatiladi?",
+			"en": "Which meta tag is used to specify the character encoding of a page in HTML?",
+			"ru": "Какой мета-тег используется для указания кодировки страницы в HTML?"
+		},
+		"options": {
+			"uz": [
+				"&ltmeta charset&gt",
+				"&ltmeta encoding&gt",
+				"&ltmeta lang&gt",
+				"&ltmeta type&gt"
+			],
+			"en": [
+				"&ltmeta charset&gt",
+				"&ltmeta encoding&gt",
+				"&ltmeta lang&gt",
+				"&ltmeta type&gt"
+			],
+			"ru": [
+				"&ltmeta charset&gt",
+				"&ltmeta encoding&gt",
+				"&ltmeta lang&gt",
+				"&ltmeta type&gt"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda audio va video elementlari uchun boshqaruv panelini yo‘q qilish uchun qaysi atribut ishlatiladi?",
+			"en": "Which attribute is used to remove the control panel from audio and video elements in HTML?",
+			"ru": "Какой атрибут используется для удаления панели управления у аудио и видео элементов в HTML?"
+		},
+		"options": {
+			"uz": [
+				"controls='false'",
+				"controls='off'",
+				"controls='none'",
+				"no-controls"
+			],
+			"en": [
+				"controls='false'",
+				"controls='off'",
+				"controls='none'",
+				"no-controls"
+			],
+			"ru": [
+				"controls='false'",
+				"controls='off'",
+				"controls='none'",
+				"no-controls"
+			]
+		},
+		"correct": 2
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda sarlavha qo‘shish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to add a heading in HTML?",
+			"ru": "Какой тег используется для добавления заголовка в HTML?"
+		},
+		"options": {
+			"uz": ["&ltp&gt", "&lth1&gt", "&ltspan&gt", "&ltdiv&gt"],
+			"en": ["&ltp&gt", "&lth1&gt", "&ltspan&gt", "&ltdiv&gt"],
+			"ru": ["&ltp&gt", "&lth1&gt", "&ltspan&gt", "&ltdiv&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda audio fayl joylash uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to embed an audio file in HTML?",
+			"ru": "Какой тег используется для вставки аудиофайла в HTML?"
+		},
+		"options": {
+			"uz": ["&ltsound&gt", "&ltaudio&gt", "&ltmedia&gt", "&ltplay&gt"],
+			"en": ["&ltsound&gt", "&ltaudio&gt", "&ltmedia&gt", "&ltplay&gt"],
+			"ru": ["&ltsound&gt", "&ltaudio&gt", "&ltmedia&gt", "&ltplay&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda ro‘yxat elementini qo‘shish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to add a list item in HTML?",
+			"ru": "Какой тег используется для добавления элемента списка в HTML?"
+		},
+		"options": {
+			"uz": ["&ltli&gt", "&ltul&gt", "&ltol&gt", "&ltitem&gt"],
+			"en": ["&ltli&gt", "&ltul&gt", "&ltol&gt", "&ltitem&gt"],
+			"ru": ["&ltli&gt", "&ltul&gt", "&ltol&gt", "&ltitem&gt"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda tartiblangan ro‘yxat yaratish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to create an ordered list in HTML?",
+			"ru": "Какой тег используется для создания упорядоченного списка в HTML?"
+		},
+		"options": {
+			"uz": ["&ltul&gt", "&ltol&gt", "&ltdl&gt", "&ltlist&gt"],
+			"en": ["&ltul&gt", "&ltol&gt", "&ltdl&gt", "&ltlist&gt"],
+			"ru": ["&ltul&gt", "&ltol&gt", "&ltdl&gt", "&ltlist&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda tartiblanmagan ro‘yxat yaratish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to create an unordered list in HTML?",
+			"ru": "Какой тег используется для создания неупорядоченного списка в HTML?"
+		},
+		"options": {
+			"uz": ["&ltol&gt", "&ltul&gt", "&ltli&gt", "&ltunordered&gt"],
+			"en": ["&ltol&gt", "&ltul&gt", "&ltli&gt", "&ltunordered&gt"],
+			"ru": ["&ltol&gt", "&ltul&gt", "&ltli&gt", "&ltunordered&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda matnni qalin qilish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to make text bold in HTML?",
+			"ru": "Какой тег используется для выделения текста жирным в HTML?"
+		},
+		"options": {
+			"uz": ["&ltbold&gt", "&ltstrong&gt", "&ltb&gt", "&ltem&gt"],
+			"en": ["&ltbold&gt", "&ltstrong&gt", "&ltb&gt", "&ltem&gt"],
+			"ru": ["&ltbold&gt", "&ltstrong&gt", "&ltb&gt", "&ltem&gt"]
+		},
+		"correct": 2
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda matnni kursiv qilish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to make text italic in HTML?",
+			"ru": "Какой тег используется для выделения текста курсивом в HTML?"
+		},
+		"options": {
+			"uz": ["&lti&gt", "&ltitalic&gt", "&ltem&gt", "&ltspan&gt"],
+			"en": ["&lti&gt", "&ltitalic&gt", "&ltem&gt", "&ltspan&gt"],
+			"ru": ["&lti&gt", "&ltitalic&gt", "&ltem&gt", "&ltspan&gt"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda sahifaga stil faylini ulash uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to link a stylesheet to an HTML page?",
+			"ru": "Какой тег используется для подключения таблицы стилей к HTML странице?"
+		},
+		"options": {
+			"uz": ["&ltstyle&gt", "&ltlink&gt", "&ltcss&gt", "&ltscript&gt"],
+			"en": ["&ltstyle&gt", "&ltlink&gt", "&ltcss&gt", "&ltscript&gt"],
+			"ru": ["&ltstyle&gt", "&ltlink&gt", "&ltcss&gt", "&ltscript&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda JavaScript faylini ulash uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to link a JavaScript file in HTML?",
+			"ru": "Какой тег используется для подключения файла JavaScript в HTML?"
+		},
+		"options": {
+			"uz": ["&ltjs&gt", "&ltscript&gt", "&ltlink&gt", "&ltcode&gt"],
+			"en": ["&ltjs&gt", "&ltscript&gt", "&ltlink&gt", "&ltcode&gt"],
+			"ru": ["&ltjs&gt", "&ltscript&gt", "&ltlink&gt", "&ltcode&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda sahifaning asosiy sarlavhasini qo‘yish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to set the main title of a page in HTML?",
+			"ru": "Какой тег используется для установки основного заголовка страницы в HTML?"
+		},
+		"options": {
+			"uz": ["&lttitle&gt", "&lth1&gt", "&ltheader&gt", "&ltmeta&gt"],
+			"en": ["&lttitle&gt", "&lth1&gt", "&ltheader&gt", "&ltmeta&gt"],
+			"ru": ["&lttitle&gt", "&lth1&gt", "&ltheader&gt", "&ltmeta&gt"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda yangi qatorga o‘tish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to insert a line break in HTML?",
+			"ru": "Какой тег используется для вставки разрыва строки в HTML?"
+		},
+		"options": {
+			"uz": ["&ltbr&gt", "&ltbreak&gt", "&ltnewline&gt", "&lthr&gt"],
+			"en": ["&ltbr&gt", "&ltbreak&gt", "&ltnewline&gt", "&lthr&gt"],
+			"ru": ["&ltbr&gt", "&ltbreak&gt", "&ltnewline&gt", "&lthr&gt"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda gorizontal chiziq chizish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to draw a horizontal line in HTML?",
+			"ru": "Какой тег используется для рисования горизонтальной линии в HTML?"
+		},
+		"options": {
+			"uz": ["&lthr&gt", "&ltline&gt", "&ltborder&gt", "&ltdivider&gt"],
+			"en": ["&lthr&gt", "&ltline&gt", "&ltborder&gt", "&ltdivider&gt"],
+			"ru": ["&lthr&gt", "&ltline&gt", "&ltborder&gt", "&ltdivider&gt"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda sahifaga izoh qoldirish uchun qanday sintaksis ishlatiladi?",
+			"en": "What syntax is used to add a comment in HTML?",
+			"ru": "Какой синтаксис используется для добавления комментария в HTML?"
+		},
+		"options": {
+			"uz": ["&lt!-- --&gt", "//", "/* */", "#"],
+			"en": ["&lt!-- --&gt", "//", "/* */", "#"],
+			"ru": ["&lt!-- --&gt", "//", "/* */", "#"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda input maydoniga matn kiritish uchun qaysi atribut ishlatiladi?",
+			"en": "Which attribute is used for text input in an HTML input field?",
+			"ru": "Какой атрибут используется для текстового ввода в HTML поле ввода?"
+		},
+		"options": {
+			"uz": ["type='text'", "input='text'", "value='text'", "text='input'"],
+			"en": ["type='text'", "input='text'", "value='text'", "text='input'"],
+			"ru": ["type='text'", "input='text'", "value='text'", "text='input'"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda matn kiritish maydoni yaratish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to create a text area in HTML?",
+			"ru": "Какой тег используется для создания текстового поля в HTML?"
+		},
+		"options": {
+			"uz": ["&ltinput&gt", "&lttextarea&gt", "&lttext&gt", "&ltfield&gt"],
+			"en": ["&ltinput&gt", "&lttextarea&gt", "&lttext&gt", "&ltfield&gt"],
+			"ru": ["&ltinput&gt", "&lttextarea&gt", "&lttext&gt", "&ltfield&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda tugma yaratish uchun qaysi teg ishlatiladi?",
+			"en": "Which tag is used to create a button in HTML?",
+			"ru": "Какой тег используется для создания кнопки в HTML?"
+		},
+		"options": {
+			"uz": ["&ltbtn&gt", "&ltbutton&gt", "&ltclick&gt", "&ltsubmit&gt"],
+			"en": ["&ltbtn&gt", "&ltbutton&gt", "&ltclick&gt", "&ltsubmit&gt"],
+			"ru": ["&ltbtn&gt", "&ltbutton&gt", "&ltclick&gt", "&ltsubmit&gt"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTMLda rasmning manbasini ko‘rsatish uchun qaysi atribut ishlatiladi?",
+			"en": "Which attribute is used to specify the source of an image in HTML?",
+			"ru": "Какой атрибут используется для указания источника изображения в HTML?"
+		},
+		"options": {
+			"uz": ["src", "href", "link", "path"],
+			"en": ["src", "href", "link", "path"],
+			"ru": ["src", "href", "link", "path"]
+		},
+		"correct": 0
+	}
+]
