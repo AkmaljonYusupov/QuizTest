@@ -10,8 +10,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/imask@7.6.1/dist/imask.min.js" onload="window.IMaskLoaded = true"
 		onerror="console.error('IMask failed to load')"></script>
-	<script src="./qrcode.min.js" onload="window.QRCodeLoaded = true"
-		onerror="console.error('QRCode failed to load')"></script>
 	<link rel="stylesheet" href="./style.css">
 </head>
 
@@ -47,7 +45,7 @@
 		<input type="number" id="questionCountInput" class="form-control mb-3 form-control-lg"
 			placeholder="Nechta savol bo‘lsin?" min="1" max="1000" />
 
-		<button class="btn btn-success btn-lg w-100" onclick="startQuiz()">
+		<button class="btn btn-success btn-lg w-100" id="startQuizButton">
 			<i class="bi bi-play-circle-fill me-2"></i><span id="startButton"
 				style="text-transform: uppercase; font-style: oblique;">Testni Boshlash</span>
 		</button>

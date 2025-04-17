@@ -64,8 +64,6 @@ const langData = {
 		date: '📅 Sana:',
 		time: '⏰ Vaqt:',
 		score: '🏆 Ball:',
-		footerText: 'Natijalarni onlayn ko‘rish uchun QR kodni skanerlang',
-		qrCodeError: 'QR kodni yaratishda xatolik yuz berdi!',
 	},
 	en: {
 		enterName: 'Enter your first and last name',
@@ -113,8 +111,6 @@ const langData = {
 		date: '📅 Date:',
 		time: '⏰ Time:',
 		score: '🏆 Score:',
-		footerText: 'Scan the QR code to view results online',
-		qrCodeError: 'Error generating QR code!',
 	},
 	ru: {
 		enterName: 'Введите свое имя и фамилию',
@@ -162,8 +158,6 @@ const langData = {
 		date: '📅 Дата:',
 		time: '⏰ Время:',
 		score: '🏆 Балл:',
-		footerText: 'Отсканируйте QR-код, чтобы просмотреть результаты онлайн',
-		qrCodeError: 'Ошибка при создании QR-кода!',
 	},
 }
 
@@ -565,89 +559,144 @@ function downloadPDF() {
 		(ans, i) => ans === shuffledQuestions[i].correct
 	).length
 	const languageName = getLangText(`lang_${language}`)
-
-	let qrCodeDataUrl = ''
-	if (typeof QRCode !== 'undefined') {
-		const qrCanvas = document.createElement('canvas')
-		qrCanvas.width = 100
-		qrCanvas.height = 100
-		QRCode.toCanvas(
-			qrCanvas,
-			'https://quiztest-uz.vercel.app/results',
-			{ width: 100, height: 100, errorCorrectionLevel: 'H' },
-			error => {
-				if (error) {
-					console.error('QRCode generation failed:', error)
-					showToast(getLangText('qrCodeError'), 'danger')
-				}
-			}
-		)
-		qrCodeDataUrl = qrCanvas.toDataURL('image/png')
-	} else {
-		console.error('QRCode library not loaded')
-		showToast(getLangText('qrCodeError'), 'danger')
-	}
+	const developerLabel =
+		language === 'uz'
+			? 'Dasturchi'
+			: language === 'en'
+			? 'Developer'
+			: 'Разработчик'
 
 	const element = document.createElement('div')
 	element.innerHTML = `
-        <div style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; color: #333; padding: 8px; background: #f8f9fa;">
-            <div style="text-align: center; background: linear-gradient(to right, #007bff, #0056b3); color: white; padding: 8px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 8px;">
-                <h2 style="margin: 0; font-size: 16px;">
-                    <span style="font-size: 18px;">📋</span> ${getLangText(
+        <div style="font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 12px; color: #333; padding: 15px; background: #F5F7FA; max-width: 800px; margin: 0 auto;">
+            <!-- Header -->
+            <div style="background: #1E88E5; color: white; padding: 15px; border-radius: 8px; text-align: center; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <h2 style="margin: 0; font-size: 20px; font-weight: 600;">
+                    <span style="font-size: 24px; margin-right: 8px;">📋</span> ${getLangText(
 											'downloadTitle'
 										)}
                 </h2>
             </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; border: 1px solid #ddd; padding: 8px; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-                <div style="flex: 1; min-width: 120px;">
-                    <p style="margin: 3px 0;"><strong>${getLangText(
+
+            <!-- User Info Section -->
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+                <div style="flex: 1; min-width: 250px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                    <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
 											'name'
 										)}</strong> ${username}</p>
-                    <p style="margin: 3px 0;"><strong>${getLangText(
+                    <p style="margin: 5px 0; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong style="color: #1E88E5;">${getLangText(
 											'phone'
 										)}</strong> ${phoneNumber}</p>
-                    <p style="margin: 3px 0;"><strong>${getLangText(
+                    <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
 											'topic'
 										)}</strong> ${selectedTopic}</p>
                 </div>
-                <div style="flex: 1; min-width: 120px;">
-                    <p style="margin: 3px 0;"><strong>${getLangText(
+                <div style="flex: 1; min-width: 200px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                    <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
 											'language'
 										)}</strong> ${languageName}</p>
-                    <p style="margin: 3px 0;"><strong>${getLangText(
+                    <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
 											'date'
 										)}</strong> ${formattedDate}</p>
-                    <p style="margin: 3px 0;"><strong>${getLangText(
+                    <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
 											'time'
 										)}</strong> ${formattedTime}</p>
                 </div>
-                <div style="flex: 1; min-width: 120px; text-align: center;">
-                    <p style="margin: 3px 0;"><strong>${getLangText(
+                <div style="flex: 1; min-width: 150px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); text-align: center;">
+                    <p style="margin: 5px 0; font-size: 16px; font-weight: 600; color: #43A047;"><strong>${getLangText(
 											'score'
 										)}</strong> ${score} / ${shuffledQuestions.length}</p>
-                    ${
-											qrCodeDataUrl
-												? `<img src="${qrCodeDataUrl}" style="width: 60px; height: 60px; margin-top: 5px;" />`
-												: '<p style="color: #dc3545; font-size: 10px;">QR Code not available</p>'
-										}
+                    <p style="margin: 5px 0; font-size: 12px; color: #1E88E5;"><a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #1E88E5;">quiztest-uz.vercel.app</a></p>
                 </div>
             </div>
-            <hr style="border: 0; border-top: 1px solid #ddd; margin: 8px 0;" />
-            <div style="font-size: 10px;">
-                ${quizContainer.innerHTML
-									.replace(/class="[^"]*"/g, '')
-									.replace(/<span[^>]*>/g, '<span style="color: #28a745;">')
-									.replace(/wrong/g, 'color: #dc3545;')}
+
+            <!-- Questions and Answers Section -->
+            <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); margin-bottom: 20px;">
+                <h3 style="font-size: 16px; color: #1E88E5; margin-bottom: 15px; border-bottom: 2px solid #E0E0E0; padding-bottom: 5px;">${
+									language === 'uz'
+										? 'Savollar va Javoblar'
+										: language === 'en'
+										? 'Questions and Answers'
+										: 'Вопросы и Ответы'
+								}</h3>
+                <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
+                    <thead>
+                        <tr style="background: #E3F2FD; color: #333;">
+                            <th style="padding: 10px; text-align: left; border-bottom: 1px solid #ddd;">${
+															language === 'uz'
+																? 'Savol'
+																: language === 'en'
+																? 'Question'
+																: 'Вопрос'
+														}</th>
+                            <th style="padding: 10px; text-align: left; border-bottom: 1px solid #ddd;">${getLangText(
+															'yourAnswer'
+														)}</th>
+                            <th style="padding: 10px; text-align: left; border-bottom: 1px solid #ddd;">${getLangText(
+															'correctAnswer'
+														)}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${shuffledQuestions
+													.map((q, i) => {
+														const userAnswer = userAnswers[i]
+														const isCorrect = userAnswer === q.correct
+														return `
+                                <tr style="border-bottom: 1px solid #eee;">
+                                    <td style="padding: 10px;">${i + 1}. ${
+															q.question[language]
+														}</td>
+                                    <td style="padding: 10px; color: ${
+																			isCorrect ? '#43A047' : '#E53935'
+																		};">
+                                        ${
+																					q.options[language][userAnswer] ||
+																					getLangText('noAnswer')
+																				}
+                                    </td>
+                                    <td style="padding: 10px; color: #43A047;">
+                                        ${q.options[language][q.correct]}
+                                    </td>
+                                </tr>
+                            `
+													})
+													.join('')}
+                    </tbody>
+                </table>
             </div>
-            <div style="text-align: center; margin-top: 8px; font-size: 9px; color: #666;">
-                <p>${getLangText('footerText')}</p>
+
+            <!-- Footer -->
+            <div style="text-align: center; font-size: 10px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px;">
+                <p>© 2025 QuizTest App | ${formattedDate}</p>
+                <div style="display: inline-block; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); margin-top: 10px;">
+                    <p style="margin: 0; font-size: 11px; font-weight: 500; color: #333;">
+                        <strong>${developerLabel}: </strong><strong style="color: #1E88E5;">Akmaljon Yusupov</strong>
+                        <span style="margin-left: 10px;">
+                            <i class="bi bi-telephone-fill" style="color: #1E88E5; font-size: 12px; margin-right: 5px;"></i>
+                            <span style="color: #1E88E5;">+998-(88)-570-02-09</span>
+                        </span>
+                        <span style="margin-left: 10px;">
+                            <i class="bi bi-telegram" style="color: #0088cc; font-size: 12px; margin-right: 5px;"></i>
+                            <span style="color: #0088cc;">@AkmaljonYusupov</span>
+                        </span>
+                        <span style="margin-left: 10px;">
+                            <i class="bi bi-telegram" style="color: #0088cc; font-size: 12px; margin-right: 5px;"></i>
+                            <span style="color: #0088cc;">@coder_ac</span>
+                        </span>
+                        <span style="margin-left: 10px;">
+                            <i class="bi bi-instagram" style="color: #C13584; font-size: 12px; margin-right: 5px;"></i>
+                            <span style="color: #C13584;">@coder.ac</span>
+                        </span>
+                    </p>
+                </div>
             </div>
         </div>
     `
 
 	html2pdf()
 		.set({
-			margin: [3, 3, 3, 3],
+			margin: [10, 10, 10, 10],
 			filename: `${username}_${selectedTopic}_quiz_result.pdf`,
 			image: { type: 'jpeg', quality: 0.98 },
 			html2canvas: { scale: 3 },
@@ -683,12 +732,15 @@ prevBtn.addEventListener('click', () => {
 
 // Start button hodisasi
 document.addEventListener('DOMContentLoaded', function () {
-	const startButton = document.getElementById('startButton')
+	const startButton = document.getElementById('startQuizButton') // ID o‘zgartirildi
 	if (startButton) {
-		startButton.removeEventListener('click', startQuiz)
+		startButton.removeEventListener('click', startQuiz) // Oldingi hodisani olib tashlash
 		startButton.addEventListener('click', startQuiz, { once: true })
-		startButton.innerText = getLangText('start')
+		const startText = document.getElementById('startButton')
+		if (startText) {
+			startText.innerText = getLangText('start')
+		}
 	} else {
-		console.error('startButton elementi topilmadi!')
+		console.error('startQuizButton elementi topilmadi!')
 	}
 })
