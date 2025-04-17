@@ -566,11 +566,91 @@ function downloadPDF() {
 			? 'Developer'
 			: 'Разработчик'
 
+	// Jadvalni qismlarga bo‘lish (har bir sahifada 20 ta savol)
+	const questionsPerPage = 20
+	const tableChunks = []
+	for (let i = 0; i < shuffledQuestions.length; i += questionsPerPage) {
+		const chunk = shuffledQuestions.slice(i, i + questionsPerPage)
+		const chunkRows = chunk
+			.map((q, index) => {
+				const globalIndex = i + index
+				const userAnswer = userAnswers[globalIndex]
+				const isCorrect = userAnswer === q.correct
+				const questionText = q.question[language] || 'Savol mavjud emas'
+				const userAnswerText =
+					q.options[language][userAnswer] || getLangText('noAnswer')
+				const correctAnswerText =
+					q.options[language][q.correct] || 'Javob mavjud emas'
+
+				return `
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td style="padding: 8px; word-wrap: break-word; max-width: 300px;">${
+											globalIndex + 1
+										}. ${questionText}</td>
+                    <td style="padding: 8px; color: ${
+											isCorrect ? '#43A047' : '#E53935'
+										}; word-wrap: break-word; max-width: 200px;">
+                        ${userAnswerText}
+                    </td>
+                    <td style="padding: 8px; color: #43A047; word-wrap: break-word; max-width: 200px;">
+                        ${correctAnswerText}
+                    </td>
+                </tr>
+            `
+			})
+			.join('')
+		tableChunks.push(chunkRows)
+	}
+
+	// Har bir qism uchun alohida jadval yaratamiz
+	const tableSections = tableChunks
+		.map(
+			(chunkRows, index) => `
+        <div class="table-section" style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); margin-bottom: 20px; page-break-before: ${
+					index === 0 ? 'avoid' : 'always'
+				};">
+            <h3 style="font-size: 16px; color: #1E88E5; margin-bottom: 15px; border-bottom: 2px solid #E0E0E0; padding-bottom: 5px;">${
+							language === 'uz'
+								? 'Savollar va Javoblar'
+								: language === 'en'
+								? 'Questions and Answers'
+								: 'Вопросы и Ответы'
+						} (${index * questionsPerPage + 1}-${Math.min(
+				(index + 1) * questionsPerPage,
+				shuffledQuestions.length
+			)})</h3>
+            <table style="width: 100%; border-collapse: collapse; font-size: 10px;">
+                <thead>
+                    <tr style="background: #E3F2FD; color: #333;">
+                        <th style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">${
+													language === 'uz'
+														? 'Savol'
+														: language === 'en'
+														? 'Question'
+														: 'Вопрос'
+												}</th>
+                        <th style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">${getLangText(
+													'yourAnswer'
+												)}</th>
+                        <th style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">${getLangText(
+													'correctAnswer'
+												)}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${chunkRows}
+                </tbody>
+            </table>
+        </div>
+    `
+		)
+		.join('')
+
 	const element = document.createElement('div')
 	element.innerHTML = `
         <div style="font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 12px; color: #333; padding: 15px; background: #F5F7FA; max-width: 800px; margin: 0 auto;">
             <!-- Header -->
-            <div style="background: #1E88E5; color: white; padding: 15px; border-radius: 8px; text-align: center; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <div style="background: #1E88E5; color: white; padding: 15px; border-radius: 8px; text-align: center; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); page-break-after: avoid;">
                 <h2 style="margin: 0; font-size: 20px; font-weight: 600;">
                     <span style="font-size: 24px; margin-right: 8px;">📋</span> ${getLangText(
 											'downloadTitle'
@@ -579,7 +659,7 @@ function downloadPDF() {
             </div>
 
             <!-- User Info Section -->
-            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px; page-break-inside: avoid;">
                 <div style="flex: 1; min-width: 250px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
                     <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
 											'name'
@@ -610,65 +690,12 @@ function downloadPDF() {
                 </div>
             </div>
 
-            <!-- Questions and Answers Section -->
-            <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); margin-bottom: 20px;">
-                <h3 style="font-size: 16px; color: #1E88E5; margin-bottom: 15px; border-bottom: 2px solid #E0E0E0; padding-bottom: 5px;">${
-									language === 'uz'
-										? 'Savollar va Javoblar'
-										: language === 'en'
-										? 'Questions and Answers'
-										: 'Вопросы и Ответы'
-								}</h3>
-                <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
-                    <thead>
-                        <tr style="background: #E3F2FD; color: #333;">
-                            <th style="padding: 10px; text-align: left; border-bottom: 1px solid #ddd;">${
-															language === 'uz'
-																? 'Savol'
-																: language === 'en'
-																? 'Question'
-																: 'Вопрос'
-														}</th>
-                            <th style="padding: 10px; text-align: left; border-bottom: 1px solid #ddd;">${getLangText(
-															'yourAnswer'
-														)}</th>
-                            <th style="padding: 10px; text-align: left; border-bottom: 1px solid #ddd;">${getLangText(
-															'correctAnswer'
-														)}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${shuffledQuestions
-													.map((q, i) => {
-														const userAnswer = userAnswers[i]
-														const isCorrect = userAnswer === q.correct
-														return `
-                                <tr style="border-bottom: 1px solid #eee;">
-                                    <td style="padding: 10px;">${i + 1}. ${
-															q.question[language]
-														}</td>
-                                    <td style="padding: 10px; color: ${
-																			isCorrect ? '#43A047' : '#E53935'
-																		};">
-                                        ${
-																					q.options[language][userAnswer] ||
-																					getLangText('noAnswer')
-																				}
-                                    </td>
-                                    <td style="padding: 10px; color: #43A047;">
-                                        ${q.options[language][q.correct]}
-                                    </td>
-                                </tr>
-                            `
-													})
-													.join('')}
-                    </tbody>
-                </table>
-            </div>
+            <!-- Questions and Answers Sections -->
+            ${tableSections}
 
             <!-- Footer -->
-            <div style="text-align: center; font-size: 10px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px;">
-                <p>© 2025 QuizTest App | ${formattedDate}</p>
+            <div style="text-align: center; font-size: 10px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; page-break-before: avoid;">
+                <p>© ${new Date().getFullYear()} <a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #1E88E5;">quiztest-uz.vercel.app</a> | ${formattedDate}</p>
                 <div style="display: inline-block; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); margin-top: 10px;">
                     <p style="margin: 0; font-size: 11px; font-weight: 500; color: #333;">
                         <strong>${developerLabel}: </strong><strong style="color: #1E88E5;">Akmaljon Yusupov</strong>
@@ -681,7 +708,9 @@ function downloadPDF() {
                             <span style="color: #0088cc;">@AkmaljonYusupov</span>
                         </span>
                         <span style="margin-left: 10px;">
-                            <i class="bi bi-telegram" style="color: #0088cc; font-size: 12px; margin-right: 5px;"></i>
+                            <i class="bi bi-telegram"
+
+ style="color: #0088cc; font-size: 12px; margin-right: 5px;"></i>
                             <span style="color: #0088cc;">@coder_ac</span>
                         </span>
                         <span style="margin-left: 10px;">
@@ -696,14 +725,30 @@ function downloadPDF() {
 
 	html2pdf()
 		.set({
-			margin: [10, 10, 10, 10],
+			margin: [15, 10, 15, 10], // Yuqori va pastki chegara 15mm, chap va o‘ng 10mm
 			filename: `${username}_${selectedTopic}_quiz_result.pdf`,
 			image: { type: 'jpeg', quality: 0.98 },
-			html2canvas: { scale: 3 },
+			html2canvas: {
+				scale: 2,
+				useCORS: true,
+				logging: true, // Debugging uchun loglarni yoqamiz
+				scrollY: 0, // Jadvalning boshidan render qilish
+				windowHeight: 842, // A4 sahifasi balandligi (mm da, 1mm = 3.78px)
+			},
 			jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+			pagebreak: {
+				mode: ['css', 'legacy'],
+				avoid: ['tr', 'div'],
+				before: '.break-before',
+				after: '.break-after',
+			},
 		})
 		.from(element)
 		.save()
+		.catch(err => {
+			console.error('PDF generatsiyasida xato:', err)
+			showToast('PDFni yuklashda xato yuz berdi!', 'danger')
+		})
 }
 
 nextBtn.addEventListener('click', () => {
@@ -732,9 +777,9 @@ prevBtn.addEventListener('click', () => {
 
 // Start button hodisasi
 document.addEventListener('DOMContentLoaded', function () {
-	const startButton = document.getElementById('startQuizButton') // ID o‘zgartirildi
+	const startButton = document.getElementById('startQuizButton')
 	if (startButton) {
-		startButton.removeEventListener('click', startQuiz) // Oldingi hodisani olib tashlash
+		startButton.removeEventListener('click', startQuiz)
 		startButton.addEventListener('click', startQuiz, { once: true })
 		const startText = document.getElementById('startButton')
 		if (startText) {
