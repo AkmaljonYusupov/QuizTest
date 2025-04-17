@@ -565,23 +565,22 @@ function downloadPDF() {
 	// Generate QR Code
 	let qrCodeDataUrl = ''
 	if (typeof QRCode !== 'undefined') {
-		const qrCanvas = document.createElement('canvas')
-		QRCode.toCanvas(
-			qrCanvas,
-			'https://quiztest-uz.vercel.app/',
-			{
-				width: 80,
-				margin: 1,
-				errorCorrectionLevel: 'H',
-			},
-			error => {
-				if (error) console.error('QR Code generation failed:', error)
-			}
-		)
-		qrCodeDataUrl = qrCanvas.toDataURL('image/png')
-	} else {
-		console.error('QRCode library not loaded')
-	}
+		const qrCanvas = document.createElement('canvas');
+qrCanvas.width = 100;
+qrCanvas.height = 100;
+let qrCodeHtml = '<div id="qrCode" style="width:100px; height:100px;"></div>';
+if (typeof QRCode === 'undefined') {
+    console.error('QRCode library not loaded');
+    showToast(getLangText('qrCodeError'), 'danger');
+    qrCodeHtml = '<p>QR Code not available</p>';
+} else {
+    QRCode.toCanvas(qrCanvas, 'https://quiztest-uz.vercel.app/results', { width: 100, height: 100 }, (error) => {
+        if (error) {
+            console.error('QRCode generation failed:', error);
+            qrCodeHtml = '<p>QR Code not available</p>';
+        }
+    });
+}
 
 	const element = document.createElement('div')
 	element.innerHTML = `
