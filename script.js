@@ -568,7 +568,7 @@ function downloadPDF() {
 		const qrCanvas = document.createElement('canvas')
 		QRCode.toCanvas(
 			qrCanvas,
-			'http://127.0.0.1:5500/results.html',
+			'https://quiztest-uz.vercel.app/',
 			{
 				width: 80,
 				margin: 1,
