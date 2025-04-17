@@ -8,7 +8,9 @@ let selectedTopic = ''
 let language = 'uz'
 const questionTime = 15
 let totalTime = 0
+let initialTotalTime = 0
 let questionInterval, totalInterval
+let warningShown = false
 
 const quizContainer = document.getElementById('quiz')
 const resultContainer = document.getElementById('result')
@@ -16,6 +18,15 @@ const nextBtn = document.getElementById('nextBtn')
 const prevBtn = document.getElementById('prevBtn')
 const progressBar = document.getElementById('progressBar')
 const totalTimerDisplay = document.getElementById('totalTimer')
+
+// Vaqtni MM:SS formatiga aylantirish funksiyasi
+function formatTime(seconds) {
+	const minutes = Math.floor(seconds / 60)
+	const secs = seconds % 60
+	return `${minutes.toString().padStart(2, '0')}:${secs
+		.toString()
+		.padStart(2, '0')}`
+}
 
 const langData = {
 	uz: {
@@ -33,6 +44,8 @@ const langData = {
 		prepTitle: 'Testga tayyorlaning!',
 		prepTimer: `Boshlanishiga`,
 		questionTimerSuffix: 'soniya qoldi',
+		minuteLabel: 'daqiqa',
+		secondLabel: 'soniya',
 		questionLabel: 'Savol',
 		yourAnswer: 'Sizning javobingiz:',
 		correctAnswer: 'To‘g‘ri javob:',
@@ -53,17 +66,19 @@ const langData = {
 			'Iltimos, savollar sonini to‘g‘ri kiriting (1 dan 1000 gacha)!',
 		notFound: 'Tanlangan mavzu bo‘yicha savollar topilmadi!',
 		exceeds: count => `Tanlangan mavzuda faqat ${count} ta savol mavjud!`,
-		downloadTitle: '📋 Quiz Natijasi',
-		name: '👤 Ism:',
-		phone: '📞 Telefon:',
-		topic: '📘 Mavzu:',
-		language: '🌐 Til:',
+		downloadTitle: 'Quiz Natijasi',
+		name: 'Ism:',
+		phone: 'Telefon:',
+		topic: 'Mavzu:',
+		language: 'Til:',
 		lang_uz: 'O‘zbekcha',
 		lang_en: 'Inglizcha',
 		lang_ru: 'Ruscha',
-		date: '📅 Sana:',
-		time: '⏰ Vaqt:',
-		score: '🏆 Ball:',
+		date: 'Sana:',
+		time: 'Vaqt:',
+		score: 'Ball:',
+		timeSpent: 'Sarflangan vaqt:',
+		timeWarning: '⏰ Diqqat! Test vaqti tugashiga 20 soniya qoldi!',
 	},
 	en: {
 		enterName: 'Enter your first and last name',
@@ -80,6 +95,8 @@ const langData = {
 		prepTitle: 'Get ready for the test!',
 		prepTimer: `Starts in`,
 		questionTimerSuffix: 'seconds',
+		minuteLabel: 'minutes',
+		secondLabel: 'seconds',
 		questionLabel: 'Question',
 		yourAnswer: 'Your answer:',
 		correctAnswer: 'Correct answer:',
@@ -100,17 +117,19 @@ const langData = {
 		notFound: 'No questions found for the selected topic!',
 		exceeds: count =>
 			`Only ${count} questions available for the selected topic!`,
-		downloadTitle: '📋 Quiz Result',
-		name: '👤 Name:',
-		phone: '📞 Phone:',
-		topic: '📘 Topic:',
-		language: '🌐 Language:',
+		downloadTitle: 'Quiz Result',
+		name: 'Name:',
+		phone: 'Phone:',
+		topic: 'Topic:',
+		language: 'Language:',
 		lang_uz: 'Uzbek',
 		lang_en: 'English',
 		lang_ru: 'Russian',
-		date: '📅 Date:',
-		time: '⏰ Time:',
-		score: '🏆 Score:',
+		date: 'Date:',
+		time: 'Time:',
+		score: 'Score:',
+		timeSpent: 'Time Spent:',
+		timeWarning: '⏰ Warning! Only 20 seconds left to complete the test!',
 	},
 	ru: {
 		enterName: 'Введите свое имя и фамилию',
@@ -127,6 +146,8 @@ const langData = {
 		prepTitle: 'Подготовьтесь к тесту!',
 		prepTimer: `Начнётся через `,
 		questionTimerSuffix: 'секунд',
+		minuteLabel: 'минут',
+		secondLabel: 'секунд',
 		questionLabel: 'Вопрос',
 		yourAnswer: 'Ваш ответ:',
 		correctAnswer: 'Правильный ответ:',
@@ -147,17 +168,19 @@ const langData = {
 			'Пожалуйста, введите правильное количество вопросов (от 1 до 1000)!',
 		notFound: 'Вопросы по выбранной теме не найдены!',
 		exceeds: count => `Доступно только ${count} вопросов по выбранной теме!`,
-		downloadTitle: '📋 Результат теста',
-		name: '👤 Имя:',
-		phone: '📞 Телефон:',
-		topic: '📘 Тема:',
-		language: '🌐 Язык:',
+		downloadTitle: 'Результат теста',
+		name: 'Имя:',
+		phone: 'Телефон:',
+		topic: 'Тема:',
+		language: 'Язык:',
 		lang_uz: 'Узбекский',
 		lang_en: 'Английский',
 		lang_ru: 'Русский',
-		date: '📅 Дата:',
-		time: '⏰ Время:',
-		score: '🏆 Балл:',
+		date: 'Дата:',
+		time: 'Время:',
+		score: 'Балл:',
+		timeSpent: 'Затраченное время:',
+		timeWarning: '⏰ Внимание! Осталось 20 секунд до завершения теста!',
 	},
 }
 
@@ -193,7 +216,6 @@ function showToast(message, type = 'info') {
 	setTimeout(() => toast.remove(), 5000)
 }
 
-// Apply phone number input mask
 document.addEventListener('DOMContentLoaded', () => {
 	const phoneInput = document.getElementById('phoneInput')
 	if (phoneInput) {
@@ -263,14 +285,10 @@ document.getElementById('languageSelect').addEventListener('change', () => {
 	)
 	const totalTimerSuffix = document.getElementById('totalTimerSuffix')
 	if (totalTimerSuffix) {
-		totalTimerSuffix.textContent =
-			getLangText('questionTimerSuffix') === 'seconds'
-				? 'seconds'
-				: getLangText('questionTimerSuffix')
+		totalTimerSuffix.textContent = ''
 	}
 })
 
-// Start Quiz
 async function startQuiz() {
 	username = document.getElementById('usernameInput')?.value.trim() || ''
 	phoneNumber = document.getElementById('phoneInput')?.value.trim() || ''
@@ -328,6 +346,7 @@ async function startQuiz() {
 		userAnswers = new Array(shuffledQuestions.length).fill(null)
 		currentQuestion = 0
 		totalTime = shuffledQuestions.length * questionTime
+		initialTotalTime = totalTime
 
 		const usernameForm = document.getElementById('usernameForm')
 		const prepOverlay = document.getElementById('prepOverlay')
@@ -345,7 +364,6 @@ async function startQuiz() {
 	}
 }
 
-// Preparation
 function startPreparation() {
 	let prepTime = 10
 	const prepCountdown = document.getElementById('prepCountdown')
@@ -382,20 +400,25 @@ function startPreparation() {
 	}, 1000)
 }
 
-// Start Timers
 function startTimers() {
-	totalTimerDisplay.textContent = totalTime
+	totalTimerDisplay.textContent = formatTime(totalTime)
 	const totalTimerSuffix = document.getElementById('totalTimerSuffix')
 	if (totalTimerSuffix) {
-		totalTimerSuffix.textContent =
-			getLangText('questionTimerSuffix') === 'seconds'
-				? 'seconds'
-				: getLangText('questionTimerSuffix')
+		totalTimerSuffix.textContent = ''
 	}
+
+	document.title = `Quiz Test - ${formatTime(totalTime)}`
 
 	totalInterval = setInterval(() => {
 		totalTime--
-		totalTimerDisplay.textContent = totalTime
+		totalTimerDisplay.textContent = formatTime(totalTime)
+		document.title = `Quiz Test - ${formatTime(totalTime)}`
+
+		if (totalTime === 20 && !warningShown) {
+			showToast(getLangText('timeWarning'), 'warning')
+			warningShown = true
+		}
+
 		if (totalTime <= 0) {
 			clearInterval(totalInterval)
 			clearInterval(questionInterval)
@@ -404,7 +427,6 @@ function startTimers() {
 	}, 1000)
 }
 
-// Question Timer
 function startQuestionTimer() {
 	clearInterval(questionInterval)
 	let timeLeft = questionTime
@@ -427,7 +449,6 @@ function startQuestionTimer() {
 	}, 1000)
 }
 
-// Auto Next Question
 function autoNext() {
 	if (currentQuestion < shuffledQuestions.length - 1) {
 		currentQuestion++
@@ -437,7 +458,6 @@ function autoNext() {
 	}
 }
 
-// Load Question
 function loadQuestion(index) {
 	const q = shuffledQuestions[index]
 	const options = q.options[language]
@@ -482,7 +502,6 @@ function loadQuestion(index) {
 	window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
-// Update Progress
 function updateProgress() {
 	const answered = userAnswers.filter(v => v !== null).length
 	const percent = Math.round((answered / shuffledQuestions.length) * 100)
@@ -490,10 +509,11 @@ function updateProgress() {
 	progressBar.innerText = `${percent}%`
 }
 
-// Show Result
 function showResult(timeUp) {
 	clearInterval(questionInterval)
-	clearInterval(totalInterval)
+	if (!timeUp) {
+		clearInterval(totalInterval)
+	}
 
 	let score = 0
 	quizContainer.innerHTML = shuffledQuestions
@@ -542,10 +562,10 @@ function showResult(timeUp) {
 	prevBtn.style.display = 'none'
 	progressBar.style.width = '100%'
 	progressBar.innerText = '100%'
-	totalTimerDisplay.textContent = '0'
+	totalTimerDisplay.textContent = '00:00'
+	document.title = `Quiz Test - ${getLangText('resultTitle')}`
 }
 
-// Download PDF
 function downloadPDF() {
 	const now = new Date()
 	const formattedDate = now.toLocaleDateString(
@@ -565,8 +585,18 @@ function downloadPDF() {
 			: language === 'en'
 			? 'Developer'
 			: 'Разработчик'
+	const timeSpent = initialTotalTime - totalTime
 
-	// Jadvalni qismlarga bo‘lish (har bir sahifada 20 ta savol)
+	// Sarflangan vaqtni daqiqa va soniyalarga aylantirish
+	const minutes = Math.floor(timeSpent / 60)
+	const seconds = timeSpent % 60
+	const formattedTimeSpent =
+		minutes > 0
+			? `${minutes} ${getLangText('minuteLabel')} ${seconds} ${getLangText(
+					'secondLabel'
+			  )}`
+			: `${seconds} ${getLangText('secondLabel')}`
+
 	const questionsPerPage = 20
 	const tableChunks = []
 	for (let i = 0; i < shuffledQuestions.length; i += questionsPerPage) {
@@ -583,18 +613,14 @@ function downloadPDF() {
 					q.options[language][q.correct] || 'Javob mavjud emas'
 
 				return `
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 8px; word-wrap: break-word; max-width: 300px;">${
+                <tr style="border-bottom: 1px solid #e0e0e0;">
+                    <td style="padding: 10px; word-wrap: break-word; max-width: 300px; font-size: 12px; line-height: 1.5;">${
 											globalIndex + 1
 										}. ${questionText}</td>
-                    <td style="padding: 8px; color: ${
-											isCorrect ? '#43A047' : '#E53935'
-										}; word-wrap: break-word; max-width: 200px;">
-                        ${userAnswerText}
-                    </td>
-                    <td style="padding: 8px; color: #43A047; word-wrap: break-word; max-width: 200px;">
-                        ${correctAnswerText}
-                    </td>
+                    <td style="padding: 10px; color: ${
+											isCorrect ? '#2ecc71' : '#e74c3c'
+										}; word-wrap: break-word; max-width: 200px; font-size: 12px; font-weight: 500;">${userAnswerText}</td>
+                    <td style="padding: 10px; color: #2ecc71; word-wrap: break-word; max-width: 200px; font-size: 12px; font-weight: 500;">${correctAnswerText}</td>
                 </tr>
             `
 			})
@@ -602,14 +628,13 @@ function downloadPDF() {
 		tableChunks.push(chunkRows)
 	}
 
-	// Har bir qism uchun alohida jadval yaratamiz
 	const tableSections = tableChunks
 		.map(
 			(chunkRows, index) => `
-        <div class="table-section" style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); margin-bottom: 20px; page-break-before: ${
+        <div class="table-section" style="background: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 25px; page-break-before: ${
 					index === 0 ? 'avoid' : 'always'
 				};">
-            <h3 style="font-size: 16px; color: #1E88E5; margin-bottom: 15px; border-bottom: 2px solid #E0E0E0; padding-bottom: 5px;">${
+            <h3 style="font-size: 18px; color: #34495e; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 8px; font-weight: 600;">${
 							language === 'uz'
 								? 'Savollar va Javoblar'
 								: language === 'en'
@@ -619,20 +644,20 @@ function downloadPDF() {
 				(index + 1) * questionsPerPage,
 				shuffledQuestions.length
 			)})</h3>
-            <table style="width: 100%; border-collapse: collapse; font-size: 10px;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 12px;">
                 <thead>
-                    <tr style="background: #E3F2FD; color: #333;">
-                        <th style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">${
+                    <tr style="background: #3498db; color: #ffffff; font-weight: 600;">
+                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #2980b9;">${
 													language === 'uz'
 														? 'Savol'
 														: language === 'en'
 														? 'Question'
 														: 'Вопрос'
 												}</th>
-                        <th style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">${getLangText(
+                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #2980b9;">${getLangText(
 													'yourAnswer'
 												)}</th>
-                        <th style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">${getLangText(
+                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #2980b9;">${getLangText(
 													'correctAnswer'
 												)}</th>
                     </tr>
@@ -648,45 +673,49 @@ function downloadPDF() {
 
 	const element = document.createElement('div')
 	element.innerHTML = `
-        <div style="font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size: 12px; color: #333; padding: 15px; background: #F5F7FA; max-width: 800px; margin: 0 auto;">
+        <div style="font-family: 'Poppins', sans-serif; font-size: 12px; color: #2c3e50; padding: 20px; background: linear-gradient(135deg, #ecf0f1 0%, #dfe4ea 100%); max-width: 900px; margin: 0 auto;">
             <!-- Header -->
-            <div style="background: #1E88E5; color: white; padding: 15px; border-radius: 8px; text-align: center; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); page-break-after: avoid;">
-                <h2 style="margin: 0; font-size: 20px; font-weight: 600;">
-                    <span style="font-size: 24px; margin-right: 8px;">📋</span> ${getLangText(
+            <div style="background: linear-gradient(90deg, #3498db 0%, #2980b9 100%); color: #ffffff; padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.15); position: relative; page-break-after: avoid;">
+                <h2 style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: 1px;">
+                    <span style="font-size: 28px; margin-right: 10px;">📋</span> ${getLangText(
 											'downloadTitle'
 										)}
                 </h2>
+                <p style="margin: 5px 0 0; font-size: 14px; opacity: 0.9;">QuizTest - Bilimlaringizni sinang!</p>
             </div>
 
             <!-- User Info Section -->
-            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px; page-break-inside: avoid;">
-                <div style="flex: 1; min-width: 250px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
-                    <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 25px; page-break-inside: avoid;">
+                <div style="flex: 1; min-width: 280px; background: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #3498db;">
+                    <p style="margin: 8px 0; font-size: 14px; font-weight: 500;"><i class="bi bi-person-circle me-2" style="color: #3498db;"></i><strong style="color: #34495e;">${getLangText(
 											'name'
 										)}</strong> ${username}</p>
-                    <p style="margin: 5px 0; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><strong style="color: #1E88E5;">${getLangText(
+                    <p style="margin: 8px 0; font-size: 14px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><i class="bi bi-telephone-fill me-2" style="color: #3498db;"></i><strong style="color: #34495e;">${getLangText(
 											'phone'
 										)}</strong> ${phoneNumber}</p>
-                    <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
+                    <p style="margin: 8px 0; font-size: 14px; font-weight: 500;"><i class="bi bi-book-fill me-2" style="color: #3498db;"></i><strong style="color: #34495e;">${getLangText(
 											'topic'
 										)}</strong> ${selectedTopic}</p>
                 </div>
-                <div style="flex: 1; min-width: 200px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
-                    <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
+                <div style="flex: 1; min-width: 220px; background: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #3498db;">
+                    <p style="margin: 8px 0; font-size: 14px; font-weight: 500;"><i class="bi bi-globe me-2" style="color: #3498db;"></i><strong style="color: #34495e;">${getLangText(
 											'language'
 										)}</strong> ${languageName}</p>
-                    <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
+                    <p style="margin: 8px 0; font-size: 14px; font-weight: 500;"><i class="bi bi-calendar-date me-2" style="color: #3498db;"></i><strong style="color: #34495e;">${getLangText(
 											'date'
 										)}</strong> ${formattedDate}</p>
-                    <p style="margin: 5px 0; font-size: 14px;"><strong style="color: #1E88E5;">${getLangText(
+                    <p style="margin: 8px 0; font-size: 14px; font-weight: 500;"><i class="bi bi-clock-fill me-2" style="color: #3498db;"></i><strong style="color: #34495e;">${getLangText(
 											'time'
 										)}</strong> ${formattedTime}</p>
                 </div>
-                <div style="flex: 1; min-width: 150px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); text-align: center;">
-                    <p style="margin: 5px 0; font-size: 16px; font-weight: 600; color: #43A047;"><strong>${getLangText(
+                <div style="flex: 1; min-width: 180px; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; border: 2px solid #3498db;">
+                    <p style="margin: 8px 0; font-size: 18px; font-weight: 700; color: #2ecc71;"><i class="bi bi-trophy-fill me-2" style="color: #f1c40f;"></i><strong>${getLangText(
 											'score'
 										)}</strong> ${score} / ${shuffledQuestions.length}</p>
-                    <p style="margin: 5px 0; font-size: 12px; color: #1E88E5;"><a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #1E88E5;">quiztest-uz.vercel.app</a></p>
+                    <p style="margin: 8px 0; font-size: 16px; font-weight: 600; color: #3498db;"><i class="bi bi-hourglass-split me-2" style="color: #3498db;"></i><strong>${getLangText(
+											'timeSpent'
+										)}</strong> ${formattedTimeSpent}</p>
+                    <p style="margin: 8px 0; font-size: 12px; color: #7f8c8d;"><a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #3498db; font-weight: 500;">quiztest-uz.vercel.app</a></p>
                 </div>
             </div>
 
@@ -694,28 +723,26 @@ function downloadPDF() {
             ${tableSections}
 
             <!-- Footer -->
-            <div style="text-align: center; font-size: 10px; color: #666; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 10px; page-break-before: avoid;">
-                <p>© ${new Date().getFullYear()} <a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #1E88E5;">quiztest-uz.vercel.app</a> | ${formattedDate}</p>
-                <div style="display: inline-block; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); margin-top: 10px;">
-                    <p style="margin: 0; font-size: 11px; font-weight: 500; color: #333;">
-                        <strong>${developerLabel}: </strong><strong style="color: #1E88E5;">Akmaljon Yusupov</strong>
-                        <span style="margin-left: 10px;">
-                            <i class="bi bi-telephone-fill" style="color: #1E88E5; font-size: 12px; margin-right: 5px;"></i>
-                            <span style="color: #1E88E5;">+998-(88)-570-02-09</span>
+            <div style="text-align: center; font-size: 11px; color: #7f8c8d; margin-top: 30px; border-top: 2px solid #3498db; padding-top: 15px; page-break-before: avoid;">
+                <p style="margin: 0; font-weight: 500;">© ${new Date().getFullYear()} <a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #3498db; font-weight: 600;">QuizTest</a> | ${formattedDate}</p>
+                <div style="display: inline-block; background: #ffffff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 15px;">
+                    <p style="margin: 0; font-size: 12px; font-weight: 600; color: #34495e;">
+                        <strong>${developerLabel}: </strong><strong style="color: #3498db;">Akmaljon Yusupov</strong>
+                        <span style="margin-left: 15px;">
+                            <i class="bi bi-telephone-fill" style="color: #3498db; font-size: 13px; margin-right: 5px;"></i>
+                            <span style="color: #34495e;">+998-(88)-570-02-09</span>
                         </span>
-                        <span style="margin-left: 10px;">
-                            <i class="bi bi-telegram" style="color: #0088cc; font-size: 12px; margin-right: 5px;"></i>
-                            <span style="color: #0088cc;">@AkmaljonYusupov</span>
+                        <span style="margin-left: 15px;">
+                            <i class="bi bi-telegram" style="color: #0088cc; font-size: 13px; margin-right: 5px;"></i>
+                            <a href="https://t.me/AkmaljonYusupov" style="color: #0088cc; text-decoration: none;">@AkmaljonYusupov</a>
                         </span>
-                        <span style="margin-left: 10px;">
-                            <i class="bi bi-telegram"
-
- style="color: #0088cc; font-size: 12px; margin-right: 5px;"></i>
-                            <span style="color: #0088cc;">@coder_ac</span>
+                        <span style="margin-left: 15px;">
+                            <i class="bi bi-telegram" style="color: #0088cc; font-size: 13px; margin-right: 5px;"></i>
+                            <a href="https://t.me/coder_ac" style="color: #0088cc; text-decoration: none;">@coder_ac</a>
                         </span>
-                        <span style="margin-left: 10px;">
-                            <i class="bi bi-instagram" style="color: #C13584; font-size: 12px; margin-right: 5px;"></i>
-                            <span style="color: #C13584;">@coder.ac</span>
+                        <span style="margin-left: 15px;">
+                            <i class="bi bi-instagram" style="color: #e91e63; font-size: 13px; margin-right: 5px;"></i>
+                            <a href="https://instagram.com/coder.ac" style="color: #e91e63; text-decoration: none;">@coder.ac</a>
                         </span>
                     </p>
                 </div>
@@ -725,15 +752,15 @@ function downloadPDF() {
 
 	html2pdf()
 		.set({
-			margin: [15, 10, 15, 10], // Yuqori va pastki chegara 15mm, chap va o‘ng 10mm
+			margin: [15, 15, 15, 15],
 			filename: `${username}_${selectedTopic}_quiz_result.pdf`,
 			image: { type: 'jpeg', quality: 0.98 },
 			html2canvas: {
 				scale: 2,
 				useCORS: true,
-				logging: true, // Debugging uchun loglarni yoqamiz
-				scrollY: 0, // Jadvalning boshidan render qilish
-				windowHeight: 842, // A4 sahifasi balandligi (mm da, 1mm = 3.78px)
+				logging: true,
+				scrollY: 0,
+				windowHeight: 842,
 			},
 			jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
 			pagebreak: {
@@ -775,7 +802,6 @@ prevBtn.addEventListener('click', () => {
 	}
 })
 
-// Start button hodisasi
 document.addEventListener('DOMContentLoaded', function () {
 	const startButton = document.getElementById('startQuizButton')
 	if (startButton) {
