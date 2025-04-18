@@ -2,9 +2,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<p> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <p> tag?",
-			"ru": "Для чего используется тег <p>?"
+			"uz": "&ltp&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltp&gt tag?",
+			"ru": "Для чего используется тег &ltp&gt?"
 		},
 		"options": {
 			"uz": [
@@ -31,9 +31,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<a> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <a> tag perform?",
-			"ru": "Какую функцию выполняет тег <a>?"
+			"uz": "&lta&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &lta&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &lta&gt?"
 		},
 		"options": {
 			"uz": [
@@ -55,9 +55,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<div> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <div> tag?",
-			"ru": "Для чего используется тег <div>?"
+			"uz": "&ltdiv&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltdiv&gt tag?",
+			"ru": "Для чего используется тег &ltdiv&gt?"
 		},
 		"options": {
 			"uz": [
@@ -79,9 +79,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<h1> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <h1> tag perform?",
-			"ru": "Какую функцию выполняет тег <h1>?"
+			"uz": "&lth1&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &lth1&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &lth1&gt?"
 		},
 		"options": {
 			"uz": [
@@ -108,9 +108,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<img> tegi qanday kontentni ko'rsatadi?",
-			"en": "What type of content does the <img> tag display?",
-			"ru": "Какой тип контента отображает тег <img>?"
+			"uz": "&ltimg&gt tegi qanday kontentni ko'rsatadi?",
+			"en": "What type of content does the &ltimg&gt tag display?",
+			"ru": "Какой тип контента отображает тег &ltimg&gt?"
 		},
 		"options": {
 			"uz": ["Video", "Rasm", "Matn", "Havola"],
@@ -122,9 +122,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<ul> tegi qanday ro'yxatni yaratadi?",
-			"en": "What type of list does the <ul> tag create?",
-			"ru": "Какой тип списка создает тег <ul>?"
+			"uz": "&ltul&gt tegi qanday ro'yxatni yaratadi?",
+			"en": "What type of list does the &ltul&gt tag create?",
+			"ru": "Какой тип списка создает тег &ltul&gt?"
 		},
 		"options": {
 			"uz": [
@@ -151,9 +151,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<ol> tegi qanday ro'yxatni belgilaydi?",
-			"en": "What type of list does the <ol> tag define?",
-			"ru": "Какой тип списка определяет тег <ol>?"
+			"uz": "&ltol&gt tegi qanday ro'yxatni belgilaydi?",
+			"en": "What type of list does the &ltol&gt tag define?",
+			"ru": "Какой тип списка определяет тег &ltol&gt?"
 		},
 		"options": {
 			"uz": ["Tartibli ro'yxat", "Tartibsiz ro'yxat", "Matn bloki", "Jadval"],
@@ -170,9 +170,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<li> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <li> tag?",
-			"ru": "Для чего используется тег <li>?"
+			"uz": "&ltli&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltli&gt tag?",
+			"ru": "Для чего используется тег &ltli&gt?"
 		},
 		"options": {
 			"uz": [
@@ -199,9 +199,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<table> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <table> tag?",
-			"ru": "Для чего используется тег <table>?"
+			"uz": "&lttable&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &lttable&gt tag?",
+			"ru": "Для чего используется тег &lttable&gt?"
 		},
 		"options": {
 			"uz": [
@@ -223,9 +223,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<tr> tegi jadvalda nima uchun ishlatiladi?",
-			"en": "What is the <tr> tag used for in a table?",
-			"ru": "Для чего используется тег <tr> в таблице?"
+			"uz": "&lttr&gt tegi jadvalda nima uchun ishlatiladi?",
+			"en": "What is the &lttr&gt tag used for in a table?",
+			"ru": "Для чего используется тег &lttr&gt в таблице?"
 		},
 		"options": {
 			"uz": [
@@ -247,9 +247,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<td> tegi jadvalda qanday vazifani bajaradi?",
-			"en": "What function does the <td> tag perform in a table?",
-			"ru": "Какую функцию выполняет тег <td> в таблице?"
+			"uz": "&lttd&gt tegi jadvalda qanday vazifani bajaradi?",
+			"en": "What function does the &lttd&gt tag perform in a table?",
+			"ru": "Какую функцию выполняет тег &lttd&gt в таблице?"
 		},
 		"options": {
 			"uz": [
@@ -276,9 +276,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<th> tegi jadvalda qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <th> tag in a table?",
-			"ru": "Для чего используется тег <th> в таблице?"
+			"uz": "&ltth&gt tegi jadvalda qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltth&gt tag in a table?",
+			"ru": "Для чего используется тег &ltth&gt в таблице?"
 		},
 		"options": {
 			"uz": [
@@ -305,9 +305,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<br> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <br> tag perform?",
-			"ru": "Какую функцию выполняет тег <br>?"
+			"uz": "&ltbr&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltbr&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltbr&gt?"
 		},
 		"options": {
 			"uz": [
@@ -334,9 +334,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<hr> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <hr> tag?",
-			"ru": "Для чего используется тег <hr>?"
+			"uz": "&lthr&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &lthr&gt tag?",
+			"ru": "Для чего используется тег &lthr&gt?"
 		},
 		"options": {
 			"uz": [
@@ -363,9 +363,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<strong> tegi matnni qanday ko'rinishda aks ettiradi?",
-			"en": "How does the <strong> tag affect text appearance?",
-			"ru": "Как тег <strong> влияет на отображение текста?"
+			"uz": "&ltstrong&gt tegi matnni qanday ko'rinishda aks ettiradi?",
+			"en": "How does the &ltstrong&gt tag affect text appearance?",
+			"ru": "Как тег &ltstrong&gt влияет на отображение текста?"
 		},
 		"options": {
 			"uz": [
@@ -392,9 +392,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<em> tegi matnni qanday formatlaydi?",
-			"en": "How does the <em> tag format text?",
-			"ru": "Как тег <em> форматирует текст?"
+			"uz": "&ltem&gt tegi matnni qanday formatlaydi?",
+			"en": "How does the &ltem&gt tag format text?",
+			"ru": "Как тег &ltem&gt форматирует текст?"
 		},
 		"options": {
 			"uz": [
@@ -416,9 +416,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<span> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <span> tag?",
-			"ru": "Для чего используется тег <span>?"
+			"uz": "&ltspan&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltspan&gt tag?",
+			"ru": "Для чего используется тег &ltspan&gt?"
 		},
 		"options": {
 			"uz": [
@@ -445,9 +445,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<form> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <form> tag perform?",
-			"ru": "Какую функцию выполняет тег <form>?"
+			"uz": "&ltform&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltform&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltform&gt?"
 		},
 		"options": {
 			"uz": [
@@ -474,9 +474,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<input> tegi forma ichida qanday ishlatiladi?",
-			"en": "How is the <input> tag used within a form?",
-			"ru": "Как используется тег <input> внутри формы?"
+			"uz": "&ltinput&gt tegi forma ichida qanday ishlatiladi?",
+			"en": "How is the &ltinput&gt tag used within a form?",
+			"ru": "Как используется тег &ltinput&gt внутри формы?"
 		},
 		"options": {
 			"uz": [
@@ -503,9 +503,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<button> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <button> tag?",
-			"ru": "Для чего используется тег <button>?"
+			"uz": "&ltbutton&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltbutton&gt tag?",
+			"ru": "Для чего используется тег &ltbutton&gt?"
 		},
 		"options": {
 			"uz": [
@@ -532,9 +532,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<select> tegi qanday elementni yaratadi?",
-			"en": "What element does the <select> tag create?",
-			"ru": "Какой элемент создает тег <select>?"
+			"uz": "&ltselect&gt tegi qanday elementni yaratadi?",
+			"en": "What element does the &ltselect&gt tag create?",
+			"ru": "Какой элемент создает тег &ltselect&gt?"
 		},
 		"options": {
 			"uz": ["Ochiladigan ro'yxat", "Matn maydoni", "Tugma", "Rasm"],
@@ -546,9 +546,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<textarea> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <textarea> tag perform?",
-			"ru": "Какую функцию выполняет тег <textarea>?"
+			"uz": "&lttextarea&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &lttextarea&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &lttextarea&gt?"
 		},
 		"options": {
 			"uz": [
@@ -575,9 +575,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<label> tegi forma elementlari bilan qanday ishlaydi?",
-			"en": "How does the <label> tag work with form elements?",
-			"ru": "Как тег <label> работает с элементами формы?"
+			"uz": "&ltlabel&gt tegi forma elementlari bilan qanday ishlaydi?",
+			"en": "How does the &ltlabel&gt tag work with form elements?",
+			"ru": "Как тег &ltlabel&gt работает с элементами формы?"
 		},
 		"options": {
 			"uz": [
@@ -599,9 +599,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<iframe> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <iframe> tag?",
-			"ru": "Для чего используется тег <iframe>?"
+			"uz": "&ltiframe&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltiframe&gt tag?",
+			"ru": "Для чего используется тег &ltiframe&gt?"
 		},
 		"options": {
 			"uz": [
@@ -628,9 +628,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<meta> tegi qanday ma'lumotlarni taqdim etadi?",
-			"en": "What type of information does the <meta> tag provide?",
-			"ru": "Какую информацию предоставляет тег <meta>?"
+			"uz": "&ltmeta&gt tegi qanday ma'lumotlarni taqdim etadi?",
+			"en": "What type of information does the &ltmeta&gt tag provide?",
+			"ru": "Какую информацию предоставляет тег &ltmeta&gt?"
 		},
 		"options": {
 			"uz": [
@@ -657,9 +657,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<link> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <link> tag?",
-			"ru": "Для чего используется тег <link>?"
+			"uz": "&ltlink&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltlink&gt tag?",
+			"ru": "Для чего используется тег &ltlink&gt?"
 		},
 		"options": {
 			"uz": [
@@ -686,9 +686,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<script> tegi qanday kontentni o'z ichiga oladi?",
-			"en": "What type of content does the <script> tag contain?",
-			"ru": "Какой тип контента содержит тег <script>?"
+			"uz": "&ltscript&gt tegi qanday kontentni o'z ichiga oladi?",
+			"en": "What type of content does the &ltscript&gt tag contain?",
+			"ru": "Какой тип контента содержит тег &ltscript&gt?"
 		},
 		"options": {
 			"uz": ["JavaScript kodi", "Rasm", "Matn", "Havola"],
@@ -700,9 +700,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<style> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <style> tag?",
-			"ru": "Для чего используется тег <style>?"
+			"uz": "&ltstyle&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltstyle&gt tag?",
+			"ru": "Для чего используется тег &ltstyle&gt?"
 		},
 		"options": {
 			"uz": [
@@ -729,9 +729,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<body> tegi HTML hujjatida qanday rol o'ynaydi?",
-			"en": "What role does the <body> tag play in an HTML document?",
-			"ru": "Какую роль играет тег <body> в HTML-документе?"
+			"uz": "&ltbody&gt tegi HTML hujjatida qanday rol o'ynaydi?",
+			"en": "What role does the &ltbody&gt tag play in an HTML document?",
+			"ru": "Какую роль играет тег &ltbody&gt в HTML-документе?"
 		},
 		"options": {
 			"uz": [
@@ -758,9 +758,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<head> tegi qanday ma'lumotlarni o'z ichiga oladi?",
-			"en": "What type of information does the <head> tag contain?",
-			"ru": "Какую информацию содержит тег <head>?"
+			"uz": "&lthead&gt tegi qanday ma'lumotlarni o'z ichiga oladi?",
+			"en": "What type of information does the &lthead&gt tag contain?",
+			"ru": "Какую информацию содержит тег &lthead&gt?"
 		},
 		"options": {
 			"uz": [
@@ -787,9 +787,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<title> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <title> tag?",
-			"ru": "Для чего используется тег <title>?"
+			"uz": "&lttitle&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &lttitle&gt tag?",
+			"ru": "Для чего используется тег &lttitle&gt?"
 		},
 		"options": {
 			"uz": [
@@ -816,9 +816,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<b> tegi matnni qanday ko'rinishda aks ettiradi?",
-			"en": "How does the <b> tag affect text appearance?",
-			"ru": "Как тег <b> влияет на отображение текста?"
+			"uz": "&ltb&gt tegi matnni qanday ko'rinishda aks ettiradi?",
+			"en": "How does the &ltb&gt tag affect text appearance?",
+			"ru": "Как тег &ltb&gt влияет на отображение текста?"
 		},
 		"options": {
 			"uz": [
@@ -845,9 +845,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<i> tegi matnni qanday formatlaydi?",
-			"en": "How does the <i> tag format text?",
-			"ru": "Как тег <i> форматирует текст?"
+			"uz": "&lti&gt tegi matnni qanday formatlaydi?",
+			"en": "How does the &lti&gt tag format text?",
+			"ru": "Как тег &lti&gt форматирует текст?"
 		},
 		"options": {
 			"uz": [
@@ -869,9 +869,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<u> tegi matnni qanday ko'rinishda aks ettiradi?",
-			"en": "How does the <u> tag affect text appearance?",
-			"ru": "Как тег <u> влияет на отображение текста?"
+			"uz": "&ltu&gt tegi matnni qanday ko'rinishda aks ettiradi?",
+			"en": "How does the &ltu&gt tag affect text appearance?",
+			"ru": "Как тег &ltu&gt влияет на отображение текста?"
 		},
 		"options": {
 			"uz": [
@@ -898,9 +898,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<s> tegi matnni qanday formatlaydi?",
-			"en": "How does the <s> tag format text?",
-			"ru": "Как тег <s> форматирует текст?"
+			"uz": "&lts&gt tegi matnni qanday formatlaydi?",
+			"en": "How does the &lts&gt tag format text?",
+			"ru": "Как тег &lts&gt форматирует текст?"
 		},
 		"options": {
 			"uz": [
@@ -927,9 +927,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<sup> tegi matnni qanday joylashtiradi?",
-			"en": "How does the <sup> tag position text?",
-			"ru": "Как тег <sup> позиционирует текст?"
+			"uz": "&ltsup&gt tegi matnni qanday joylashtiradi?",
+			"en": "How does the &ltsup&gt tag position text?",
+			"ru": "Как тег &ltsup&gt позиционирует текст?"
 		},
 		"options": {
 			"uz": [
@@ -951,9 +951,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<sub> tegi matnni qanday joylashtiradi?",
-			"en": "How does the <sub> tag position text?",
-			"ru": "Как тег <sub> позиционирует текст?"
+			"uz": "&ltsub&gt tegi matnni qanday joylashtiradi?",
+			"en": "How does the &ltsub&gt tag position text?",
+			"ru": "Как тег &ltsub&gt позиционирует текст?"
 		},
 		"options": {
 			"uz": [
@@ -975,9 +975,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<pre> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <pre> tag?",
-			"ru": "Для чего используется тег <pre>?"
+			"uz": "&ltpre&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltpre&gt tag?",
+			"ru": "Для чего используется тег &ltpre&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1004,9 +1004,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<code> tegi qanday kontentni ko'rsatadi?",
-			"en": "What type of content does the <code> tag display?",
-			"ru": "Какой тип контента отображает тег <code>?"
+			"uz": "&ltcode&gt tegi qanday kontentni ko'rsatadi?",
+			"en": "What type of content does the &ltcode&gt tag display?",
+			"ru": "Какой тип контента отображает тег &ltcode&gt?"
 		},
 		"options": {
 			"uz": ["Kompyuter kodi", "Rasm", "Havola", "Jadval"],
@@ -1018,9 +1018,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<blockquote> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <blockquote> tag?",
-			"ru": "Для чего используется тег <blockquote>?"
+			"uz": "&ltblockquote&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltblockquote&gt tag?",
+			"ru": "Для чего используется тег &ltblockquote&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1047,9 +1047,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<cite> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <cite> tag perform?",
-			"ru": "Какую функцию выполняет тег <cite>?"
+			"uz": "&ltcite&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltcite&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltcite&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1076,9 +1076,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<q> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <q> tag?",
-			"ru": "Для чего используется тег <q>?"
+			"uz": "&ltq&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltq&gt tag?",
+			"ru": "Для чего используется тег &ltq&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1105,9 +1105,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<abbr> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <abbr> tag perform?",
-			"ru": "Какую функцию выполняет тег <abbr>?"
+			"uz": "&ltabbr&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltabbr&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltabbr&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1134,9 +1134,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<address> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <address> tag?",
-			"ru": "Для чего используется тег <address>?"
+			"uz": "&ltaddress&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltaddress&gt tag?",
+			"ru": "Для чего используется тег &ltaddress&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1163,9 +1163,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<area> tegi qanday ishlatiladi?",
-			"en": "How is the <area> tag used?",
-			"ru": "Как используется тег <area>?"
+			"uz": "&ltarea&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltarea&gt tag used?",
+			"ru": "Как используется тег &ltarea&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1192,9 +1192,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<map> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <map> tag?",
-			"ru": "Для чего используется тег <map>?"
+			"uz": "&ltmap&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltmap&gt tag?",
+			"ru": "Для чего используется тег &ltmap&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1221,9 +1221,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<base> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <base> tag perform?",
-			"ru": "Какую функцию выполняет тег <base>?"
+			"uz": "&ltbase&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltbase&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltbase&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1250,9 +1250,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<bdi> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <bdi> tag?",
-			"ru": "Для чего используется тег <bdi>?"
+			"uz": "&ltbdi&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltbdi&gt tag?",
+			"ru": "Для чего используется тег &ltbdi&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1279,9 +1279,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<bdo> tegi matnni qanday ko'rsatadi?",
-			"en": "How does the <bdo> tag display text?",
-			"ru": "Как тег <bdo> отображает текст?"
+			"uz": "&ltbdo&gt tegi matnni qanday ko'rsatadi?",
+			"en": "How does the &ltbdo&gt tag display text?",
+			"ru": "Как тег &ltbdo&gt отображает текст?"
 		},
 		"options": {
 			"uz": [
@@ -1308,9 +1308,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<col> tegi jadvalda qanday ishlatiladi?",
-			"en": "How is the <col> tag used in a table?",
-			"ru": "Как используется тег <col> в таблице?"
+			"uz": "&ltcol&gt tegi jadvalda qanday ishlatiladi?",
+			"en": "How is the &ltcol&gt tag used in a table?",
+			"ru": "Как используется тег &ltcol&gt в таблице?"
 		},
 		"options": {
 			"uz": [
@@ -1337,9 +1337,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<colgroup> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <colgroup> tag?",
-			"ru": "Для чего используется тег <colgroup>?"
+			"uz": "&ltcolgroup&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltcolgroup&gt tag?",
+			"ru": "Для чего используется тег &ltcolgroup&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1366,9 +1366,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<data> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <data> tag perform?",
-			"ru": "Какую функцию выполняет тег <data>?"
+			"uz": "&ltdata&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltdata&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltdata&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1395,9 +1395,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<datalist> tegi qanday ishlatiladi?",
-			"en": "How is the <datalist> tag used?",
-			"ru": "Как используется тег <datalist>?"
+			"uz": "&ltdatalist&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltdatalist&gt tag used?",
+			"ru": "Как используется тег &ltdatalist&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1424,9 +1424,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<del> tegi matnni qanday ko'rsatadi?",
-			"en": "How does the <del> tag display text?",
-			"ru": "Как тег <del> отображает текст?"
+			"uz": "&ltdel&gt tegi matnni qanday ko'rsatadi?",
+			"en": "How does the &ltdel&gt tag display text?",
+			"ru": "Как тег &ltdel&gt отображает текст?"
 		},
 		"options": {
 			"uz": [
@@ -1453,9 +1453,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<dfn> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <dfn> tag?",
-			"ru": "Для чего используется тег <dfn>?"
+			"uz": "&ltdfn&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltdfn&gt tag?",
+			"ru": "Для чего используется тег &ltdfn&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1482,9 +1482,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<dialog> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <dialog> tag perform?",
-			"ru": "Какую функцию выполняет тег <dialog>?"
+			"uz": "&ltdialog&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltdialog&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltdialog&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1511,9 +1511,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<embed> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <embed> tag?",
-			"ru": "Для чего используется тег <embed>?"
+			"uz": "&ltembed&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltembed&gt tag?",
+			"ru": "Для чего используется тег &ltembed&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1540,9 +1540,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<fieldset> tegi forma ichida qanday ishlatiladi?",
-			"en": "How is the <fieldset> tag used within a form?",
-			"ru": "Как используется тег <fieldset> внутри формы?"
+			"uz": "&ltfieldset&gt tegi forma ichida qanday ishlatiladi?",
+			"en": "How is the &ltfieldset&gt tag used within a form?",
+			"ru": "Как используется тег &ltfieldset&gt внутри формы?"
 		},
 		"options": {
 			"uz": [
@@ -1569,9 +1569,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<figcaption> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <figcaption> tag?",
-			"ru": "Для чего используется тег <figcaption>?"
+			"uz": "&ltfigcaption&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltfigcaption&gt tag?",
+			"ru": "Для чего используется тег &ltfigcaption&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1598,9 +1598,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<figure> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <figure> tag perform?",
-			"ru": "Какую функцию выполняет тег <figure>?"
+			"uz": "&ltfigure&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltfigure&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltfigure&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1627,9 +1627,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<ins> tegi matnni qanday ko'rsatadi?",
-			"en": "How does the <ins> tag display text?",
-			"ru": "Как тег <ins> отображает текст?"
+			"uz": "&ltins&gt tegi matnni qanday ko'rsatadi?",
+			"en": "How does the &ltins&gt tag display text?",
+			"ru": "Как тег &ltins&gt отображает текст?"
 		},
 		"options": {
 			"uz": [
@@ -1656,9 +1656,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<kbd> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <kbd> tag?",
-			"ru": "Для чего используется тег <kbd>?"
+			"uz": "&ltkbd&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltkbd&gt tag?",
+			"ru": "Для чего используется тег &ltkbd&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1685,9 +1685,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<legend> tegi forma ichida qanday ishlatiladi?",
-			"en": "How is the <legend> tag used within a form?",
-			"ru": "Как используется тег <legend> внутри формы?"
+			"uz": "&ltlegend&gt tegi forma ichida qanday ishlatiladi?",
+			"en": "How is the &ltlegend&gt tag used within a form?",
+			"ru": "Как используется тег &ltlegend&gt внутри формы?"
 		},
 		"options": {
 			"uz": [
@@ -1714,9 +1714,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<mark> tegi matnni qanday ko'rsatadi?",
-			"en": "How does the <mark> tag display text?",
-			"ru": "Как тег <mark> отображает текст?"
+			"uz": "&ltmark&gt tegi matnni qanday ko'rsatadi?",
+			"en": "How does the &ltmark&gt tag display text?",
+			"ru": "Как тег &ltmark&gt отображает текст?"
 		},
 		"options": {
 			"uz": [
@@ -1743,9 +1743,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<meter> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <meter> tag?",
-			"ru": "Для чего используется тег <meter>?"
+			"uz": "&ltmeter&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltmeter&gt tag?",
+			"ru": "Для чего используется тег &ltmeter&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1772,9 +1772,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<noscript> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <noscript> tag perform?",
-			"ru": "Какую функцию выполняет тег <noscript>?"
+			"uz": "&ltnoscript&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltnoscript&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltnoscript&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1801,9 +1801,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<object> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <object> tag?",
-			"ru": "Для чего используется тег <object>?"
+			"uz": "&ltobject&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltobject&gt tag?",
+			"ru": "Для чего используется тег &ltobject&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1830,9 +1830,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<optgroup> tegi qanday ishlatiladi?",
-			"en": "How is the <optgroup> tag used?",
-			"ru": "Как используется тег <optgroup>?"
+			"uz": "&ltoptgroup&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltoptgroup&gt tag used?",
+			"ru": "Как используется тег &ltoptgroup&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1859,9 +1859,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<option> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <option> tag perform?",
-			"ru": "Какую функцию выполняет тег <option>?"
+			"uz": "&ltoption&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltoption&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltoption&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1888,9 +1888,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<output> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <output> tag?",
-			"ru": "Для чего используется тег <output>?"
+			"uz": "&ltoutput&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltoutput&gt tag?",
+			"ru": "Для чего используется тег &ltoutput&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1917,9 +1917,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<param> tegi qanday ishlatiladi?",
-			"en": "How is the <param> tag used?",
-			"ru": "Как используется тег <param>?"
+			"uz": "&ltparam&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltparam&gt tag used?",
+			"ru": "Как используется тег &ltparam&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1946,9 +1946,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<progress> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <progress> tag perform?",
-			"ru": "Какую функцию выполняет тег <progress>?"
+			"uz": "&ltprogress&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltprogress&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltprogress&gt?"
 		},
 		"options": {
 			"uz": [
@@ -1975,9 +1975,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<rp> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <rp> tag?",
-			"ru": "Для чего используется тег <rp>?"
+			"uz": "&ltrp&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltrp&gt tag?",
+			"ru": "Для чего используется тег &ltrp&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2004,9 +2004,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<rt> tegi qanday ishlatiladi?",
-			"en": "How is the <rt> tag used?",
-			"ru": "Как используется тег <rt>?"
+			"uz": "&ltrt&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltrt&gt tag used?",
+			"ru": "Как используется тег &ltrt&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2033,9 +2033,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<ruby> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <ruby> tag?",
-			"ru": "Для чего используется тег <ruby>?"
+			"uz": "&ltruby&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltruby&gt tag?",
+			"ru": "Для чего используется тег &ltruby&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2062,9 +2062,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<samp> tegi qanday kontentni ko'rsatadi?",
-			"en": "What type of content does the <samp> tag display?",
-			"ru": "Какой тип контента отображает тег <samp>?"
+			"uz": "&ltsamp&gt tegi qanday kontentni ko'rsatadi?",
+			"en": "What type of content does the &ltsamp&gt tag display?",
+			"ru": "Какой тип контента отображает тег &ltsamp&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2091,9 +2091,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<small> tegi matnni qanday ko'rsatadi?",
-			"en": "How does the <small> tag display text?",
-			"ru": "Как тег <small> отображает текст?"
+			"uz": "&ltsmall&gt tegi matnni qanday ko'rsatadi?",
+			"en": "How does the &ltsmall&gt tag display text?",
+			"ru": "Как тег &ltsmall&gt отображает текст?"
 		},
 		"options": {
 			"uz": [
@@ -2120,9 +2120,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<source> tegi qanday ishlatiladi?",
-			"en": "How is the <source> tag used?",
-			"ru": "Как используется тег <source>?"
+			"uz": "&ltsource&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltsource&gt tag used?",
+			"ru": "Как используется тег &ltsource&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2149,9 +2149,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<summary> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <summary> tag?",
-			"ru": "Для чего используется тег <summary>?"
+			"uz": "&ltsummary&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltsummary&gt tag?",
+			"ru": "Для чего используется тег &ltsummary&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2178,9 +2178,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<template> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <template> tag perform?",
-			"ru": "Какую функцию выполняет тег <template>?"
+			"uz": "&lttemplate&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &lttemplate&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &lttemplate&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2207,9 +2207,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<time> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <time> tag?",
-			"ru": "Для чего используется тег <time>?"
+			"uz": "&lttime&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &lttime&gt tag?",
+			"ru": "Для чего используется тег &lttime&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2236,9 +2236,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<track> tegi qanday ishlatiladi?",
-			"en": "How is the <track> tag used?",
-			"ru": "Как используется тег <track>?"
+			"uz": "&lttrack&gt tegi qanday ishlatiladi?",
+			"en": "How is the &lttrack&gt tag used?",
+			"ru": "Как используется тег &lttrack&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2265,9 +2265,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<var> tegi qanday kontentni ko'rsatadi?",
-			"en": "What type of content does the <var> tag display?",
-			"ru": "Какой тип контента отображает тег <var>?"
+			"uz": "&ltvar&gt tegi qanday kontentni ko'rsatadi?",
+			"en": "What type of content does the &ltvar&gt tag display?",
+			"ru": "Какой тип контента отображает тег &ltvar&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2294,9 +2294,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<wbr> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <wbr> tag perform?",
-			"ru": "Какую функцию выполняет тег <wbr>?"
+			"uz": "&ltwbr&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltwbr&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltwbr&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2323,9 +2323,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<canvas> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <canvas> tag?",
-			"ru": "Для чего используется тег <canvas>?"
+			"uz": "&ltcanvas&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltcanvas&gt tag?",
+			"ru": "Для чего используется тег &ltcanvas&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2347,9 +2347,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<video> tegi qanday kontentni ko'rsatadi?",
-			"en": "What type of content does the <video> tag display?",
-			"ru": "Какой тип контента отображает тег <video>?"
+			"uz": "&ltvideo&gt tegi qanday kontentni ko'rsatadi?",
+			"en": "What type of content does the &ltvideo&gt tag display?",
+			"ru": "Какой тип контента отображает тег &ltvideo&gt?"
 		},
 		"options": {
 			"uz": ["Video kontent", "Rasm", "Matn", "Havola"],
@@ -2361,9 +2361,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<audio> tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the <audio> tag?",
-			"ru": "Для чего используется тег <audio>?"
+			"uz": "&ltaudio&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltaudio&gt tag?",
+			"ru": "Для чего используется тег &ltaudio&gt?"
 		},
 		"options": {
 			"uz": [
@@ -2390,9 +2390,9 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "<picture> tegi qanday vazifani bajaradi?",
-			"en": "What function does the <picture> tag perform?",
-			"ru": "Какую функцию выполняет тег <picture>?"
+			"uz": "&ltpicture&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltpicture&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltpicture&gt?"
 		},
 		"options": {
 			"uz": [
