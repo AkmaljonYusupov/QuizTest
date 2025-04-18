@@ -28,6 +28,18 @@ function formatTime(seconds) {
 		.padStart(2, '0')}`
 }
 
+// Soatni HH:MM:SS AM/PM formatiga aylantirish funksiyasi
+function formatClock() {
+	const now = new Date()
+	let hours = now.getHours()
+	const minutes = now.getMinutes().toString().padStart(2, '0')
+	const seconds = now.getSeconds().toString().padStart(2, '0')
+	const ampm = hours >= 12 ? 'PM' : 'AM'
+	hours = hours % 12 || 12 // 0 ni 12 ga aylantirish
+	hours = hours.toString().padStart(2, '0')
+	return `${hours}:${minutes}:${seconds} ${ampm}`
+}
+
 const langData = {
 	uz: {
 		enterName: 'Ismingizni va familyangizni kiriting',
@@ -37,6 +49,7 @@ const langData = {
 		topicHTML: 'HTML',
 		topicCSS: 'CSS',
 		topicJS: 'JavaScript',
+		topicEnglish: 'Ingliz tili',
 		enterYourName: 'Masalan: Akmaljon Yusupov',
 		enterCount: 'Nechta savol bo‘lsin?',
 		timeLeft: 'Bu savol uchun vaqt',
@@ -79,6 +92,13 @@ const langData = {
 		score: 'Ball:',
 		timeSpent: 'Sarflangan vaqt:',
 		timeWarning: '⏰ Diqqat! Test vaqti tugashiga 20 soniya qoldi!',
+		contactButton: 'Bog‘lanish',
+		contactTitle: 'Dasturchi bilan bog‘lanish',
+		contactName: 'Ism va familya:',
+		contactPhone: 'Telefon:',
+		contactTelegram: 'Telegram:',
+		contactTelegramChannel: 'Telegram kanal:',
+		contactInstagram: 'Instagram:',
 	},
 	en: {
 		enterName: 'Enter your first and last name',
@@ -88,6 +108,7 @@ const langData = {
 		topicHTML: 'HTML',
 		topicCSS: 'CSS',
 		topicJS: 'JavaScript',
+		topicEnglish: 'English',
 		enterYourName: 'For example: Akmaljon Yusupov',
 		enterCount: 'How many questions?',
 		timeLeft: 'Time left for this question',
@@ -130,6 +151,13 @@ const langData = {
 		score: 'Score:',
 		timeSpent: 'Time Spent:',
 		timeWarning: '⏰ Warning! Only 20 seconds left to complete the test!',
+		contactButton: 'Contact',
+		contactTitle: 'Contact the Developer',
+		contactName: 'Name:',
+		contactPhone: 'Phone:',
+		contactTelegram: 'Telegram:',
+		contactTelegramChannel: 'Telegram Channel:',
+		contactInstagram: 'Instagram:',
 	},
 	ru: {
 		enterName: 'Введите свое имя и фамилию',
@@ -139,6 +167,7 @@ const langData = {
 		topicHTML: 'HTML',
 		topicCSS: 'CSS',
 		topicJS: 'JavaScript',
+		topicEnglish: 'Английский язык',
 		enterYourName: 'Например: Акмалжон Юсупов',
 		enterCount: 'Сколько вопросов?',
 		timeLeft: 'Оставшееся время для вопроса',
@@ -181,6 +210,13 @@ const langData = {
 		score: 'Балл:',
 		timeSpent: 'Затраченное время:',
 		timeWarning: '⏰ Внимание! Осталось 20 секунд до завершения теста!',
+		contactButton: 'Связаться',
+		contactTitle: 'Связаться с разработчиком',
+		contactName: 'Имя и фамилия:',
+		contactPhone: 'Телефон:',
+		contactTelegram: 'Телеграм:',
+		contactTelegramChannel: 'Телеграм канал:',
+		contactInstagram: 'Инстаграм:',
 	},
 }
 
@@ -216,10 +252,42 @@ function showToast(message, type = 'info') {
 	setTimeout(() => toast.remove(), 5000)
 }
 
+function updateContactInfo() {
+	const contactTitle = document.getElementById('contactOffcanvasLabel')
+	const contactNameLabel = document.getElementById('contactNameLabel')
+	const contactPhoneLabel = document.getElementById('contactPhoneLabel')
+	const contactTelegramLabel = document.getElementById('contactTelegramLabel')
+	const contactTelegramChannelLabel = document.getElementById(
+		'contactTelegramChannelLabel'
+	)
+	const contactInstagramLabel = document.getElementById('contactInstagramLabel')
+
+	if (contactTitle) contactTitle.innerText = getLangText('contactTitle')
+	if (contactNameLabel) contactNameLabel.innerText = getLangText('contactName')
+	if (contactPhoneLabel)
+		contactPhoneLabel.innerText = getLangText('contactPhone')
+	if (contactTelegramLabel)
+		contactTelegramLabel.innerText = getLangText('contactTelegram')
+	if (contactTelegramChannelLabel)
+		contactTelegramChannelLabel.innerText = getLangText(
+			'contactTelegramChannel'
+		)
+	if (contactInstagramLabel)
+		contactInstagramLabel.innerText = getLangText('contactInstagram')
+}
+
+function updateClock() {
+	const contactClock = document.getElementById('contactClock')
+	if (contactClock) {
+		contactClock.innerText = formatClock()
+	}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	const phoneInput = document.getElementById('phoneInput')
 	const usernameInput = document.getElementById('usernameInput')
 	const startButton = document.getElementById('startQuizButton')
+	const contactButton = document.querySelector('.contact-btn')
 
 	if (phoneInput) {
 		if (typeof IMask === 'undefined') {
@@ -253,6 +321,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		document.getElementById('languageSelect').addEventListener('change', () => {
 			phoneInput.placeholder = getLangText('enterPhone')
+			updateContactInfo()
+			// Tooltip matnini yangilash
+			if (contactButton) {
+				const tooltip = bootstrap.Tooltip.getInstance(contactButton)
+				if (tooltip) {
+					tooltip.setContent({ '.tooltip-inner': getLangText('contactButton') })
+				}
+			}
 		})
 	} else {
 		console.error('phoneInput elementi topilmadi!')
@@ -283,6 +359,40 @@ document.addEventListener('DOMContentLoaded', () => {
 	} else {
 		console.error('startQuizButton elementi topilmadi!')
 	}
+
+	// Tooltipni ishga tushirish
+	if (contactButton) {
+		new bootstrap.Tooltip(contactButton, {
+			trigger: 'hover focus',
+			placement: 'right',
+			title: getLangText('contactButton'),
+			customClass: 'custom-tooltip',
+		})
+	}
+
+	// Off-Canvas fokus boshqaruvi
+	const contactOffcanvas = document.getElementById('contactOffcanvas')
+	if (contactOffcanvas) {
+		contactOffcanvas.addEventListener('shown.bs.offcanvas', () => {
+			const closeButton = contactOffcanvas.querySelector('.btn-close')
+			if (closeButton) closeButton.focus()
+			updateClock()
+			const clockInterval = setInterval(updateClock, 1000)
+			contactOffcanvas.addEventListener(
+				'hidden.bs.offcanvas',
+				() => {
+					clearInterval(clockInterval)
+				},
+				{ once: true }
+			)
+		})
+
+		contactOffcanvas.addEventListener('hidden.bs.offcanvas', () => {
+			if (contactButton) contactButton.focus()
+		})
+	}
+
+	updateContactInfo()
 })
 
 document.getElementById('languageSelect').addEventListener('change', () => {
@@ -297,11 +407,14 @@ document.getElementById('languageSelect').addEventListener('change', () => {
 		getLangText('enterCount')
 	document.getElementById('usernameInput').placeholder =
 		getLangText('enterYourName')
+
 	const topicSelect = document.getElementById('topicSelect')
 	topicSelect.options[0].text = getLangText('selectTopic')
 	topicSelect.options[1].text = getLangText('topicHTML')
 	topicSelect.options[2].text = getLangText('topicCSS')
 	topicSelect.options[3].text = getLangText('topicJS')
+	topicSelect.options[4].text = getLangText('topicEnglish') // Yangi qator
+
 	const prepCountdownValue =
 		document.getElementById('prepCountdown')?.innerText || 10
 	const prepTimerSuffix = document.getElementById('prepTimerSuffix')
@@ -316,6 +429,7 @@ document.getElementById('languageSelect').addEventListener('change', () => {
 	if (totalTimerSuffix) {
 		totalTimerSuffix.textContent = ''
 	}
+	updateContactInfo()
 })
 
 async function startQuiz() {
@@ -598,7 +712,7 @@ function showResult(timeUp) {
 	prevBtn.style.display = 'none'
 	progressBar.style.width = '100%'
 	progressBar.innerText = '100%'
-	totalTimerDisplay.textContent = '00:00'
+	totalTimerDisplay.textContent = '00:00:00'
 	document.title = `Quiz Test - ${getLangText('resultTitle')}`
 }
 

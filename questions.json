@@ -393,5 +393,33 @@
 			"ru": ["src", "href", "link", "path"]
 		},
 		"correct": 0
+	},
+	{
+		"topic": "English",
+		"question": {
+			"uz": "Ingliz tilida 'Hello' so'zining ma'nosi nima?",
+			"en": "What is the meaning of the word 'Hello' in English?",
+			"ru": "Каково значение слова 'Hello' на английском?"
+		},
+		"options": {
+			"uz": ["Xayrli kun", "Salom", "Xayr", "Rahmat"],
+			"en": ["Good day", "Hello", "Goodbye", "Thank you"],
+			"ru": ["Добрый день", "Привет", "Прощай", "Спасибо"]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "English",
+		"question": {
+			"uz": "Ingliz tilida 'to run' fe'lining o'tgan zamon shakli qanday?",
+			"en": "What is the past tense of the verb 'to run' in English?",
+			"ru": "Какова форма прошедшего времени глагола 'to run' на английском?"
+		},
+		"options": {
+			"uz": ["Run", "Ran", "Running", "Runs"],
+			"en": ["Run", "Ran", "Running", "Runs"],
+			"ru": ["Run", "Ran", "Running", "Runs"]
+		},
+		"correct": 1
 	}
 ]

@@ -26,26 +26,22 @@
 		</h4>
 		<input type="text" id="usernameInput" class="form-control mb-3 form-control-lg"
 			placeholder="Masalan: Akmaljon Yusupov" />
-
 		<input type="tel" inputmode="numeric" id="phoneInput" class="form-control mb-3 form-control-lg"
 			placeholder="+998-(##)-###-##-##" pattern="[0-9]*" />
-
 		<select id="languageSelect" class="form-select mb-3 form-select-lg">
 			<option value="uz">O‘zbekcha</option>
 			<option value="en">English</option>
 			<option value="ru">Русский</option>
 		</select>
-
 		<select id="topicSelect" class="form-select mb-3 form-select-lg">
 			<option value="">-- Mavzuni tanlang --</option>
 			<option value="HTML">HTML</option>
 			<option value="CSS">CSS</option>
 			<option value="JS">JavaScript</option>
+			<option value="English">English</option>
 		</select>
-
 		<input type="number" id="questionCountInput" class="form-control mb-3 form-control-lg"
 			placeholder="Nechta savol bo‘lsin?" min="1" max="1000" />
-
 		<button class="btn btn-success btn-lg w-100" id="startQuizButton">
 			<i class="bi bi-play-circle-fill me-2"></i><span id="startButton"
 				style="text-transform: uppercase; font-style: oblique;">Testni Boshlash</span>
@@ -66,21 +62,17 @@
 		<h4 class="text-center mb-3" id="quizTitle">
 			<i class="bi bi-question-circle-fill text-info me-2"></i>Quiz Test
 		</h4>
-
 		<div class="total-timer-card">
 			<i class="bi bi-stopwatch-fill text-danger me-2"></i>
 			<span id="totalTimeLabel">Umumiy vaqt tugashiga:</span> <span id="totalTimer">--</span> <span
 				id="totalTimerSuffix">soniya</span>
 		</div>
-
 		<div class="d-flex justify-content-between align-items-center mb-3">
 			<div class="progress flex-grow-1 me-2">
 				<div id="progressBar" class="progress-bar" style="width: 0%;">0%</div>
 			</div>
 		</div>
-
 		<div id="quiz"></div>
-
 		<div class="d-flex justify-content-between mt-3 flex-wrap gap-2">
 			<button class="btn btn-outline-secondary flex-grow-1" id="prevBtn" disabled>
 				<i class="bi bi-arrow-left-circle-fill me-1"></i><span id="prevBtnText">Ortga</span>
@@ -89,8 +81,39 @@
 				<span id="nextBtnText">Keyingi</span> <i class="bi bi-arrow-right-circle-fill ms-1"></i>
 			</button>
 		</div>
-
 		<div id="result" class="text-center mt-4"></div>
+	</div>
+
+	<!-- Bog'lanish tugmasi -->
+	<button class="btn btn-success contact-btn" type="button" data-bs-toggle="offcanvas"
+		data-bs-target="#contactOffcanvas" aria-controls="contactOffcanvas" data-bs-toggle="tooltip"
+		data-bs-placement="right" title="Bog‘lanish">
+		<i class="bi bi-telephone-fill"></i>
+	</button>
+
+	<!-- Off-Canvas panel -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="contactOffcanvas" aria-labelledby="contactOffcanvasLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="contactOffcanvasLabel">Dasturchi bilan bog‘lanish</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<div class="contact-info">
+				<p><i class="bi bi-person-circle me-2"></i><strong id="contactNameLabel">Ism va familya:</strong> Akmaljon
+					Yusupov</p>
+				<p><i class="bi bi-telephone-fill me-2"></i><strong id="contactPhoneLabel">Telefon:</strong> <a
+						href="tel:+998885700209">+998-(88)-570-02-09</a></p>
+				<p><i class="bi bi-telegram me-2"></i><strong id="contactTelegramLabel">Telegram:</strong> <a
+						href="https://t.me/AkmaljonYusupov" target="_blank">@AkmaljonYusupov</a></p>
+				<p><i class="bi bi-telegram me-2"></i><strong id="contactTelegramChannelLabel">Telegram kanal:</strong> <a
+						href="https://t.me/coder_ac" target="_blank">@coder_ac</a></p>
+				<p><i class="bi bi-instagram me-2"></i><strong id="contactInstagramLabel">Instagram:</strong> <a
+						href="https://instagram.com/coder.ac" target="_blank">@coder.ac</a></p>
+			</div>
+			<div class="contact-clock text-center mt-4">
+				<span id="contactClock">12:00:00 AM</span>
+			</div>
+		</div>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
