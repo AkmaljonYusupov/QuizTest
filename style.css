@@ -88,20 +88,24 @@ body {
 	border: 2px solid rgba(0, 123, 255, 0.2);
 	backdrop-filter: blur(15px);
 	border-radius: 20px;
-	padding: 40px 60px;
+	padding: 30px 40px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 	text-align: center;
 	color: #1a1a1a;
+	width: auto;
+	max-width: 90%;
+	min-width: 300px;
 }
 
 .prep-content h2 {
-	font-size: 2.3rem;
+	font-size: 2rem;
 	font-weight: 700;
 	color: #0d6efd;
+	margin-bottom: 15px;
 }
 
 .prep-content p {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: 600;
 	margin-top: 10px;
 	color: #333;
@@ -111,4 +115,20 @@ body {
 	font-size: 1.8rem;
 	vertical-align: middle;
 	color: #0d6efd;
+}
+
+/* Mobil qurilmalar uchun optimallashtirish */
+@media (max-width: 576px) {
+	.prep-content {
+		padding: 20px 30px;
+		min-width: 250px;
+	}
+
+	.prep-content h2 {
+		font-size: 1.8rem;
+	}
+
+	.prep-content p {
+		font-size: 1.1rem;
+	}
 }

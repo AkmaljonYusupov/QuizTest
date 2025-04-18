@@ -59,11 +59,11 @@ const langData = {
 		prev: 'Ortga',
 		noSelection: '❗ Savolga javob belgilang!',
 		invalidName:
-			'Iltimos, ism va familyani to‘liq kiriting (masalan: Akmaljon Yusupov)!',
+			'Iltimos, ism va familyani to‘liq kiriting, faqat harflar va probeldan foydalaning, uzunligi kamida 10 belgi bo‘lsin (masalan: Akmaljon Yusupov)!',
 		invalidPhone: 'Iltimos, to‘liq 9 ta raqam kiriting: +998-(##)-###-##-##',
 		invalidTopic: 'Iltimos, mavzuni tanlang!',
 		invalidCount:
-			'Iltimos, savollar sonini to‘g‘ri kiriting (1 dan 1000 gacha)!',
+			'Iltimos, savollar sonini to‘g‘ri kiriting (1 yoki undan ko‘p)!',
 		notFound: 'Tanlangan mavzu bo‘yicha savollar topilmadi!',
 		exceeds: count => `Tanlangan mavzuda faqat ${count} ta savol mavjud!`,
 		downloadTitle: 'Quiz Natijasi',
@@ -110,10 +110,10 @@ const langData = {
 		prev: 'Previous',
 		noSelection: '❗ Please select an answer!',
 		invalidName:
-			'Please enter both first and last name (e.g., Akmaljon Yusupov)!',
+			'Please enter both first and last name, using only letters and spaces, with a minimum length of 10 characters (e.g., Akmaljon Yusupov)!',
 		invalidPhone: 'Please enter all 9 digits: +998-(##)-###-##-##',
 		invalidTopic: 'Please select a topic!',
-		invalidCount: 'Please enter a valid number of questions (1 to 1000)!',
+		invalidCount: 'Please enter a valid number of questions (1 or more)!',
 		notFound: 'No questions found for the selected topic!',
 		exceeds: count =>
 			`Only ${count} questions available for the selected topic!`,
@@ -161,11 +161,11 @@ const langData = {
 		prev: 'Назад',
 		noSelection: '❗ Пожалуйста, выберите ответ!',
 		invalidName:
-			'Пожалуйста, введите имя и фамилию полностью (например, Акмалжон Юсупов)!',
+			'Пожалуйста, введите имя и фамилию полностью, используя только буквы и пробелы, минимальная длина 10 символов (например, Акмалжон Юсупов)!',
 		invalidPhone: 'Пожалуйста, введите все 9 цифр: +998-(##)-###-##-##',
 		invalidTopic: 'Пожалуйста, выберите тему!',
 		invalidCount:
-			'Пожалуйста, введите правильное количество вопросов (от 1 до 1000)!',
+			'Пожалуйста, введите правильное количество вопросов (1 или больше)!',
 		notFound: 'Вопросы по выбранной теме не найдены!',
 		exceeds: count => `Доступно только ${count} вопросов по выбранной теме!`,
 		downloadTitle: 'Результат теста',
@@ -218,6 +218,9 @@ function showToast(message, type = 'info') {
 
 document.addEventListener('DOMContentLoaded', () => {
 	const phoneInput = document.getElementById('phoneInput')
+	const usernameInput = document.getElementById('usernameInput')
+	const startButton = document.getElementById('startQuizButton')
+
 	if (phoneInput) {
 		if (typeof IMask === 'undefined') {
 			console.error(
@@ -253,6 +256,32 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	} else {
 		console.error('phoneInput elementi topilmadi!')
+	}
+
+	// Ism va familya uchun faqat harflar va probelga ruxsat berish
+	if (usernameInput) {
+		usernameInput.addEventListener('input', () => {
+			const validInput = usernameInput.value.replace(/[^a-zA-Zа-яА-Я\s]/g, '')
+			if (usernameInput.value !== validInput) {
+				usernameInput.value = validInput
+				showToast(getLangText('invalidName'), 'warning')
+			}
+		})
+	} else {
+		console.error('usernameInput elementi topilmadi!')
+	}
+
+	// "Testni boshlash" tugmasi uchun voqea tinglovchisi
+	if (startButton) {
+		startButton.addEventListener('click', () => {
+			startQuiz()
+		})
+		const startText = document.getElementById('startButton')
+		if (startText) {
+			startText.innerText = getLangText('start')
+		}
+	} else {
+		console.error('startQuizButton elementi topilmadi!')
 	}
 })
 
@@ -299,6 +328,13 @@ async function startQuiz() {
 		? parseInt(questionCountInput.value)
 		: 0
 
+	// Ism va familyani tekshirish: faqat harflar va probel, minimal 10 belgi
+	const nameRegex = /^[a-zA-Zа-яА-Я\s]+$/
+	if (!nameRegex.test(username) || username.length < 10) {
+		showToast(getLangText('invalidName'), 'warning')
+		return
+	}
+
 	const nameParts = username.split(' ').filter(part => part.length > 0)
 	if (nameParts.length < 2) {
 		showToast(getLangText('invalidName'), 'warning')
@@ -316,7 +352,7 @@ async function startQuiz() {
 		return
 	}
 
-	if (isNaN(questionCount) || questionCount <= 0 || questionCount > 1000) {
+	if (isNaN(questionCount) || questionCount <= 0) {
 		showToast(getLangText('invalidCount'), 'warning')
 		return
 	}
@@ -587,7 +623,6 @@ function downloadPDF() {
 			: 'Разработчик'
 	const timeSpent = initialTotalTime - totalTime
 
-	// Sarflangan vaqtni daqiqa va soniyalarga aylantirish
 	const minutes = Math.floor(timeSpent / 60)
 	const seconds = timeSpent % 60
 	const formattedTimeSpent =
@@ -634,32 +669,37 @@ function downloadPDF() {
         <div class="table-section" style="background: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 25px; page-break-before: ${
 					index === 0 ? 'avoid' : 'always'
 				};">
-            <h3 style="font-size: 18px; color: #34495e; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 8px; font-weight: 600;">${
-							language === 'uz'
-								? 'Savollar va Javoblar'
-								: language === 'en'
-								? 'Questions and Answers'
-								: 'Вопросы и Ответы'
-						} (${index * questionsPerPage + 1}-${Math.min(
+            <h3 style="font-size: 18px; color: #34495e; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 8px; font-weight: 600;">
+                ${
+									language === 'uz'
+										? 'Savollar va Javoblar'
+										: language === 'en'
+										? 'Questions and Answers'
+										: 'Вопросы и Ответы'
+								} 
+                (${index * questionsPerPage + 1}-${Math.min(
 				(index + 1) * questionsPerPage,
 				shuffledQuestions.length
-			)})</h3>
+			)})
+            </h3>
             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">
                 <thead>
                     <tr style="background: #3498db; color: #ffffff; font-weight: 600;">
-                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #2980b9;">${
-													language === 'uz'
-														? 'Savol'
-														: language === 'en'
-														? 'Question'
-														: 'Вопрос'
-												}</th>
-                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #2980b9;">${getLangText(
-													'yourAnswer'
-												)}</th>
-                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #2980b9;">${getLangText(
-													'correctAnswer'
-												)}</th>
+                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #2980b9;">
+                            ${
+															language === 'uz'
+																? 'Savol'
+																: language === 'en'
+																? 'Question'
+																: 'Вопрос'
+														}
+                        </th>
+                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #2980b9;">
+                            ${getLangText('yourAnswer')}
+                        </th>
+                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #2980b9;">
+                            ${getLangText('correctAnswer')}
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -799,19 +839,5 @@ prevBtn.addEventListener('click', () => {
 	if (currentQuestion > 0) {
 		currentQuestion--
 		loadQuestion(currentQuestion)
-	}
-})
-
-document.addEventListener('DOMContentLoaded', function () {
-	const startButton = document.getElementById('startQuizButton')
-	if (startButton) {
-		startButton.removeEventListener('click', startQuiz)
-		startButton.addEventListener('click', startQuiz, { once: true })
-		const startText = document.getElementById('startButton')
-		if (startText) {
-			startText.innerText = getLangText('start')
-		}
-	} else {
-		console.error('startQuizButton elementi topilmadi!')
 	}
 })
