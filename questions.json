@@ -5186,5 +5186,4732 @@
 			]
 		},
 		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "Semantik HTML nima maqsadda ishlatiladi?",
+			"en": "What is the purpose of semantic HTML?",
+			"ru": "Для чего используется семантический HTML?"
+		},
+		"options": {
+			"uz": [
+				"Kontentning ma'nosini aniqroq ifodalash va kirish imkoniyatini yaxshilash",
+				"Sahifani faqat vizual dizayn uchun tuzish",
+				"JavaScript kodlarini boshqarish",
+				"Rasmlarni avtomatik optimallashtirish"
+			],
+			"en": [
+				"To clearly express the meaning of content and improve accessibility",
+				"To structure a page solely for visual design",
+				"To manage JavaScript code",
+				"To automatically optimize images"
+			],
+			"ru": [
+				"Для четкого выражения смысла контента и улучшения доступности",
+				"Для структурирования страницы только для визуального дизайна",
+				"Для управления кодом JavaScript",
+				"Для автоматической оптимизации изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltarticle&gt tegi qanday kontent uchun ishlatiladi?",
+			"en": "What type of content is the &ltarticle&gt tag used for?",
+			"ru": "Для какого типа контента используется тег &ltarticle&gt?"
+		},
+		"options": {
+			"uz": [
+				"Mustaqil va o‘z-o‘zini ta’minlaydigan kontent",
+				"Sahifa navigatsiyasi",
+				"Statik fon rasmlari",
+				"Forma elementlari"
+			],
+			"en": [
+				"Independent and self-contained content",
+				"Page navigation",
+				"Static background images",
+				"Form elements"
+			],
+			"ru": [
+				"Независимый и самодостаточный контент",
+				"Навигация по странице",
+				"Статические фоновые изображения",
+				"Элементы формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltsection&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltsection&gt tag?",
+			"ru": "Для чего используется тег &ltsection&gt?"
+		},
+		"options": {
+			"uz": [
+				"Mantiqiy guruhlangan kontentni ajratish",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Interaktiv tugmalar yaratish"
+			],
+			"en": [
+				"To separate logically grouped content",
+				"To automatically bold text",
+				"To place an image on the page",
+				"To create interactive buttons"
+			],
+			"ru": [
+				"Для разделения логически сгруппированного контента",
+				"Для автоматического выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для создания интерактивных кнопок"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltheader&gt tegi sahifada qanday rol o‘ynaydi?",
+			"en": "What role does the &ltheader&gt tag play on a page?",
+			"ru": "Какую роль играет тег &ltheader&gt на странице?"
+		},
+		"options": {
+			"uz": [
+				"Kirish yoki navigatsiya uchun yuqori qismni belgilaydi",
+				"Ma’lumotlar jadvalini yaratadi",
+				"Matnni kursiv qiladi",
+				"Video kontentni joylashtiradi"
+			],
+			"en": [
+				"Defines the top section for introductory or navigational content",
+				"Creates a data table",
+				"Italicizes text",
+				"Embeds video content"
+			],
+			"ru": [
+				"Определяет верхнюю часть для вводного или навигационного контента",
+				"Создает таблицу данных",
+				"Выделяет текст курсивом",
+				"Встраивает видеоконтент"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltfooter&gt tegi qanday ma’lumotlarni o‘z ichiga oladi?",
+			"en": "What information does the &ltfooter&gt tag typically contain?",
+			"ru": "Какую информацию обычно содержит тег &ltfooter&gt?"
+		},
+		"options": {
+			"uz": [
+				"Aloqa ma’lumotlari yoki mualliflik huquqi",
+				"Asosiy navigatsiya menyusi",
+				"Interaktiv forma maydonlari",
+				"Rasmlar galereyasi"
+			],
+			"en": [
+				"Contact information or copyright details",
+				"Main navigation menu",
+				"Interactive form fields",
+				"Image gallery"
+			],
+			"ru": [
+				"Контактная информация или данные об авторских правах",
+				"Главное навигационное меню",
+				"Интерактивные поля формы",
+				"Галерея изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltnav&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltnav&gt tag?",
+			"ru": "Для чего используется тег &ltnav&gt?"
+		},
+		"options": {
+			"uz": [
+				"Navigatsiya havolalarini guruhlash",
+				"Matnni avtomatik qalinlashtirish",
+				"Audio fayllarni joylashtirish",
+				"Jadval tuzilmasini yaratish"
+			],
+			"en": [
+				"To group navigation links",
+				"To automatically bold text",
+				"To embed audio files",
+				"As a table structure"
+			],
+			"ru": [
+				"Для группировки навигационных ссылок",
+				"Для автоматического выделения текста жирным",
+				"Для встраивания аудиофайлов",
+				"Для создания структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltmain&gt tegi sahifada qanday kontentni ifodalaydi?",
+			"en": "What type of content does the &ltmain&gt tag represent on a page?",
+			"ru": "Какой тип контента представляет тег &ltmain&gt на странице?"
+		},
+		"options": {
+			"uz": [
+				"Sahifaning asosiy mazmunini",
+				"Qidiruv formasini",
+				"Reklama bannerlarini",
+				"Fon rasmini"
+			],
+			"en": [
+				"The main content of the page",
+				"A search form",
+				"Advertising banners",
+				"A background image"
+			],
+			"ru": [
+				"Основное содержимое страницы",
+				"Форма поиска",
+				"Рекламные баннеры",
+				"Фоновое изображение"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltaside&gt tegi qanday kontent uchun ishlatiladi?",
+			"en": "What type of content is the &ltaside&gt tag used for?",
+			"ru": "Для какого типа контента используется тег &ltaside&gt?"
+		},
+		"options": {
+			"uz": [
+				"Asosiy kontent bilan bilvosita bog‘liq yordamchi ma’lumotlar",
+				"Sahifa sarlavhasi",
+				"Interaktiv tugmalar",
+				"Video kontent"
+			],
+			"en": [
+				"Supplementary content indirectly related to the main content",
+				"Page title",
+				"Interactive buttons",
+				"Video content"
+			],
+			"ru": [
+				"Дополнительный контент, косвенно связанный с основным содержимым",
+				"Заголовок страницы",
+				"Интерактивные кнопки",
+				"Видеоконтент"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltfigure&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltfigure&gt tag?",
+			"ru": "Для чего используется тег &ltfigure&gt?"
+		},
+		"options": {
+			"uz": [
+				"Rasm yoki diagramma kabi mustaqil kontentni guruhlash",
+				"Matnni avtomatik kursiv qilish",
+				"Forma maydonlarini yaratish",
+				"Navigatsiya panelini belgilash"
+			],
+			"en": [
+				"To group self-contained content like images or diagrams",
+				"To automatically italicize text",
+				"To create form fields",
+				"To define a navigation bar"
+			],
+			"ru": [
+				"Для группировки самостоятельного контента, такого как изображения или диаграммы",
+				"Для автоматического выделения текста курсивом",
+				"Для создания полей формы",
+				"Для определения панели навигации"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltfigcaption&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltfigcaption&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltfigcaption&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltfigure&gt ichidagi kontent uchun sarlavha yoki izoh beradi",
+				"Matnni qalinlashtiradi",
+				"Jadval qatorini belgilaydi",
+				"Audio faylni joylashtiradi"
+			],
+			"en": [
+				"Provides a caption or description for content within &ltfigure&gt",
+				"Bolds text",
+				"Defines a table row",
+				"Embeds an audio file"
+			],
+			"ru": [
+				"Предоставляет заголовок или описание для контента внутри &ltfigure&gt",
+				"Выделяет текст жирным",
+				"Определяет строку таблицы",
+				"Встраивает аудиофайл"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltdetails&gt tegi qanday imkoniyatni beradi?",
+			"en": "What capability does the &ltdetails&gt tag provide?",
+			"ru": "Какую возможность предоставляет тег &ltdetails&gt?"
+		},
+		"options": {
+			"uz": [
+				"Foydalanuvchi ochishi mumkin bo‘lgan yashirin kontentni ko‘rsatish",
+				"Rasmni avtomatik o‘lchamlash",
+				"Matnni tagiga chizish",
+				"Navigatsiya menyusini yaratish"
+			],
+			"en": [
+				"Displays collapsible content that a user can toggle",
+				"Automatically resizes an image",
+				"Underlines text",
+				"Creates a navigation menu"
+			],
+			"ru": [
+				"Отображает сворачиваемый контент, который пользователь может переключать",
+				"Автоматически изменяет размер изображения",
+				"Подчеркивает текст",
+				"Создает навигационное меню"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltsummary&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltsummary&gt tag used?",
+			"ru": "Как используется тег &ltsummary&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltdetails&gt tegi uchun ko‘rinadigan sarlavha sifatida",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Jadval tuzilmasini belgilash"
+			],
+			"en": [
+				"As a visible heading for the &ltdetails&gt tag",
+				"To automatically bold text",
+				"To place an image on the page",
+				"To define a table structure"
+			],
+			"ru": [
+				"В качестве видимого заголовка для тега &ltdetails&gt",
+				"Для автоматического выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для определения структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltdialog&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltdialog&gt tag?",
+			"ru": "Для чего используется тег &ltdialog&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ochiladigan dialog oynalarini yaratish",
+				"Matnni kursiv qilish",
+				"Jadval qatorini belgilash",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To create pop-up dialog windows",
+				"To italicize text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для создания всплывающих диалоговых окон",
+				"Для выделения текста курсивом",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltmark&gt tegi matnni qanday ko‘rsatadi?",
+			"en": "How does the &ltmark&gt tag display text?",
+			"ru": "Как тег &ltmark&gt отображает текст?"
+		},
+		"options": {
+			"uz": [
+				"Matnni ajratib ko‘rsatish uchun sariq fonda",
+				"Matnni qalinlashtirish",
+				"Matnni yashirish",
+				"Matnni yuqori indeks sifatida"
+			],
+			"en": [
+				"Highlights text with a yellow background",
+				"Bolds text",
+				"Hides text",
+				"Displays text as superscript"
+			],
+			"ru": [
+				"Выделяет текст желтым фоном",
+				"Выделяет текст жирным",
+				"Скрывает текст",
+				"Отображает текст как верхний индекс"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&lttime&gt tegi qanday ma’lumotni belgilaydi?",
+			"en": "What information does the &lttime&gt tag specify?",
+			"ru": "Какую информацию указывает тег &lttime&gt?"
+		},
+		"options": {
+			"uz": [
+				"Sana yoki vaqtni mashinada o‘qiladigan formatda",
+				"Matnli iqtiboslarni",
+				"Rasm sarlavhalarini",
+				"Interaktiv tugmalarni"
+			],
+			"en": [
+				"A date or time in a machine-readable format",
+				"Text quotations",
+				"Image captions",
+				"Interactive buttons"
+			],
+			"ru": [
+				"Дату или время в машиночитаемом формате",
+				"Текстовые цитаты",
+				"Подписи изображений",
+				"Интерактивные кнопки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltmeter&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltmeter&gt tag?",
+			"ru": "Для чего используется тег &ltmeter&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ma’lum bir diapazondagi qiymatni ko‘rsatish",
+				"Matnni kursiv qilish",
+				"Navigatsiya menyusini yaratish",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To represent a value within a specific range",
+				"To italicize text",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для представления значения в определенном диапазоне",
+				"Для выделения текста курсивом",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltprogress&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltprogress&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltprogress&gt?"
+		},
+		"options": {
+			"uz": [
+				"Vazifaning bajarilish jarayonini ko‘rsatadi",
+				"Matnni qalinlashtiradi",
+				"Jadval tuzilmasini belgilaydi",
+				"Audio faylni joylashtiradi"
+			],
+			"en": [
+				"Indicates the progress of a task",
+				"Bolds text",
+				"Defines a table structure",
+				"Embeds an audio file"
+			],
+			"ru": [
+				"Показывает прогресс выполнения задачи",
+				"Выделяет текст жирным",
+				"Определяет структуру таблицы",
+				"Встраивает аудиофайл"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltdatalist&gt tegi qanday imkoniyatni beradi?",
+			"en": "What capability does the &ltdatalist&gt tag provide?",
+			"ru": "Какую возможность предоставляет тег &ltdatalist&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltinput&gt uchun oldindan belgilangan variantlar ro‘yxatini taqdim etadi",
+				"Rasmni avtomatik o‘lchamlash",
+				"Matnni tagiga chizish",
+				"Navigatsiya panelini yaratish"
+			],
+			"en": [
+				"Provides a list of predefined options for an &ltinput&gt element",
+				"Automatically resizes an image",
+				"Underlines text",
+				"Creates a navigation bar"
+			],
+			"ru": [
+				"Предоставляет список предопределенных вариантов для элемента &ltinput&gt",
+				"Автоматически изменяет размер изображения",
+				"Подчеркивает текст",
+				"Создает панель навигации"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltoutput&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltoutput&gt tag?",
+			"ru": "Для чего используется тег &ltoutput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Forma ichidagi hisob-kitob natijalarini ko‘rsatish",
+				"Matnni kursiv qilish",
+				"Jadval qatorini belgilash",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To display the result of a calculation within a form",
+				"To italicize text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для отображения результата вычислений в форме",
+				"Для выделения текста курсивом",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltoptgroup&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltoptgroup&gt tag used?",
+			"ru": "Как используется тег &ltoptgroup&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltselect&gt ichidagi variantlarni guruhlash",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Jadval tuzilmasini belgilash"
+			],
+			"en": [
+				"To group options within a &ltselect&gt element",
+				"To automatically bold text",
+				"To place an image on the page",
+				"To define a table structure"
+			],
+			"ru": [
+				"Для группировки вариантов внутри элемента &ltselect&gt",
+				"Для автоматического выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для определения структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltoption&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltoption&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltoption&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltselect&gt yoki &ltdatalist&gt ichida tanlov variantini belgilaydi",
+				"Matnni qalinlashtiradi",
+				"Jadval qatorini belgilaydi",
+				"Audio faylni joylashtiradi"
+			],
+			"en": [
+				"Defines a selectable option within a &ltselect&gt or &ltdatalist&gt",
+				"Bolds text",
+				"Defines a table row",
+				"Embeds an audio file"
+			],
+			"ru": [
+				"Определяет выбираемый вариант внутри &ltselect&gt или &ltdatalist&gt",
+				"Выделяет текст жирным",
+				"Определяет строку таблицы",
+				"Встраивает аудиофайл"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltsource&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltsource&gt tag?",
+			"ru": "Для чего используется тег &ltsource&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltpicture&gt, &ltvideo&gt yoki &ltaudio&gt uchun bir nechta media manbalarini ko‘rsatish",
+				"Matnni kursiv qilish",
+				"Navigatsiya menyusini yaratish",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To specify multiple media sources for &ltpicture&gt, &ltvideo&gt, or &ltaudio&gt",
+				"To italicize text",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для указания нескольких источников медиа для &ltpicture&gt, &ltvideo&gt или &ltaudio&gt",
+				"Для выделения текста курсивом",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&lttrack&gt tegi qanday ishlatiladi?",
+			"en": "How is the &lttrack&gt tag used?",
+			"ru": "Как используется тег &lttrack&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltvideo&gt yoki &ltaudio&gt uchun subtitr yoki boshqa matnli trekni qo‘shadi",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Jadval tuzilmasini belgilash"
+			],
+			"en": [
+				"Adds subtitles or other text tracks for &ltvideo&gt or &ltaudio&gt",
+				"To automatically bold text",
+				"To place an image on the page",
+				"To define a table structure"
+			],
+			"ru": [
+				"Добавляет субтитры или другие текстовые треки для &ltvideo&gt или &ltaudio&gt",
+				"Для автоматического выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для определения структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltpicture&gt tegi qanday imkoniyatni beradi?",
+			"en": "What capability does the &ltpicture&gt tag provide?",
+			"ru": "Какую возможность предоставляет тег &ltpicture&gt?"
+		},
+		"options": {
+			"uz": [
+				"Turli ekran o‘lchamlari uchun moslashtirilgan rasmlarni ko‘rsatish",
+				"Matnni tagiga chizish",
+				"Navigatsiya panelini yaratish",
+				"Rasmni avtomatik o‘lchamlash"
+			],
+			"en": [
+				"Displays adaptive images for different screen sizes",
+				"Underlines text",
+				"Creates a navigation bar",
+				"Automatically resizes an image"
+			],
+			"ru": [
+				"Отображает адаптивные изображения для разных размеров экрана",
+				"Подчеркивает текст",
+				"Создает панель навигации",
+				"Автоматически изменяет размер изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltslot&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltslot&gt tag?",
+			"ru": "Для чего используется тег &ltslot&gt?"
+		},
+		"options": {
+			"uz": [
+				"Web komponentlarda dinamik kontent joylashuvini belgilash",
+				"Matnni kursiv qilish",
+				"Jadval qatorini belgilash",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To define a placeholder for dynamic content in web components",
+				"To italicize text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для определения заполнителя для динамического контента в веб-компонентах",
+				"Для выделения текста курсивом",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&lttemplate&gt tegi qanday ishlatiladi?",
+			"en": "How is the &lttemplate&gt tag used?",
+			"ru": "Как используется тег &lttemplate&gt?"
+		},
+		"options": {
+			"uz": [
+				"Keyinchalik JavaScript orqali ishlatiladigan kontent shablonlarini saqlash",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Jadval tuzilmasini belgilash"
+			],
+			"en": [
+				"To store content templates for later use via JavaScript",
+				"To automatically bold text",
+				"To place an image on the page",
+				"To define a table structure"
+			],
+			"ru": [
+				"Для хранения шаблонов контента для последующего использования через JavaScript",
+				"Для автоматического выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для определения структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltform&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltform&gt tag?",
+			"ru": "Для чего используется тег &ltform&gt?"
+		},
+		"options": {
+			"uz": [
+				"Foydalanuvchi kiritgan ma’lumotlarni yuborish uchun interfeys yaratish",
+				"Matnni kursiv qilish",
+				"Navigatsiya menyusini yaratish",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To create an interface for submitting user input",
+				"To italicize text",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для создания интерфейса для отправки данных пользователя",
+				"Для выделения текста курсивом",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi qanday turdagi elementlarni yaratadi?",
+			"en": "What types of elements does the &ltinput&gt tag create?",
+			"ru": "Какие типы элементов создает тег &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Matn maydonlari, tugmalar va boshqa kiritish elementlari",
+				"Rasmlar galereyasi",
+				"Navigatsiya havolalari",
+				"Jadval tuzilmalari"
+			],
+			"en": [
+				"Text fields, buttons, and other input elements",
+				"Image galleries",
+				"Navigation links",
+				"Table structures"
+			],
+			"ru": [
+				"Текстовые поля, кнопки и другие элементы ввода",
+				"Галереи изображений",
+				"Навигационные ссылки",
+				"Структуры таблиц"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltlabel&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltlabel&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltlabel&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltinput&gt elementiga yorliq qo‘shadi va kirish imkoniyatini yaxshilaydi",
+				"Matnni qalinlashtiradi",
+				"Jadval qatorini belgilaydi",
+				"Audio faylni joylashtiradi"
+			],
+			"en": [
+				"Adds a label to an &ltinput&gt element and improves accessibility",
+				"Bolds text",
+				"Defines a table row",
+				"Embeds an audio file"
+			],
+			"ru": [
+				"Добавляет метку к элементу &ltinput&gt и улучшает доступность",
+				"Выделяет текст жирным",
+				"Определяет строку таблицы",
+				"Встраивает аудиофайл"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltfieldset&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltfieldset&gt tag?",
+			"ru": "Для чего используется тег &ltfieldset&gt?"
+		},
+		"options": {
+			"uz": [
+				"Forma elementlarini mantiqiy guruhlash",
+				"Matnni kursiv qilish",
+				"Navigatsiya menyusini yaratish",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To logically group form elements",
+				"To italicize text",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для логической группировки элементов формы",
+				"Для выделения текста курсивом",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltlegend&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltlegend&gt tag used?",
+			"ru": "Как используется тег &ltlegend&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltfieldset&gt uchun sarlavha sifatida",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Jadval tuzilmasini belgilash"
+			],
+			"en": [
+				"As a caption for a &ltfieldset&gt",
+				"To automatically bold text",
+				"To place an image on the page",
+				"To define a table structure"
+			],
+			"ru": [
+				"В качестве заголовка для &ltfieldset&gt",
+				"Для автоматического выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для определения структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltbutton&gt tegi qanday turdagi elementlarni yaratadi?",
+			"en": "What types of elements does the &ltbutton&gt tag create?",
+			"ru": "Какие типы элементов создает тег &ltbutton&gt?"
+		},
+		"options": {
+			"uz": [
+				"Foydalanuvchi bosishi mumkin bo‘lgan interaktiv tugmalar",
+				"Rasmlar galereyasi",
+				"Navigatsiya havolalari",
+				"Jadval tuzilmalari"
+			],
+			"en": [
+				"Interactive buttons that a user can click",
+				"Image galleries",
+				"Navigation links",
+				"Table structures"
+			],
+			"ru": [
+				"Интерактивные кнопки, которые пользователь может нажимать",
+				"Галереи изображений",
+				"Навигационные ссылки",
+				"Структуры таблиц"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltselect&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltselect&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltselect&gt?"
+		},
+		"options": {
+			"uz": [
+				"Foydalanuvchiga tanlov ro‘yxatini taqdim etadi",
+				"Matnni qalinlashtiradi",
+				"Jadval qatorini belgilaydi",
+				"Audio faylni joylashtiradi"
+			],
+			"en": [
+				"Provides a dropdown list for user selection",
+				"Bolds text",
+				"Defines a table row",
+				"Embeds an audio file"
+			],
+			"ru": [
+				"Предоставляет выпадающий список для выбора пользователем",
+				"Выделяет текст жирным",
+				"Определяет строку таблицы",
+				"Встраивает аудиофайл"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&lttextarea&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &lttextarea&gt tag?",
+			"ru": "Для чего используется тег &lttextarea&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ko‘p qatorli matn kiritish maydonini yaratish",
+				"Matnni kursiv qilish",
+				"Navigatsiya menyusini yaratish",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To create a multi-line text input field",
+				"To italicize text",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для создания многострочного поля ввода текста",
+				"Для выделения текста курсивом",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltcanvas&gt tegi qanday imkoniyatni beradi?",
+			"en": "What capability does the &ltcanvas&gt tag provide?",
+			"ru": "Какую возможность предоставляет тег &ltcanvas&gt?"
+		},
+		"options": {
+			"uz": [
+				"JavaScript yordamida dinamik grafikalar chizish",
+				"Matnni tagiga chizish",
+				"Navigatsiya panelini yaratish",
+				"Rasmni avtomatik o‘lchamlash"
+			],
+			"en": [
+				"Drawing dynamic graphics using JavaScript",
+				"Underlining text",
+				"Creating a navigation bar",
+				"Automatically resizing an image"
+			],
+			"ru": [
+				"Рисование динамической графики с помощью JavaScript",
+				"Подчеркивание текста",
+				"Создание панели навигации",
+				"Автоматическое изменение размера изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltsvg&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltsvg&gt tag?",
+			"ru": "Для чего используется тег &ltsvg&gt?"
+		},
+		"options": {
+			"uz": [
+				"Skalalanadigan vektor grafikalarini ko‘rsatish",
+				"Matnni kursiv qilish",
+				"Jadval qatorini belgilash",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To display scalable vector graphics",
+				"To italicize text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для отображения масштабируемой векторной графики",
+				"Для выделения текста курсивом",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltobject&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltobject&gt tag used?",
+			"ru": "Как используется тег &ltobject&gt?"
+		},
+		"options": {
+			"uz": [
+				"PDF yoki boshqa tashqi resurslarni sahifaga joylashtirish",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Jadval tuzilmasini belgilash"
+			],
+			"en": [
+				"To embed external resources like PDFs on the page",
+				"To automatically bold text",
+				"To place an image on the page",
+				"To define a table structure"
+			],
+			"ru": [
+				"Для встраивания внешних ресурсов, таких как PDF, на страницу",
+				"Для автоматического выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для определения структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltembed&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltembed&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltembed&gt?"
+		},
+		"options": {
+			"uz": [
+				"Tashqi kontentni (masalan, plaginlar) sahifaga joylashtiradi",
+				"Matnni qalinlashtiradi",
+				"Jadval qatorini belgilaydi",
+				"Audio faylni joylashtiradi"
+			],
+			"en": [
+				"Embeds external content (e.g., plugins) on the page",
+				"Bolds text",
+				"Defines a table row",
+				"Embeds an audio file"
+			],
+			"ru": [
+				"Встраивает внешний контент (например, плагины) на страницу",
+				"Выделяет текст жирным",
+				"Определяет строку таблицы",
+				"Встраивает аудиофайл"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltportal&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltportal&gt tag?",
+			"ru": "Для чего используется тег &ltportal&gt?"
+		},
+		"options": {
+			"uz": [
+				"Boshqa sahifaga silliq o‘tishni ta’minlash",
+				"Matnni kursiv qilish",
+				"Navigatsiya menyusini yaratish",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To provide seamless navigation to another page",
+				"To italicize text",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для обеспечения плавного перехода на другую страницу",
+				"Для выделения текста курсивом",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltnoembed&gt tegi qachon ishlatiladi?",
+			"en": "When is the &ltnoembed&gt tag used?",
+			"ru": "Когда используется тег &ltnoembed&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltembed&gt tegi qo‘llab-quvvatlanmasa, muqobil kontent ko‘rsatish",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Jadval tuzilmasini belgilash"
+			],
+			"en": [
+				"To display alternative content if the &ltembed&gt tag is not supported",
+				"To automatically bold text",
+				"To place an image on the page",
+				"To define a table structure"
+			],
+			"ru": [
+				"Для отображения альтернативного контента, если тег &ltembed&gt не поддерживается",
+				"Для автоматического выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для определения структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltmenu&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltmenu&gt tag?",
+			"ru": "Для чего используется тег &ltmenu&gt?"
+		},
+		"options": {
+			"uz": [
+				"Foydalanuvchi uchun interaktiv amallar ro‘yxatini yaratish",
+				"Matnni kursiv qilish",
+				"Jadval qatorini belgilash",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To create a list of interactive commands for the user",
+				"To italicize text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для создания списка интерактивных команд для пользователя",
+				"Для выделения текста курсивом",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltsemantics&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltsemantics&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltsemantics&gt?"
+		},
+		"options": {
+			"uz": [
+				"Matnning semantik ma’nosini aniqlashtirish uchun ishlatiladi",
+				"Matnni qalinlashtiradi",
+				"Jadval qatorini belgilaydi",
+				"Audio faylni joylashtiradi"
+			],
+			"en": [
+				"Used to clarify the semantic meaning of text",
+				"Bolds text",
+				"Defines a table row",
+				"Embeds an audio file"
+			],
+			"ru": [
+				"Используется для уточнения семантического значения текста",
+				"Выделяет текст жирным",
+				"Определяет строку таблицы",
+				"Встраивает аудиофайл"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltaddress&gt tegi qanday ma’lumotlarni o‘z ichiga oladi?",
+			"en": "What information does the &ltaddress&gt tag typically contain?",
+			"ru": "Какую информацию обычно содержит тег &ltaddress&gt?"
+		},
+		"options": {
+			"uz": [
+				"Aloqa ma’lumotlari, masalan, pochta manzili yoki telefon",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasm galereyasini yaratish",
+				"Interaktiv navigatsiya menyusi"
+			],
+			"en": [
+				"Contact information, such as a postal address or phone number",
+				"Automatically bolding text",
+				"Creating an image gallery",
+				"Interactive navigation menu"
+			],
+			"ru": [
+				"Контактная информация, например, почтовый адрес или телефон",
+				"Автоматическое выделение текста жирным",
+				"Создание галереи изображений",
+				"Интерактивное навигационное меню"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltabbr&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltabbr&gt tag?",
+			"ru": "Для чего используется тег &ltabbr&gt?"
+		},
+		"options": {
+			"uz": [
+				"Qisqartmalar yoki akronimlarni belgilash",
+				"Matnni tagiga chizish",
+				"Video kontentni joylashtirish",
+				"Forma elementlarini guruhlash"
+			],
+			"en": [
+				"To mark abbreviations or acronyms",
+				"To underline text",
+				"To embed video content",
+				"To group form elements"
+			],
+			"ru": [
+				"Для обозначения аббревиатур или акронимов",
+				"Для подчеркивания текста",
+				"Для встраивания видеоконтента",
+				"Для группировки элементов формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltbdi&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltbdi&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltbdi&gt?"
+		},
+		"options": {
+			"uz": [
+				"Matn yo‘nalishini izolyatsiya qilish, masalan, aralash tillar uchun",
+				"Matnni qalinlashtirish",
+				"Jadval sarlavhasini belgilash",
+				"Audio faylni joylashtirish"
+			],
+			"en": [
+				"Isolates text direction, e.g., for mixed-language content",
+				"Bolds text",
+				"Defines a table header",
+				"Embeds an audio file"
+			],
+			"ru": [
+				"Изолирует направление текста, например, для контента на разных языках",
+				"Выделяет текст жирным",
+				"Определяет заголовок таблицы",
+				"Встраивает аудиофайл"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltbdo&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltbdo&gt tag used?",
+			"ru": "Как используется тег &ltbdo&gt?"
+		},
+		"options": {
+			"uz": [
+				"Matn yo‘nalishini majburiy o‘zgartirish uchun",
+				"Matnni avtomatik kursiv qilish",
+				"Rasmni sahifaga joylashtirish",
+				"Navigatsiya panelini yaratish"
+			],
+			"en": [
+				"To override the text direction explicitly",
+				"To automatically italicize text",
+				"To place an image on the page",
+				"To create a navigation bar"
+			],
+			"ru": [
+				"Для явного изменения направления текста",
+				"Для автоматического выделения текста курсивом",
+				"Для размещения изображения на странице",
+				"Для создания панели навигации"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltcite&gt tegi qanday ma’lumotni belgilaydi?",
+			"en": "What information does the &ltcite&gt tag specify?",
+			"ru": "Какую информацию указывает тег &ltcite&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ijodiy ishning manbasini yoki muallifini",
+				"Matnni yuqori indeks sifatida",
+				"Rasm sarlavhalarini",
+				"Interaktiv tugmalarni"
+			],
+			"en": [
+				"The source or author of a creative work",
+				"Text as superscript",
+				"Image captions",
+				"Interactive buttons"
+			],
+			"ru": [
+				"Источник или автора творческой работы",
+				"Текст как верхний индекс",
+				"Подписи изображений",
+				"Интерактивные кнопки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltcode&gt tegi qanday kontent uchun ishlatiladi?",
+			"en": "What type of content is the &ltcode&gt tag used for?",
+			"ru": "Для какого типа контента используется тег &ltcode&gt?"
+		},
+		"options": {
+			"uz": [
+				"Kompyuter kodi yoki dasturlash fragmentlari",
+				"Sahifa navigatsiyasi",
+				"Statik fon rasmlari",
+				"Forma maydonlari"
+			],
+			"en": [
+				"Computer code or programming snippets",
+				"Page navigation",
+				"Static background images",
+				"Form fields"
+			],
+			"ru": [
+				"Компьютерный код или фрагменты программирования",
+				"Навигация по странице",
+				"Статические фоновые изображения",
+				"Поля формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltdata&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltdata&gt tag?",
+			"ru": "Для чего используется тег &ltdata&gt?"
+		},
+		"options": {
+			"uz": [
+				"Mashinada o‘qiladigan ma’lumotlar bilan kontentni bog‘lash",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Interaktiv tugmalar yaratish"
+			],
+			"en": [
+				"To associate content with machine-readable data",
+				"To automatically bold text",
+				"To place an image on the page",
+				"To create interactive buttons"
+			],
+			"ru": [
+				"Для связывания контента с машиночитаемыми данными",
+				"Для автоматического выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для создания интерактивных кнопок"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltdfn&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltdfn&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltdfn&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ta’rif qilinayotgan atamani belgilash",
+				"Matnni qalinlashtirish",
+				"Jadval qatorini belgilash",
+				"Video faylni joylashtirish"
+			],
+			"en": [
+				"To mark a term being defined",
+				"To bold text",
+				"To define a table row",
+				"To embed a video file"
+			],
+			"ru": [
+				"Для обозначения термина, который определяется",
+				"Для выделения текста жирным",
+				"Для определения строки таблицы",
+				"Для встраивания видеофайла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltkbd&gt tegi qanday kontentni ifodalaydi?",
+			"en": "What type of content does the &ltkbd&gt tag represent?",
+			"ru": "Какой тип контента представляет тег &ltkbd&gt?"
+		},
+		"options": {
+			"uz": [
+				"Klaviatura kiritishini, masalan, tugma nomlarini",
+				"Reklama bannerlarini",
+				"Qidiruv formasini",
+				"Fon rasmini"
+			],
+			"en": [
+				"Keyboard input, such as key names",
+				"Advertising banners",
+				"A search form",
+				"A background image"
+			],
+			"ru": [
+				"Ввод с клавиатуры, например, названия клавиш",
+				"Рекламные баннеры",
+				"Форма поиска",
+				"Фоновое изображение"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltsamp&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltsamp&gt tag?",
+			"ru": "Для чего используется тег &ltsamp&gt?"
+		},
+		"options": {
+			"uz": [
+				"Dastur yoki skriptning chiqish natijasini ko‘rsatish",
+				"Matnni kursiv qilish",
+				"Navigatsiya menyusini yaratish",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To display the output of a program or script",
+				"To italicize text",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для отображения вывода программы или скрипта",
+				"Для выделения текста курсивом",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltvar&gt tegi qanday kontent uchun ishlatiladi?",
+			"en": "What type of content is the &ltvar&gt tag used for?",
+			"ru": "Для какого типа контента используется тег &ltvar&gt?"
+		},
+		"options": {
+			"uz": [
+				"Matematik ifodalardagi yoki dasturlashdagi o‘zgaruvchilarni belgilash",
+				"Sahifa navigatsiyasi",
+				"Statik fon rasmlari",
+				"Forma elementlari"
+			],
+			"en": [
+				"To mark variables in mathematical expressions or programming",
+				"Page navigation",
+				"Static background images",
+				"Form elements"
+			],
+			"ru": [
+				"Для обозначения переменных в математических выражениях или программировании",
+				"Навигация по странице",
+				"Статические фоновые изображения",
+				"Элементы формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltq&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltq&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltq&gt?"
+		},
+		"options": {
+			"uz": [
+				"Qisqa iqtiboslarni matn ichida belgilash",
+				"Matnni qalinlashtirish",
+				"Jadval qatorini belgilash",
+				"Audio faylni joylashtirish"
+			],
+			"en": [
+				"To mark short inline quotations",
+				"To bold text",
+				"To define a table row",
+				"To embed an audio file"
+			],
+			"ru": [
+				"Для обозначения коротких встроенных цитат",
+				"Для выделения текста жирным",
+				"Для определения строки таблицы",
+				"Для встраивания аудиофайла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltblockquote&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltblockquote&gt tag?",
+			"ru": "Для чего используется тег &ltblockquote&gt?"
+		},
+		"options": {
+			"uz": [
+				"Uzun iqtiboslarni alohida blok sifatida ko‘rsatish",
+				"Matnni kursiv qilish",
+				"Navigatsiya menyusini yaratish",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To display long quotations as a separate block",
+				"To italicize text",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для отображения длинных цитат в виде отдельного блока",
+				"Для выделения текста курсивом",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltdel&gt tegi qanday kontentni ifodalaydi?",
+			"en": "What type of content does the &ltdel&gt tag represent?",
+			"ru": "Какой тип контента представляет тег &ltdel&gt?"
+		},
+		"options": {
+			"uz": [
+				"O‘chirilgan yoki endi amalda bo‘lmagan matnni",
+				"Reklama bannerlarini",
+				"Qidiruv formasini",
+				"Fon rasmini"
+			],
+			"en": [
+				"Text that has been deleted or is no longer valid",
+				"Advertising banners",
+				"A search form",
+				"A background image"
+			],
+			"ru": [
+				"Текст, который был удален или больше не действителен",
+				"Рекламные баннеры",
+				"Форма поиска",
+				"Фоновое изображение"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltins&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltins&gt tag?",
+			"ru": "Для чего используется тег &ltins&gt?"
+		},
+		"options": {
+			"uz": [
+				"Yangidan qo‘shilgan yoki o‘zgartirilgan matnni belgilash",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Interaktiv tugmalar yaratish"
+			],
+			"en": [
+				"To mark newly added or modified text",
+				"To automatically bold text",
+				"To place an image on the page",
+				"To create interactive buttons"
+			],
+			"ru": [
+				"Для обозначения вновь добавленного или измененного текста",
+				"Для автоматического выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для создания интерактивных кнопок"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltruby&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltruby&gt tag used?",
+			"ru": "Как используется тег &ltruby&gt?"
+		},
+		"options": {
+			"uz": [
+				"Sharqiy Osiyo tillarida matn annotatsiyasini ko‘rsatish",
+				"Matnni avtomatik kursiv qilish",
+				"Rasmni sahifaga joylashtirish",
+				"Navigatsiya panelini yaratish"
+			],
+			"en": [
+				"To display text annotations in East Asian languages",
+				"To automatically italicize text",
+				"To place an image on the page",
+				"To create a navigation bar"
+			],
+			"ru": [
+				"Для отображения текстовых аннотаций в восточноазиатских языках",
+				"Для автоматического выделения текста курсивом",
+				"Для размещения изображения на странице",
+				"Для создания панели навигации"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltrp&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltrp&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltrp&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltruby&gt annotatsiyalari qo‘llab-quvvatlanmasa, muqobil matn ko‘rsatadi",
+				"Matnni qalinlashtiradi",
+				"Jadval qatorini belgilaydi",
+				"Audio faylni joylashtiradi"
+			],
+			"en": [
+				"Provides fallback text if &ltruby&gt annotations are not supported",
+				"Bolds text",
+				"Defines a table row",
+				"Embeds an audio file"
+			],
+			"ru": [
+				"Предоставляет резервный текст, если аннотации &ltruby&gt не поддерживаются",
+				"Выделяет текст жирным",
+				"Определяет строку таблицы",
+				"Встраивает аудиофайл"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltrt&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltrt&gt tag?",
+			"ru": "Для чего используется тег &ltrt&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltruby&gt ichida matn annotatsiyasining talaffuzini ko‘rsatish",
+				"Matnni kursiv qilish",
+				"Navigatsiya menyusini yaratish",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To specify the pronunciation of text annotations within &ltruby&gt",
+				"To italicize text",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для указания произношения текстовых аннотаций внутри &ltruby&gt",
+				"Для выделения текста курсивом",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltform&gt tegi uchun 'method' atributi qanday vazifani bajaradi?",
+			"en": "What does the 'method' attribute of the &ltform&gt tag specify?",
+			"ru": "Какую функцию выполняет атрибут 'method' тега &ltform&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ma'lumotlarni serverga yuborish usulini belgilaydi",
+				"Forma uslubini o'zgartiradi",
+				"Matn kiritish maydonini yaratadi",
+				"Forma ichidagi tugmalarni guruhlaydi"
+			],
+			"en": [
+				"Specifies the HTTP method for sending form data to the server",
+				"Changes the form's style",
+				"Creates a text input field",
+				"Groups buttons within the form"
+			],
+			"ru": [
+				"Указывает метод HTTP для отправки данных формы на сервер",
+				"Изменяет стиль формы",
+				"Создает поле ввода текста",
+				"Группирует кнопки внутри формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'type' atributining 'text' qiymati nima yaratadi?",
+			"en": "What does the 'text' value of the 'type' attribute for the &ltinput&gt tag create?",
+			"ru": "Что создает значение 'text' атрибута 'type' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Bir qatorli matn kiritish maydonini",
+				"Parol kiritish maydonini",
+				"Radio tugmani",
+				"Tanlov ro'yxatini"
+			],
+			"en": [
+				"A single-line text input field",
+				"A password input field",
+				"A radio button",
+				"A dropdown list"
+			],
+			"ru": [
+				"Однострочное поле ввода текста",
+				"Поле ввода пароля",
+				"Радиокнопку",
+				"Выпадающий список"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='submit'&gt elementi qanday vazifani bajaradi?",
+			"en": "What function does the &ltinput type='submit'&gt element perform?",
+			"ru": "Какую функцию выполняет элемент &ltinput type='submit'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Forma ma'lumotlarini serverga yuboradi",
+				"Matn kiritish maydonini yaratadi",
+				"Forma elementlarini guruhlaydi",
+				"Fayl yuklash maydonini ochadi"
+			],
+			"en": [
+				"Submits form data to the server",
+				"Creates a text input field",
+				"Groups form elements",
+				"Opens a file upload field"
+			],
+			"ru": [
+				"Отправляет данные формы на сервер",
+				"Создает поле ввода текста",
+				"Группирует элементы формы",
+				"Открывает поле загрузки файла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'required' atributi qanday ishlaydi?",
+			"en": "How does the 'required' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'required' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Maydonni to'ldirishni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi",
+				"Maydonni avtomatik to'ldiradi"
+			],
+			"en": [
+				"Makes the field mandatory to fill",
+				"Makes the field read-only",
+				"Hides the field",
+				"Automatically fills the field"
+			],
+			"ru": [
+				"Делает поле обязательным для заполнения",
+				"Делает поле только для чтения",
+				"Скрывает поле",
+				"Автоматически заполняет поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&lttextarea&gt tegi qanday ma'lumot kiritish imkonini beradi?",
+			"en": "What type of input does the &lttextarea&gt tag allow?",
+			"ru": "Какой тип ввода позволяет тег &lttextarea&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ko'p qatorli matn kiritish",
+				"Bitta variant tanlash",
+				"Fayl yuklash",
+				"Parol kiritish"
+			],
+			"en": [
+				"Multi-line text input",
+				"Single option selection",
+				"File upload",
+				"Password input"
+			],
+			"ru": [
+				"Многострочный ввод текста",
+				"Выбор одного варианта",
+				"Загрузка файла",
+				"Ввод пароля"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltselect&gt tegi qanday elementni yaratadi?",
+			"en": "What element does the &ltselect&gt tag create?",
+			"ru": "Какой элемент создает тег &ltselect&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ochiladigan ro'yxatni",
+				"Matn kiritish maydonini",
+				"Radio tugmalarni",
+				"Fayl tanlash maydonini"
+			],
+			"en": [
+				"A dropdown list",
+				"A text input field",
+				"Radio buttons",
+				"A file selection field"
+			],
+			"ru": [
+				"Выпадающий список",
+				"Поле ввода текста",
+				"Радиокнопки",
+				"Поле выбора файла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltlabel&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltlabel&gt tag?",
+			"ru": "Для чего используется тег &ltlabel&gt?"
+		},
+		"options": {
+			"uz": [
+				"Forma elementiga yorliq qo'shish va kirish imkoniyatini yaxshilash",
+				"Forma ma'lumotlarini serverga yuborish",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To add a label to a form element and improve accessibility",
+				"To submit form data to the server",
+				"To automatically bold text",
+				"To insert an image"
+			],
+			"ru": [
+				"Для добавления метки к элементу формы и улучшения доступности",
+				"Для отправки данных формы на сервер",
+				"Для автоматического выделения текста жирным",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='radio'&gt qanday imkoniyatni beradi?",
+			"en": "What capability does &ltinput type='radio'&gt provide?",
+			"ru": "Какую возможность предоставляет &ltinput type='radio'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Bitta variantni tanlash imkonini",
+				"Ko'p variant tanlash imkonini",
+				"Matn kiritish maydonini",
+				"Fayl yuklash maydonini"
+			],
+			"en": [
+				"Allows selection of a single option",
+				"Allows selection of multiple options",
+				"A text input field",
+				"A file upload field"
+			],
+			"ru": [
+				"Позволяет выбрать один вариант",
+				"Позволяет выбрать несколько вариантов",
+				"Поле ввода текста",
+				"Поле загрузки файла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='checkbox'&gt qanday funksiyani bajaradi?",
+			"en": "What function does &ltinput type='checkbox'&gt perform?",
+			"ru": "Какую функцию выполняет &ltinput type='checkbox'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ko'p variant tanlash imkonini beradi",
+				"Bitta variant tanlash imkonini beradi",
+				"Parol kiritish maydonini yaratadi",
+				"Forma ma'lumotlarini yuboradi"
+			],
+			"en": [
+				"Allows selection of multiple options",
+				"Allows selection of a single option",
+				"Creates a password input field",
+				"Submits form data"
+			],
+			"ru": [
+				"Позволяет выбрать несколько вариантов",
+				"Позволяет выбрать один вариант",
+				"Создает поле ввода пароля",
+				"Отправляет данные формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltform&gt tegi uchun 'action' atributi nima qiladi?",
+			"en": "What does the 'action' attribute of the &ltform&gt tag do?",
+			"ru": "Что делает атрибут 'action' тега &ltform&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ma'lumotlar yuboriladigan URL manzilini belgilaydi",
+				"Forma uslubini o'zgartiradi",
+				"Matn kiritish maydonini ochadi",
+				"Forma elementlarini yashiradi"
+			],
+			"en": [
+				"Specifies the URL where form data is sent",
+				"Changes the form's style",
+				"Opens a text input field",
+				"Hides form elements"
+			],
+			"ru": [
+				"Указывает URL, куда отправляются данные формы",
+				"Изменяет стиль формы",
+				"Открывает поле ввода текста",
+				"Скрывает элементы формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='file'&gt qanday elementni yaratadi?",
+			"en": "What element does &ltinput type='file'&gt create?",
+			"ru": "Какой элемент создает &ltinput type='file'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Fayl tanlash va yuklash maydonini",
+				"Matn kiritish maydonini",
+				"Radio tugmalarni",
+				"Ochiladigan ro'yxatni"
+			],
+			"en": [
+				"A file selection and upload field",
+				"A text input field",
+				"Radio buttons",
+				"A dropdown list"
+			],
+			"ru": [
+				"Поле выбора и загрузки файла",
+				"Поле ввода текста",
+				"Радиокнопки",
+				"Выпадающий список"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'placeholder' atributi qanday ishlaydi?",
+			"en": "How does the 'placeholder' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'placeholder' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Maydonda ko'rsatiladigan vaqtinchalik maslahat matnini ko'rsatadi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Displays temporary hint text in the field",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Отображает временный текст подсказки в поле",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltbutton&gt tegi qanday turdagi elementlarni yaratadi?",
+			"en": "What types of elements does the &ltbutton&gt tag create?",
+			"ru": "Какие типы элементов создает тег &ltbutton&gt?"
+		},
+		"options": {
+			"uz": [
+				"Foydalanuvchi bosishi mumkin bo'lgan interaktiv tugmalarni",
+				"Matn kiritish maydonlarini",
+				"Jadval tuzilmalarini",
+				"Rasmlar galereyasini"
+			],
+			"en": [
+				"Interactive buttons that a user can click",
+				"Text input fields",
+				"Table structures",
+				"Image galleries"
+			],
+			"ru": [
+				"Интерактивные кнопки, которые пользователь может нажимать",
+				"Поля ввода текста",
+				"Структуры таблиц",
+				"Галереи изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='password'&gt qanday maydonni yaratadi?",
+			"en": "What type of field does &ltinput type='password'&gt create?",
+			"ru": "Какое поле создает &ltinput type='password'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Yashirin belgilardan iborat parol kiritish maydonini",
+				"Matn kiritish maydonini",
+				"Fayl tanlash maydonini",
+				"Radio tugmalarni"
+			],
+			"en": [
+				"A password input field with hidden characters",
+				"A text input field",
+				"A file selection field",
+				"Radio buttons"
+			],
+			"ru": [
+				"Поле ввода пароля с скрытыми символами",
+				"Поле ввода текста",
+				"Поле выбора файла",
+				"Радиокнопки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltfieldset&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltfieldset&gt tag?",
+			"ru": "Для чего используется тег &ltfieldset&gt?"
+		},
+		"options": {
+			"uz": [
+				"Forma elementlarini mantiqiy guruhlash",
+				"Matnni avtomatik kursiv qilish",
+				"Navigatsiya menyusini yaratish",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To logically group form elements",
+				"To automatically italicize text",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для логической группировки элементов формы",
+				"Для автоматического выделения текста курсивом",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltlegend&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltlegend&gt tag used?",
+			"ru": "Как используется тег &ltlegend&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltfieldset&gt uchun sarlavha sifatida",
+				"Matnni qalinlashtirish",
+				"Rasmni sahifaga joylashtirish",
+				"Jadval tuzilmasini belgilash"
+			],
+			"en": [
+				"As a caption for a &ltfieldset&gt",
+				"To bold text",
+				"To place an image on the page",
+				"To define a table structure"
+			],
+			"ru": [
+				"В качестве заголовка для &ltfieldset&gt",
+				"Для выделения текста жирным",
+				"Для размещения изображения на странице",
+				"Для определения структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='email'&gt qanday cheklovni qo'yadi?",
+			"en": "What restriction does &ltinput type='email'&gt impose?",
+			"ru": "Какое ограничение накладывает &ltinput type='email'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Faqat elektron pochta formatidagi kiritishni qabul qiladi",
+				"Faqat raqamlarni kiritishga ruxsat beradi",
+				"Matnni avtomatik qalinlashtiradi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Accepts only email address format input",
+				"Allows only numeric input",
+				"Automatically bolds text",
+				"Hides the field"
+			],
+			"ru": [
+				"Принимает только ввод в формате адреса электронной почты",
+				"Разрешает ввод только чисел",
+				"Автоматически выделяет текст жирным",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='number'&gt qanday kiritishni qo'llab-quvvatlaydi?",
+			"en": "What type of input does &ltinput type='number'&gt support?",
+			"ru": "Какой тип ввода поддерживает &ltinput type='number'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Raqamli qiymatlarni",
+				"Matnli iqtiboslarni",
+				"Fayl tanlashni",
+				"Parol kiritishni"
+			],
+			"en": [
+				"Numeric values",
+				"Text quotations",
+				"File selection",
+				"Password input"
+			],
+			"ru": [
+				"Числовые значения",
+				"Текстовые цитаты",
+				"Выбор файла",
+				"Ввод пароля"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'maxlength' atributi nima qiladi?",
+			"en": "What does the 'maxlength' attribute for the &ltinput&gt tag do?",
+			"ru": "Что делает атрибут 'maxlength' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Kiritiladigan belgilarga maksimal sonni belgilaydi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Sets the maximum number of characters allowed",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Устанавливает максимальное количество допустимых символов",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='hidden'&gt qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of &ltinput type='hidden'&gt?",
+			"ru": "Для чего используется &ltinput type='hidden'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Foydalanuvchiga ko'rinmaydigan ma'lumotni serverga yuborish",
+				"Matn kiritish maydonini yaratish",
+				"Radio tugmalarni guruhlash",
+				"Fayl tanlash maydonini ochish"
+			],
+			"en": [
+				"To send data to the server without displaying it to the user",
+				"To create a text input field",
+				"To group radio buttons",
+				"To open a file selection field"
+			],
+			"ru": [
+				"Для отправки данных на сервер без отображения пользователю",
+				"Для создания поля ввода текста",
+				"Для группировки радиокнопок",
+				"Для открытия поля выбора файла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='date'&gt qanday kiritish maydonini yaratadi?",
+			"en": "What type of input field does &ltinput type='date'&gt create?",
+			"ru": "Какое поле ввода создает &ltinput type='date'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Sana tanlash maydonini",
+				"Matn kiritish maydonini",
+				"Fayl tanlash maydonini",
+				"Radio tugmalarni"
+			],
+			"en": [
+				"A date selection field",
+				"A text input field",
+				"A file selection field",
+				"Radio buttons"
+			],
+			"ru": [
+				"Поле выбора даты",
+				"Поле ввода текста",
+				"Поле выбора файла",
+				"Радиокнопки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'disabled' atributi qanday ta'sir qiladi?",
+			"en": "How does the 'disabled' attribute affect the &ltinput&gt tag?",
+			"ru": "Как атрибут 'disabled' влияет на тег &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Maydonni faolsizlantiradi va kiritishni taqiqlaydi",
+				"Maydonni majburiy qiladi",
+				"Maydonni yashiradi",
+				"Maydonni avtomatik to'ldiradi"
+			],
+			"en": [
+				"Disables the field and prevents input",
+				"Makes the field mandatory",
+				"Hides the field",
+				"Automatically fills the field"
+			],
+			"ru": [
+				"Отключает поле и запрещает ввод",
+				"Делает поле обязательным",
+				"Скрывает поле",
+				"Автоматически заполняет поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='tel'&gt qanday kiritishni qo'llab-quvvatlaydi?",
+			"en": "What type of input does &ltinput type='tel'&gt support?",
+			"ru": "Какой тип ввода поддерживает &ltinput type='tel'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Telefon raqami kiritishni",
+				"Matnli iqtiboslarni",
+				"Fayl tanlashni",
+				"Parol kiritishni"
+			],
+			"en": [
+				"Telephone number input",
+				"Text quotations",
+				"File selection",
+				"Password input"
+			],
+			"ru": [
+				"Ввод номера телефона",
+				"Текстовые цитаты",
+				"Выбор файла",
+				"Ввод пароля"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='url'&gt qanday cheklovni qo'yadi?",
+			"en": "What restriction does &ltinput type='url'&gt impose?",
+			"ru": "Какое ограничение накладывает &ltinput type='url'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Faqat URL formatidagi kiritishni qabul qiladi",
+				"Faqat raqamlarni kiritishga ruxsat beradi",
+				"Matnni avtomatik qalinlashtiradi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Accepts only URL format input",
+				"Allows only numeric input",
+				"Automatically bolds text",
+				"Hides the field"
+			],
+			"ru": [
+				"Принимает только ввод в формате URL",
+				"Разрешает ввод только чисел",
+				"Автоматически выделяет текст жирным",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'pattern' atributi qanday ishlaydi?",
+			"en": "How does the 'pattern' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'pattern' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Kiritilgan ma'lumotni regular ifoda orqali tekshiradi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi",
+				"Maydonni avtomatik to'ldiradi"
+			],
+			"en": [
+				"Validates input data using a regular expression",
+				"Makes the field read-only",
+				"Hides the field",
+				"Automatically fills the field"
+			],
+			"ru": [
+				"Проверяет введенные данные с помощью регулярного выражения",
+				"Делает поле только для чтения",
+				"Скрывает поле",
+				"Автоматически заполняет поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='range'&gt qanday elementni yaratadi?",
+			"en": "What element does &ltinput type='range'&gt create?",
+			"ru": "Какой элемент создает &ltinput type='range'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Slayder yoki diapazon tanlash elementini",
+				"Matn kiritish maydonini",
+				"Radio tugmalarni",
+				"Fayl tanlash maydonini"
+			],
+			"en": [
+				"A slider or range selection element",
+				"A text input field",
+				"Radio buttons",
+				"A file selection field"
+			],
+			"ru": [
+				"Слайдер или элемент выбора диапазона",
+				"Поле ввода текста",
+				"Радиокнопки",
+				"Поле выбора файла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'autocomplete' atributi qanday ishlaydi?",
+			"en": "How does the 'autocomplete' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'autocomplete' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Maydonni avtomatik to'ldirishni yoqadi yoki o'chiradi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Enables or disables autofill for the field",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Включает или отключает автозаполнение для поля",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='color'&gt qanday kiritish maydonini yaratadi?",
+			"en": "What type of input field does &ltinput type='color'&gt create?",
+			"ru": "Какое поле ввода создает &ltinput type='color'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Rang tanlash maydonini",
+				"Matn kiritish maydonini",
+				"Fayl tanlash maydonini",
+				"Radio tugmalarni"
+			],
+			"en": [
+				"A color selection field",
+				"A text input field",
+				"A file selection field",
+				"Radio buttons"
+			],
+			"ru": [
+				"Поле выбора цвета",
+				"Поле ввода текста",
+				"Поле выбора файла",
+				"Радиокнопки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'min' atributi qanday ishlaydi?",
+			"en": "How does the 'min' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'min' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Raqamli maydon uchun minimal qiymatni belgilaydi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Sets the minimum value for a numeric field",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Устанавливает минимальное значение для числового поля",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'max' atributi qanday ta'sir qiladi?",
+			"en": "How does the 'max' attribute affect the &ltinput&gt tag?",
+			"ru": "Как атрибут 'max' влияет на тег &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Raqamli maydon uchun maksimal qiymatni belgilaydi",
+				"Maydonni faolsizlantiradi",
+				"Maydonni yashiradi",
+				"Maydonni avtomatik to'ldiradi"
+			],
+			"en": [
+				"Sets the maximum value for a numeric field",
+				"Disables the field",
+				"Hides the field",
+				"Automatically fills the field"
+			],
+			"ru": [
+				"Устанавливает максимальное значение для числового поля",
+				"Отключает поле",
+				"Скрывает поле",
+				"Автоматически заполняет поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='time'&gt qanday kiritish maydonini yaratadi?",
+			"en": "What type of input field does &ltinput type='time'&gt create?",
+			"ru": "Какое поле ввода создает &ltinput type='time'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Vaqt tanlash maydonini",
+				"Matn kiritish maydonini",
+				"Fayl tanlash maydonini",
+				"Radio tugmalarni"
+			],
+			"en": [
+				"A time selection field",
+				"A text input field",
+				"A file selection field",
+				"Radio buttons"
+			],
+			"ru": [
+				"Поле выбора времени",
+				"Поле ввода текста",
+				"Поле выбора файла",
+				"Радиокнопки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='datetime-local'&gt qanday kiritishni qo'llab-quvvatlaydi?",
+			"en": "What type of input does &ltinput type='datetime-local'&gt support?",
+			"ru": "Какой тип ввода поддерживает &ltinput type='datetime-local'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Sana va vaqtni mahalliy formatda kiritishni",
+				"Matnli iqtiboslarni",
+				"Fayl tanlashni",
+				"Parol kiritishni"
+			],
+			"en": [
+				"Date and time input in local format",
+				"Text quotations",
+				"File selection",
+				"Password input"
+			],
+			"ru": [
+				"Ввод даты и времени в локальном формате",
+				"Текстовые цитаты",
+				"Выбор файла",
+				"Ввод пароля"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'step' atributi qanday ishlaydi?",
+			"en": "How does the 'step' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'step' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Raqamli yoki vaqt maydonida qadamlar orasidagi farqni belgilaydi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Sets the increment between steps in numeric or time fields",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Устанавливает шаг между значениями в числовых или временных полях",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='search'&gt qanday maydonni yaratadi?",
+			"en": "What type of field does &ltinput type='search'&gt create?",
+			"ru": "Какое поле создает &ltinput type='search'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Qidiruv matni kiritish maydonini",
+				"Parol kiritish maydonini",
+				"Fayl tanlash maydonini",
+				"Radio tugmalarni"
+			],
+			"en": [
+				"A search text input field",
+				"A password input field",
+				"A file selection field",
+				"Radio buttons"
+			],
+			"ru": [
+				"Поле ввода текста для поиска",
+				"Поле ввода пароля",
+				"Поле выбора файла",
+				"Радиокнопки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'readonly' atributi qanday ta'sir qiladi?",
+			"en": "How does the 'readonly' attribute affect the &ltinput&gt tag?",
+			"ru": "Как атрибут 'readonly' влияет на тег &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni majburiy qiladi",
+				"Maydonni yashiradi",
+				"Maydonni avtomatik to'ldiradi"
+			],
+			"en": [
+				"Makes the field read-only",
+				"Makes the field mandatory",
+				"Hides the field",
+				"Automatically fills the field"
+			],
+			"ru": [
+				"Делает поле только для чтения",
+				"Делает поле обязательным",
+				"Скрывает поле",
+				"Автоматически заполняет поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='image'&gt qanday vazifani bajaradi?",
+			"en": "What function does &ltinput type='image'&gt perform?",
+			"ru": "Какую функцию выполняет &ltinput type='image'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Rasm orqali forma ma'lumotlarini yuborish tugmasini yaratadi",
+				"Matn kiritish maydonini yaratadi",
+				"Radio tugmalarni guruhlaydi",
+				"Fayl tanlash maydonini ochadi"
+			],
+			"en": [
+				"Creates a submit button using an image",
+				"Creates a text input field",
+				"Groups radio buttons",
+				"Opens a file selection field"
+			],
+			"ru": [
+				"Создает кнопку отправки формы с использованием изображения",
+				"Создает поле ввода текста",
+				"Группирует радиокнопки",
+				"Открывает поле выбора файла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'value' atributi qanday ishlaydi?",
+			"en": "How does the 'value' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'value' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Maydonning standart yoki joriy qiymatini belgilaydi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Sets the default or current value of the field",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Устанавливает значение по умолчанию или текущее значение поля",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='reset'&gt qanday vazifani bajaradi?",
+			"en": "What function does &ltinput type='reset'&gt perform?",
+			"ru": "Какую функцию выполняет &ltinput type='reset'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Forma maydonlarini dastlabki holatiga qaytaradi",
+				"Forma ma'lumotlarini serverga yuboradi",
+				"Matn kiritish maydonini yaratadi",
+				"Fayl yuklash maydonini ochadi"
+			],
+			"en": [
+				"Resets form fields to their initial state",
+				"Submits form data to the server",
+				"Creates a text input field",
+				"Opens a file upload field"
+			],
+			"ru": [
+				"Сбрасывает поля формы в исходное состояние",
+				"Отправляет данные формы на сервер",
+				"Создает поле ввода текста",
+				"Открывает поле загрузки файла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltselect&gt tegi uchun 'multiple' atributi qanday imkoniyat beradi?",
+			"en": "What capability does the 'multiple' attribute for the &ltselect&gt tag provide?",
+			"ru": "Какую возможность предоставляет атрибут 'multiple' для тега &ltselect&gt?"
+		},
+		"options": {
+			"uz": [
+				"Bir nechta variantni tanlash imkonini beradi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Allows selection of multiple options",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Позволяет выбрать несколько вариантов",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltoptgroup&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltoptgroup&gt tag?",
+			"ru": "Для чего используется тег &ltoptgroup&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltselect&gt ichidagi variantlarni guruhlash",
+				"Matn kiritish maydonini yaratish",
+				"Forma ma'lumotlarini yuborish",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To group options within a &ltselect&gt element",
+				"To create a text input field",
+				"To submit form data",
+				"To insert an image"
+			],
+			"ru": [
+				"Для группировки вариантов внутри элемента &ltselect&gt",
+				"Для создания поля ввода текста",
+				"Для отправки данных формы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltoption&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltoption&gt tag perform?",
+			"ru": "Какую функцию выполняет тег &ltoption&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltselect&gt yoki &ltdatalist&gt ichida tanlov variantini belgilaydi",
+				"Matnni qalinlashtiradi",
+				"Jadval qatorini belgilaydi",
+				"Audio faylni joylashtiradi"
+			],
+			"en": [
+				"Defines a selectable option within a &ltselect&gt or &ltdatalist&gt",
+				"Bolds text",
+				"Defines a table row",
+				"Embeds an audio file"
+			],
+			"ru": [
+				"Определяет выбираемый вариант внутри &ltselect&gt или &ltdatalist&gt",
+				"Выделяет текст жирным",
+				"Определяет строку таблицы",
+				"Встраивает аудиофайл"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltdatalist&gt tegi qanday imkoniyatni beradi?",
+			"en": "What capability does the &ltdatalist&gt tag provide?",
+			"ru": "Какую возможность предоставляет тег &ltdatalist&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltinput&gt uchun oldindan belgilangan variantlar ro'yxatini taqdim etadi",
+				"Rasmni avtomatik o'lchamlash",
+				"Matnni tagiga chizish",
+				"Navigatsiya panelini yaratish"
+			],
+			"en": [
+				"Provides a list of predefined options for an &ltinput&gt element",
+				"Automatically resizes an image",
+				"Underlines text",
+				"Creates a navigation bar"
+			],
+			"ru": [
+				"Предоставляет список предопределенных вариантов для элемента &ltinput&gt",
+				"Автоматически изменяет размер изображения",
+				"Подчеркивает текст",
+				"Создает панель навигации"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltoutput&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltoutput&gt tag?",
+			"ru": "Для чего используется тег &ltoutput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Forma ichidagi hisob-kitob natijalarini ko'rsatish",
+				"Matnni kursiv qilish",
+				"Jadval qatorini belgilash",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To display the result of a calculation within a form",
+				"To italicize text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для отображения результата вычислений в форме",
+				"Для выделения текста курсивом",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltform&gt tegi uchun 'enctype' atributi qanday vazifani bajaradi?",
+			"en": "What function does the 'enctype' attribute of the &ltform&gt tag perform?",
+			"ru": "Какую функцию выполняет атрибут 'enctype' тега &ltform&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ma'lumotlar yuborilganda ishlatiladigan kodlash turini belgilaydi",
+				"Forma uslubini o'zgartiradi",
+				"Matn kiritish maydonini ochadi",
+				"Forma elementlarini yashiradi"
+			],
+			"en": [
+				"Specifies the encoding type used when submitting form data",
+				"Changes the form's style",
+				"Opens a text input field",
+				"Hides form elements"
+			],
+			"ru": [
+				"Указывает тип кодирования, используемый при отправке данных формы",
+				"Изменяет стиль формы",
+				"Открывает поле ввода текста",
+				"Скрывает элементы формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'name' atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'name' attribute for the &ltinput&gt tag?",
+			"ru": "Для чего используется атрибут 'name' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Ma'lumotlar serverga yuborilganda maydonni identifikatsiya qiladi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Identifies the field when data is sent to the server",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Идентифицирует поле при отправке данных на сервер",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='month'&gt qanday kiritish maydonini yaratadi?",
+			"en": "What type of input field does &ltinput type='month'&gt create?",
+			"ru": "Какое поле ввода создает &ltinput type='month'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Oy va yil tanlash maydonini",
+				"Matn kiritish maydonini",
+				"Fayl tanlash maydonini",
+				"Radio tugmalarni"
+			],
+			"en": [
+				"A month and year selection field",
+				"A text input field",
+				"A file selection field",
+				"Radio buttons"
+			],
+			"ru": [
+				"Поле выбора месяца и года",
+				"Поле ввода текста",
+				"Поле выбора файла",
+				"Радиокнопки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput type='week'&gt qanday kiritishni qo'llab-quvvatlaydi?",
+			"en": "What type of input does &ltinput type='week'&gt support?",
+			"ru": "Какой тип ввода поддерживает &ltinput type='week'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Hafta va yilni tanlash kiritishni",
+				"Matnli iqtiboslarni",
+				"Fayl tanlashni",
+				"Parol kiritishni"
+			],
+			"en": [
+				"Week and year selection input",
+				"Text quotations",
+				"File selection",
+				"Password input"
+			],
+			"ru": [
+				"Ввод выбора недели и года",
+				"Текстовые цитаты",
+				"Выбор файла",
+				"Ввод пароля"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'list' atributi qanday ishlaydi?",
+			"en": "How does the 'list' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'list' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltdatalist&gt elementi bilan bog'langan oldindan belgilangan variantlarni ko'rsatadi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Links to predefined options in a &ltdatalist&gt element",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Связывает с предопределенными вариантами в элементе &ltdatalist&gt",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltbutton type='submit'&gt qanday vazifani bajaradi?",
+			"en": "What function does &ltbutton type='submit'&gt perform?",
+			"ru": "Какую функцию выполняет &ltbutton type='submit'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Forma ma'lumotlarini serverga yuboradi",
+				"Forma maydonlarini dastlabki holatiga qaytaradi",
+				"Matn kiritish maydonini yaratadi",
+				"Fayl yuklash maydonini ochadi"
+			],
+			"en": [
+				"Submits form data to the server",
+				"Resets form fields to their initial state",
+				"Creates a text input field",
+				"Opens a file upload field"
+			],
+			"ru": [
+				"Отправляет данные формы на сервер",
+				"Сбрасывает поля формы в исходное состояние",
+				"Создает поле ввода текста",
+				"Открывает поле загрузки файла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltbutton type='reset'&gt qanday imkoniyatni beradi?",
+			"en": "What capability does &ltbutton type='reset'&gt provide?",
+			"ru": "Какую возможность предоставляет &ltbutton type='reset'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Forma maydonlarini dastlabki holatiga qaytaradi",
+				"Forma ma'lumotlarini serverga yuboradi",
+				"Matn kiritish maydonini ochadi",
+				"Fayl tanlash maydonini yaratadi"
+			],
+			"en": [
+				"Resets form fields to their initial state",
+				"Submits form data to the server",
+				"Opens a text input field",
+				"Creates a file selection field"
+			],
+			"ru": [
+				"Сбрасывает поля формы в исходное состояние",
+				"Отправляет данные формы на сервер",
+				"Открывает поле ввода текста",
+				"Создает поле выбора файла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltbutton type='button'&gt qanday xususiyatga ega?",
+			"en": "What characteristic does &ltbutton type='button'&gt have?",
+			"ru": "Какую характеристику имеет &ltbutton type='button'&gt?"
+		},
+		"options": {
+			"uz": [
+				"Standart tugma sifatida ishlaydi, lekin avtomatik funksiyasiz",
+				"Forma ma'lumotlarini serverga yuboradi",
+				"Forma maydonlarini tozalaydi",
+				"Fayl tanlash maydonini ochadi"
+			],
+			"en": [
+				"Acts as a standard button without automatic functionality",
+				"Submits form data to the server",
+				"Clears form fields",
+				"Opens a file selection field"
+			],
+			"ru": [
+				"Работает как стандартная кнопка без автоматической функциональности",
+				"Отправляет данные формы на сервер",
+				"Очищает поля формы",
+				"Открывает поле выбора файла"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'form' atributi qanday ishlaydi?",
+			"en": "How does the 'form' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'form' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Maydonni ma'lum bir &ltform&gt elementi bilan bog'laydi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Associates the field with a specific &ltform&gt element",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Связывает поле с определенным элементом &ltform&gt",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'autofocus' atributi qanday ta'sir qiladi?",
+			"en": "How does the 'autofocus' attribute affect the &ltinput&gt tag?",
+			"ru": "Как атрибут 'autofocus' влияет на тег &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"Sahifa yuklanganda maydonga avtomatik fokus qo'yadi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Automatically focuses on the field when the page loads",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Автоматически фокусируется на поле при загрузке страницы",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&lttextarea&gt tegi uchun 'rows' atributi qanday ishlaydi?",
+			"en": "How does the 'rows' attribute for the &lttextarea&gt tag work?",
+			"ru": "Как работает атрибут 'rows' для тега &lttextarea&gt?"
+		},
+		"options": {
+			"uz": [
+				"Matn maydonidagi ko'rinadigan qatorlar sonini belgilaydi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Sets the number of visible rows in the text area",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Устанавливает количество видимых строк в текстовом поле",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&lttextarea&gt tegi uchun 'cols' atributi qanday ta'sir qiladi?",
+			"en": "How does the 'cols' attribute affect the &lttextarea&gt tag?",
+			"ru": "Как атрибут 'cols' влияет на тег &lttextarea&gt?"
+		},
+		"options": {
+			"uz": [
+				"Matn maydonidagi ko'rinadigan belgilar sonini belgilaydi",
+				"Maydonni faolsizlantiradi",
+				"Maydonni yashiradi",
+				"Maydonni avtomatik to'ldiradi"
+			],
+			"en": [
+				"Sets the number of visible characters in the text area",
+				"Disables the field",
+				"Hides the field",
+				"Automatically fills the field"
+			],
+			"ru": [
+				"Устанавливает количество видимых символов в текстовом поле",
+				"Отключает поле",
+				"Скрывает поле",
+				"Автоматически заполняет поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'accept' atributi qanday ishlaydi?",
+			"en": "How does the 'accept' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'accept' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltinput type='file'&gt uchun qabul qilinadigan fayl turlarini belgilaydi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Specifies accepted file types for &ltinput type='file'&gt",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Указывает допустимые типы файлов для &ltinput type='file'&gt",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltform&gt tegi uchun 'novalidate' atributi qanday ta'sir qiladi?",
+			"en": "How does the 'novalidate' attribute affect the &ltform&gt tag?",
+			"ru": "Как атрибут 'novalidate' влияет на тег &ltform&gt?"
+		},
+		"options": {
+			"uz": [
+				"Forma yuborilganda brauzer validatsiyasini o'chiradi",
+				"Forma uslubini o'zgartiradi",
+				"Matn kiritish maydonini ochadi",
+				"Forma elementlarini yashiradi"
+			],
+			"en": [
+				"Disables browser validation when the form is submitted",
+				"Changes the form's style",
+				"Opens a text input field",
+				"Hides form elements"
+			],
+			"ru": [
+				"Отключает валидацию браузера при отправке формы",
+				"Изменяет стиль формы",
+				"Открывает поле ввода текста",
+				"Скрывает элементы формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltinput&gt tegi uchun 'multiple' atributi qanday ishlaydi?",
+			"en": "How does the 'multiple' attribute for the &ltinput&gt tag work?",
+			"ru": "Как работает атрибут 'multiple' для тега &ltinput&gt?"
+		},
+		"options": {
+			"uz": [
+				"&ltinput type='file'&gt yoki &ltinput type='email'&gt uchun bir nechta qiymatni qabul qilishga ruxsat beradi",
+				"Maydonni majburiy qiladi",
+				"Maydonni faqat o'qish uchun qiladi",
+				"Maydonni yashiradi"
+			],
+			"en": [
+				"Allows multiple values for &ltinput type='file'&gt or &ltinput type='email'&gt",
+				"Makes the field mandatory",
+				"Makes the field read-only",
+				"Hides the field"
+			],
+			"ru": [
+				"Позволяет ввод нескольких значений для &ltinput type='file'&gt или &ltinput type='email'&gt",
+				"Делает поле обязательным",
+				"Делает поле только для чтения",
+				"Скрывает поле"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltcanvas&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltcanvas&gt tag in HTML5?",
+			"ru": "Для чего используется тег &ltcanvas&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"JavaScript yordamida dinamik grafikalar chizish uchun",
+				"Matnni avtomatik formatlash uchun",
+				"Forma elementlarini guruhlash uchun",
+				"Video fayllarni joylashtirish uchun"
+			],
+			"en": [
+				"To draw dynamic graphics using JavaScript",
+				"To automatically format text",
+				"To group form elements",
+				"To embed video files"
+			],
+			"ru": [
+				"Для рисования динамической графики с помощью JavaScript",
+				"Для автоматического форматирования текста",
+				"Для группировки элементов формы",
+				"Для встраивания видеофайлов"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltvideo&gt tegi qanday imkoniyatni beradi?",
+			"en": "What capability does the &ltvideo&gt tag provide in HTML5?",
+			"ru": "Какую возможность предоставляет тег &ltvideo&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Video kontentni brauzerda to'g'ridan-to'g'ri ijro etish",
+				"Interaktiv formalar yaratish",
+				"Matnni avtomatik qalinlashtirish",
+				"Rasmlarni optimallashtirish"
+			],
+			"en": [
+				"Direct playback of video content in the browser",
+				"Creating interactive forms",
+				"Automatically bolding text",
+				"Optimizing images"
+			],
+			"ru": [
+				"Прямое воспроизведение видеоконтента в браузере",
+				"Создание интерактивных форм",
+				"Автоматическое выделение текста жирным",
+				"Оптимизация изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltaudio&gt tegi qanday funksiyani bajaradi?",
+			"en": "What function does the &ltaudio&gt tag perform in HTML5?",
+			"ru": "Какую функцию выполняет тег &ltaudio&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Audio fayllarni veb-sahifada ijro etish",
+				"Jadval tuzilmalarini yaratish",
+				"Matn kiritish maydonini ochish",
+				"Rasmlarni guruhlash"
+			],
+			"en": [
+				"Playing audio files on a webpage",
+				"Creating table structures",
+				"Opening a text input field",
+				"Grouping images"
+			],
+			"ru": [
+				"Воспроизведение аудиофайлов на веб-странице",
+				"Создание табличных структур",
+				"Открытие поля ввода текста",
+				"Группировка изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da 'data-' atributlari qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of 'data-' attributes in HTML5?",
+			"ru": "Для чего используются атрибуты 'data-' в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Maxsus foydalanuvchi ma'lumotlarini elementlarga bog'lash",
+				"Matnni avtomatik kursiv qilish",
+				"Forma validatsiyasini o'chirish",
+				"Rasm o'lchamlarini o'zgartirish"
+			],
+			"en": [
+				"To attach custom data to elements",
+				"To automatically italicize text",
+				"To disable form validation",
+				"To resize images"
+			],
+			"ru": [
+				"Для привязки пользовательских данных к элементам",
+				"Для автоматического выделения текста курсивом",
+				"Для отключения валидации формы",
+				"Для изменения размеров изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltarticle&gt tegi qanday ma'lumotni ifodalaydi?",
+			"en": "What type of content does the &ltarticle&gt tag represent in HTML5?",
+			"ru": "Какой тип контента представляет тег &ltarticle&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Mustaqil, o'z-o'zini ta'minlaydigan kontentni",
+				"Navigatsiya menyusini",
+				"Forma elementlarini",
+				"Matnli iqtiboslarni"
+			],
+			"en": [
+				"Independent, self-contained content",
+				"A navigation menu",
+				"Form elements",
+				"Text quotations"
+			],
+			"ru": [
+				"Независимый, самодостаточный контент",
+				"Навигационное меню",
+				"Элементы формы",
+				"Текстовые цитаты"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltsection&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltsection&gt tag perform in HTML5?",
+			"ru": "Какую функцию выполняет тег &ltsection&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Ma'lumotni tematik guruhlash uchun ishlatiladi",
+				"Video fayllarni joylashtiradi",
+				"Matn kiritish maydonini yaratadi",
+				"Rasmlarni avtomatik optimallashtiradi"
+			],
+			"en": [
+				"Used to group content thematically",
+				"Embeds video files",
+				"Creates a text input field",
+				"Automatically optimizes images"
+			],
+			"ru": [
+				"Используется для тематической группировки контента",
+				"Встраивает видеофайлы",
+				"Создает поле ввода текста",
+				"Автоматически оптимизирует изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltnav&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltnav&gt tag in HTML5?",
+			"ru": "Для чего используется тег &ltnav&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Navigatsiya havolalarini guruhlash uchun",
+				"Matnni qalinlashtirish",
+				"Jadval qatorlarini belgilash",
+				"Audio fayllarni joylashtirish"
+			],
+			"en": [
+				"To group navigation links",
+				"To bold text",
+				"To define table rows",
+				"To embed audio files"
+			],
+			"ru": [
+				"Для группировки навигационных ссылок",
+				"Для выделения текста жирным",
+				"Для определения строк таблицы",
+				"Для встраивания аудиофайлов"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltheader&gt tegi qanday kontentni ifodalaydi?",
+			"en": "What type of content does the &ltheader&gt tag represent in HTML5?",
+			"ru": "Какой тип контента представляет тег &ltheader&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Sahifa yoki bo'limning kirish qismini",
+				"Matn kiritish maydonini",
+				"Fayl tanlash maydonini",
+				"Radio tugmalarni"
+			],
+			"en": [
+				"The introductory content of a page or section",
+				"A text input field",
+				"A file selection field",
+				"Radio buttons"
+			],
+			"ru": [
+				"Вводный контент страницы или раздела",
+				"Поле ввода текста",
+				"Поле выбора файла",
+				"Радиокнопки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltfooter&gt tegi qanday ma'lumotni ko'rsatadi?",
+			"en": "What type of content does the &ltfooter&gt tag represent in HTML5?",
+			"ru": "Какой тип контента представляет тег &ltfooter&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Sahifa yoki bo'limning oxirgi qismini",
+				"Interaktiv formani",
+				"Matnli iqtiboslarni",
+				"Rasm galereyasini"
+			],
+			"en": [
+				"The concluding content of a page or section",
+				"An interactive form",
+				"Text quotations",
+				"An image gallery"
+			],
+			"ru": [
+				"Заключительный контент страницы или раздела",
+				"Интерактивная форма",
+				"Текстовые цитаты",
+				"Галерея изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltaside&gt tegi qanday kontent uchun ishlatiladi?",
+			"en": "What type of content is the &ltaside&gt tag used for in HTML5?",
+			"ru": "Для какого типа контента используется тег &ltaside&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Asosiy kontentga qo'shimcha yoki yon ma'lumotlar uchun",
+				"Navigatsiya panelini yaratish",
+				"Matnni avtomatik qalinlashtirish",
+				"Jadval tuzilmasini belgilash"
+			],
+			"en": [
+				"For supplementary or tangential content to the main content",
+				"To create a navigation bar",
+				"To automatically bold text",
+				"To define a table structure"
+			],
+			"ru": [
+				"Для дополнительного или побочного контента к основному",
+				"Для создания панели навигации",
+				"Для автоматического выделения текста жирным",
+				"Для определения структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltfigure&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltfigure&gt tag in HTML5?",
+			"ru": "Для чего используется тег &ltfigure&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Rasm, diagramma yoki boshqa vizual kontentni guruhlash",
+				"Matn kiritish maydonini yaratish",
+				"Forma ma'lumotlarini yuborish",
+				"Video fayllarni optimallashtirish"
+			],
+			"en": [
+				"To group images, diagrams, or other visual content",
+				"To create a text input field",
+				"To submit form data",
+				"To optimize video files"
+			],
+			"ru": [
+				"Для группировки изображений, диаграмм или другого визуального контента",
+				"Для создания поля ввода текста",
+				"Для отправки данных формы",
+				"Для оптимизации видеофайлов"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltfigcaption&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltfigcaption&gt tag perform in HTML5?",
+			"ru": "Какую функцию выполняет тег &ltfigcaption&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"&ltfigure&gt ichidagi kontent uchun sarlavha yoki izoh beradi",
+				"Matnni avtomatik kursiv qiladi",
+				"Navigatsiya havolalarini guruhlaydi",
+				"Audio fayllarni joylashtiradi"
+			],
+			"en": [
+				"Provides a caption or description for content within a &ltfigure&gt",
+				"Automatically italicizes text",
+				"Groups navigation links",
+				"Embeds audio files"
+			],
+			"ru": [
+				"Предоставляет заголовок или описание для контента внутри &ltfigure&gt",
+				"Автоматически выделяет текст курсивом",
+				"Группирует навигационные ссылки",
+				"Встраивает аудиофайлы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltmain&gt tegi qanday kontentni ifodalaydi?",
+			"en": "What type of content does the &ltmain&gt tag represent in HTML5?",
+			"ru": "Какой тип контента представляет тег &ltmain&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Sahifaning asosiy mazmunini",
+				"Forma elementlarini",
+				"Matnli iqtiboslarni",
+				"Rasm galereyasini"
+			],
+			"en": [
+				"The primary content of the page",
+				"Form elements",
+				"Text quotations",
+				"An image gallery"
+			],
+			"ru": [
+				"Основное содержимое страницы",
+				"Элементы формы",
+				"Текстовые цитаты",
+				"Галерея изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltdetails&gt tegi qanday imkoniyatni beradi?",
+			"en": "What capability does the &ltdetails&gt tag provide in HTML5?",
+			"ru": "Какую возможность предоставляет тег &ltdetails&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Foydalanuvchi ochishi mumkin bo'lgan yashirin kontentni ko'rsatish",
+				"Matn kiritish maydonini yaratish",
+				"Jadval tuzilmasini belgilash",
+				"Video fayllarni joylashtirish"
+			],
+			"en": [
+				"Displaying collapsible content that a user can toggle",
+				"Creating a text input field",
+				"Defining a table structure",
+				"Embedding video files"
+			],
+			"ru": [
+				"Отображение сворачиваемого контента, который пользователь может переключать",
+				"Создание поля ввода текста",
+				"Определение структуры таблицы",
+				"Встраивание видеофайлов"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltsummary&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltsummary&gt tag in HTML5?",
+			"ru": "Для чего используется тег &ltsummary&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"&ltdetails&gt tegi ichidagi kontent uchun ko'rinadigan sarlavha beradi",
+				"Matnni avtomatik qalinlashtiradi",
+				"Navigatsiya panelini yaratadi",
+				"Rasmlarni optimallashtiradi"
+			],
+			"en": [
+				"Provides a visible heading for content within a &ltdetails&gt tag",
+				"Automatically bolds text",
+				"Creates a navigation bar",
+				"Optimizes images"
+			],
+			"ru": [
+				"Предоставляет видимый заголовок для контента внутри тега &ltdetails&gt",
+				"Автоматически выделяет текст жирным",
+				"Создает панель навигации",
+				"Оптимизирует изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da Geolocation API qanday vazifani bajaradi?",
+			"en": "What function does the Geolocation API perform in HTML5?",
+			"ru": "Какую функцию выполняет Geolocation API в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Foydalanuvchining geografik joylashuvini aniqlash",
+				"Matnni avtomatik formatlash",
+				"Forma validatsiyasini boshqarish",
+				"Rasmlarni avtomatik siqish"
+			],
+			"en": [
+				"Determining the user's geographic location",
+				"Automatically formatting text",
+				"Managing form validation",
+				"Automatically compressing images"
+			],
+			"ru": [
+				"Определение географического местоположения пользователя",
+				"Автоматическое форматирование текста",
+				"Управление валидацией формы",
+				"Автоматическое сжатие изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da Web Storage API qanday imkoniyatni beradi?",
+			"en": "What capability does the Web Storage API provide in HTML5?",
+			"ru": "Какую возможность предоставляет Web Storage API в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Ma'lumotlarni brauzerda saqlash (localStorage va sessionStorage)",
+				"Video fayllarni optimallashtirish",
+				"Matn kiritish maydonini yaratish",
+				"Jadval tuzilmasini belgilash"
+			],
+			"en": [
+				"Storing data in the browser (localStorage and sessionStorage)",
+				"Optimizing video files",
+				"Creating a text input field",
+				"Defining a table structure"
+			],
+			"ru": [
+				"Хранение данных в браузере (localStorage и sessionStorage)",
+				"Оптимизация видеофайлов",
+				"Создание поля ввода текста",
+				"Определение структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da Drag and Drop API qanday funksiyani bajaradi?",
+			"en": "What function does the Drag and Drop API perform in HTML5?",
+			"ru": "Какую функцию выполняет Drag and Drop API в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Elementlarni sudrab tashlash va joylashtirish imkonini beradi",
+				"Matnni avtomatik qalinlashtiradi",
+				"Forma elementlarini guruhlaydi",
+				"Audio fayllarni joylashtiradi"
+			],
+			"en": [
+				"Allows dragging and dropping elements",
+				"Automatically bolds text",
+				"Groups form elements",
+				"Embeds audio files"
+			],
+			"ru": [
+				"Позволяет перетаскивать и размещать элементы",
+				"Автоматически выделяет текст жирным",
+				"Группирует элементы формы",
+				"Встраивает аудиофайлы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltmark&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltmark&gt tag in HTML5?",
+			"ru": "Для чего используется тег &ltmark&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Matnni muhim yoki ajratilgan sifatida belgilash",
+				"Jadval qatorini belgilash",
+				"Navigatsiya panelini yaratish",
+				"Rasmlarni optimallashtirish"
+			],
+			"en": [
+				"To highlight text as important or relevant",
+				"To define a table row",
+				"To create a navigation bar",
+				"To optimize images"
+			],
+			"ru": [
+				"Для выделения текста как важного или релевантного",
+				"Для определения строки таблицы",
+				"Для создания панели навигации",
+				"Для оптимизации изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltprogress&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltprogress&gt tag perform in HTML5?",
+			"ru": "Какую функцию выполняет тег &ltprogress&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Vazifaning bajarilish jarayonini ko'rsatadi",
+				"Matn kiritish maydonini yaratadi",
+				"Forma ma'lumotlarini yuboradi",
+				"Video fayllarni joylashtiradi"
+			],
+			"en": [
+				"Displays the progress of a task",
+				"Creates a text input field",
+				"Submits form data",
+				"Embeds video files"
+			],
+			"ru": [
+				"Отображает прогресс выполнения задачи",
+				"Создает поле ввода текста",
+				"Отправляет данные формы",
+				"Встраивает видеофайлы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "&ltmeter&gt tegi qanday ma'lumotni ifodalaydi?",
+			"en": "What type of information does the &ltmeter&gt tag represent in HTML5?",
+			"ru": "Какую информацию представляет тег &ltmeter&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Ma'lum bir diapazondagi o'lchov yoki qiymatni",
+				"Navigatsiya havolalarini",
+				"Matnli iqtiboslarni",
+				"Rasm galereyasini"
+			],
+			"en": [
+				"A measurement or value within a specific range",
+				"Navigation links",
+				"Text quotations",
+				"An image gallery"
+			],
+			"ru": [
+				"Измерение или значение в определенном диапазоне",
+				"Навигационные ссылки",
+				"Текстовые цитаты",
+				"Галерея изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da WebSocket API qanday imkoniyatni beradi?",
+			"en": "What capability does the WebSocket API provide in HTML5?",
+			"ru": "Какую возможность предоставляет WebSocket API в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Server va brauzer o'rtasida doimiy ikki tomonlama aloqani",
+				"Matnni avtomatik formatlashni",
+				"Forma validatsiyasini boshqarishni",
+				"Rasmlarni avtomatik siqishni"
+			],
+			"en": [
+				"Persistent two-way communication between server and browser",
+				"Automatic text formatting",
+				"Managing form validation",
+				"Automatic image compression"
+			],
+			"ru": [
+				"Постоянную двустороннюю связь между сервером и браузером",
+				"Автоматическое форматирование текста",
+				"Управление валидацией формы",
+				"Автоматическое сжатие изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltsource&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltsource&gt tag used in HTML5?",
+			"ru": "Как используется тег &ltsource&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"&ltvideo&gt yoki &ltaudio&gt uchun bir nechta media resurslarini belgilash",
+				"Matnni qalinlashtirish",
+				"Jadval qatorini belgilash",
+				"Navigatsiya panelini yaratish"
+			],
+			"en": [
+				"To specify multiple media resources for &ltvideo&gt or &ltaudio&gt",
+				"To bold text",
+				"To define a table row",
+				"To create a navigation bar"
+			],
+			"ru": [
+				"Для указания нескольких медиаресурсов для &ltvideo&gt или &ltaudio&gt",
+				"Для выделения текста жирным",
+				"Для определения строки таблицы",
+				"Для создания панели навигации"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da 'contenteditable' atributi qanday ishlaydi?",
+			"en": "How does the 'contenteditable' attribute work in HTML5?",
+			"ru": "Как работает атрибут 'contenteditable' в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Elementning mazmunini foydalanuvchi tomonidan tahrirlashga ruxsat beradi",
+				"Elementni yashiradi",
+				"Matnni avtomatik qalinlashtiradi",
+				"Forma validatsiyasini o'chiradi"
+			],
+			"en": [
+				"Allows the content of an element to be edited by the user",
+				"Hides the element",
+				"Automatically bolds text",
+				"Disables form validation"
+			],
+			"ru": [
+				"Позволяет пользователю редактировать содержимое элемента",
+				"Скрывает элемент",
+				"Автоматически выделяет текст жирным",
+				"Отключает валидацию формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltpicture&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltpicture&gt tag in HTML5?",
+			"ru": "Для чего используется тег &ltpicture&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Turli qurilmalar uchun moslashtirilgan rasmlarni ko'rsatish",
+				"Matn kiritish maydonini yaratish",
+				"Forma ma'lumotlarini yuborish",
+				"Video fayllarni joylashtirish"
+			],
+			"en": [
+				"To display adaptive images for different devices",
+				"To create a text input field",
+				"To submit form data",
+				"To embed video files"
+			],
+			"ru": [
+				"Для отображения адаптивных изображений для разных устройств",
+				"Для создания поля ввода текста",
+				"Для отправки данных формы",
+				"Для встраивания видеофайлов"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &lttrack&gt tegi qanday ishlatiladi?",
+			"en": "How is the &lttrack&gt tag used in HTML5?",
+			"ru": "Как используется тег &lttrack&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"&ltvideo&gt yoki &ltaudio&gt uchun subtitr yoki boshqa matnli trekni qo'shish",
+				"Matnni avtomatik kursiv qilish",
+				"Navigatsiya havolalarini guruhlash",
+				"Rasmlarni optimallashtirish"
+			],
+			"en": [
+				"To add subtitles or other text tracks to &ltvideo&gt or &ltaudio&gt",
+				"To automatically italicize text",
+				"To group navigation links",
+				"To optimize images"
+			],
+			"ru": [
+				"Для добавления субтитров или других текстовых треков к &ltvideo&gt или &ltaudio&gt",
+				"Для автоматического выделения текста курсивом",
+				"Для группировки навигационных ссылок",
+				"Для оптимизации изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da 'spellcheck' atributi qanday vazifani bajaradi?",
+			"en": "What function does the 'spellcheck' attribute perform in HTML5?",
+			"ru": "Какую функцию выполняет атрибут 'spellcheck' в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Matn kiritishda imlo tekshiruvini yoqadi yoki o'chiradi",
+				"Elementni yashiradi",
+				"Forma validatsiyasini boshqaradi",
+				"Rasmlarni avtomatik siqadi"
+			],
+			"en": [
+				"Enables or disables spell checking for text input",
+				"Hides the element",
+				"Manages form validation",
+				"Automatically compresses images"
+			],
+			"ru": [
+				"Включает или отключает проверку орфографии для ввода текста",
+				"Скрывает элемент",
+				"Управляет валидацией формы",
+				"Автоматически сжимает изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da Web Workers API qanday imkoniyatni beradi?",
+			"en": "What capability does the Web Workers API provide in HTML5?",
+			"ru": "Какую возможность предоставляет Web Workers API в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"JavaScript kodini alohida fonda ishlatish",
+				"Matnni avtomatik formatlash",
+				"Forma elementlarini guruhlash",
+				"Video fayllarni optimallashtirish"
+			],
+			"en": [
+				"Running JavaScript code in a separate background thread",
+				"Automatically formatting text",
+				"Grouping form elements",
+				"Optimizing video files"
+			],
+			"ru": [
+				"Запуск кода JavaScript в отдельном фоновом потоке",
+				"Автоматическое форматирование текста",
+				"Группировка элементов формы",
+				"Оптимизация видеофайлов"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &lttime&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &lttime&gt tag in HTML5?",
+			"ru": "Для чего используется тег &lttime&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Vaqt yoki sana ma'lumotlarini semantik tarzda belgilash",
+				"Jadval qatorini belgilash",
+				"Navigatsiya panelini yaratish",
+				"Rasmlarni optimallashtirish"
+			],
+			"en": [
+				"To semantically mark up time or date information",
+				"To define a table row",
+				"To create a navigation bar",
+				"To optimize images"
+			],
+			"ru": [
+				"Для семантической разметки информации о времени или дате",
+				"Для определения строки таблицы",
+				"Для создания панели навигации",
+				"Для оптимизации изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da 'draggable' atributi qanday ishlaydi?",
+			"en": "How does the 'draggable' attribute work in HTML5?",
+			"ru": "Как работает атрибут 'draggable' в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Elementni sudrab tashlash imkonini yoqadi yoki o'chiradi",
+				"Matnni avtomatik qalinlashtiradi",
+				"Forma validatsiyasini o'chiradi",
+				"Elementni yashiradi"
+			],
+			"en": [
+				"Enables or disables dragging of an element",
+				"Automatically bolds text",
+				"Disables form validation",
+				"Hides the element"
+			],
+			"ru": [
+				"Включает или отключает возможность перетаскивания элемента",
+				"Автоматически выделяет текст жирным",
+				"Отключает валидацию формы",
+				"Скрывает элемент"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da Fullscreen API qanday funksiyani bajaradi?",
+			"en": "What function does the Fullscreen API perform in HTML5?",
+			"ru": "Какую функцию выполняет Fullscreen API в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Elementni yoki butun sahifani to'liq ekran rejimida ko'rsatish",
+				"Matn kiritish maydonini yaratish",
+				"Forma ma'lumotlarini yuborish",
+				"Video fayllarni optimallashtirish"
+			],
+			"en": [
+				"Displays an element or the entire page in fullscreen mode",
+				"Creates a text input field",
+				"Submits form data",
+				"Optimizes video files"
+			],
+			"ru": [
+				"Отображает элемент или всю страницу в полноэкранном режиме",
+				"Создает поле ввода текста",
+				"Отправляет данные формы",
+				"Оптимизирует видеофайлы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltdialog&gt tegi qanday imkoniyatni beradi?",
+			"en": "What capability does the &ltdialog&gt tag provide in HTML5?",
+			"ru": "Какую возможность предоставляет тег &ltdialog&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Interaktiv dialog oynalarini yaratish",
+				"Matnni avtomatik formatlash",
+				"Jadval tuzilmasini belgilash",
+				"Rasmlarni avtomatik siqish"
+			],
+			"en": [
+				"Creating interactive dialog boxes",
+				"Automatically formatting text",
+				"Defining a table structure",
+				"Automatically compressing images"
+			],
+			"ru": [
+				"Создание интерактивных диалоговых окон",
+				"Автоматическое форматирование текста",
+				"Определение структуры таблицы",
+				"Автоматическое сжатие изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da 'hidden' atributi qanday vazifani bajaradi?",
+			"en": "What function does the 'hidden' attribute perform in HTML5?",
+			"ru": "Какую функцию выполняет атрибут 'hidden' в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Elementni sahifada ko'rinmas qiladi",
+				"Matnni avtomatik qalinlashtiradi",
+				"Forma validatsiyasini boshqaradi",
+				"Elementni tahrirlashga ruxsat beradi"
+			],
+			"en": [
+				"Makes an element invisible on the page",
+				"Automatically bolds text",
+				"Manages form validation",
+				"Allows editing of an element"
+			],
+			"ru": [
+				"Делает элемент невидимым на странице",
+				"Автоматически выделяет текст жирным",
+				"Управляет валидацией формы",
+				"Позволяет редактировать элемент"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da Server-Sent Events (SSE) qanday imkoniyatni beradi?",
+			"en": "What capability does Server-Sent Events (SSE) provide in HTML5?",
+			"ru": "Какую возможность предоставляет Server-Sent Events (SSE) в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Serverdan brauzerga real vaqtda yangilanishlarni yuborish",
+				"Matn kiritish maydonini yaratish",
+				"Jadval tuzilmasini belgilash",
+				"Rasmlarni avtomatik siqish"
+			],
+			"en": [
+				"Sending real-time updates from the server to the browser",
+				"Creating a text input field",
+				"Defining a table structure",
+				"Automatically compressing images"
+			],
+			"ru": [
+				"Отправка обновлений в реальном времени от сервера к браузеру",
+				"Создание поля ввода текста",
+				"Определение структуры таблицы",
+				"Автоматическое сжатие изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltoutput&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltoutput&gt tag in HTML5?",
+			"ru": "Для чего используется тег &ltoutput&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Forma ichidagi hisob-kitob natijalarini ko'rsatish",
+				"Matnni kursiv qilish",
+				"Jadval qatorini belgilash",
+				"Rasmni joylashtirish"
+			],
+			"en": [
+				"To display the result of a calculation within a form",
+				"To italicize text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для отображения результата вычислений в форме",
+				"Для выделения текста курсивом",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltbdi&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltbdi&gt tag perform in HTML5?",
+			"ru": "Какую функцию выполняет тег &ltbdi&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Matnni yozuv yo'nalishidan izolyatsiya qiladi",
+				"Matn kiritish maydonini yaratadi",
+				"Forma ma'lumotlarini yuboradi",
+				"Video fayllarni joylashtiradi"
+			],
+			"en": [
+				"Isolates text from its surrounding text directionality",
+				"Creates a text input field",
+				"Submits form data",
+				"Embeds video files"
+			],
+			"ru": [
+				"Изолирует текст от направления письма окружающего текста",
+				"Создает поле ввода текста",
+				"Отправляет данные формы",
+				"Встраивает видеофайлы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltruby&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltruby&gt tag in HTML5?",
+			"ru": "Для чего используется тег &ltruby&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Sharqiy Osiyo tillarida matn annotatsiyalarini ko'rsatish",
+				"Jadval qatorini belgilash",
+				"Navigatsiya panelini yaratish",
+				"Rasmlarni optimallashtirish"
+			],
+			"en": [
+				"To display text annotations in East Asian languages",
+				"To define a table row",
+				"To create a navigation bar",
+				"To optimize images"
+			],
+			"ru": [
+				"Для отображения текстовых аннотаций в восточноазиатских языках",
+				"Для определения строки таблицы",
+				"Для создания панели навигации",
+				"Для оптимизации изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltrt&gt tegi qanday ishlatiladi?",
+			"en": "How is the &ltrt&gt tag used in HTML5?",
+			"ru": "Как используется тег &ltrt&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"&ltruby&gt ichida matn annotatsiyasini taqdim etadi",
+				"Matnni avtomatik kursiv qiladi",
+				"Navigatsiya havolalarini guruhlaydi",
+				"Rasmlarni optimallashtiradi"
+			],
+			"en": [
+				"Provides the annotation text within a &ltruby&gt tag",
+				"Automatically italicizes text",
+				"Groups navigation links",
+				"Optimizes images"
+			],
+			"ru": [
+				"Предоставляет текст аннотации внутри тега &ltruby&gt",
+				"Автоматически выделяет текст курсивом",
+				"Группирует навигационные ссылки",
+				"Оптимизирует изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltrp&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltrp&gt tag in HTML5?",
+			"ru": "Для чего используется тег &ltrp&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"&ltruby&gt annotatsiyalari qo'llab-quvvatlanmasa, qavslar ko'rsatish",
+				"Matn kiritish maydonini yaratish",
+				"Forma ma'lumotlarini yuborish",
+				"Video fayllarni joylashtirish"
+			],
+			"en": [
+				"To display parentheses for &ltruby&gt annotations if unsupported",
+				"To create a text input field",
+				"To submit form data",
+				"To embed video files"
+			],
+			"ru": [
+				"Для отображения скобок для аннотаций &ltruby&gt, если они не поддерживаются",
+				"Для создания поля ввода текста",
+				"Для отправки данных формы",
+				"Для встраивания видеофайлов"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da History API qanday imkoniyatni beradi?",
+			"en": "What capability does the History API provide in HTML5?",
+			"ru": "Какую возможность предоставляет History API в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Brauzer tarixini boshqarish va sahifalar o'rtasida navigatsiya qilish",
+				"Matnni avtomatik formatlash",
+				"Forma elementlarini guruhlash",
+				"Rasmlarni avtomatik siqish"
+			],
+			"en": [
+				"Manipulating browser history and navigating between pages",
+				"Automatically formatting text",
+				"Grouping form elements",
+				"Automatically compressing images"
+			],
+			"ru": [
+				"Управление историей браузера и навигация между страницами",
+				"Автоматическое форматирование текста",
+				"Группировка элементов формы",
+				"Автоматическое сжатие изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &lttemplate&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &lttemplate&gt tag perform in HTML5?",
+			"ru": "Какую функцию выполняет тег &lttemplate&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Keyinchalik JavaScript yordamida ishlatiladigan kontent shablonini saqlaydi",
+				"Matn kiritish maydonini yaratadi",
+				"Forma ma'lumotlarini yuboradi",
+				"Video fayllarni joylashtiradi"
+			],
+			"en": [
+				"Stores content templates for later use with JavaScript",
+				"Creates a text input field",
+				"Submits form data",
+				"Embeds video files"
+			],
+			"ru": [
+				"Хранит шаблоны контента для последующего использования с JavaScript",
+				"Создает поле ввода текста",
+				"Отправляет данные формы",
+				"Встраивает видеофайлы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da Vibration API qanday imkoniyatni beradi?",
+			"en": "What capability does the Vibration API provide in HTML5?",
+			"ru": "Какую возможность предоставляет Vibration API в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Mobil qurilmalarda tebranish effektini ishga tushirish",
+				"Matnni avtomatik formatlash",
+				"Forma validatsiyasini boshqarish",
+				"Rasmlarni avtomatik siqish"
+			],
+			"en": [
+				"Triggering vibration effects on mobile devices",
+				"Automatically formatting text",
+				"Managing form validation",
+				"Automatically compressing images"
+			],
+			"ru": [
+				"Запуск эффекта вибрации на мобильных устройствах",
+				"Автоматическое форматирование текста",
+				"Управление валидацией формы",
+				"Автоматическое сжатие изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltkeygen&gt tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the &ltkeygen&gt tag in HTML5?",
+			"ru": "Для чего используется тег &ltkeygen&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Forma ichida shifrlash kalitlarini yaratish",
+				"Matnni qalinlashtirish",
+				"Jadval qatorini belgilash",
+				"Navigatsiya panelini yaratish"
+			],
+			"en": [
+				"To generate encryption keys within a form",
+				"To bold text",
+				"To define a table row",
+				"To create a navigation bar"
+			],
+			"ru": [
+				"Для генерации ключей шифрования внутри формы",
+				"Для выделения текста жирным",
+				"Для определения строки таблицы",
+				"Для создания панели навигации"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da Battery Status API qanday funksiyani bajaradi?",
+			"en": "What function does the Battery Status API perform in HTML5?",
+			"ru": "Какую функцию выполняет Battery Status API в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Qurilmaning batareya holatini kuzatish",
+				"Matn kiritish maydonini yaratish",
+				"Forma ma'lumotlarini yuborish",
+				"Video fayllarni optimallashtirish"
+			],
+			"en": [
+				"Monitoring the battery status of a device",
+				"Creating a text input field",
+				"Submitting form data",
+				"Optimizing video files"
+			],
+			"ru": [
+				"Мониторинг состояния батареи устройства",
+				"Создание поля ввода текста",
+				"Отправка данных формы",
+				"Оптимизация видеофайлов"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "HTML5 da &ltwbr&gt tegi qanday vazifani bajaradi?",
+			"en": "What function does the &ltwbr&gt tag perform in HTML5?",
+			"ru": "Какую функцию выполняет тег &ltwbr&gt в HTML5?"
+		},
+		"options": {
+			"uz": [
+				"Matnni qayerda bo'linishi mumkinligini ko'rsatadi",
+				"Matnni avtomatik qalinlashtiradi",
+				"Forma validatsiyasini boshqaradi",
+				"Elementni yashiradi"
+			],
+			"en": [
+				"Indicates where text can be broken",
+				"Automatically bolds text",
+				"Manages form validation",
+				"Hides an element"
+			],
+			"ru": [
+				"Указывает, где текст может быть разорван",
+				"Автоматически выделяет текст жирным",
+				"Управляет валидацией формы",
+				"Скрывает элемент"
+			]
+		},
+		"correct": 0
 	}
 ]
