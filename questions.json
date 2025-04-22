@@ -2,76 +2,28 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltp&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltp&gt tag?",
-			"ru": "Для чего используется тег &ltp&gt?"
+			"uz": "<div> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <div> tag?",
+			"ru": "Для чего используется тег <div>?"
 		},
 		"options": {
 			"uz": [
-				"Matnni qalin qilish",
-				"Paragraf yaratish",
-				"Havola qo'shish",
-				"Rasm ko'rsatish"
+				"Kontentni guruhlash va tartibga solish",
+				"Rasmni avtomatik o‘lchamlash",
+				"Jadvalning sarlavhasini belgilash",
+				"Matnni avtomatik ravishda kursiv qilish"
 			],
 			"en": [
-				"Make text bold",
-				"Create a paragraph",
-				"Add a link",
-				"Display an image"
+				"To group and organize content",
+				"To automatically resize an image",
+				"To define a table caption",
+				"To automatically italicize text"
 			],
 			"ru": [
-				"Сделать текст жирным",
-				"Создать параграф",
-				"Добавить ссылку",
-				"Отобразить изображение"
-			]
-		},
-		"correct": 1
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&lta&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &lta&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &lta&gt?"
-		},
-		"options": {
-			"uz": [
-				"Rasm qo'shish",
-				"Havola qo'shish",
-				"Jadval yaratish",
-				"Matnni formatlash"
-			],
-			"en": ["Add an image", "Add a link", "Create a table", "Format text"],
-			"ru": [
-				"Добавить изображение",
-				"Добавить ссылку",
-				"Создать таблицу",
-				"Форматировать текст"
-			]
-		},
-		"correct": 1
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltdiv&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltdiv&gt tag?",
-			"ru": "Для чего используется тег &ltdiv&gt?"
-		},
-		"options": {
-			"uz": [
-				"Kontentni guruhlash",
-				"Matnni qalin qilish",
-				"Havola qo'shish",
-				"Forma yaratish"
-			],
-			"en": ["Group content", "Make text bold", "Add a link", "Create a form"],
-			"ru": [
-				"Группировать контент",
-				"Сделать текст жирным",
-				"Добавить ссылку",
-				"Создать форму"
+				"Для группировки и организации контента",
+				"Для автоматического изменения размера изображения",
+				"Для определения заголовка таблицы",
+				"Для автоматического выделения текста курсивом"
 			]
 		},
 		"correct": 0
@@ -79,28 +31,28 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&lth1&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &lth1&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &lth1&gt?"
+			"uz": "<p> tegi qaysi turdagi kontent uchun ishlatiladi?",
+			"en": "What type of content is the <p> tag used for?",
+			"ru": "Для какого типа контента используется тег <p>?"
 		},
 		"options": {
 			"uz": [
-				"Asosiy sarlavha yaratish",
-				"Rasm qo'shish",
-				"Jadval yaratish",
-				"Matnni kursiv qilish"
+				"Matnli paragraf",
+				"Interaktiv tugmalar",
+				"Video o‘rnatish",
+				"Navigatsiya menyusi"
 			],
 			"en": [
-				"Create a main heading",
-				"Add an image",
-				"Create a table",
-				"Make text italic"
+				"Text paragraph",
+				"Interactive buttons",
+				"Embedded video",
+				"Navigation menu"
 			],
 			"ru": [
-				"Создать основной заголовок",
-				"Добавить изображение",
-				"Создать таблицу",
-				"Сделать текст курсивным"
+				"Текстовый параграф",
+				"Интерактивные кнопки",
+				"Встроенное видео",
+				"Навигационное меню"
 			]
 		},
 		"correct": 0
@@ -108,42 +60,85 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltimg&gt tegi qanday kontentni ko'rsatadi?",
-			"en": "What type of content does the &ltimg&gt tag display?",
-			"ru": "Какой тип контента отображает тег &ltimg&gt?"
+			"uz": "<a> tegi qanday funksiyani bajaradi?",
+			"en": "What function does the <a> tag perform?",
+			"ru": "Какую функцию выполняет тег <a>?"
 		},
 		"options": {
-			"uz": ["Video", "Rasm", "Matn", "Havola"],
-			"en": ["Video", "Image", "Text", "Link"],
-			"ru": ["Видео", "Изображение", "Текст", "Ссылка"]
+			"uz": [
+				"Havola yoki ankerni belgilaydi",
+				"Matnni avtomatik ravishda qalinlashtiradi",
+				"Forma maydonini yaratadi",
+				"Rasmni ko‘rsatadi"
+			],
+			"en": [
+				"Defines a hyperlink or anchor",
+				"Automatically bolds text",
+				"Creates a form field",
+				"Displays an image"
+			],
+			"ru": [
+				"Определяет гиперссылку или якорь",
+				"Автоматически выделяет текст жирным",
+				"Создает поле формы",
+				"Отображает изображение"
+			]
 		},
-		"correct": 1
+		"correct": 0
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltul&gt tegi qanday ro'yxatni yaratadi?",
-			"en": "What type of list does the &ltul&gt tag create?",
-			"ru": "Какой тип списка создает тег &ltul&gt?"
+			"uz": "<img> tegi qanday elementni sahifaga qo‘shadi?",
+			"en": "What element does the <img> tag add to a page?",
+			"ru": "Какой элемент добавляет тег <img> на страницу?"
+		},
+		"options": {
+			"uz": ["Rasm", "Matnli maydon", "Jadval qatori", "Audio fayl"],
+			"en": ["Image", "Text field", "Table row", "Audio file"],
+			"ru": ["Изображение", "Текстовое поле", "Строка таблицы", "Аудиофайл"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<table> tegi qanday tuzilmani yaratadi?",
+			"en": "What structure does the <table> tag create?",
+			"ru": "Какую структуру создает тег <table>?"
+		},
+		"options": {
+			"uz": ["Jadval", "Ro‘yxat", "Forma", "Navigatsiya paneli"],
+			"en": ["Table", "List", "Form", "Navigation bar"],
+			"ru": ["Таблица", "Список", "Форма", "Панель навигации"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<ul> tegi qanday ro‘yxat turini belgilaydi?",
+			"en": "What type of list does the <ul> tag define?",
+			"ru": "Какой тип списка определяет тег <ul>?"
 		},
 		"options": {
 			"uz": [
-				"Tartibsiz ro'yxat",
-				"Tartibli ro'yxat",
-				"Ta'rif ro'yxati",
-				"Ichki ro'yxat"
+				"Tartibsiz ro‘yxat",
+				"Tartibli ro‘yxat",
+				"Tanlov ro‘yxati",
+				"Ierarxik ro‘yxat"
 			],
 			"en": [
 				"Unordered list",
 				"Ordered list",
-				"Definition list",
-				"Nested list"
+				"Selection list",
+				"Hierarchical list"
 			],
 			"ru": [
-				"Ненумерованный список",
-				"Нумерованный список",
-				"Список определений",
-				"Вложенный список"
+				"Неупорядоченный список",
+				"Упорядоченный список",
+				"Список выбора",
+				"Иерархический список"
 			]
 		},
 		"correct": 0
@@ -151,47 +146,28 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltol&gt tegi qanday ro'yxatni belgilaydi?",
-			"en": "What type of list does the &ltol&gt tag define?",
-			"ru": "Какой тип списка определяет тег &ltol&gt?"
-		},
-		"options": {
-			"uz": ["Tartibli ro'yxat", "Tartibsiz ro'yxat", "Matn bloki", "Jadval"],
-			"en": ["Ordered list", "Unordered list", "Text block", "Table"],
-			"ru": [
-				"Нумерованный список",
-				"Ненумерованный список",
-				"Текстовый блок",
-				"Таблица"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltli&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltli&gt tag?",
-			"ru": "Для чего используется тег &ltli&gt?"
+			"uz": "<li> tegi qaysi tuzilma ichida ishlatiladi?",
+			"en": "In which structure is the <li> tag used?",
+			"ru": "В какой структуре используется тег <li>?"
 		},
 		"options": {
 			"uz": [
-				"Ro'yxat elementi qo'shish",
-				"Rasm qo'shish",
-				"Havola yaratish",
-				"Matnni qalin qilish"
+				"Ro‘yxat elementlari ichida",
+				"Jadval katakchalarida",
+				"Forma maydonlarida",
+				"Matnli paragraflarda"
 			],
 			"en": [
-				"Add a list item",
-				"Add an image",
-				"Create a link",
-				"Make text bold"
+				"Within list items",
+				"In table cells",
+				"In form fields",
+				"In text paragraphs"
 			],
 			"ru": [
-				"Добавить элемент списка",
-				"Добавить изображение",
-				"Создать ссылку",
-				"Сделать текст жирным"
+				"Внутри элементов списка",
+				"В ячейках таблицы",
+				"В полях формы",
+				"В текстовых параграфах"
 			]
 		},
 		"correct": 0
@@ -199,76 +175,1563 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&lttable&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &lttable&gt tag?",
-			"ru": "Для чего используется тег &lttable&gt?"
+			"uz": "<span> tegi qanday holatda ishlatiladi?",
+			"en": "In what situation is the <span> tag used?",
+			"ru": "В какой ситуации используется тег <span>?"
 		},
 		"options": {
 			"uz": [
-				"Matnni formatlash",
-				"Jadval yaratish",
-				"Havola qo'shish",
-				"Rasm ko'rsatish"
+				"Kichik matn qismini stilize qilishda",
+				"Butun sahifani guruhlashda",
+				"Video faylni o‘rnatishda",
+				"Forma tugmasini yaratishda"
 			],
-			"en": ["Format text", "Create a table", "Add a link", "Display an image"],
+			"en": [
+				"To style a small portion of text",
+				"To group an entire page",
+				"To embed a video file",
+				"To create a form button"
+			],
 			"ru": [
-				"Форматировать текст",
-				"Создать таблицу",
-				"Добавить ссылку",
-				"Отобразить изображение"
+				"Для стилизации небольшого фрагмента текста",
+				"Для группировки всей страницы",
+				"Для встраивания видеофайла",
+				"Для создания кнопки формы"
 			]
 		},
-		"correct": 1
+		"correct": 0
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&lttr&gt tegi jadvalda nima uchun ishlatiladi?",
-			"en": "What is the &lttr&gt tag used for in a table?",
-			"ru": "Для чего используется тег &lttr&gt в таблице?"
+			"uz": "<h1> tegi qanday darajadagi sarlavhani ifodalaydi?",
+			"en": "What level of heading does the <h1> tag represent?",
+			"ru": "Какой уровень заголовка представляет тег <h1>?"
 		},
 		"options": {
 			"uz": [
-				"Ustun qo'shish",
-				"Qator qo'shish",
-				"Sarlavha qo'shish",
-				"Matnni markazlashtirish"
+				"Eng yuqori darajali sarlavha",
+				"Ikkinchi darajali sarlavha",
+				"Uchinchi darajali sarlavha",
+				"Eng past darajali sarlavha"
 			],
-			"en": ["Add a column", "Add a row", "Add a header", "Center text"],
+			"en": [
+				"Highest level heading",
+				"Second level heading",
+				"Third level heading",
+				"Lowest level heading"
+			],
 			"ru": [
-				"Добавить столбец",
-				"Добавить строку",
-				"Добавить заголовок",
-				"Центрировать текст"
+				"Заголовок наивысшего уровня",
+				"Заголовок второго уровня",
+				"Заголовок третьего уровня",
+				"Заголовок наименьшего уровня"
 			]
 		},
-		"correct": 1
+		"correct": 0
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&lttd&gt tegi jadvalda qanday vazifani bajaradi?",
-			"en": "What function does the &lttd&gt tag perform in a table?",
-			"ru": "Какую функцию выполняет тег &lttd&gt в таблице?"
+			"uz": "<br> tegi matnda qanday o‘zgarish keltirib chiqaradi?",
+			"en": "What change does the <br> tag introduce in text?",
+			"ru": "Какое изменение вносит тег <br> в текст?"
 		},
 		"options": {
 			"uz": [
-				"Qator yaratish",
-				"Ustun sarlavhasi qo'shish",
-				"Katak yaratish",
+				"Qator uzilishi",
+				"Matnni qalinlashtirish",
+				"Matnni tagiga chizish",
+				"Matnni yashirish"
+			],
+			"en": ["Line break", "Text bolding", "Text underlining", "Text hiding"],
+			"ru": [
+				"Разрыв строки",
+				"Выделение текста жирным",
+				"Подчеркивание текста",
+				"Скрытие текста"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<hr> tegi sahifada qanday vizual element qo‘shadi?",
+			"en": "What visual element does the <hr> tag add to a page?",
+			"ru": "Какой визуальный элемент добавляет тег <hr> на страницу?"
+		},
+		"options": {
+			"uz": [
+				"Gorizontal chiziq",
+				"Matnli ramka",
+				"Rasmli fon",
+				"Interaktiv tugma"
+			],
+			"en": [
+				"Horizontal line",
+				"Text border",
+				"Image background",
+				"Interactive button"
+			],
+			"ru": [
+				"Горизонтальная линия",
+				"Текстовая рамка",
+				"Фон изображения",
+				"Интерактивная кнопка"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<strong> tegi matnni qanday ko‘rinishga keltiradi?",
+			"en": "How does the <strong> tag affect text appearance?",
+			"ru": "Как тег <strong> влияет на внешний вид текста?"
+		},
+		"options": {
+			"uz": [
+				"Qalin va muhim sifatida ko‘rsatadi",
+				"Kursiv sifatida ko‘rsatadi",
+				"Tagiga chizadi",
+				"Yuqori indeks sifatida ko‘rsatadi"
+			],
+			"en": [
+				"Displays as bold and important",
+				"Displays as italic",
+				"Underlines it",
+				"Displays as superscript"
+			],
+			"ru": [
+				"Отображает как жирный и важный",
+				"Отображает как курсив",
+				"Подчеркивает",
+				"Отображает как верхний индекс"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<em> tegi matnni qanday ma’noda ishlatadi?",
+			"en": "In what sense is the <em> tag used for text?",
+			"ru": "В каком смысле используется тег <em> для текста?"
+		},
+		"options": {
+			"uz": [
+				"Ta’kidlangan matn sifatida",
+				"O‘chirilgan matn sifatida",
+				"Iqtibos matni sifatida",
+				"Kod sifatida"
+			],
+			"en": [
+				"As emphasized text",
+				"As deleted text",
+				"As quoted text",
+				"As code"
+			],
+			"ru": [
+				"Как акцентированный текст",
+				"Как удаленный текст",
+				"Как цитируемый текст",
+				"Как код"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<code> tegi qanday turdagi matn uchun ishlatiladi?",
+			"en": "What type of text is the <code> tag used for?",
+			"ru": "Для какого типа текста используется тег <code>?"
+		},
+		"options": {
+			"uz": [
+				"Kompyuter kodi",
+				"Iqtibos matni",
+				"Ta’kidlangan matn",
+				"Matnli sarlavha"
+			],
+			"en": ["Computer code", "Quoted text", "Emphasized text", "Text heading"],
+			"ru": [
+				"Компьютерный код",
+				"Цитируемый текст",
+				"Акцентированный текст",
+				"Текстовый заголовок"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<pre> tegi matnni qanday ko‘rsatadi?",
+			"en": "How does the <pre> tag display text?",
+			"ru": "Как тег <pre> отображает текст?"
+		},
+		"options": {
+			"uz": [
+				"Oldindan formatlangan holda",
+				"Avtomatik ravishda qalinlashtirilgan holda",
+				"Kursiv sifatida",
+				"Yashirin holda"
+			],
+			"en": [
+				"In a preformatted manner",
+				"Automatically bolded",
+				"As italic",
+				"As hidden"
+			],
+			"ru": [
+				"В предварительно отформатированном виде",
+				"Автоматически жирным",
+				"Как курсив",
+				"Как скрытый"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<blockquote> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <blockquote> tag?",
+			"ru": "Для чего используется тег <blockquote>?"
+		},
+		"options": {
+			"uz": [
+				"Uzun iqtiboslarni ajratib ko‘rsatish",
+				"Matnni avtomatik ravishda qalinlashtirish",
+				"Rasm joylashtirish",
+				"Forma tugmasini yaratish"
+			],
+			"en": [
+				"To highlight long quotations",
+				"To automatically bold text",
+				"To insert an image",
+				"To create a form button"
+			],
+			"ru": [
+				"Для выделения длинных цитат",
+				"Для автоматического выделения текста жирным",
+				"Для вставки изображения",
+				"Для создания кнопки формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<meta> tegi qanday ma’lumotlarni o‘z ichiga oladi?",
+			"en": "What type of information does the <meta> tag contain?",
+			"ru": "Какую информацию содержит тег <meta>?"
+		},
+		"options": {
+			"uz": [
+				"Sahifa metama’lumotlari",
+				"Matnli kontent",
+				"Interaktiv havolalar",
+				"Audio fayllar"
+			],
+			"en": [
+				"Page metadata",
+				"Text content",
+				"Interactive links",
+				"Audio files"
+			],
+			"ru": [
+				"Метаданные страницы",
+				"Текстовый контент",
+				"Интерактивные ссылки",
+				"Аудиофайлы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<link> tegi qanday resurslarni ulaydi?",
+			"en": "What resources does the <link> tag connect?",
+			"ru": "Какие ресурсы подключает тег <link>?"
+		},
+		"options": {
+			"uz": [
+				"Tashqi CSS yoki favicon",
+				"JavaScript kodlari",
+				"Matnli paragraflar",
+				"Forma maydonlari"
+			],
+			"en": [
+				"External CSS or favicon",
+				"JavaScript code",
+				"Text paragraphs",
+				"Form fields"
+			],
+			"ru": [
+				"Внешние CSS или favicon",
+				"Код JavaScript",
+				"Текстовые параграфы",
+				"Поля формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<script> tegi qanday kod turini qo‘llab-quvvatlaydi?",
+			"en": "What type of code does the <script> tag support?",
+			"ru": "Какой тип кода поддерживает тег <script>?"
+		},
+		"options": {
+			"uz": [
+				"JavaScript",
+				"CSS uslublari",
+				"Matnli iqtiboslar",
+				"Rasm formatlari"
+			],
+			"en": ["JavaScript", "CSS styles", "Text quotations", "Image formats"],
+			"ru": [
+				"JavaScript",
+				"Стили CSS",
+				"Текстовые цитаты",
+				"Форматы изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<style> tegi qanday uslublarni belgilaydi?",
+			"en": "What styles does the <style> tag define?",
+			"ru": "Какие стили определяет тег <style>?"
+		},
+		"options": {
+			"uz": [
+				"CSS uslublari",
+				"JavaScript funksiyalari",
+				"Matnli sarlavhalar",
+				"Interaktiv tugmalar"
+			],
+			"en": [
+				"CSS styles",
+				"JavaScript functions",
+				"Text headings",
+				"Interactive buttons"
+			],
+			"ru": [
+				"Стили CSS",
+				"Функции JavaScript",
+				"Текстовые заголовки",
+				"Интерактивные кнопки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<title> tegi sahifaning qaysi qismida ko‘rinadi?",
+			"en": "Where does the <title> tag appear on a page?",
+			"ru": "Где отображается тег <title> на странице?"
+		},
+		"options": {
+			"uz": [
+				"Brauzer yorlig‘ida",
+				"Sahifa o‘rtasida",
+				"Pastki kolontitulda",
+				"Navigatsiya panelida"
+			],
+			"en": [
+				"In the browser tab",
+				"In the middle of the page",
+				"In the footer",
+				"In the navigation bar"
+			],
+			"ru": [
+				"В вкладке браузера",
+				"В середине страницы",
+				"В нижнем колонтитуле",
+				"В панели навигации"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<body> tegi qaysi qismni o‘z ichiga oladi?",
+			"en": "What part does the <body> tag contain?",
+			"ru": "Какую часть содержит тег <body>?"
+		},
+		"options": {
+			"uz": [
+				"Sahifaning ko‘rinadigan kontentini",
+				"Metama’lumotlarni",
+				"Tashqi resurslarni",
+				"Skript fayllarini"
+			],
+			"en": [
+				"The visible content of the page",
+				"Metadata",
+				"External resources",
+				"Script files"
+			],
+			"ru": [
+				"Видимый контент страницы",
+				"Метаданные",
+				"Внешние ресурсы",
+				"Файлы скриптов"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<head> tegi qanday ma’lumotlarni joylashtiradi?",
+			"en": "What information does the <head> tag hold?",
+			"ru": "Какую информацию размещает тег <head>?"
+		},
+		"options": {
+			"uz": [
+				"Metama’lumotlar va resurs havolalari",
+				"Matnli paragraflar",
+				"Interaktiv formalar",
+				"Video kontent"
+			],
+			"en": [
+				"Metadata and resource links",
+				"Text paragraphs",
+				"Interactive forms",
+				"Video content"
+			],
+			"ru": [
+				"Метаданные и ссылки на ресурсы",
+				"Текстовые параграфы",
+				"Интерактивные формы",
+				"Видеоконтент"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<html> tegi hujjatning qaysi qismini belgilaydi?",
+			"en": "What part of a document does the <html> tag define?",
+			"ru": "Какую часть документа определяет тег <html>?"
+		},
+		"options": {
+			"uz": [
+				"Ildiz elementni",
+				"Sarlavha qismini",
+				"Forma maydonini",
+				"Jadval tuzilmasini"
+			],
+			"en": [
+				"The root element",
+				"The heading section",
+				"The form field",
+				"The table structure"
+			],
+			"ru": [
+				"Корневой элемент",
+				"Раздел заголовка",
+				"Поле формы",
+				"Структура таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<ol> tegi qanday ro‘yxat turini yaratadi?",
+			"en": "What type of list does the <ol> tag create?",
+			"ru": "Какой тип списка создает тег <ol>?"
+		},
+		"options": {
+			"uz": [
+				"Tartibli ro‘yxat",
+				"Tartibsiz ro‘yxat",
+				"Ierarxik ro‘yxat",
+				"Interaktiv ro‘yxat"
+			],
+			"en": [
+				"Ordered list",
+				"Unordered list",
+				"Hierarchical list",
+				"Interactive list"
+			],
+			"ru": [
+				"Упорядоченный список",
+				"Неупорядоченный список",
+				"Иерархический список",
+				"Интерактивный список"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<tr> tegi jadvalda qanday rol o‘ynaydi?",
+			"en": "What role does the <tr> tag play in a table?",
+			"ru": "Какую роль играет тег <tr> в таблице?"
+		},
+		"options": {
+			"uz": [
+				"Qatorni belgilaydi",
+				"Katakchani belgilaydi",
+				"Sarlavhani belgilaydi",
+				"Jadvalni yashiradi"
+			],
+			"en": [
+				"Defines a row",
+				"Defines a cell",
+				"Defines a header",
+				"Hides the table"
+			],
+			"ru": [
+				"Определяет строку",
+				"Определяет ячейку",
+				"Определяет заголовок",
+				"Скрывает таблицу"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<td> tegi jadvalda qanday elementni yaratadi?",
+			"en": "What element does the <td> tag create in a table?",
+			"ru": "Какой элемент создает тег <td> в таблице?"
+		},
+		"options": {
+			"uz": [
+				"Ma’lumot katakchasini",
+				"Sarlavha katakchasini",
+				"Jadval sarlavhasini",
+				"Jadval qatorini"
+			],
+			"en": ["Data cell", "Header cell", "Table caption", "Table row"],
+			"ru": [
+				"Ячейка данных",
+				"Ячейка заголовка",
+				"Заголовок таблицы",
+				"Строка таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<th> tegi jadvalda qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <th> tag in a table?",
+			"ru": "Для чего используется тег <th> в таблице?"
+		},
+		"options": {
+			"uz": [
+				"Sarlavha katakchasini belgilash",
+				"Ma’lumot katakchasini belgilash",
+				"Jadvalni guruhlash",
 				"Jadvalni yashirish"
 			],
 			"en": [
-				"Create a row",
-				"Add a column header",
-				"Create a cell",
-				"Hide the table"
+				"To define a header cell",
+				"To define a data cell",
+				"To group the table",
+				"To hide the table"
 			],
 			"ru": [
-				"Создать строку",
-				"Добавить заголовок столбца",
-				"Создать ячейку",
-				"Скрыть таблицу"
+				"Для определения ячейки заголовка",
+				"Для определения ячейки данных",
+				"Для группировки таблицы",
+				"Для скрытия таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<caption> tegi jadvalda qanday ma’lumotni taqdim etadi?",
+			"en": "What information does the <caption> tag provide in a table?",
+			"ru": "Какую информацию предоставляет тег <caption> в таблице?"
+		},
+		"options": {
+			"uz": [
+				"Jadvalning qisqacha tavsifini",
+				"Jadval qatorlarini",
+				"Jadval katakchalarini",
+				"Jadval uslublarini"
+			],
+			"en": [
+				"A brief description of the table",
+				"Table rows",
+				"Table cells",
+				"Table styles"
+			],
+			"ru": [
+				"Краткое описание таблицы",
+				"Строки таблицы",
+				"Ячейки таблицы",
+				"Стили таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<b> tegi matnni qanday ko‘rinishga keltiradi?",
+			"en": "How does the <b> tag affect text appearance?",
+			"ru": "Как тег <b> влияет на внешний вид текста?"
+		},
+		"options": {
+			"uz": [
+				"Qalin ko‘rinishda",
+				"Kursiv ko‘rinishda",
+				"Tagiga chizilgan holda",
+				"Yuqori indeks sifatida"
+			],
+			"en": [
+				"In bold appearance",
+				"In italic appearance",
+				"Underlined",
+				"As superscript"
+			],
+			"ru": [
+				"В жирном виде",
+				"В курсивном виде",
+				"Подчеркнутым",
+				"Как верхний индекс"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<i> tegi matnni qanday formatda ko‘rsatadi?",
+			"en": "In what format does the <i> tag display text?",
+			"ru": "В каком формате тег <i> отображает текст?"
+		},
+		"options": {
+			"uz": ["Kursiv", "Qalin", "Tagiga chizilgan", "Pastki indeks"],
+			"en": ["Italic", "Bold", "Underlined", "Subscript"],
+			"ru": ["Курсив", "Жирный", "Подчеркнутый", "Нижний индекс"]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<u> tegi matnni qanday ko‘rinishga keltiradi?",
+			"en": "How does the <u> tag affect text appearance?",
+			"ru": "Как тег <u> влияет на внешний вид текста?"
+		},
+		"options": {
+			"uz": [
+				"Tagiga chizilgan",
+				"Qalin ko‘rinishda",
+				"Kursiv ko‘rinishda",
+				"Yuqori indeks sifatida"
+			],
+			"en": [
+				"Underlined",
+				"In bold appearance",
+				"In italic appearance",
+				"As superscript"
+			],
+			"ru": [
+				"Подчеркнутым",
+				"В жирном виде",
+				"В курсивном виде",
+				"Как верхний индекс"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<sup> tegi matnni qanday pozitsiyada ko‘rsatadi?",
+			"en": "In what position does the <sup> tag display text?",
+			"ru": "В какой позиции тег <sup> отображает текст?"
+		},
+		"options": {
+			"uz": [
+				"Yuqori indeks sifatida",
+				"Pastki indeks sifatida",
+				"Markazda",
+				"Chapga tekislangan"
+			],
+			"en": ["As superscript", "As subscript", "In the center", "Left-aligned"],
+			"ru": [
+				"Как верхний индекс",
+				"Как нижний индекс",
+				"В центре",
+				"Выровненный по левому краю"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<sub> tegi matnni qanday joylashtiradi?",
+			"en": "How does the <sub> tag position text?",
+			"ru": "Как тег <sub> позиционирует текст?"
+		},
+		"options": {
+			"uz": [
+				"Pastki indeks sifatida",
+				"Yuqori indeks sifatida",
+				"O‘ngga tekislangan",
+				"Qalin ko‘rinishda"
+			],
+			"en": [
+				"As subscript",
+				"As superscript",
+				"Right-aligned",
+				"In bold appearance"
+			],
+			"ru": [
+				"Как нижний индекс",
+				"Как верхний индекс",
+				"Выровненный по правому краю",
+				"В жирном виде"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<del> tegi matnni qanday sifatda belgilaydi?",
+			"en": "How does the <del> tag mark text?",
+			"ru": "Как тег <del> обозначает текст?"
+		},
+		"options": {
+			"uz": [
+				"O‘chirilgan sifatida",
+				"Qo'shilgan sifatida",
+				"Ta’kidlangan sifatida",
+				"Iqtibos sifatida"
+			],
+			"en": ["As deleted", "As inserted", "As emphasized", "As quoted"],
+			"ru": [
+				"Как удаленный",
+				"Как вставленный",
+				"Как акцентированный",
+				"Как цитируемый"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<ins> tegi matnni qanday sifatda ko‘rsatadi?",
+			"en": "How does the <ins> tag display text?",
+			"ru": "Как тег <ins> отображает текст?"
+		},
+		"options": {
+			"uz": [
+				"Qo'shilgan sifatida",
+				"O‘chirilgan sifatida",
+				"Kursiv sifatida",
+				"Yuqori indeks sifatida"
+			],
+			"en": ["As inserted", "As deleted", "As italic", "As superscript"],
+			"ru": [
+				"Как вставленный",
+				"Как удаленный",
+				"Как курсив",
+				"Как верхний индекс"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<q> tegi qanday matnni belgilaydi?",
+			"en": "What type of text does the <q> tag mark?",
+			"ru": "Какой тип текста обозначает тег <q>?"
+		},
+		"options": {
+			"uz": [
+				"Qisqa iqtiboslar",
+				"Uzun iqtiboslar",
+				"Kompyuter kodi",
+				"Matnli sarlavhalar"
+			],
+			"en": [
+				"Short quotations",
+				"Long quotations",
+				"Computer code",
+				"Text headings"
+			],
+			"ru": [
+				"Короткие цитаты",
+				"Длинные цитаты",
+				"Компьютерный код",
+				"Текстовые заголовки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<abbr> tegi qanday ma’lumotni taqdim etadi?",
+			"en": "What information does the <abbr> tag provide?",
+			"ru": "Какую информацию предоставляет тег <abbr>?"
+		},
+		"options": {
+			"uz": [
+				"Qisqartma yoki akronim",
+				"Matnli iqtibos",
+				"Interaktiv havola",
+				"Rasm sarlavhasi"
+			],
+			"en": [
+				"Abbreviation or acronym",
+				"Text quotation",
+				"Interactive link",
+				"Image caption"
+			],
+			"ru": [
+				"Сокращение или акроним",
+				"Текстовая цитата",
+				"Интерактивная ссылка",
+				"Подпись изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<address> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <address> tag?",
+			"ru": "Для чего используется тег <address>?"
+		},
+		"options": {
+			"uz": [
+				"Aloqa ma’lumotlarini ko‘rsatish",
+				"Matnni qalinlashtirish",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To display contact information",
+				"To bold text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для отображения контактной информации",
+				"Для выделения текста жирным",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<cite> tegi qanday ma’lumotni belgilaydi?",
+			"en": "What information does the <cite> tag specify?",
+			"ru": "Какую информацию указывает тег <cite>?"
+		},
+		"options": {
+			"uz": [
+				"Ijodiy ishning manbasini",
+				"Matnli paragrafni",
+				"Interaktiv tugmani",
+				"Rasm sarlavhasini"
+			],
+			"en": [
+				"The source of a creative work",
+				"A text paragraph",
+				"An interactive button",
+				"An image caption"
+			],
+			"ru": [
+				"Источник творческой работы",
+				"Текстовый параграф",
+				"Интерактивная кнопка",
+				"Подпись изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<dfn> tegi qanday elementni ta’riflaydi?",
+			"en": "What element does the <dfn> tag define?",
+			"ru": "Какой элемент определяет тег <dfn>?"
+		},
+		"options": {
+			"uz": [
+				"Termin yoki atamani",
+				"Iqtibos matnini",
+				"Kompyuter kodini",
+				"Matnli sarlavhani"
+			],
+			"en": [
+				"A term or phrase",
+				"Quoted text",
+				"Computer code",
+				"Text heading"
+			],
+			"ru": [
+				"Термин или фразу",
+				"Цитируемый текст",
+				"Компьютерный код",
+				"Текстовый заголовок"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<kbd> tegi qanday ma’lumotni ko‘rsatadi?",
+			"en": "What information does the <kbd> tag indicate?",
+			"ru": "Какую информацию указывает тег <kbd>?"
+		},
+		"options": {
+			"uz": [
+				"Klaviature kiritishni",
+				"Matnli iqtibosni",
+				"Rasm sarlavhasini",
+				"Jadval qatorini"
+			],
+			"en": ["Keyboard input", "Text quotation", "Image caption", "Table row"],
+			"ru": [
+				"Ввод с клавиатуры",
+				"Текстовая цитата",
+				"Подпись изображения",
+				"Строка таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<samp> tegi qanday ma’lumotni taqdim etadi?",
+			"en": "What information does the <samp> tag provide?",
+			"ru": "Какую информацию предоставляет тег <samp>?"
+		},
+		"options": {
+			"uz": [
+				"Dastur natijasini",
+				"Matnli sarlavhani",
+				"Interaktiv havolani",
+				"Rasm joylashuvini"
+			],
+			"en": [
+				"Program output",
+				"Text heading",
+				"Interactive link",
+				"Image placement"
+			],
+			"ru": [
+				"Вывод программы",
+				"Текстовый заголовок",
+				"Интерактивная ссылка",
+				"Размещение изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<var> tegi qanday ma’lumotni belgilaydi?",
+			"en": "What information does the <var> tag specify?",
+			"ru": "Какую информацию указывает тег <var>?"
+		},
+		"options": {
+			"uz": [
+				"O‘zgaruvchilarni",
+				"Iqtibos matnini",
+				"Matnli paragrafni",
+				"Rasm sarlavhasini"
+			],
+			"en": ["Variables", "Quoted text", "Text paragraph", "Image caption"],
+			"ru": [
+				"Переменные",
+				"Цитируемый текст",
+				"Текстовый параграф",
+				"Подпись изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<base> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <base> tag?",
+			"ru": "Для чего используется тег <base>?"
+		},
+		"options": {
+			"uz": [
+				"Nisbiy URL’lar uchun asosiy manzilni belgilash",
+				"Matnni qalinlashtirish",
+				"Jadval qatorini yaratish",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To specify a base URL for relative URLs",
+				"To bold text",
+				"To create a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для указания базового URL для относительных URL",
+				"Для выделения текста жирным",
+				"Для создания строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<noscript> tegi qachon ishlatiladi?",
+			"en": "When is the <noscript> tag used?",
+			"ru": "Когда используется тег <noscript>?"
+		},
+		"options": {
+			"uz": [
+				"Skriptlar o‘chirilgan bo‘lsa kontent ko‘rsatish",
+				"Matnni kursiv qilish",
+				"Forma maydonini yaratish",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To display content when scripts are disabled",
+				"To italicize text",
+				"To create a form field",
+				"To insert an image"
+			],
+			"ru": [
+				"Для отображения контента, когда скрипты отключены",
+				"Для выделения текста курсивом",
+				"Для создания поля формы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<ruby> tegi qanday matnni qo‘llab-quvvatlaydi?",
+			"en": "What type of text does the <ruby> tag support?",
+			"ru": "Какой тип текста поддерживает тег <ruby>?"
+		},
+		"options": {
+			"uz": [
+				"Sharqiy Osiyo skriptlari uchun annotatsiyalar",
+				"Matnli iqtiboslar",
+				"Kompyuter kodi",
+				"Matnli sarlavhalar"
+			],
+			"en": [
+				"Annotations for East Asian scripts",
+				"Text quotations",
+				"Computer code",
+				"Text headings"
+			],
+			"ru": [
+				"Аннотации для восточноазиатских скриптов",
+				"Текстовые цитаты",
+				"Компьютерный код",
+				"Текстовые заголовки"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<rt> tegi qanday ma’lumotni taqdim etadi?",
+			"en": "What information does the <rt> tag provide?",
+			"ru": "Какую информацию предоставляет тег <rt>?"
+		},
+		"options": {
+			"uz": [
+				"Ruby annotatsiyasi uchun talaffuz",
+				"Matnli sarlavha",
+				"Interaktiv havola",
+				"Rasm sarlavhasi"
+			],
+			"en": [
+				"Pronunciation for ruby annotations",
+				"Text heading",
+				"Interactive link",
+				"Image caption"
+			],
+			"ru": [
+				"Произношение для аннотаций ruby",
+				"Текстовый заголовок",
+				"Интерактивная ссылка",
+				"Подпись изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<bdi> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <bdi> tag?",
+			"ru": "Для чего используется тег <bdi>?"
+		},
+		"options": {
+			"uz": [
+				"Matn yo‘nalishini izolyatsiya qilish",
+				"Matnni qalinlashtirish",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To isolate text directionality",
+				"To bold text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для изоляции направления текста",
+				"Для выделения текста жирным",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<bdo> tegi qanday funksiyani bajaradi?",
+			"en": "What function does the <bdo> tag perform?",
+			"ru": "Какую функцию выполняет тег <bdo>?"
+		},
+		"options": {
+			"uz": [
+				"Matn yo‘nalishini majburan o‘zgartirish",
+				"Matnni kursiv qilish",
+				"Forma maydonini yaratish",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To override text directionality",
+				"To italicize text",
+				"To create a form field",
+				"To insert an image"
+			],
+			"ru": [
+				"Для принудительного изменения направления текста",
+				"Для выделения текста курсивом",
+				"Для создания поля формы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<wbr> tegi qanday imkoniyatni beradi?",
+			"en": "What opportunity does the <wbr> tag provide?",
+			"ru": "Какую возможность предоставляет тег <wbr>?"
+		},
+		"options": {
+			"uz": [
+				"Matnni bo‘lish imkoniyati",
+				"Matnni qalinlashtirish",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"Word break opportunity",
+				"To bold text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Возможность разрыва слова",
+				"Для выделения текста жирным",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<col> tegi jadvalda qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <col> tag in a table?",
+			"ru": "Для чего используется тег <col> в таблице?"
+		},
+		"options": {
+			"uz": [
+				"Ustunlar uchun atributlarni belgilash",
+				"Qatorlarni guruhlash",
+				"Sarlavha katakchalarini yaratish",
+				"Jadvalni yashirish"
+			],
+			"en": [
+				"To specify attributes for columns",
+				"To group rows",
+				"To create header cells",
+				"To hide the table"
+			],
+			"ru": [
+				"Для указания атрибутов столбцов",
+				"Для группировки строк",
+				"Для создания ячеек заголовка",
+				"Для скрытия таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<colgroup> tegi jadvalda qanday rol o‘ynaydi?",
+			"en": "What role does the <colgroup> tag play in a table?",
+			"ru": "Какую роль играет тег <colgroup> в таблице?"
+		},
+		"options": {
+			"uz": [
+				"Ustunlarni guruhlash",
+				"Qatorlarni belgilash",
+				"Sarlavha katakchalarini yaratish",
+				"Jadval sarlavhasini belgilash"
+			],
+			"en": [
+				"To group columns",
+				"To define rows",
+				"To create header cells",
+				"To define a table caption"
+			],
+			"ru": [
+				"Для группировки столбцов",
+				"Для определения строк",
+				"Для создания ячеек заголовка",
+				"Для определения заголовка таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<map> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <map ?",
+			"ru": "Для чего используется тег <map>?"
+		},
+		"options": {
+			"uz": [
+				"Rasmdagi interaktiv hududlarni belgilash",
+				"Matnni qalinlashtirish",
+				"Jadval qatorini belgilash",
+				"Forma maydonini yaratish"
+			],
+			"en": [
+				"To define interactive areas on an image",
+				"To bold text",
+				"To define a table row",
+				"To create a form field"
+			],
+			"ru": [
+				"Для определения интерактивных областей на изображении",
+				"Для выделения текста жирным",
+				"Для определения строки таблицы",
+				"Для создания поля формы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<area> tegi qanday element bilan ishlatiladi?",
+			"en": "With which element is the <area> tag used?",
+			"ru": "С каким элементом используется тег <area>?"
+		},
+		"options": {
+			"uz": [
+				"<map> tegi bilan",
+				"<table> tegi bilan",
+				"<form> tegi bilan",
+				"<div> tegi bilan"
+			],
+			"en": [
+				"With the <map> tag",
+				"With the <table> tag",
+				"With the <form> tag",
+				"With the <div> tag"
+			],
+			"ru": [
+				"С тегом <map>",
+				"С тегом <table>",
+				"С тегом <form>",
+				"С тегом <div>"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<track> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <track> tag?",
+			"ru": "Для чего используется тег <track>?"
+		},
+		"options": {
+			"uz": [
+				"Video yoki audio uchun subtitrlar qo‘shish",
+				"Matnni kursiv qilish",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To add subtitles for video or audio",
+				"To italicize text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для добавления субтитров к видео или аудио",
+				"Для выделения текста курсивом",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<source> tegi qanday elementlar bilan ishlatiladi?",
+			"en": "With which elements is the <source> tag used?",
+			"ru": "С какими элементами используется тег <source>?"
+		},
+		"options": {
+			"uz": [
+				"<video> yoki <audio> bilan",
+				"<table> yoki <form> bilan",
+				"<div> yoki <span> bilan",
+				"<p> yoki <h1> bilan"
+			],
+			"en": [
+				"With <video> or <audio>",
+				"With <table> or <form>",
+				"With <div> or <span>",
+				"With <p> or <h1>"
+			],
+			"ru": [
+				"С <video> или <audio>",
+				"С <table> или <form>",
+				"С <div> или <span>",
+				"С <p> или <h1>"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<embed> tegi qanday kontentni qo‘shadi?",
+			"en": "What content does the <embed> tag add?",
+			"ru": "Какой контент добавляет тег <embed>?"
+		},
+		"options": {
+			"uz": [
+				"Tashqi plagin kontentini",
+				"Matnli iqtibosni",
+				"Jadval qatorini",
+				"Interaktiv havolani"
+			],
+			"en": [
+				"External plugin content",
+				"Text quotation",
+				"Table row",
+				"Interactive link"
+			],
+			"ru": [
+				"Внешний контент плагина",
+				"Текстовая цитата",
+				"Строка таблицы",
+				"Интерактивная ссылка"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<object> tegi qanday resurslarni qo‘llab-quvvatlaydi?",
+			"en": "What resources does the <object> tag support?",
+			"ru": "Какие ресурсы поддерживает тег <object>?"
+		},
+		"options": {
+			"uz": [
+				"Flash, PDF yoki boshqa plaginlar",
+				"Matnli paragraflar",
+				"Interaktiv formalar",
+				"Jadval tuzilmalari"
+			],
+			"en": [
+				"Flash, PDF, or other plugins",
+				"Text paragraphs",
+				"Interactive forms",
+				"Table structures"
+			],
+			"ru": [
+				"Flash, PDF или другие плагины",
+				"Текстовые параграфы",
+				"Интерактивные формы",
+				"Структуры таблиц"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<param> tegi qanday element bilan ishlatiladi?",
+			"en": "With which element is the <param> tag used?",
+			"ru": "С каким элементом используется тег <param>?"
+		},
+		"options": {
+			"uz": [
+				"<object> tegi bilan",
+				"<table> tegi bilan",
+				"<form> tegi bilan",
+				"<div> tegi bilan"
+			],
+			"en": [
+				"With the <object> tag",
+				"With the <table> tag",
+				"With the <form> tag",
+				"With the <div> tag"
+			],
+			"ru": [
+				"С тегом <object>",
+				"С тегом <table>",
+				"С тегом <form>",
+				"С тегом <div>"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<noembed> tegi qachon ishlatiladi?",
+			"en": "When is the <noembed> tag used?",
+			"ru": "Когда используется тег <noembed>?"
+		},
+		"options": {
+			"uz": [
+				"Plaginlar qo‘llab-quvvatlanmasa kontent ko‘rsatish",
+				"Matnni kursiv qilish",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To display content if plugins are not supported",
+				"To italicize text",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для отображения контента, если плагины не поддерживаются",
+				"Для выделения текста курсивом",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<nav> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <nav> tag?",
+			"ru": "Для чего используется тег <nav>?"
+		},
+		"options": {
+			"uz": [
+				"Matnni qalinlashtirish uchun",
+				"Navigatsiya havolalarini guruhlash uchun",
+				"Rasm joylashtirish uchun",
+				"Jadval qatorini belgilash uchun"
+			],
+			"en": [
+				"To bold text",
+				"To group navigation links",
+				"To insert an image",
+				"To define a table row"
+			],
+			"ru": [
+				"Для выделения текста жирным",
+				"Для группировки навигационных ссылок",
+				"Для вставки изображения",
+				"Для определения строки таблицы"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<header> tegi sahifada qanday rol o‘ynaydi?",
+			"en": "What role does the <header> tag play on a page?",
+			"ru": "Какую роль играет тег <header> на странице?"
+		},
+		"options": {
+			"uz": [
+				"Jadval yaratish uchun",
+				"Matnni kursiv qilish uchun",
+				"Sahifaning kirish qismini belgilash uchun",
+				"Video kontent qo‘shish uchun"
+			],
+			"en": [
+				"To create a table",
+				"To italicize text",
+				"To define the introductory section of a page",
+				"To add video content"
+			],
+			"ru": [
+				"Для создания таблицы",
+				"Для выделения текста курсивом",
+				"Для определения вводного раздела страницы",
+				"Для добавления видеоконтента"
 			]
 		},
 		"correct": 2
@@ -276,28 +1739,57 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltth&gt tegi jadvalda qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltth&gt tag in a table?",
-			"ru": "Для чего используется тег &ltth&gt в таблице?"
+			"uz": "<footer> tegi qanday ma’lumotni o‘z ichiga oladi?",
+			"en": "What information does the <footer> tag contain?",
+			"ru": "Какую информацию содержит тег <footer>?"
 		},
 		"options": {
 			"uz": [
-				"Katak ma'lumotlari qo'shish",
-				"Jadval sarlavhasi qo'shish",
-				"Qator qo'shish",
-				"Jadvalni formatlash"
+				"Sahifa yoki bo‘limning yakuniy ma’lumotlarini",
+				"Matnli paragraflarni",
+				"Interaktiv formalar",
+				"Rasm sarlavhalarini"
 			],
 			"en": [
-				"Add cell data",
-				"Add a table header",
-				"Add a row",
-				"Format the table"
+				"Final information of a page or section",
+				"Text paragraphs",
+				"Interactive forms",
+				"Image captions"
 			],
 			"ru": [
-				"Добавить данные ячейки",
-				"Добавить заголовок таблицы",
-				"Добавить строку",
-				"Форматировать таблицу"
+				"Итоговую информацию страницы или раздела",
+				"Текстовые параграфы",
+				"Интерактивные формы",
+				"Подписи изображений"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<article> tegi qanday kontentni belgilaydi?",
+			"en": "What content does the <article> tag define?",
+			"ru": "Какой контент определяет тег <article>?"
+		},
+		"options": {
+			"uz": [
+				"Matnni qalinlashtirish",
+				"Mustaqil, o‘z-o‘zini ta’minlaydigan kontent",
+				"Navigatsiya menyusini",
+				"Jadval tuzilmasini"
+			],
+			"en": [
+				"To bold text",
+				"Independent, self-contained content",
+				"A navigation menu",
+				"A table structure"
+			],
+			"ru": [
+				"Для выделения текста жирным",
+				"Независимый, самодостаточный контент",
+				"Навигационное меню",
+				"Структура таблицы"
 			]
 		},
 		"correct": 1
@@ -305,28 +1797,57 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltbr&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltbr&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltbr&gt?"
+			"uz": "<section> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <section> tag?",
+			"ru": "Для чего используется тег <section>?"
 		},
 		"options": {
 			"uz": [
-				"Yangi qatorga o'tish",
-				"Matnni qalin qilish",
-				"Havola qo'shish",
-				"Rasm qo'shish"
+				"Rasm joylashtirish",
+				"Forma maydonini yaratish",
+				"Kontentni tematik bo‘limlarga ajratish",
+				"Matnni kursiv qilish"
 			],
 			"en": [
-				"Break to a new line",
-				"Make text bold",
-				"Add a link",
-				"Add an image"
+				"To insert an image",
+				"To create a form field",
+				"To divide content into thematic sections",
+				"To italicize text"
 			],
 			"ru": [
-				"Перейти на новую строку",
-				"Сделать текст жирным",
-				"Добавить ссылку",
-				"Добавить изображение"
+				"Для вставки изображения",
+				"Для создания поля формы",
+				"Для разделения контента на тематические разделы",
+				"Для выделения текста курсивом"
+			]
+		},
+		"correct": 2
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<aside> tegi qanday kontentni ifodalaydi?",
+			"en": "What content does the <aside> tag represent?",
+			"ru": "Какой контент представляет тег <aside>?"
+		},
+		"options": {
+			"uz": [
+				"Asosiy kontent bilan bilvosita bog‘liq ma’lumotlarni",
+				"Matnli sarlavhalarni",
+				"Jadval qatorlarini",
+				"Interaktiv tugmalarni"
+			],
+			"en": [
+				"Information indirectly related to the main content",
+				"Text headings",
+				"Table rows",
+				"Interactive buttons"
+			],
+			"ru": [
+				"Информацию, косвенно связанную с основным контентом",
+				"Текстовые заголовки",
+				"Строки таблицы",
+				"Интерактивные кнопки"
 			]
 		},
 		"correct": 0
@@ -334,81 +1855,28 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&lthr&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &lthr&gt tag?",
-			"ru": "Для чего используется тег &lthr&gt?"
+			"uz": "<main> tegi qanday kontentni o‘z ichiga oladi?",
+			"en": "What content does the <main> tag contain?",
+			"ru": "Какой контент содержит тег <main>?"
 		},
 		"options": {
 			"uz": [
-				"Gorizontal chiziq chizish",
-				"Matnni markazlashtirish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Matnni qalinlashtirish",
+				"Sahifaning asosiy kontentini",
+				"Navigatsiya havolalarini",
+				"Rasm sarlavhalarini"
 			],
 			"en": [
-				"Draw a horizontal line",
-				"Center text",
-				"Create a table",
-				"Add a link"
+				"To bold text",
+				"The main content of a page",
+				"Navigation links",
+				"Image captions"
 			],
 			"ru": [
-				"Нарисовать горизонтальную линию",
-				"Центрировать текст",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltstrong&gt tegi matnni qanday ko'rinishda aks ettiradi?",
-			"en": "How does the &ltstrong&gt tag affect text appearance?",
-			"ru": "Как тег &ltstrong&gt влияет на отображение текста?"
-		},
-		"options": {
-			"uz": [
-				"Matnni kursiv qilish",
-				"Matnni qalin qilish",
-				"Matnni pastga tushirish",
-				"Matnni chizib tashlash"
-			],
-			"en": [
-				"Make text italic",
-				"Make text bold",
-				"Lower text",
-				"Strike through text"
-			],
-			"ru": [
-				"Сделать текст курсивным",
-				"Сделать текст жирным",
-				"Опустить текст",
-				"Зачеркнуть текст"
-			]
-		},
-		"correct": 1
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltem&gt tegi matnni qanday formatlaydi?",
-			"en": "How does the &ltem&gt tag format text?",
-			"ru": "Как тег &ltem&gt форматирует текст?"
-		},
-		"options": {
-			"uz": [
-				"Matnni qalin qilish",
-				"Matnni kursiv qilish",
-				"Matnni markazlashtirish",
-				"Matnni yuqoriga ko'tarish"
-			],
-			"en": ["Make text bold", "Make text italic", "Center text", "Raise text"],
-			"ru": [
-				"Сделать текст жирным",
-				"Сделать текст курсивным",
-				"Центрировать текст",
-				"Поднять текст"
+				"Для выделения текста жирным",
+				"Основной контент страницы",
+				"Навигационные ссылки",
+				"Подписи изображений"
 			]
 		},
 		"correct": 1
@@ -416,115 +1884,28 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltspan&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltspan&gt tag?",
-			"ru": "Для чего используется тег &ltspan&gt?"
+			"uz": "<figure> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <figure> tag?",
+			"ru": "Для чего используется тег <figure>?"
 		},
 		"options": {
 			"uz": [
-				"Matnni guruhlash va stillarni qo'llash",
-				"Jadval yaratish",
-				"Havola qo'shish",
-				"Rasm qo'shish"
+				"Jadval qatorini belgilash",
+				"Rasm yoki grafik kontentni guruhlash",
+				"Forma maydonini yaratish",
+				"Matnni kursiv qilish"
 			],
 			"en": [
-				"Group text and apply styles",
-				"Create a table",
-				"Add a link",
-				"Add an image"
+				"To define a table row",
+				"To group image or graphic content",
+				"To create a form field",
+				"To italicize text"
 			],
 			"ru": [
-				"Группировать текст и применять стили",
-				"Создать таблицу",
-				"Добавить ссылку",
-				"Добавить изображение"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltform&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltform&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltform&gt?"
-		},
-		"options": {
-			"uz": [
-				"Foydalanuvchi ma'lumotlarini yig'ish",
-				"Rasm qo'shish",
-				"Matnni qalin qilish",
-				"Jadval yaratish"
-			],
-			"en": [
-				"Collect user input",
-				"Add an image",
-				"Make text bold",
-				"Create a table"
-			],
-			"ru": [
-				"Собирать данные пользователя",
-				"Добавить изображение",
-				"Сделать текст жирным",
-				"Создать таблицу"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltinput&gt tegi forma ichida qanday ishlatiladi?",
-			"en": "How is the &ltinput&gt tag used within a form?",
-			"ru": "Как используется тег &ltinput&gt внутри формы?"
-		},
-		"options": {
-			"uz": [
-				"Foydalanuvchi kiritish maydonini yaratish",
-				"Havola qo'shish",
-				"Matnni formatlash",
-				"Rasm ko'rsatish"
-			],
-			"en": [
-				"Create a user input field",
-				"Add a link",
-				"Format text",
-				"Display an image"
-			],
-			"ru": [
-				"Создать поле ввода пользователя",
-				"Добавить ссылку",
-				"Форматировать текст",
-				"Отобразить изображение"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltbutton&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltbutton&gt tag?",
-			"ru": "Для чего используется тег &ltbutton&gt?"
-		},
-		"options": {
-			"uz": [
-				"Matnni qalin qilish",
-				"Foydalanuvchi harakatini boshlash",
-				"Jadval yaratish",
-				"Rasm qo'shish"
-			],
-			"en": [
-				"Make text bold",
-				"Initiate a user action",
-				"Create a table",
-				"Add an image"
-			],
-			"ru": [
-				"Сделать текст жирным",
-				"Инициировать действие пользователя",
-				"Создать таблицу",
-				"Добавить изображение"
+				"Для определения строки таблицы",
+				"Для группировки изображений или графического контента",
+				"Для создания поля формы",
+				"Для выделения текста курсивом"
 			]
 		},
 		"correct": 1
@@ -532,66 +1913,57 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltselect&gt tegi qanday elementni yaratadi?",
-			"en": "What element does the &ltselect&gt tag create?",
-			"ru": "Какой элемент создает тег &ltselect&gt?"
-		},
-		"options": {
-			"uz": ["Ochiladigan ro'yxat", "Matn maydoni", "Tugma", "Rasm"],
-			"en": ["Dropdown list", "Text field", "Button", "Image"],
-			"ru": ["Выпадающий список", "Текстовое поле", "Кнопка", "Изображение"]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&lttextarea&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &lttextarea&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &lttextarea&gt?"
+			"uz": "<figcaption> tegi qanday ma’lumotni taqdim etadi?",
+			"en": "What information does the <figcaption> tag provide?",
+			"ru": "Какую информацию предоставляет тег <figcaption>?"
 		},
 		"options": {
 			"uz": [
-				"Ko'p qatorli matn maydoni yaratish",
-				"Havola qo'shish",
-				"Jadval yaratish",
-				"Matnni qalin qilish"
+				"Matnli paragraflarni",
+				"Interaktiv havolalarni",
+				"<figure> ichidagi kontentning tavsifini",
+				"Jadval tuzilmasini"
 			],
 			"en": [
-				"Create a multi-line text area",
-				"Add a link",
-				"Create a table",
-				"Make text bold"
+				"Text paragraphs",
+				"Interactive links",
+				"A description of content in <figure>",
+				"A table structure"
 			],
 			"ru": [
-				"Создать многострочное текстовое поле",
-				"Добавить ссылку",
-				"Создать таблицу",
-				"Сделать текст жирным"
+				"Текстовые параграфы",
+				"Интерактивные ссылки",
+				"Описание контента в <figure>",
+				"Структура таблицы"
 			]
 		},
-		"correct": 0
+		"correct": 2
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltlabel&gt tegi forma elementlari bilan qanday ishlaydi?",
-			"en": "How does the &ltlabel&gt tag work with form elements?",
-			"ru": "Как тег &ltlabel&gt работает с элементами формы?"
+			"uz": "<time> tegi qanday ma’lumotni belgilaydi?",
+			"en": "What information does the <time> tag specify?",
+			"ru": "Какую информацию указывает тег <time>?"
 		},
 		"options": {
 			"uz": [
-				"Matnni formatlash",
-				"Elementlarni tavsiflash",
-				"Havola qo'shish",
-				"Rasm qo'shish"
+				"Matnni qalinlashtirish",
+				"Sana yoki vaqtni",
+				"Navigatsiya menyusini",
+				"Rasm joylashuvini"
 			],
-			"en": ["Format text", "Describe elements", "Add a link", "Add an image"],
+			"en": [
+				"To bold text",
+				"A date or time",
+				"A navigation menu",
+				"An image placement"
+			],
 			"ru": [
-				"Форматировать текст",
-				"Описывать элементы",
-				"Добавить ссылку",
-				"Добавить изображение"
+				"Для выделения текста жирным",
+				"Дата или время",
+				"Навигационное меню",
+				"Размещение изображения"
 			]
 		},
 		"correct": 1
@@ -599,245 +1971,28 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltiframe&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltiframe&gt tag?",
-			"ru": "Для чего используется тег &ltiframe&gt?"
-		},
-		"options": {
-			"uz": [
-				"Tashqi veb-sahifani ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Display an external webpage",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
-			],
-			"ru": [
-				"Отобразить внешнюю веб-страницу",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltmeta&gt tegi qanday ma'lumotlarni taqdim etadi?",
-			"en": "What type of information does the &ltmeta&gt tag provide?",
-			"ru": "Какую информацию предоставляет тег &ltmeta&gt?"
-		},
-		"options": {
-			"uz": [
-				"Sahifa haqida metadata",
-				"Rasm qo'shish",
-				"Matnni formatlash",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Metadata about the page",
-				"Add an image",
-				"Format text",
-				"Add a link"
-			],
-			"ru": [
-				"Метаданные о странице",
-				"Добавить изображение",
-				"Форматировать текст",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltlink&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltlink&gt tag?",
-			"ru": "Для чего используется тег &ltlink&gt?"
-		},
-		"options": {
-			"uz": [
-				"Tashqi CSS faylini ulash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
-			],
-			"en": [
-				"Link an external CSS file",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
-			],
-			"ru": [
-				"Подключить внешний CSS-файл",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltscript&gt tegi qanday kontentni o'z ichiga oladi?",
-			"en": "What type of content does the &ltscript&gt tag contain?",
-			"ru": "Какой тип контента содержит тег &ltscript&gt?"
-		},
-		"options": {
-			"uz": ["JavaScript kodi", "Rasm", "Matn", "Havola"],
-			"en": ["JavaScript code", "Image", "Text", "Link"],
-			"ru": ["Код JavaScript", "Изображение", "Текст", "Ссылка"]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltstyle&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltstyle&gt tag?",
-			"ru": "Для чего используется тег &ltstyle&gt?"
-		},
-		"options": {
-			"uz": [
-				"CSS stillarini belgilash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Define CSS styles",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
-			],
-			"ru": [
-				"Определить стили CSS",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltbody&gt tegi HTML hujjatida qanday rol o'ynaydi?",
-			"en": "What role does the &ltbody&gt tag play in an HTML document?",
-			"ru": "Какую роль играет тег &ltbody&gt в HTML-документе?"
-		},
-		"options": {
-			"uz": [
-				"Ko'rinadigan kontentni o'z ichiga oladi",
-				"Metadata taqdim etadi",
-				"Havola qo'shadi",
-				"Rasm qo'shadi"
-			],
-			"en": [
-				"Contains visible content",
-				"Provides metadata",
-				"Adds a link",
-				"Adds an image"
-			],
-			"ru": [
-				"Содержит видимый контент",
-				"Предоставляет метаданные",
-				"Добавляет ссылку",
-				"Добавляет изображение"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&lthead&gt tegi qanday ma'lumotlarni o'z ichiga oladi?",
-			"en": "What type of information does the &lthead&gt tag contain?",
-			"ru": "Какую информацию содержит тег &lthead&gt?"
-		},
-		"options": {
-			"uz": [
-				"Metadata va tashqi resurslarni ulash",
-				"Ko'rinadigan matn",
-				"Jadval ma'lumotlari",
-				"Havola"
-			],
-			"en": [
-				"Metadata and external resource links",
-				"Visible text",
-				"Table data",
-				"Link"
-			],
-			"ru": [
-				"Метаданные и ссылки на внешние ресурсы",
-				"Видимый текст",
-				"Данные таблицы",
-				"Ссылка"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&lttitle&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &lttitle&gt tag?",
-			"ru": "Для чего используется тег &lttitle&gt?"
-		},
-		"options": {
-			"uz": [
-				"Sahifa sarlavhasini belgilash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
-			],
-			"en": [
-				"Set the page title",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
-			],
-			"ru": [
-				"Установить заголовок страницы",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltb&gt tegi matnni qanday ko'rinishda aks ettiradi?",
-			"en": "How does the &ltb&gt tag affect text appearance?",
-			"ru": "Как тег &ltb&gt влияет на отображение текста?"
+			"uz": "<mark> tegi matnni qanday ko‘rinishga keltiradi?",
+			"en": "How does the <mark> tag affect text appearance?",
+			"ru": "Как тег <mark> влияет на внешний вид текста?"
 		},
 		"options": {
 			"uz": [
 				"Matnni kursiv qilish",
-				"Matnni qalin qilish",
-				"Matnni pastga tushirish",
-				"Matnni chizib tashlash"
+				"Matnni ta’kidlash uchun rangli fon qo‘shish",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
 			],
 			"en": [
-				"Make text italic",
-				"Make text bold",
-				"Lower text",
-				"Strike through text"
+				"To italicize text",
+				"To highlight text with a colored background",
+				"To define a table row",
+				"To insert an image"
 			],
 			"ru": [
-				"Сделать текст курсивным",
-				"Сделать текст жирным",
-				"Опустить текст",
-				"Зачеркнуть текст"
+				"Для выделения текста курсивом",
+				"Для выделения текста цветным фоном",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
 			]
 		},
 		"correct": 1
@@ -845,23 +2000,115 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&lti&gt tegi matnni qanday formatlaydi?",
-			"en": "How does the &lti&gt tag format text?",
-			"ru": "Как тег &lti&gt форматирует текст?"
+			"uz": "<details> tegi qanday funksiyani bajaradi?",
+			"en": "What function does the <details> tag perform?",
+			"ru": "Какую функцию выполняет тег <details>?"
 		},
 		"options": {
 			"uz": [
-				"Matnni qalin qilish",
-				"Matnni kursiv qilish",
-				"Matnni markazlashtirish",
-				"Matnni yuqoriga ko'tarish"
+				"Yashirin kontentni ochiladigan shaklda ko‘rsatish",
+				"Matnni qalinlashtirish",
+				"Forma maydonini yaratish",
+				"Jadval tuzilmasini belgilash"
 			],
-			"en": ["Make text bold", "Make text italic", "Center text", "Raise text"],
+			"en": [
+				"To display hidden content in a collapsible form",
+				"To bold text",
+				"To create a form field",
+				"To define a table structure"
+			],
 			"ru": [
-				"Сделать текст жирным",
-				"Сделать текст курсивным",
-				"Центрировать текст",
-				"Поднять текст"
+				"Для отображения скрытого контента в раскрывающейся форме",
+				"Для выделения текста жирным",
+				"Для создания поля формы",
+				"Для определения структуры таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<summary> tegi qanday element bilan ishlatiladi?",
+			"en": "With which element is the <summary> tag used?",
+			"ru": "С каким элементом используется тег <summary>?"
+		},
+		"options": {
+			"uz": [
+				"<table> tegi bilan",
+				"<form> tegi bilan",
+				"<details> tegi bilan",
+				"<div> tegi bilan"
+			],
+			"en": [
+				"With the <table> tag",
+				"With the <form> tag",
+				"With the <details> tag",
+				"With the <div> tag"
+			],
+			"ru": [
+				"С тегом <table>",
+				"С тегом <form>",
+				"С тегом <details>",
+				"С тегом <div>"
+			]
+		},
+		"correct": 2
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<meter> tegi qanday ma’lumotni ko‘rsatadi?",
+			"en": "What information does the <meter> tag display?",
+			"ru": "Какую информацию отображает тег <meter>?"
+		},
+		"options": {
+			"uz": [
+				"Matnli sarlavhalarni",
+				"Navigatsiya havolalarini",
+				"Ma’lum bir diapazondagi o‘lchovni",
+				"Rasm joylashuvini"
+			],
+			"en": [
+				"Text headings",
+				"Navigation links",
+				"A measurement within a specific range",
+				"Image placement"
+			],
+			"ru": [
+				"Текстовые заголовки",
+				"Навигационные ссылки",
+				"Измерение в определенном диапазоне",
+				"Размещение изображения"
+			]
+		},
+		"correct": 2
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<progress> tegi qanday holatni ko‘rsatadi?",
+			"en": "What state does the <progress> tag indicate?",
+			"ru": "Какое состояние отображает тег <progress>?"
+		},
+		"options": {
+			"uz": [
+				"Matnni kursiv qilish",
+				"Vazifaning bajarilish jarayonini",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To italicize text",
+				"The progress of a task",
+				"To define a table row",
+				"To insert an image"
+			],
+			"ru": [
+				"Для выделения текста курсивом",
+				"Прогресс выполнения задачи",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
 			]
 		},
 		"correct": 1
@@ -869,902 +2116,666 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltu&gt tegi matnni qanday ko'rinishda aks ettiradi?",
-			"en": "How does the &ltu&gt tag affect text appearance?",
-			"ru": "Как тег &ltu&gt влияет на отображение текста?"
+			"uz": "<data> tegi qanday ma’lumotni belgilaydi?",
+			"en": "What information does the <data> tag specify?",
+			"ru": "Какую информацию указывает тег <data>?"
 		},
 		"options": {
 			"uz": [
-				"Matnni tagiga chizish",
-				"Matnni qalin qilish",
+				"Mashina o‘qiy oladigan ma’lumotni",
+				"Matnli paragraflarni",
+				"Interaktiv formalar",
+				"Jadval tuzilmasini"
+			],
+			"en": [
+				"Machine-readable data",
+				"Text paragraphs",
+				"Interactive forms",
+				"Table structure"
+			],
+			"ru": [
+				"Машиночитаемые данные",
+				"Текстовые параграфы",
+				"Интерактивные формы",
+				"Структура таблицы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<template> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <template> tag?",
+			"ru": "Для чего используется тег <template>?"
+		},
+		"options": {
+			"uz": [
+				"Matnni qalinlashtirish",
+				"Keyinchalik ishlatish uchun kontent shablonini saqlash",
+				"Navigatsiya menyusini yaratish",
+				"Rasm joylashtirish"
+			],
+			"en": [
+				"To bold text",
+				"To store content templates for later use",
+				"To create a navigation menu",
+				"To insert an image"
+			],
+			"ru": [
+				"Для выделения текста жирным",
+				"Для хранения шаблонов контента для последующего использования",
+				"Для создания навигационного меню",
+				"Для вставки изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<dialog> tegi qanday elementni yaratadi?",
+			"en": "What element does the <dialog> tag create?",
+			"ru": "Какой элемент создает тег <dialog>?"
+		},
+		"options": {
+			"uz": [
+				"Jadval qatorini",
+				"Interaktiv dialog oynasini",
+				"Matnli sarlavhani",
+				"Rasm sarlavhasini"
+			],
+			"en": [
+				"A table row",
+				"An interactive dialog window",
+				"A text heading",
+				"An image caption"
+			],
+			"ru": [
+				"Строка таблицы",
+				"Интерактивное диалоговое окно",
+				"Текстовый заголовок",
+				"Подпись изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<hgroup> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <hgroup> tag?",
+			"ru": "Для чего используется тег <hgroup>?"
+		},
+		"options": {
+			"uz": [
 				"Matnni kursiv qilish",
-				"Matnni chizib tashlash"
+				"Bir nechta sarlavhalarni guruhlash",
+				"Forma maydonini yaratish",
+				"Jadval tuzilmasini belgilash"
 			],
 			"en": [
-				"Underline text",
-				"Make text bold",
-				"Make text italic",
-				"Strike through text"
+				"To italicize text",
+				"To group multiple headings",
+				"To create a form field",
+				"To define a table structure"
 			],
 			"ru": [
-				"Подчеркнуть текст",
-				"Сделать текст жирным",
-				"Сделать текст курсивным",
-				"Зачеркнуть текст"
+				"Для выделения текста курсивом",
+				"Для группировки нескольких заголовков",
+				"Для создания поля формы",
+				"Для определения структуры таблицы"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&lts&gt tegi matnni qanday formatlaydi?",
-			"en": "How does the &lts&gt tag format text?",
-			"ru": "Как тег &lts&gt форматирует текст?"
+			"uz": "<menu> tegi qanday kontentni tashkil qiladi?",
+			"en": "What content does the <menu> tag organize?",
+			"ru": "Какой контент организует тег <menu>?"
 		},
 		"options": {
 			"uz": [
-				"Matnni chizib tashlash",
-				"Matnni qalin qilish",
+				"Navigatsiya havolalarini",
+				"Matnli paragraflarni",
+				"Interaktiv buyruqlar ro‘yxatini",
+				"Rasm joylashuvini"
+			],
+			"en": [
+				"Navigation links",
+				"Text paragraphs",
+				"A list of interactive commands",
+				"Image placement"
+			],
+			"ru": [
+				"Навигационные ссылки",
+				"Текстовые параграфы",
+				"Список интерактивных команд",
+				"Размещение изображения"
+			]
+		},
+		"correct": 2
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<menuitem> tegi qanday element bilan ishlatiladi?",
+			"en": "With which element is the <menuitem> tag used?",
+			"ru": "С каким элементом используется тег <menuitem>?"
+		},
+		"options": {
+			"uz": [
+				"<table> tegi bilan",
+				"<menu> tegi bilan",
+				"<form> tegi bilan",
+				"<div> tegi bilan"
+			],
+			"en": [
+				"With the <table> tag",
+				"With the <menu> tag",
+				"With the <form> tag",
+				"With the <div> tag"
+			],
+			"ru": [
+				"С тегом <table>",
+				"С тегом <menu>",
+				"С тегом <form>",
+				"С тегом <div>"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<picture> tegi qanday imkoniyatni beradi?",
+			"en": "What capability does the <picture> tag provide?",
+			"ru": "Какую возможность предоставляет тег <picture>?"
+		},
+		"options": {
+			"uz": [
+				"Matnni qalinlashtirish",
+				"Rasm formatlarini moslashuvchan tanlash",
+				"Jadval qatorini belgilash",
+				"Forma maydonini yaratish"
+			],
+			"en": [
+				"To bold text",
+				"Flexible selection of image formats",
+				"To define a table row",
+				"To create a form field"
+			],
+			"ru": [
+				"Для выделения текста жирным",
+				"Гибкий выбор форматов изображений",
+				"Для определения строки таблицы",
+				"Для создания поля формы"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<audio> tegi qanday kontentni qo‘shadi?",
+			"en": "What content does the <audio> tag add?",
+			"ru": "Какой контент добавляет тег <audio>?"
+		},
+		"options": {
+			"uz": [
+				"Matnli sarlavhalarni",
+				"Audio fayllarni",
+				"Interaktiv havolalarni",
+				"Jadval tuzilmasini"
+			],
+			"en": [
+				"Text headings",
+				"Audio files",
+				"Interactive links",
+				"Table structure"
+			],
+			"ru": [
+				"Текстовые заголовки",
+				"Аудиофайлы",
+				"Интерактивные ссылки",
+				"Структура таблицы"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "<video> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <video> tag?",
+			"ru": "Для чего используется тег <video>?"
+		},
+		"options": {
+			"uz": [
 				"Matnni kursiv qilish",
-				"Matnni tagiga chizish"
+				"Video kontentni o‘rnatish",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
 			],
 			"en": [
-				"Strike through text",
-				"Make text bold",
-				"Make text italic",
-				"Underline text"
+				"To italicize text",
+				"To embed video content",
+				"To define a table row",
+				"To insert an image"
 			],
 			"ru": [
-				"Зачеркнуть текст",
-				"Сделать текст жирным",
-				"Сделать текст курсивным",
-				"Подчеркнуть текст"
+				"Для выделения текста курсивом",
+				"Для встраивания видеоконтента",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltsup&gt tegi matnni qanday joylashtiradi?",
-			"en": "How does the &ltsup&gt tag position text?",
-			"ru": "Как тег &ltsup&gt позиционирует текст?"
+			"uz": "<canvas> tegi qanday imkoniyatni beradi?",
+			"en": "What capability does the <canvas> tag provide?",
+			"ru": "Какую возможность предоставляет тег <canvas>?"
 		},
 		"options": {
 			"uz": [
-				"Matnni yuqoriga ko'tarish",
-				"Matnni pastga tushirish",
-				"Matnni qalin qilish",
-				"Matnni markazlashtirish"
-			],
-			"en": ["Raise text", "Lower text", "Make text bold", "Center text"],
-			"ru": [
-				"Поднять текст",
-				"Опустить текст",
-				"Сделать текст жирным",
-				"Центрировать текст"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltsub&gt tegi matnni qanday joylashtiradi?",
-			"en": "How does the &ltsub&gt tag position text?",
-			"ru": "Как тег &ltsub&gt позиционирует текст?"
-		},
-		"options": {
-			"uz": [
-				"Matnni pastga tushirish",
-				"Matnni yuqoriga ko'tarish",
-				"Matnni qalin qilish",
-				"Matnni markazlashtirish"
-			],
-			"en": ["Lower text", "Raise text", "Make text bold", "Center text"],
-			"ru": [
-				"Опустить текст",
-				"Поднять текст",
-				"Сделать текст жирным",
-				"Центрировать текст"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltpre&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltpre&gt tag?",
-			"ru": "Для чего используется тег &ltpre&gt?"
-		},
-		"options": {
-			"uz": [
-				"Oldindan formatlangan matn ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Matnli paragraflarni guruhlash",
+				"JavaScript yordamida grafik chizish",
+				"Navigatsiya menyusini yaratish",
+				"Jadval tuzilmasini belgilash"
 			],
 			"en": [
-				"Display preformatted text",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"To group text paragraphs",
+				"To draw graphics using JavaScript",
+				"To create a navigation menu",
+				"To define a table structure"
 			],
 			"ru": [
-				"Отобразить предварительно отформатированный текст",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Для группировки текстовых параграфов",
+				"Для рисования графики с помощью JavaScript",
+				"Для создания навигационного меню",
+				"Для определения структуры таблицы"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltcode&gt tegi qanday kontentni ko'rsatadi?",
-			"en": "What type of content does the &ltcode&gt tag display?",
-			"ru": "Какой тип контента отображает тег &ltcode&gt?"
-		},
-		"options": {
-			"uz": ["Kompyuter kodi", "Rasm", "Havola", "Jadval"],
-			"en": ["Computer code", "Image", "Link", "Table"],
-			"ru": ["Компьютерный код", "Изображение", "Ссылка", "Таблица"]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltblockquote&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltblockquote&gt tag?",
-			"ru": "Для чего используется тег &ltblockquote&gt?"
+			"uz": "<svg> tegi qanday kontentni qo‘llab-quvvatlaydi?",
+			"en": "What content does the <svg> tag support?",
+			"ru": "Какой контент поддерживает тег <svg>?"
 		},
 		"options": {
 			"uz": [
-				"Iqtibos ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Matnli sarlavhalarni",
+				"Vektorli grafikalar",
+				"Interaktiv formalar",
+				"Jadval tuzilmasini"
 			],
 			"en": [
-				"Display a quotation",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"Text headings",
+				"Vector graphics",
+				"Interactive forms",
+				"Table structure"
 			],
 			"ru": [
-				"Отобразить цитату",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Текстовые заголовки",
+				"Векторная графика",
+				"Интерактивные формы",
+				"Структура таблицы"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltcite&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltcite&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltcite&gt?"
+			"uz": "<math> tegi qanday ma’lumotni ko‘rsatadi?",
+			"en": "What information does the <math> tag display?",
+			"ru": "Какую информацию отображает тег <math>?"
 		},
 		"options": {
 			"uz": [
-				"Iqtibos manbasini ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
+				"Matnni qalinlashtirish",
+				"Matematik ifodalarni",
+				"Navigatsiya havolalarini",
+				"Rasm joylashuvini"
 			],
 			"en": [
-				"Indicate the source of a quotation",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
+				"To bold text",
+				"Mathematical expressions",
+				"Navigation links",
+				"Image placement"
 			],
 			"ru": [
-				"Указать источник цитаты",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
+				"Для выделения текста жирным",
+				"Математические выражения",
+				"Навигационные ссылки",
+				"Размещение изображения"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltq&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltq&gt tag?",
-			"ru": "Для чего используется тег &ltq&gt?"
+			"uz": "<dl> tegi qanday ro‘yxat turini yaratadi?",
+			"en": "What type of list does the <dl> tag create?",
+			"ru": "Какой тип списка создает тег <dl>?"
 		},
 		"options": {
 			"uz": [
-				"Qisqa iqtibos ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Display a short quotation",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
-			],
-			"ru": [
-				"Отобразить короткую цитату",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltabbr&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltabbr&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltabbr&gt?"
-		},
-		"options": {
-			"uz": [
-				"Qisqartma yoki abbreviaturani belgilash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
-			],
-			"en": [
-				"Mark an abbreviation or acronym",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
-			],
-			"ru": [
-				"Отметить аббревиатуру или акроним",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltaddress&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltaddress&gt tag?",
-			"ru": "Для чего используется тег &ltaddress&gt?"
-		},
-		"options": {
-			"uz": [
-				"Aloqa ma'lumotlarini ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Display contact information",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
-			],
-			"ru": [
-				"Отобразить контактную информацию",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltarea&gt tegi qanday ishlatiladi?",
-			"en": "How is the &ltarea&gt tag used?",
-			"ru": "Как используется тег &ltarea&gt?"
-		},
-		"options": {
-			"uz": [
-				"Rasm xaritasida havola hududlarini belgilash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Forma yaratish"
-			],
-			"en": [
-				"Define clickable areas in an image map",
-				"Make text bold",
-				"Create a table",
-				"Create a form"
-			],
-			"ru": [
-				"Определить кликабельные области в карте изображений",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Создать форму"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltmap&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltmap&gt tag?",
-			"ru": "Для чего используется тег &ltmap&gt?"
-		},
-		"options": {
-			"uz": [
-				"Rasm xaritasini yaratish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Create an image map",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
-			],
-			"ru": [
-				"Создать карту изображений",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltbase&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltbase&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltbase&gt?"
-		},
-		"options": {
-			"uz": [
-				"Barcha nisbiy URL lar uchun asosiy manzilni belgilash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
-			],
-			"en": [
-				"Specify a base URL for all relative URLs",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
-			],
-			"ru": [
-				"Указать базовый URL для всех относительных URL",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltbdi&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltbdi&gt tag?",
-			"ru": "Для чего используется тег &ltbdi&gt?"
-		},
-		"options": {
-			"uz": [
-				"Matn yo'nalishini izolyatsiya qilish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Isolate text directionality",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
-			],
-			"ru": [
-				"Изолировать направление текста",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltbdo&gt tegi matnni qanday ko'rsatadi?",
-			"en": "How does the &ltbdo&gt tag display text?",
-			"ru": "Как тег &ltbdo&gt отображает текст?"
-		},
-		"options": {
-			"uz": [
-				"Matn yo'nalishini majburiy o'zgartirish",
-				"Matnni qalin qilish",
 				"Matnni kursiv qilish",
-				"Matnni tagiga chizish"
+				"Ta’rif ro‘yxatini",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
 			],
 			"en": [
-				"Override text direction",
-				"Make text bold",
-				"Make text italic",
-				"Underline text"
+				"To italicize text",
+				"A description list",
+				"To define a table row",
+				"To insert an image"
 			],
 			"ru": [
-				"Переопределить направление текста",
-				"Сделать текст жирным",
-				"Сделать текст курсивным",
-				"Подчеркнуть текст"
+				"Для выделения текста курсивом",
+				"Список описаний",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltcol&gt tegi jadvalda qanday ishlatiladi?",
-			"en": "How is the &ltcol&gt tag used in a table?",
-			"ru": "Как используется тег &ltcol&gt в таблице?"
+			"uz": "<dt> tegi qanday elementni belgilaydi?",
+			"en": "What element does the <dt> tag define?",
+			"ru": "Какой элемент определяет тег <dt>?"
 		},
 		"options": {
 			"uz": [
-				"Ustun xususiyatlarini belgilash",
-				"Qator qo'shish",
-				"Katak qo'shish",
-				"Jadvalni yashirish"
+				"Matnli paragraflarni",
+				"Ta’rif ro‘yxatidagi atamani",
+				"Interaktiv havolalarni",
+				"Jadval tuzilmasini"
 			],
 			"en": [
-				"Specify column properties",
-				"Add a row",
-				"Add a cell",
-				"Hide the table"
+				"Text paragraphs",
+				"A term in a description list",
+				"Interactive links",
+				"Table structure"
 			],
 			"ru": [
-				"Указать свойства столбца",
-				"Добавить строку",
-				"Добавить ячейку",
-				"Скрыть таблицу"
+				"Текстовые параграфы",
+				"Термин в списке описаний",
+				"Интерактивные ссылки",
+				"Структура таблицы"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltcolgroup&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltcolgroup&gt tag?",
-			"ru": "Для чего используется тег &ltcolgroup&gt?"
+			"uz": "<dd> tegi qanday ma’lumotni taqdim etadi?",
+			"en": "What information does the <dd> tag provide?",
+			"ru": "Какую информацию предоставляет тег <dd>?"
 		},
 		"options": {
 			"uz": [
-				"Jadval ustunlarini guruhlash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Matnni qalinlashtirish",
+				"Ta’rif ro‘yxatidagi tavsifni",
+				"Navigatsiya menyusini",
+				"Rasm joylashuvini"
 			],
 			"en": [
-				"Group table columns",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"To bold text",
+				"A description in a description list",
+				"A navigation menu",
+				"Image placement"
 			],
 			"ru": [
-				"Группировать столбцы таблицы",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Для выделения текста жирным",
+				"Описание в списке описаний",
+				"Навигационное меню",
+				"Размещение изображения"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltdata&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltdata&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltdata&gt?"
+			"uz": "<output> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <output> tag?",
+			"ru": "Для чего используется тег <output>?"
 		},
 		"options": {
 			"uz": [
-				"Mashina o'qiy oladigan ma'lumotlarni belgilash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
-			],
-			"en": [
-				"Mark machine-readable data",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
-			],
-			"ru": [
-				"Отметить машиночитаемые данные",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltdatalist&gt tegi qanday ishlatiladi?",
-			"en": "How is the &ltdatalist&gt tag used?",
-			"ru": "Как используется тег &ltdatalist&gt?"
-		},
-		"options": {
-			"uz": [
-				"Kiritish maydoni uchun oldindan belgilangan variantlarni taqdim etish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Provide predefined options for an input field",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
-			],
-			"ru": [
-				"Предоставить заранее заданные варианты для поля ввода",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltdel&gt tegi matnni qanday ko'rsatadi?",
-			"en": "How does the &ltdel&gt tag display text?",
-			"ru": "Как тег &ltdel&gt отображает текст?"
-		},
-		"options": {
-			"uz": [
-				"Matnni chizib tashlash",
-				"Matnni qalin qilish",
 				"Matnni kursiv qilish",
-				"Matnni tagiga chizish"
+				"Hisoblash natijalarini ko‘rsatish",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
 			],
 			"en": [
-				"Strike through text",
-				"Make text bold",
-				"Make text italic",
-				"Underline text"
+				"To italicize text",
+				"To display calculation results",
+				"To define a table row",
+				"To insert an image"
 			],
 			"ru": [
-				"Зачеркнуть текст",
-				"Сделать текст жирным",
-				"Сделать текст курсивным",
-				"Подчеркнуть текст"
+				"Для выделения текста курсивом",
+				"Для отображения результатов вычислений",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltdfn&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltdfn&gt tag?",
-			"ru": "Для чего используется тег &ltdfn&gt?"
+			"uz": "<keygen> tegi qanday funksiyani bajaradi?",
+			"en": "What function does the <keygen> tag perform?",
+			"ru": "Какую функцию выполняет тег <keygen>?"
 		},
 		"options": {
 			"uz": [
-				"Ta'rif qilinayotgan atamani belgilash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Matnli paragraflarni guruhlash",
+				"Kriptografik kalit juftini yaratish",
+				"Navigatsiya menyusini yaratish",
+				"Jadval tuzilmasini belgilash"
 			],
 			"en": [
-				"Mark a term being defined",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"To group text paragraphs",
+				"To generate a cryptographic key pair",
+				"To create a navigation menu",
+				"To define a table structure"
 			],
 			"ru": [
-				"Отметить определяемый термин",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Для группировки текстовых параграфов",
+				"Для генерации пары криптографических ключей",
+				"Для создания навигационного меню",
+				"Для определения структуры таблицы"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltdialog&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltdialog&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltdialog&gt?"
+			"uz": "<small> tegi matnni qanday ko‘rinishga keltiradi?",
+			"en": "How does the <small> tag affect text appearance?",
+			"ru": "Как тег <small> влияет на внешний вид текста?"
 		},
 		"options": {
 			"uz": [
-				"Muloqot oynasini yaratish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
+				"Matnni qalinlashtirish",
+				"Matnni kichikroq shrift bilan ko‘rsatish",
+				"Navigatsiya havolalarini guruhlash",
+				"Rasm joylashtirish"
 			],
 			"en": [
-				"Create a dialog box",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
+				"To bold text",
+				"To display text in a smaller font",
+				"To group navigation links",
+				"To insert an image"
 			],
 			"ru": [
-				"Создать диалоговое окно",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
+				"Для выделения текста жирным",
+				"Для отображения текста меньшим шрифтом",
+				"Для группировки навигационных ссылок",
+				"Для вставки изображения"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltembed&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltembed&gt tag?",
-			"ru": "Для чего используется тег &ltembed&gt?"
+			"uz": "<acronym> tegi qanday ma’lumotni belgilaydi?",
+			"en": "What information does the <acronym> tag specify?",
+			"ru": "Какую информацию указывает тег <acronym>?"
 		},
 		"options": {
 			"uz": [
-				"Tashqi kontentni joylashtirish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Embed external content",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
-			],
-			"ru": [
-				"Встроить внешний контент",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltfieldset&gt tegi forma ichida qanday ishlatiladi?",
-			"en": "How is the &ltfieldset&gt tag used within a form?",
-			"ru": "Как используется тег &ltfieldset&gt внутри формы?"
-		},
-		"options": {
-			"uz": [
-				"Forma elementlarini guruhlash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Group form elements",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
-			],
-			"ru": [
-				"Группировать элементы формы",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltfigcaption&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltfigcaption&gt tag?",
-			"ru": "Для чего используется тег &ltfigcaption&gt?"
-		},
-		"options": {
-			"uz": [
-				"Rasm yoki diagramma uchun sarlavha qo'shish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
-			],
-			"en": [
-				"Add a caption for an image or diagram",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
-			],
-			"ru": [
-				"Добавить подпись для изображения или диаграммы",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltfigure&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltfigure&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltfigure&gt?"
-		},
-		"options": {
-			"uz": [
-				"Rasm yoki diagrammani guruhlash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
-			],
-			"en": [
-				"Group an image or diagram",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
-			],
-			"ru": [
-				"Группировать изображение или диаграмму",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
-			]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltins&gt tegi matnni qanday ko'rsatadi?",
-			"en": "How does the &ltins&gt tag display text?",
-			"ru": "Как тег &ltins&gt отображает текст?"
-		},
-		"options": {
-			"uz": [
-				"Qo'shilgan matn sifatida belgilash",
-				"Matnni qalin qilish",
 				"Matnni kursiv qilish",
-				"Matnni chizib tashlash"
+				"Qisqartma yoki akronimni",
+				"Jadval qatorini belgilash",
+				"Rasm joylashtirish"
 			],
 			"en": [
-				"Mark text as inserted",
-				"Make text bold",
-				"Make text italic",
-				"Strike through text"
+				"To italicize text",
+				"An abbreviation or acronym",
+				"To define a table row",
+				"To insert an image"
 			],
 			"ru": [
-				"Отметить текст как вставленный",
-				"Сделать текст жирным",
-				"Сделать текст курсивным",
-				"Зачеркнуть текст"
+				"Для выделения текста курсивом",
+				"Сокращение или акроним",
+				"Для определения строки таблицы",
+				"Для вставки изображения"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltkbd&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltkbd&gt tag?",
-			"ru": "Для чего используется тег &ltkbd&gt?"
+			"uz": "<basefont> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <basefont> tag?",
+			"ru": "Для чего используется тег <basefont>?"
 		},
 		"options": {
 			"uz": [
-				"Klaviatura kiritishini ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Matnli paragraflarni guruhlash",
+				"Sahifadagi matn uchun asosiy shriftni belgilash",
+				"Navigatsiya menyusini yaratish",
+				"Jadval tuzilmasini belgilash"
 			],
 			"en": [
-				"Indicate keyboard input",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"To group text paragraphs",
+				"To specify the base font for text on a page",
+				"To create a navigation menu",
+				"To define a table structure"
 			],
 			"ru": [
-				"Указать ввод с клавиатуры",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Для группировки текстовых параграфов",
+				"Для указания базового шрифта для текста на странице",
+				"Для создания навигационного меню",
+				"Для определения структуры таблицы"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltlegend&gt tegi forma ichida qanday ishlatiladi?",
-			"en": "How is the &ltlegend&gt tag used within a form?",
-			"ru": "Как используется тег &ltlegend&gt внутри формы?"
+			"uz": "<center> tegi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the <center> tag have?",
+			"ru": "Какой эффект оказывает тег <center>?"
 		},
 		"options": {
 			"uz": [
-				"Fieldset uchun sarlavha qo'shish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Matnni qalinlashtirish",
+				"Kontentni sahifa markaziga joylashtirish",
+				"Navigatsiya havolalarini guruhlash",
+				"Rasm joylashtirish"
 			],
 			"en": [
-				"Add a caption for a fieldset",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"To bold text",
+				"To center content on the page",
+				"To group navigation links",
+				"To insert an image"
 			],
 			"ru": [
-				"Добавить подпись для fieldset",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Для выделения текста жирным",
+				"Для центрирования контента на странице",
+				"Для группировки навигационных ссылок",
+				"Для вставки изображения"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltmark&gt tegi matnni qanday ko'rsatadi?",
-			"en": "How does the &ltmark&gt tag display text?",
-			"ru": "Как тег &ltmark&gt отображает текст?"
+			"uz": "<slot> tegi qanday texnologiyada ishlatiladi?",
+			"en": "In which technology is the <slot> tag used?",
+			"ru": "В какой технологии используется тег <slot>?"
 		},
 		"options": {
 			"uz": [
-				"Matnni ajratib ko'rsatish",
-				"Matnni qalin qilish",
-				"Matnni kursiv qilish",
-				"Matnni tagiga chizish"
+				"Matnni animatsiya qilish uchun",
+				"Jadval tuzilmasini belgilash uchun",
+				"Web Components-da dinamik kontent joylashuvini ta’minlash uchun",
+				"Forma maydonlarini guruhlash uchun"
 			],
 			"en": [
-				"Highlight text",
-				"Make text bold",
-				"Make text italic",
-				"Underline text"
+				"To animate text",
+				"To define a table structure",
+				"To provide dynamic content placement in Web Components",
+				"To group form fields"
 			],
 			"ru": [
-				"Выделить текст",
-				"Сделать текст жирным",
-				"Сделать текст курсивным",
-				"Подчеркнуть текст"
+				"Для анимации текста",
+				"Для определения структуры таблицы",
+				"Для обеспечения динамического размещения контента в Web Components",
+				"Для группировки полей формы"
 			]
 		},
-		"correct": 0
+		"correct": 2
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltmeter&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltmeter&gt tag?",
-			"ru": "Для чего используется тег &ltmeter&gt?"
+			"uz": "<portal> tegi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the <portal> tag?",
+			"ru": "Для чего используется тег <portal>?"
 		},
 		"options": {
 			"uz": [
-				"O'lchov yoki miqdor ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Sahifalar o‘rtasida silliq navigatsiyani ta’minlash uchun",
+				"Matnni kichikroq shrift bilan ko‘rsatish uchun",
+				"Rasm sarlavhalarini belgilash uchun",
+				"Audio fayllarni o‘rnatish uchun"
 			],
 			"en": [
-				"Show a measurement or quantity",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"To enable smooth navigation between pages",
+				"To display text in a smaller font",
+				"To define image captions",
+				"To embed audio files"
 			],
 			"ru": [
-				"Показать измерение или количество",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Для обеспечения плавной навигации между страницами",
+				"Для отображения текста меньшим шрифтом",
+				"Для определения подписей изображений",
+				"Для встраивания аудиофайлов"
 			]
 		},
 		"correct": 0
@@ -1772,86 +2783,86 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltnoscript&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltnoscript&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltnoscript&gt?"
+			"uz": "<marquee> tegi qanday effektni yaratadi?",
+			"en": "What effect does the <marquee> tag create?",
+			"ru": "Какой эффект создает тег <marquee>?"
 		},
 		"options": {
 			"uz": [
-				"JavaScript o'chirilgan bo'lsa kontent ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
+				"Matnni avtomatik ravishda qalinlashtirish",
+				"Matn yoki kontentni sahifada siljitish (animatsiya)",
+				"Interaktiv dialog oynasini yaratish",
+				"Vektorli grafikalar chizish"
 			],
 			"en": [
-				"Display content if JavaScript is disabled",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
+				"To automatically bold text",
+				"To scroll (animate) text or content across the page",
+				"To create an interactive dialog window",
+				"To draw vector graphics"
 			],
 			"ru": [
-				"Отобразить контент, если JavaScript отключен",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
+				"Для автоматического выделения текста жирным",
+				"Для прокрутки (анимации) текста или контента по странице",
+				"Для создания интерактивного диалогового окна",
+				"Для рисования векторной графики"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltobject&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltobject&gt tag?",
-			"ru": "Для чего используется тег &ltobject&gt?"
+			"uz": "`id` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `id` attribute?",
+			"ru": "Для чего используется атрибут `id`?"
 		},
 		"options": {
 			"uz": [
-				"Tashqi resurslarni joylashtirish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Elementning sinfini belgilash",
+				"Elementga noyob identifikator berish",
+				"Matnni qalinlashtirish",
+				"Rasm o‘lchamini o‘zgartirish"
 			],
 			"en": [
-				"Embed external resources",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"To specify a class for an element",
+				"To assign a unique identifier to an element",
+				"To bold text",
+				"To resize an image"
 			],
 			"ru": [
-				"Встроить внешние ресурсы",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Для указания класса элемента",
+				"Для присвоения уникального идентификатора элементу",
+				"Для выделения текста жирным",
+				"Для изменения размера изображения"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltoptgroup&gt tegi qanday ishlatiladi?",
-			"en": "How is the &ltoptgroup&gt tag used?",
-			"ru": "Как используется тег &ltoptgroup&gt?"
+			"uz": "`class` atributi qanday vazifani bajaradi?",
+			"en": "What function does the `class` attribute perform?",
+			"ru": "Какую функцию выполняет атрибут `class`?"
 		},
 		"options": {
 			"uz": [
-				"Select ichida variantlarni guruhlash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Elementga CSS stillarini qo‘llash uchun guruhni belgilaydi",
+				"Elementning URL manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi",
+				"Matn yo‘nalishini o‘zgartiradi"
 			],
 			"en": [
-				"Group options in a select element",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"Specifies a group for applying CSS styles to an element",
+				"Indicates the URL of an element",
+				"Makes a form field mandatory",
+				"Changes text direction"
 			],
 			"ru": [
-				"Группировать варианты в элементе select",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Указывает группу для применения стилей CSS к элементу",
+				"Указывает URL-адрес элемента",
+				"Делает поле формы обязательным",
+				"Изменяет направление текста"
 			]
 		},
 		"correct": 0
@@ -1859,57 +2870,57 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltoption&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltoption&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltoption&gt?"
+			"uz": "`style` atributi qanday ishlatiladi?",
+			"en": "How is the `style` attribute used?",
+			"ru": "Как используется атрибут `style`?"
 		},
 		"options": {
 			"uz": [
-				"Select ichida tanlov variantini qo'shish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
+				"Elementning tashqi manzilini belgilash",
+				"Elementga bevosita CSS stillarini qo‘llash",
+				"Elementni yashirish",
+				"Forma maydoniga standart qiymat berish"
 			],
 			"en": [
-				"Add an option to a select element",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
+				"To specify an external resource for an element",
+				"To apply inline CSS styles directly to an element",
+				"To hide an element",
+				"To set a default value for a form field"
 			],
 			"ru": [
-				"Добавить вариант в элемент select",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
+				"Для указания внешнего ресурса для элемента",
+				"Для применения встроенных стилей CSS непосредственно к элементу",
+				"Для скрытия элемента",
+				"Для установки значения по умолчанию для поля формы"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltoutput&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltoutput&gt tag?",
-			"ru": "Для чего используется тег &ltoutput&gt?"
+			"uz": "`hidden` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `hidden` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `hidden`?"
 		},
 		"options": {
 			"uz": [
-				"Hisoblash natijalarini ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Elementni ko‘rinmas qiladi",
+				"Elementni faqat o‘qish uchun qiladi",
+				"Matnni qalinlashtiradi",
+				"Rasmni avtomatik aylantiradi"
 			],
 			"en": [
-				"Display calculation results",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"Makes an element invisible",
+				"Makes an element read-only",
+				"Bolds text",
+				"Automatically rotates an image"
 			],
 			"ru": [
-				"Отобразить результаты вычислений",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Делает элемент невидимым",
+				"Делает элемент доступным только для чтения",
+				"Выделяет текст жирным",
+				"Автоматически вращает изображение"
 			]
 		},
 		"correct": 0
@@ -1917,376 +2928,376 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltparam&gt tegi qanday ishlatiladi?",
-			"en": "How is the &ltparam&gt tag used?",
-			"ru": "Как используется тег &ltparam&gt?"
+			"uz": "`data-*` atributlari qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of `data-*` attributes?",
+			"ru": "Для чего используются атрибуты `data-*`?"
 		},
 		"options": {
 			"uz": [
-				"Object tegi uchun parametrlar belgilash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Elementning joylashuvini belgilash",
+				"Maxsus ma’lumotlarni JavaScript uchun saqlash",
+				"Forma maydonini majburiy qilish",
+				"Matnni avtomatik ravishda kursiv qilish"
 			],
 			"en": [
-				"Set parameters for an object tag",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"To specify the position of an element",
+				"To store custom data for JavaScript",
+				"To make a form field mandatory",
+				"To automatically italicize text"
 			],
 			"ru": [
-				"Установить параметры для тега object",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Для указания положения элемента",
+				"Для хранения пользовательских данных для JavaScript",
+				"Для сделать поле формы обязательным",
+				"Для автоматического выделения текста курсивом"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltprogress&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltprogress&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltprogress&gt?"
+			"uz": "`href` atributi qaysi tegda ishlatiladi va uning vazifasi nima?",
+			"en": "Which tag uses the `href` attribute, and what is its function?",
+			"ru": "В каком теге используется атрибут `href`, и какова его функция?"
 		},
 		"options": {
 			"uz": [
-				"Jarayon holatini ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
+				"<img> tegi, rasm manzilini ko‘rsatadi",
+				"<a> tegi, havola manzilini ko‘rsatadi",
+				"<input> tegi, kirish qiymatini belgilaydi",
+				"<div> tegi, fon rangini o‘zgartiradi"
 			],
 			"en": [
-				"Show the progress of a task",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
+				"<img> tag, specifies the image source",
+				"<a> tag, specifies the link destination",
+				"<input> tag, defines the input value",
+				"<div> tag, changes the background color"
 			],
 			"ru": [
-				"Показать прогресс задачи",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
+				"Тег <img>, указывает источник изображения",
+				"Тег <a>, указывает адрес ссылки",
+				"Тег <input>, определяет значение ввода",
+				"Тег <div>, изменяет цвет фона"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltrp&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltrp&gt tag?",
-			"ru": "Для чего используется тег &ltrp&gt?"
+			"uz": "`src` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `src` attribute?",
+			"ru": "Для чего используется атрибут `src`?"
 		},
 		"options": {
 			"uz": [
-				"Ruby annotatsiyalarda qavslar ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Elementning sinfini belgilash",
+				"Tashqi resurs (masalan, rasm yoki skript) manzilini ko‘rsatish",
+				"Matnni qalinlashtirish",
+				"Forma maydoniga sarlavha qo‘shish"
 			],
 			"en": [
-				"Show parentheses in ruby annotations",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"To specify a class for an element",
+				"To specify the source of an external resource (e.g., image or script)",
+				"To bold text",
+				"To add a title to a form field"
 			],
 			"ru": [
-				"Показать скобки в аннотациях ruby",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Для указания класса элемента",
+				"Для указания источника внешнего ресурса (например, изображения или скрипта)",
+				"Для выделения текста жирным",
+				"Для добавления заголовка к полю формы"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltrt&gt tegi qanday ishlatiladi?",
-			"en": "How is the &ltrt&gt tag used?",
-			"ru": "Как используется тег &ltrt&gt?"
+			"uz": "`alt` atributi qaysi tegda ishlatiladi va uning maqsadi nima?",
+			"en": "Which tag uses the `alt` attribute, and what is its purpose?",
+			"ru": "В каком теге используется атрибут `alt`, и какова его цель?"
 		},
 		"options": {
 			"uz": [
-				"Ruby annotatsiyalarda matn ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"<a> tegi, havola sarlavhasini ko‘rsatadi",
+				"<img> tegi, rasmning muqobil tavsifini taqdim etadi",
+				"<form> tegi, formani yuborish usulini belgilaydi",
+				"<div> tegi, element joylashuvini o‘zgartiradi"
 			],
 			"en": [
-				"Display text in ruby annotations",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"<a> tag, specifies the link title",
+				"<img> tag, provides an alternative description for the image",
+				"<form> tag, defines the form submission method",
+				"<div> tag, changes the element’s position"
 			],
 			"ru": [
-				"Отобразить текст в аннотациях ruby",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Тег <a>, указывает заголовок ссылки",
+				"Тег <img>, предоставляет альтернативное описание изображения",
+				"Тег <form>, определяет метод отправки формы",
+				"Тег <div>, изменяет положение элемента"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltruby&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltruby&gt tag?",
-			"ru": "Для чего используется тег &ltruby&gt?"
+			"uz": "`title` atributi qanday vazifani bajaradi?",
+			"en": "What function does the `title` attribute perform?",
+			"ru": "Какую функцию выполняет атрибут `title`?"
 		},
 		"options": {
 			"uz": [
-				"Sharqiy Osiyo matnlari uchun annotatsiyalar qo'shish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Elementning asosiy sarlavhasini belgilaydi",
+				"Element ustiga sichqoncha olib borilganda qo‘shimcha ma’lumot ko‘rsatadi",
+				"Matn yo‘nalishini o‘zgartiradi",
+				"Forma maydonini majburiy qiladi"
 			],
 			"en": [
-				"Add annotations for East Asian text",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"Specifies the main heading of an element",
+				"Displays additional information when hovering over an element",
+				"Changes text direction",
+				"Makes a form field mandatory"
 			],
 			"ru": [
-				"Добавить аннотации для восточноазиатского текста",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Указывает основной заголовок элемента",
+				"Отображает дополнительную информацию при наведении на элемент",
+				"Изменяет направление текста",
+				"Делает поле формы обязательным"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltsamp&gt tegi qanday kontentni ko'rsatadi?",
-			"en": "What type of content does the &ltsamp&gt tag display?",
-			"ru": "Какой тип контента отображает тег &ltsamp&gt?"
+			"uz": "`value` atributi qaysi tegda ishlatiladi va uning roli nima?",
+			"en": "Which tag uses the `value` attribute, and what is its role?",
+			"ru": "В каком теге используется атрибут `value`, и какова его роль?"
 		},
 		"options": {
 			"uz": [
-				"Dastur chiqishi namunasini ko'rsatish",
-				"Rasm qo'shish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"<img> tegi, rasm o‘lchamini belgilaydi",
+				"<input> tegi, kirish maydonining standart qiymatini ko‘rsatadi",
+				"<a> tegi, havola turini belgilaydi",
+				"<div> tegi, elementning fon rangini o‘zgartiradi"
 			],
 			"en": [
-				"Show a sample output from a program",
-				"Add an image",
-				"Create a table",
-				"Add a link"
+				"<img> tag, specifies the image size",
+				"<input> tag, specifies the default value of an input field",
+				"<a> tag, defines the link type",
+				"<div> tag, changes the element’s background color"
 			],
 			"ru": [
-				"Показать образец вывода программы",
-				"Добавить изображение",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Тег <img>, указывает размер изображения",
+				"Тег <input>, указывает значение по умолчанию для поля ввода",
+				"Тег <a>, определяет тип ссылки",
+				"Тег <div>, изменяет цвет фона элемента"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltsmall&gt tegi matnni qanday ko'rsatadi?",
-			"en": "How does the &ltsmall&gt tag display text?",
-			"ru": "Как тег &ltsmall&gt отображает текст?"
+			"uz": "`required` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `required` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `required`?"
 		},
 		"options": {
 			"uz": [
-				"Kichikroq shriftda ko'rsatish",
-				"Matnni qalin qilish",
-				"Matnni kursiv qilish",
-				"Matnni tagiga chizish"
+				"Forma maydonini faqat o‘qish uchun qiladi",
+				"Forma maydonini to‘ldirishni majburiy qiladi",
+				"Elementni ko‘rinmas qiladi",
+				"Matnni avtomatik aylantiradi"
 			],
 			"en": [
-				"Display in a smaller font",
-				"Make text bold",
-				"Make text italic",
-				"Underline text"
+				"Makes a form field read-only",
+				"Makes a form field mandatory to fill",
+				"Makes an element invisible",
+				"Automatically rotates text"
 			],
 			"ru": [
-				"Отобразить меньшим шрифтом",
-				"Сделать текст жирным",
-				"Сделать текст курсивным",
-				"Подчеркнуть текст"
+				"Делает поле формы доступным только для чтения",
+				"Делает поле формы обязательным для заполнения",
+				"Делает элемент невидимым",
+				"Автоматически вращает текст"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltsource&gt tegi qanday ishlatiladi?",
-			"en": "How is the &ltsource&gt tag used?",
-			"ru": "Как используется тег &ltsource&gt?"
+			"uz": "`placeholder` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `placeholder` attribute?",
+			"ru": "Для чего используется атрибут `placeholder`?"
 		},
 		"options": {
 			"uz": [
-				"Media elementlari uchun bir nechta manbalar taqdim etish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Matnni qalinlashtirish",
+				"<input> yoki <textarea> uchun vaqtinchalik maslahat matnini ko‘rsatish",
+				"Rasmning muqobil manzilini belgilash",
+				"Elementning joylashuvini o‘zgartirish"
 			],
 			"en": [
-				"Provide multiple sources for media elements",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"To bold text",
+				"To display temporary hint text for <input> or <textarea>",
+				"To specify an alternative source for an image",
+				"To change the position of an element"
 			],
 			"ru": [
-				"Предоставить несколько источников для мультимедийных элементов",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Для выделения текста жирным",
+				"Для отображения временного подсказочного текста для <input> или <textarea>",
+				"Для указания альтернативного источника изображения",
+				"Для изменения положения элемента"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltsummary&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltsummary&gt tag?",
-			"ru": "Для чего используется тег &ltsummary&gt?"
+			"uz": "`target` atributi qaysi tegda ishlatiladi va uning vazifasi nima?",
+			"en": "Which tag uses the `target` attribute, and what is its function?",
+			"ru": "В каком теге используется атрибут `target`, и какова его функция?"
 		},
 		"options": {
 			"uz": [
-				"Details tegi uchun ko'rinadigan sarlavha qo'shish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"<img> tegi, rasm o‘lchamini belgilaydi",
+				"<a> tegi, havola qayerda ochilishini ko‘rsatadi",
+				"<form> tegi, formani yuborish usulini belgilaydi",
+				"<div> tegi, elementning fon rangini o‘zgartiradi"
 			],
 			"en": [
-				"Add a visible heading for a details tag",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"<img> tag, specifies the image size",
+				"<a> tag, specifies where the link opens",
+				"<form> tag, defines the form submission method",
+				"<div> tag, changes the element’s background color"
 			],
 			"ru": [
-				"Добавить видимый заголовок для тега details",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Тег <img>, указывает размер изображения",
+				"Тег <a>, указывает, где открывается ссылка",
+				"Тег <form>, определяет метод отправки формы",
+				"Тег <div>, изменяет цвет фона элемента"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&lttemplate&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &lttemplate&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &lttemplate&gt?"
+			"uz": "`rel` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `rel` attribute?",
+			"ru": "Для чего используется атрибут `rel`?"
 		},
 		"options": {
 			"uz": [
-				"Qayta ishlatiladigan kontentni saqlash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
+				"Elementning joylashuvini belgilash",
+				"<a> yoki <link> teglarida resurs bilan bog‘liqlik turini ko‘rsatish",
+				"Forma maydonini majburiy qilish",
+				"Matnni avtomatik ravishda kursiv qilish"
 			],
 			"en": [
-				"Store reusable content",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
+				"To specify the position of an element",
+				"To specify the relationship type with a resource in <a> or <link> tags",
+				"To make a form field mandatory",
+				"To automatically italicize text"
 			],
 			"ru": [
-				"Хранить повторно используемый контент",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
+				"Для указания положения элемента",
+				"Для указания типа связи с ресурсом в тегах <a> или <link>",
+				"Для сделать поле формы обязательным",
+				"Для автоматического выделения текста курсивом"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&lttime&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &lttime&gt tag?",
-			"ru": "Для чего используется тег &lttime&gt?"
+			"uz": "`type` atributi qaysi tegda ishlatiladi va uning roli nima?",
+			"en": "Which tag uses the `type` attribute, and what is its role?",
+			"ru": "В каком теге используется атрибут `type`, и какова его роль?"
 		},
 		"options": {
 			"uz": [
-				"Vaqt yoki sana ma'lumotlarini belgilash",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"<div> tegi, elementning fon rangini belgilaydi",
+				"<input> tegi, kirish maydonining turini ko‘rsatadi",
+				"<img> tegi, rasm o‘lchamini o‘zgartiradi",
+				"<a> tegi, havola sarlavhasini belgilaydi"
 			],
 			"en": [
-				"Mark time or date information",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"<div> tag, specifies the element’s background color",
+				"<input> tag, specifies the type of input field",
+				"<img> tag, changes the image size",
+				"<a> tag, defines the link title"
 			],
 			"ru": [
-				"Отметить информацию о времени или дате",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Тег <div>, указывает цвет фона элемента",
+				"Тег <input>, указывает тип поля ввода",
+				"Тег <img>, изменяет размер изображения",
+				"Тег <a>, определяет заголовок ссылки"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&lttrack&gt tegi qanday ishlatiladi?",
-			"en": "How is the &lttrack&gt tag used?",
-			"ru": "Как используется тег &lttrack&gt?"
+			"uz": "`disabled` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `disabled` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `disabled`?"
 		},
 		"options": {
 			"uz": [
-				"Video yoki audio uchun subtitrlar qo'shish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Elementni ko‘rinmas qiladi",
+				"Forma elementini faolsizlantiradi",
+				"Matnni qalinlashtiradi",
+				"Rasmni avtomatik aylantiradi"
 			],
 			"en": [
-				"Add subtitles for video or audio",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"Makes an element invisible",
+				"Deactivates a form element",
+				"Bolds text",
+				"Automatically rotates an image"
 			],
 			"ru": [
-				"Добавить субтитры для видео или аудио",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Делает элемент невидимым",
+				"Деактивирует элемент формы",
+				"Выделяет текст жирным",
+				"Автоматически вращает изображение"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltvar&gt tegi qanday kontentni ko'rsatadi?",
-			"en": "What type of content does the &ltvar&gt tag display?",
-			"ru": "Какой тип контента отображает тег &ltvar&gt?"
+			"uz": "`maxlength` atributi qanday ishlatiladi?",
+			"en": "How is the `maxlength` attribute used?",
+			"ru": "Как используется атрибут `maxlength`?"
 		},
 		"options": {
 			"uz": [
-				"Matematik yoki dasturlash o'zgaruvchisini ko'rsatish",
-				"Rasm qo'shish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"<input> yoki <textarea> uchun kiritiladigan belgilar sonini cheklaydi",
+				"Elementning kengligini belgilaydi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Matn yo‘nalishini o‘zgartiradi"
 			],
 			"en": [
-				"Indicate a mathematical or programming variable",
-				"Add an image",
-				"Create a table",
-				"Add a link"
+				"Limits the number of characters entered in <input> or <textarea>",
+				"Specifies the width of an element",
+				"Indicates an alternative source for an image",
+				"Changes text direction"
 			],
 			"ru": [
-				"Указать математическую или программную переменную",
-				"Добавить изображение",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Ограничивает количество символов, вводимых в <input> или <textarea>",
+				"Указывает ширину элемента",
+				"Указывает альтернативный источник изображения",
+				"Изменяет направление текста"
 			]
 		},
 		"correct": 0
@@ -2294,95 +3305,86 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltwbr&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltwbr&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltwbr&gt?"
+			"uz": "`method` atributi qaysi tegda ishlatiladi va uning maqsadi nima?",
+			"en": "Which tag uses the `method` attribute, and what is its purpose?",
+			"ru": "В каком теге используется атрибут `method`, и какова его цель?"
 		},
 		"options": {
 			"uz": [
-				"Matnni bo'lish imkoniyatini ko'rsatish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
+				"<img> tegi, rasm manzilini ko‘rsatadi",
+				"<form> tegi, forma ma’lumotlarini yuborish usulini belgilaydi",
+				"<a> tegi, havola turini ko‘rsatadi",
+				"<div> tegi, element joylashuvini o‘zgartiradi"
 			],
 			"en": [
-				"Indicate a word break opportunity",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
+				"<img> tag, specifies the image source",
+				"<form> tag, specifies the form data submission method",
+				"<a> tag, indicates the link type",
+				"<div> tag, changes the element’s position"
 			],
 			"ru": [
-				"Указать возможность разрыва слова",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
+				"Тег <img>, указывает источник изображения",
+				"Тег <form>, указывает метод отправки данных формы",
+				"Тег <a>, указывает тип ссылки",
+				"Тег <div>, изменяет положение элемента"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltcanvas&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltcanvas&gt tag?",
-			"ru": "Для чего используется тег &ltcanvas&gt?"
+			"uz": "`action` atributi qanday vazifani bajaradi?",
+			"en": "What function does the `action` attribute perform?",
+			"ru": "Какую функцию выполняет атрибут `action`?"
 		},
 		"options": {
 			"uz": [
-				"Grafikalar chizish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"Elementni ko‘rinmas qiladi",
+				"<form> tegi uchun ma’lumotlarni qayerga yuborishni ko‘rsatadi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
 			],
-			"en": ["Draw graphics", "Make text bold", "Create a table", "Add a link"],
+			"en": [
+				"Makes an element invisible",
+				"Specifies where to send form data in the <form> tag",
+				"Bolds text",
+				"Changes the image size"
+			],
 			"ru": [
-				"Рисовать графику",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Делает элемент невидимым",
+				"Указывает, куда отправлять данные формы в теге <form>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
 			]
 		},
-		"correct": 0
+		"correct": 1
 	},
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltvideo&gt tegi qanday kontentni ko'rsatadi?",
-			"en": "What type of content does the &ltvideo&gt tag display?",
-			"ru": "Какой тип контента отображает тег &ltvideo&gt?"
-		},
-		"options": {
-			"uz": ["Video kontent", "Rasm", "Matn", "Havola"],
-			"en": ["Video content", "Image", "Text", "Link"],
-			"ru": ["Видео контент", "Изображение", "Текст", "Ссылка"]
-		},
-		"correct": 0
-	},
-	{
-		"topic": "HTML",
-		"question": {
-			"uz": "&ltaudio&gt tegi qanday maqsadda ishlatiladi?",
-			"en": "What is the purpose of the &ltaudio&gt tag?",
-			"ru": "Для чего используется тег &ltaudio&gt?"
+			"uz": "`download` atributi qanday ishlatiladi?",
+			"en": "How is the `download` attribute used?",
+			"ru": "Как используется атрибут `download`?"
 		},
 		"options": {
 			"uz": [
-				"Audio kontentni ijro etish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Havola qo'shish"
+				"<a> tegi, faylni yuklab olishni ko‘rsatadi",
+				"Elementning kengligini belgilaydi",
+				"Forma maydonini majburiy qiladi",
+				"Matnni avtomatik ravishda kursiv qiladi"
 			],
 			"en": [
-				"Play audio content",
-				"Make text bold",
-				"Create a table",
-				"Add a link"
+				"<a> tag, indicates that the file should be downloaded",
+				"Specifies the width of an element",
+				"Makes a form field mandatory",
+				"Automatically italicizes text"
 			],
 			"ru": [
-				"Воспроизвести аудио контент",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить ссылку"
+				"Тег <a>, указывает, что файл должен быть загружен",
+				"Указывает ширину элемента",
+				"Делает поле формы обязательным",
+				"Автоматически выделяет текст курсивом"
 			]
 		},
 		"correct": 0
@@ -2390,30 +3392,1799 @@
 	{
 		"topic": "HTML",
 		"question": {
-			"uz": "&ltpicture&gt tegi qanday vazifani bajaradi?",
-			"en": "What function does the &ltpicture&gt tag perform?",
-			"ru": "Какую функцию выполняет тег &ltpicture&gt?"
+			"uz": "`lang` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `lang` attribute?",
+			"ru": "Для чего используется атрибут `lang`?"
 		},
 		"options": {
 			"uz": [
-				"Turli ekranlar uchun rasm manbalarini taqdim etish",
-				"Matnni qalin qilish",
-				"Jadval yaratish",
-				"Rasm qo'shish"
+				"Elementning fon rangini belgilaydi",
+				"Elementning tilini ko‘rsatadi (masalan, 'uz' yoki 'en')",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydoniga sarlavha qo‘shadi"
 			],
 			"en": [
-				"Provide image sources for different screens",
-				"Make text bold",
-				"Create a table",
-				"Add an image"
+				"Specifies the background color of an element",
+				"Specifies the language of an element (e.g., 'uz' or 'en')",
+				"Indicates an alternative source for an image",
+				"Adds a title to a form field"
 			],
 			"ru": [
-				"Предоставить источники изображений для разных экранов",
-				"Сделать текст жирным",
-				"Создать таблицу",
-				"Добавить изображение"
+				"Указывает цвет фона элемента",
+				"Указывает язык элемента (например, 'uz' или 'en')",
+				"Указывает альтернативный источник изображения",
+				"Добавляет заголовок к полю формы"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`dir` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `dir` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `dir`?"
+		},
+		"options": {
+			"uz": [
+				"Matn yo‘nalishini belgilaydi (masalan, 'ltr' yoki 'rtl')",
+				"Elementni faqat o‘qish uchun qiladi",
+				"Matnni qalinlashtiradi",
+				"Rasmni avtomatik aylantiradi"
+			],
+			"en": [
+				"Specifies the text direction (e.g., 'ltr' or 'rtl')",
+				"Makes an element read-only",
+				"Bolds text",
+				"Automatically rotates an image"
+			],
+			"ru": [
+				"Указывает направление текста (например, 'ltr' или 'rtl')",
+				"Делает элемент доступным только для чтения",
+				"Выделяет текст жирным",
+				"Автоматически вращает изображение"
 			]
 		},
 		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`tabindex` atributi qanday vazifani bajaradi?",
+			"en": "What function does the `tabindex` attribute perform?",
+			"ru": "Какую функцию выполняет атрибут `tabindex`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"Elementning klaviatura navigatsiyasi tartibini belgilaydi",
+				"Forma maydonini majburiy qiladi",
+				"Rasmning muqobil manzilini ko‘rsatadi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Specifies the keyboard navigation order for an element",
+				"Makes a form field mandatory",
+				"Indicates an alternative source for an image"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает порядок навигации с клавиатуры для элемента",
+				"Делает поле формы обязательным",
+				"Указывает альтернативный источник изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`contenteditable` atributi qanday imkoniyat beradi?",
+			"en": "What capability does the `contenteditable` attribute provide?",
+			"ru": "Какую возможность предоставляет атрибут `contenteditable`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni faqat o‘qish uchun qiladi",
+				"Elementning kontentini foydalanuvchi tomonidan tahrirlashga imkon beradi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Makes an element read-only",
+				"Allows the content of an element to be edited by the user",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Делает элемент доступным только для чтения",
+				"Позволяет пользователю редактировать содержимое элемента",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`draggable` atributi qanday ishlatiladi?",
+			"en": "How is the `draggable` attribute used?",
+			"ru": "Как используется атрибут `draggable`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni sudrab tashlash imkonini beradi yoki taqiqlaydi",
+				"Elementning kengligini belgilaydi",
+				"Forma maydonini majburiy qiladi",
+				"Matnni avtomatik ravishda kursiv qiladi"
+			],
+			"en": [
+				"Enables or disables dragging of an element",
+				"Specifies the width of an element",
+				"Makes a form field mandatory",
+				"Automatically italicizes text"
+			],
+			"ru": [
+				"Включает или отключает возможность перетаскивания элемента",
+				"Указывает ширину элемента",
+				"Делает поле формы обязательным",
+				"Автоматически выделяет текст курсивом"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`spellcheck` atributi qanday vazifani bajaradi?",
+			"en": "What function does the `spellcheck` attribute perform?",
+			"ru": "Какую функцию выполняет атрибут `spellcheck`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"Matn kiritishda imlo tekshiruvini yoqadi yoki o‘chiradi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Enables or disables spell checking for text input",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Включает или отключает проверку орфографии для ввода текста",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`accesskey` atributi qanday imkoniyat beradi?",
+			"en": "What capability does the `accesskey` attribute provide?",
+			"ru": "Какую возможность предоставляет атрибут `accesskey`?"
+		},
+		"options": {
+			"uz": [
+				"Elementga klaviatura yorliq tugmasi orqali tezkor kirishni ta’minlaydi",
+				"Elementni faqat o‘qish uchun qiladi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Provides quick access to an element via a keyboard shortcut",
+				"Makes an element read-only",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Обеспечивает быстрый доступ к элементу через сочетание клавиш",
+				"Делает элемент доступным только для чтения",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`aria-label` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `aria-label` attribute?",
+			"ru": "Для чего используется атрибут `aria-label`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"Kirish imkoniyati uchun elementning tavsifini taqdim etadi",
+				"Forma maydonini majburiy qiladi",
+				"Matnni avtomatik ravishda kursiv qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Provides a description for an element for accessibility",
+				"Makes a form field mandatory",
+				"Automatically italicizes text"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Предоставляет описание элемента для доступности",
+				"Делает поле формы обязательным",
+				"Автоматически выделяет текст курсивом"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`role` atributi qanday ishlatiladi?",
+			"en": "How is the `role` attribute used?",
+			"ru": "Как используется атрибут `role`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"Elementning ARIA rolini belgilaydi (masalan, 'button' yoki 'navigation')",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Specifies the ARIA role of an element (e.g., 'button' or 'navigation')",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает роль ARIA для элемента (например, 'button' или 'navigation')",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`poster` atributi qaysi tegda ishlatiladi va uning vazifasi nima?",
+			"en": "Which tag uses the `poster` attribute, and what is its function?",
+			"ru": "В каком теге используется атрибут `poster`, и какова его функция?"
+		},
+		"options": {
+			"uz": [
+				"<img> tegi, rasm manzilini ko‘rsatadi",
+				"<video> tegi, video yuklanmaguncha ko‘rsatiladigan rasmni belgilaydi",
+				"<a> tegi, havola turini ko‘rsatadi",
+				"<div> tegi, element joylashuvini o‘zgartiradi"
+			],
+			"en": [
+				"<img> tag, specifies the image source",
+				"<video> tag, specifies an image to display before the video loads",
+				"<a> tag, indicates the link type",
+				"<div> tag, changes the element’s position"
+			],
+			"ru": [
+				"Тег <img>, указывает источник изображения",
+				"Тег <video>, указывает изображение, отображаемое до загрузки видео",
+				"Тег <a>, указывает тип ссылки",
+				"Тег <div>, изменяет положение элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`autoplay` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `autoplay` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `autoplay`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni ko‘rinmas qiladi",
+				"<audio> yoki <video> tegi uchun avtomatik ijro etishni yoqadi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Makes an element invisible",
+				"Enables automatic playback for <audio> or <video> tags",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Делает элемент невидимым",
+				"Включает автоматическое воспроизведение для тегов <audio> или <video>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`loop` atributi qanday ishlatiladi?",
+			"en": "How is the `loop` attribute used?",
+			"ru": "Как используется атрибут `loop`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<audio> yoki <video> tegi uchun takroriy ijro etishni yoqadi",
+				"Forma maydonini majburiy qiladi",
+				"Matnni avtomatik ravishda kursiv qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Enables looping playback for <audio> or <video> tags",
+				"Makes a form field mandatory",
+				"Automatically italicizes text"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Включает циклическое воспроизведение для тегов <audio> или <video>",
+				"Делает поле формы обязательным",
+				"Автоматически выделяет текст курсивом"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`controls` atributi qanday vazifani bajaradi?",
+			"en": "What function does the `controls` attribute perform?",
+			"ru": "Какую функцию выполняет атрибут `controls`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<audio> yoki <video> tegi uchun ijro boshqaruv elementlarini ko‘rsatadi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Displays playback controls for <audio> or <video> tags",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Отображает элементы управления воспроизведением для тегов <audio> или <video>",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`muted` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `muted` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `muted`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni ko‘rinmas qiladi",
+				"<audio> yoki <video> tegi uchun ovozni o‘chiradi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Makes an element invisible",
+				"Mutes the sound for <audio> or <video> tags",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Делает элемент невидимым",
+				"Отключает звук для тегов <audio> или <video>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`width` atributi qaysi tegda ishlatiladi va uning roli nima?",
+			"en": "Which tag uses the `width` attribute, and what is its role?",
+			"ru": "В каком теге используется атрибут `width`, и какова его роль?"
+		},
+		"options": {
+			"uz": [
+				"<a> tegi, havola turini ko‘rsatadi",
+				"<img> tegi, rasmning kengligini belgilaydi",
+				"<form> tegi, formani yuborish usulini belgilaydi",
+				"<div> tegi, elementning fon rangini o‘zgartiradi"
+			],
+			"en": [
+				"<a> tag, indicates the link type",
+				"<img> tag, specifies the width of an image",
+				"<form> tag, defines the form submission method",
+				"<div> tag, changes the element’s background color"
+			],
+			"ru": [
+				"Тег <a>, указывает тип ссылки",
+				"Тег <img>, указывает ширину изображения",
+				"Тег <form>, определяет метод отправки формы",
+				"Тег <div>, изменяет цвет фона элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`height` atributi qanday ishlatiladi?",
+			"en": "How is the `height` attribute used?",
+			"ru": "Как используется атрибут `height`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<img> yoki <canvas> tegi uchun balandlikni belgilaydi",
+				"Forma maydonini majburiy qiladi",
+				"Matnni avtomatik ravishda kursiv qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Specifies the height for <img> or <canvas> tags",
+				"Makes a form field mandatory",
+				"Automatically italicizes text"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает высоту для тегов <img> или <canvas>",
+				"Делает поле формы обязательным",
+				"Автоматически выделяет текст курсивом"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`charset` atributi qaysi tegda ishlatiladi va uning maqsadi nima?",
+			"en": "Which tag uses the `charset` attribute, and what is its purpose?",
+			"ru": "В каком теге используется атрибут `charset`, и какова его цель?"
+		},
+		"options": {
+			"uz": [
+				"<img> tegi, rasm manzilini ko‘rsatadi",
+				"<meta> tegi, hujjatning belgi kodlash usulini belgilaydi",
+				"<a> tegi, havola turini ko‘rsatadi",
+				"<div> tegi, element joylashuvini o‘zgartiradi"
+			],
+			"en": [
+				"<img> tag, specifies the image source",
+				"<meta> tag, specifies the character encoding of the document",
+				"<a> tag, indicates the link type",
+				"<div> tag, changes the element’s position"
+			],
+			"ru": [
+				"Тег <img>, указывает источник изображения",
+				"Тег <meta>, указывает кодировку символов документа",
+				"Тег <a>, указывает тип ссылки",
+				"Тег <div>, изменяет положение элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`async` atributi qanday ishlatiladi?",
+			"en": "How is the `async` attribute used?",
+			"ru": "Как используется атрибут `async`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<script> tegi uchun asinxron yuklashni yoqadi",
+				"Forma maydonini majburiy qiladi",
+				"Matnni avtomatik ravishda kursiv qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Enables asynchronous loading for the <script> tag",
+				"Makes a form field mandatory",
+				"Automatically italicizes text"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Включает асинхронную загрузку для тега <script>",
+				"Делает поле формы обязательным",
+				"Автоматически выделяет текст курсивом"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`defer` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `defer` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `defer`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni ko‘rinmas qiladi",
+				"<script> tegi uchun skriptni sahifa yuklangandan so‘ng ijro etishni kechiktiradi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Makes an element invisible",
+				"Delays script execution until the page is loaded for the <script> tag",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Делает элемент невидимым",
+				"Откладывает выполнение скрипта до завершения загрузки страницы для тега <script>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`name` atributi qaysi tegda ishlatiladi va uning roli nima?",
+			"en": "Which tag uses the `name` attribute, and what is its role?",
+			"ru": "В каком теге используется атрибут `name`, и какова его роль?"
+		},
+		"options": {
+			"uz": [
+				"<img> tegi, rasm o‘lchamini belgilaydi",
+				"<input> tegi, forma maydonining identifikatorini ko‘rsatadi",
+				"<a> tegi, havola sarlavhasini belgilaydi",
+				"<div> tegi, elementning fon rangini o‘zgartiradi"
+			],
+			"en": [
+				"<img> tag, specifies the image size",
+				"<input> tag, specifies the identifier for a form field",
+				"<a> tag, defines the link title",
+				"<div> tag, changes the element’s background color"
+			],
+			"ru": [
+				"Тег <img>, указывает размер изображения",
+				"Тег <input>, указывает идентификатор для поля формы",
+				"Тег <a>, определяет заголовок ссылки",
+				"Тег <div>, изменяет цвет фона элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`for` atributi qanday ishlatiladi?",
+			"en": "How is the `for` attribute used?",
+			"ru": "Как используется атрибут `for`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<label> tegi uchun bog‘langan forma maydonini ko‘rsatadi",
+				"Matnni avtomatik ravishda kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Specifies the associated form field for the <label> tag",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Указывает связанное поле формы для тега <label>",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`pattern` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `pattern` attribute?",
+			"ru": "Для чего используется атрибут `pattern`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<input> tegi uchun kiritiladigan ma’lumotlar uchun naqshni belgilaydi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Specifies a pattern for input data in the <input> tag",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает шаблон для входных данных в теге <input>",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`accept` atributi qaysi tegda ishlatiladi va uning vazifasi nima?",
+			"en": "Which tag uses the `accept` attribute, and what is its function?",
+			"ru": "В каком теге используется атрибут `accept`, и какова его функция?"
+		},
+		"options": {
+			"uz": [
+				"<img> tegi, rasm manzilini ko‘rsatadi",
+				"<input> tegi, fayl yuklashda qabul qilinadigan fayl turlarini belgilaydi",
+				"<a> tegi, havola turini ko‘rsatadi",
+				"<div> tegi, element joylashuvini o‘zgartiradi"
+			],
+			"en": [
+				"<img> tag, specifies the image source",
+				"<input> tag, specifies the accepted file types for file uploads",
+				"<a> tag, indicates the link type",
+				"<div> tag, changes the element’s position"
+			],
+			"ru": [
+				"Тег <img>, указывает источник изображения",
+				"Тег <input>, указывает допустимые типы файлов для загрузки",
+				"Тег <a>, указывает тип ссылки",
+				"Тег <div>, изменяет положение элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`multiple` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `multiple` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `multiple`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni ko‘rinmas qiladi",
+				"<input> yoki <select> tegi uchun bir nechta qiymat tanlashni yoqadi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Makes an element invisible",
+				"Enables selection of multiple values for <input> or <select> tags",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Делает элемент невидимым",
+				"Позволяет выбирать несколько значений для тегов <input> или <select>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`readonly` atributi qanday ishlatiladi?",
+			"en": "How is the `readonly` attribute used?",
+			"ru": "Как используется атрибут `readonly`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<input> yoki <textarea> tegi uchun faqat o‘qish imkonini beradi",
+				"Forma maydonini majburiy qiladi",
+				"Matnni avtomatik ravishda kursiv qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Allows only reading for <input> or <textarea> tags",
+				"Makes a form field mandatory",
+				"Automatically italicizes text"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Разрешает только чтение для тегов <input> или <textarea>",
+				"Делает поле формы обязательным",
+				"Автоматически выделяет текст курсивом"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`autocomplete` atributi qanday vazifani bajaradi?",
+			"en": "What function does the `autocomplete` attribute perform?",
+			"ru": "Какую функцию выполняет атрибут `autocomplete`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<form> yoki <input> tegi uchun avtomatik to‘ldirishni boshqaradi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Controls autofill for <form> or <input> tags",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Управляет автозаполнением для тегов <form> или <input>",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`form` atributi qanday ishlatiladi?",
+			"en": "How is the `form` attribute used?",
+			"ru": "Как используется атрибут `form`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<input> yoki <button> tegi uchun bog‘langan forma identifikatorini ko‘rsatadi",
+				"Matnni avtomatik ravishda kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Specifies the associated form identifier for <input> or <button> tags",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Указывает идентификатор связанной формы для тегов <input> или <button>",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`novalidate` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `novalidate` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `novalidate`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni ko‘rinmas qiladi",
+				"<form> tegi uchun brauzer tomonidan tekshirishni o‘chiradi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Makes an element invisible",
+				"Disables browser validation for the <form> tag",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Делает элемент невидимым",
+				"Отключает проверку браузером для тега <form>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`loading` atributi qaysi tegda ishlatiladi va uning maqsadi nima?",
+			"en": "Which tag uses the `loading` attribute, and what is its purpose?",
+			"ru": "В каком теге используется атрибут `loading`, и какова его цель?"
+		},
+		"options": {
+			"uz": [
+				"<a> tegi, havola turini ko‘rsatadi",
+				"<img> tegi, rasmni yuklash usulini boshqaradi (masalan, 'lazy')",
+				"<form> tegi, formani yuborish usulini belgilaydi",
+				"<div> tegi, elementning fon rangini o‘zgartiradi"
+			],
+			"en": [
+				"<a> tag, indicates the link type",
+				"<img> tag, controls the image loading method (e.g., 'lazy')",
+				"<form> tag, defines the form submission method",
+				"<div> tag, changes the element’s background color"
+			],
+			"ru": [
+				"Тег <a>, указывает тип ссылки",
+				"Тег <img>, управляет способом загрузки изображения (например, 'lazy')",
+				"Тег <form>, определяет метод отправки формы",
+				"Тег <div>, изменяет цвет фона элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`sizes` atributi qanday ishlatiladi?",
+			"en": "How is the `sizes` attribute used?",
+			"ru": "Как используется атрибут `sizes`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<img> yoki <source> tegi uchun rasm o‘lchamlarini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi",
+				"Matnni avtomatik ravishda kursiv qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Specifies image sizes for <img> or <source> tags",
+				"Makes a form field mandatory",
+				"Automatically italicizes text"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает размеры изображения для тегов <img> или <source>",
+				"Делает поле формы обязательным",
+				"Автоматически выделяет текст курсивом"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`srcset` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `srcset` attribute?",
+			"ru": "Для чего используется атрибут `srcset`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<img> yoki <source> tegi uchun turli o‘lchamdagi rasm manbalarini ko‘rsatadi",
+				"Matnni avtomatik ravishda kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Specifies multiple image sources for different sizes in <img> or <source> tags",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Указывает несколько источников изображений для разных размеров в тегах <img> или <source>",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`crossorigin` atributi qanday ishlatiladi?",
+			"en": "How is the `crossorigin` attribute used?",
+			"ru": "Как используется атрибут `crossorigin`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<img>, <script> yoki <link> tegi uchun resursning domenlararo so‘rovlarini boshqaradi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Manages cross-origin requests for resources in <img>, <script>, or <link> tags",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Управляет кросс-доменными запросами для ресурсов в тегах <img>, <script> или <link>",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`integrity` atributi qanday vazifani bajaradi?",
+			"en": "What function does the `integrity` attribute perform?",
+			"ru": "Какую функцию выполняет атрибут `integrity`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<script> yoki <link> tegi uchun resursning yaxlitligini tekshiradi",
+				"Matnni avtomatik ravishda kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Verifies the integrity of a resource for <script> or <link> tags",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Проверяет целостность ресурса для тегов <script> или <link>",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`aria-hidden` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `aria-hidden` attribute?",
+			"ru": "Для чего используется атрибут `aria-hidden`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni kirish imkoniyati texnologiyalaridan yashiradi",
+				"Elementning fon rangini o‘zgartiradi",
+				"Forma maydonini majburiy qiladi",
+				"Matnni avtomatik kursiv qiladi"
+			],
+			"en": [
+				"Hides an element from accessibility technologies",
+				"Changes the background color of an element",
+				"Makes a form field mandatory",
+				"Automatically italicizes text"
+			],
+			"ru": [
+				"Скрывает элемент от технологий доступности",
+				"Изменяет цвет фона элемента",
+				"Делает поле формы обязательным",
+				"Автоматически выделяет текст курсивом"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`aria-live` atributi qanday vazifani bajaradi?",
+			"en": "What function does the `aria-live` attribute perform?",
+			"ru": "Какую функцию выполняет атрибут `aria-live`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning joylashuvini belgilaydi",
+				"Dinamik yangilanishlarni kirish imkoniyati texnologiyalariga xabar beradi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Matnni qalinlashtiradi"
+			],
+			"en": [
+				"Specifies the position of an element",
+				"Notifies accessibility technologies of dynamic updates",
+				"Indicates an alternative source for an image",
+				"Bolds text"
+			],
+			"ru": [
+				"Указывает положение элемента",
+				"Уведомляет технологии доступности о динамических обновлениях",
+				"Указывает альтернативный источник изображения",
+				"Выделяет текст жирным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`aria-controls` atributi qanday ishlatiladi?",
+			"en": "How is the `aria-controls` attribute used?",
+			"ru": "Как используется атрибут `aria-controls`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"Element boshqaradigan boshqa elementning ID sini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi",
+				"Matnni avtomatik kursiv qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Indicates the ID of another element controlled by this element",
+				"Makes a form field mandatory",
+				"Automatically italicizes text"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Указывает ID другого элемента, управляемого этим элементом",
+				"Делает поле формы обязательным",
+				"Автоматически выделяет текст курсивом"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`aria-expanded` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `aria-expanded` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `aria-expanded`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning yashirinligini belgilaydi",
+				"Elementning kengaytirilgan yoki yig‘ilgan holatini ko‘rsatadi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Specifies the visibility of an element",
+				"Indicates whether an element is expanded or collapsed",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Указывает видимость элемента",
+				"Указывает, развернут или свернут элемент",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`aria-checked` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `aria-checked` attribute?",
+			"ru": "Для чего используется атрибут `aria-checked`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"Belgilash katakchasi yoki tugmaning belgilangan holatini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi",
+				"Rasmning muqobil manzilini ko‘rsatadi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Indicates the checked state of a checkbox or toggle",
+				"Makes a form field mandatory",
+				"Indicates an alternative source for an image"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает состояние отмеченности флажка или переключателя",
+				"Делает поле формы обязательным",
+				"Указывает альтернативный источник изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`min` atributi qaysi tegda ishlatiladi va uning roli nima?",
+			"en": "Which tag uses the `min` attribute, and what is its role?",
+			"ru": "В каком теге используется атрибут `min`, и какова его роль?"
+		},
+		"options": {
+			"uz": [
+				"<img> tegi, rasm o‘lchamini belgilaydi",
+				"<input> tegi, son yoki sana uchun minimal qiymatni ko‘rsatadi",
+				"<a> tegi, havola sarlavhasini belgilaydi",
+				"<div> tegi, elementning fon rangini o‘zgartiradi"
+			],
+			"en": [
+				"<img> tag, specifies the image size",
+				"<input> tag, specifies the minimum value for a number or date",
+				"<a> tag, defines the link title",
+				"<div> tag, changes the element’s background color"
+			],
+			"ru": [
+				"Тег <img>, указывает размер изображения",
+				"Тег <input>, указывает минимальное значение для числа или даты",
+				"Тег <a>, определяет заголовок ссылки",
+				"Тег <div>, изменяет цвет фона элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`max` atributi qanday ishlatiladi?",
+			"en": "How is the `max` attribute used?",
+			"ru": "Как используется атрибут `max`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<input> tegi uchun son yoki sana uchun maksimal qiymatni ko‘rsatadi",
+				"Matnni avtomatik kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Specifies the maximum value for a number or date in the <input> tag",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Указывает максимальное значение для числа или даты в теге <input>",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`step` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `step` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `step`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni yashiradi",
+				"<input> tegi uchun son yoki vaqt qiymatlarining qadamlarini belgilaydi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Hides an element",
+				"Specifies the step increments for number or time values in the <input> tag",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Скрывает элемент",
+				"Указывает шаги приращения для числовых или временных значений в теге <input>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`list` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `list` attribute?",
+			"ru": "Для чего используется атрибут `list`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<input> tegi uchun oldindan belgilangan variantlar ro‘yxatini ko‘rsatadi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Specifies a list of predefined options for the <input> tag",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает список предопределенных вариантов для тега <input>",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`formaction` atributi qaysi tegda ishlatiladi va uning vazifasi nima?",
+			"en": "Which tag uses the `formaction` attribute, and what is its function?",
+			"ru": "В каком теге используется атрибут `formaction`, и какова его функция?"
+		},
+		"options": {
+			"uz": [
+				"<img> tegi, rasm manzilini ko‘rsatadi",
+				"<button> yoki <input> tegi, forma yuboriladigan URL ni ko‘rsatadi",
+				"<a> tegi, havola turini ko‘rsatadi",
+				"<div> tegi, elementning fon rangini o‘zgartiradi"
+			],
+			"en": [
+				"<img> tag, specifies the image source",
+				"<button> or <input> tag, specifies the URL where the form is submitted",
+				"<a> tag, indicates the link type",
+				"<div> tag, changes the element’s background color"
+			],
+			"ru": [
+				"Тег <img>, указывает источник изображения",
+				"Тег <button> или <input>, указывает URL, куда отправляется форма",
+				"Тег <a>, указывает тип ссылки",
+				"Тег <div>, изменяет цвет фона элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`formenctype` atributi qanday ishlatiladi?",
+			"en": "How is the `formenctype` attribute used?",
+			"ru": "Как используется атрибут `formenctype`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<button> yoki <input> tegi uchun forma ma’lumotlari kodlash turini ko‘rsatadi",
+				"Matnni avtomatik kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Specifies the encoding type for form data in <button> or <input> tags",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Указывает тип кодирования данных формы в тегах <button> или <input>",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`formmethod` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `formmethod` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `formmethod`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni yashiradi",
+				"<button> yoki <input> tegi uchun forma yuborish usulini belgilaydi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Hides an element",
+				"Specifies the form submission method for <button> or <input> tags",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Скрывает элемент",
+				"Указывает метод отправки формы для тегов <button> или <input>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`formtarget` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `formtarget` attribute?",
+			"ru": "Для чего используется атрибут `formtarget`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<button> yoki <input> tegi uchun forma javobi qayerda ochilishini ko‘rsatadi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Specifies where the form response opens for <button> or <input> tags",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает, где открывается ответ формы для тегов <button> или <input>",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`decoding` atributi qaysi tegda ishlatiladi va uning roli nima?",
+			"en": "Which tag uses the `decoding` attribute, and what is its role?",
+			"ru": "В каком теге используется атрибут `decoding`, и какова его роль?"
+		},
+		"options": {
+			"uz": [
+				"<a> tegi, havola turini ko‘rsatadi",
+				"<img> tegi, rasmni dekodlash usulini belgilaydi",
+				"<form> tegi, formani yuborish usulini belgilaydi",
+				"<div> tegi, elementning fon rangini o‘zgartiradi"
+			],
+			"en": [
+				"<a> tag, indicates the link type",
+				"<img> tag, specifies the image decoding method",
+				"<form> tag, defines the form submission method",
+				"<div> tag, changes the element’s background color"
+			],
+			"ru": [
+				"Тег <a>, указывает тип ссылки",
+				"Тег <img>, указывает метод декодирования изображения",
+				"Тег <form>, определяет метод отправки формы",
+				"Тег <div>, изменяет цвет фона элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`fetchpriority` atributi qanday ishlatiladi?",
+			"en": "How is the `fetchpriority` attribute used?",
+			"ru": "Как используется атрибут `fetchpriority`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<img> yoki <script> tegi uchun resursni yuklash ustuvorligini belgilaydi",
+				"Matnni avtomatik kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Specifies the fetch priority for resources in <img> or <script> tags",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Указывает приоритет загрузки ресурсов в тегах <img> или <script>",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`referrerpolicy` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `referrerpolicy` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `referrerpolicy`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni yashiradi",
+				"<img>, <a>, yoki <link> tegi uchun referrer ma’lumotlarini boshqaradi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Hides an element",
+				"Controls referrer information for <img>, <a>, or <link> tags",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Скрывает элемент",
+				"Управляет информацией о реферере для тегов <img>, <a> или <link>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`translate` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `translate` attribute?",
+			"ru": "Для чего используется атрибут `translate`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"Elementning matnini avtomatik tarjima qilishni yoqadi yoki o‘chiradi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Enables or disables automatic translation of an element’s text",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Включает или отключает автоматический перевод текста элемента",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`inert` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `inert` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `inert`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni yashiradi",
+				"Elementni foydalanuvchi o‘zaro ta’siridan (masalan, bosish yoki fokus) chiqarib tashlaydi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Hides an element",
+				"Removes an element from user interaction (e.g., clicking or focusing)",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Скрывает элемент",
+				"Исключает элемент из взаимодействия с пользователем (например, клики или фокус)",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`popover` atributi qanday ishlatiladi?",
+			"en": "How is the `popover` attribute used?",
+			"ru": "Как используется атрибут `popover`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"Elementni ochiladigan oynaga aylantiradi",
+				"Matnni avtomatik kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Turns an element into a popover",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Превращает элемент в всплывающее окно",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`enterkeyhint` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `enterkeyhint` attribute?",
+			"ru": "Для чего используется атрибут `enterkeyhint`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<input> yoki <textarea> tegi uchun virtual klaviaturada Enter tugmasining vazifasini ko‘rsatadi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Specifies the action of the Enter key on a virtual keyboard for <input> or <textarea> tags",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает действие клавиши Enter на виртуальной клавиатуре для тегов <input> или <textarea>",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`inputmode` atributi qanday ishlatiladi?",
+			"en": "How is the `inputmode` attribute used?",
+			"ru": "Как используется атрибут `inputmode`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<input> yoki <textarea> tegi uchun kiritish klaviaturasining turini ko‘rsatadi",
+				"Matnni avtomatik kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Specifies the type of input keyboard for <input> or <textarea> tags",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Указывает тип клавиатуры ввода для тегов <input> или <textarea>",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`autocapitalize` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `autocapitalize` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `autocapitalize`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni yashiradi",
+				"<input> yoki <textarea> tegi uchun matn kiritishda avtomatik bosh harf qo‘yishni boshqaradi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Hides an element",
+				"Controls automatic capitalization for text input in <input> or <textarea> tags",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Скрывает элемент",
+				"Управляет автоматической капитализацией текста в тегах <input> или <textarea>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`http-equiv` atributi qaysi tegda ishlatiladi va uning roli nima?",
+			"en": "Which tag uses the `http-equiv` attribute, and what is its role?",
+			"ru": "В каком теге используется атрибут `http-equiv`, и какова его роль?"
+		},
+		"options": {
+			"uz": [
+				"<img> tegi, rasm manzilini ko‘rsatadi",
+				"<meta> tegi, brauzer uchun HTTP sarlavhasini taqlid qiladi",
+				"<a> tegi, havola turini ko‘rsatadi",
+				"<div> tegi, elementning fon rangini o‘zgartiradi"
+			],
+			"en": [
+				"<img> tag, specifies the image source",
+				"<meta> tag, emulates an HTTP header for the browser",
+				"<a> tag, indicates the link type",
+				"<div> tag, changes the element’s background color"
+			],
+			"ru": [
+				"Тег <img>, указывает источник изображения",
+				"Тег <meta>, эмулирует HTTP-заголовок для браузера",
+				"Тег <a>, указывает тип ссылки",
+				"Тег <div>, изменяет цвет фона элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`content` atributi qanday ishlatiladi?",
+			"en": "How is the `content` attribute used?",
+			"ru": "Как используется атрибут `content`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<meta> tegi uchun meta-ma’lumotlarning qiymatini ko‘rsatadi",
+				"Matnni avtomatik kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Specifies the value of meta-information for the <meta> tag",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Указывает значение мета-информации для тега <meta>",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`colspan` atributi qanday ta’sir ko‘rsatadi?",
+			"en": "What effect does the `colspan` attribute have?",
+			"ru": "Какой эффект оказывает атрибут `colspan`?"
+		},
+		"options": {
+			"uz": [
+				"Elementni yashiradi",
+				"<td> yoki <th> tegi uchun katakchaning bir nechta ustunlarni egallashini belgilaydi",
+				"Matnni qalinlashtiradi",
+				"Rasm o‘lchamini o‘zgartiradi"
+			],
+			"en": [
+				"Hides an element",
+				"Specifies that a cell spans multiple columns for <td> or <th> tags",
+				"Bolds text",
+				"Changes the image size"
+			],
+			"ru": [
+				"Скрывает элемент",
+				"Указывает, что ячейка охватывает несколько столбцов для тегов <td> или <th>",
+				"Выделяет текст жирным",
+				"Изменяет размер изображения"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`rowspan` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `rowspan` attribute?",
+			"ru": "Для чего используется атрибут `rowspan`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<td> yoki <th> tegi uchun katakchaning bir nechta qatorlarni egallashini belgilaydi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Specifies that a cell spans multiple rows for <td> or <th> tags",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает, что ячейка охватывает несколько строк для тегов <td> или <th>",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`scope` atributi qaysi tegda ishlatiladi va uning roli nima?",
+			"en": "Which tag uses the `scope` attribute, and what is its role?",
+			"ru": "В каком теге используется атрибут `scope`, и какова его роль?"
+		},
+		"options": {
+			"uz": [
+				"<img> tegi, rasm manzilini ko‘rsatadi",
+				"<th> tegi, sarlavha katakchasining qamrovini (ustun yoki qator) ko‘rsatadi",
+				"<a> tegi, havola turini ko‘rsatadi",
+				"<div> tegi, elementning fon rangini o‘zgartiradi"
+			],
+			"en": [
+				"<img> tag, specifies the image source",
+				"<th> tag, specifies the scope (column or row) of a header cell",
+				"<a> tag, indicates the link type",
+				"<div> tag, changes the element’s background color"
+			],
+			"ru": [
+				"Тег <img>, указывает источник изображения",
+				"Тег <th>, указывает область действия (столбец или строка) ячейки заголовка",
+				"Тег <a>, указывает тип ссылки",
+				"Тег <div>, изменяет цвет фона элемента"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`headers` atributi qanday ishlatiladi?",
+			"en": "How is the `headers` attribute used?",
+			"ru": "Как используется атрибут `headers`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"<td> yoki <th> tegi uchun bog‘langan sarlavha katakchalarining ID larini ko‘rsatadi",
+				"Matnni avtomatik kursiv qiladi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Specifies the width of an element",
+				"Specifies the IDs of associated header cells for <td> or <th> tags",
+				"Automatically italicizes text",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Указывает ширину элемента",
+				"Указывает ID связанных ячеек заголовков для тегов <td> или <th>",
+				"Автоматически выделяет текст курсивом",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
+	},
+	{
+		"topic": "HTML",
+		"question": {
+			"uz": "`datetime` atributi qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the `datetime` attribute?",
+			"ru": "Для чего используется атрибут `datetime`?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini o‘zgartiradi",
+				"<time> yoki <del>/<ins> tegi uchun aniq sana va vaqtni ko‘rsatadi",
+				"Rasmning muqobil manzilini ko‘rsatadi",
+				"Forma maydonini majburiy qiladi"
+			],
+			"en": [
+				"Changes the background color of an element",
+				"Specifies a precise date and time for <time> or <del>/<ins> tags",
+				"Indicates an alternative source for an image",
+				"Makes a form field mandatory"
+			],
+			"ru": [
+				"Изменяет цвет фона элемента",
+				"Указывает точную дату и время для тегов <time> или <del>/<ins>",
+				"Указывает альтернативный источник изображения",
+				"Делает поле формы обязательным"
+			]
+		},
+		"correct": 1
 	}
 ]

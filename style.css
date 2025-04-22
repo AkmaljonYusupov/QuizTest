@@ -325,6 +325,9 @@ body {
 	display: flex;
 	align-items: center;
 }
+.contact-info p strong {
+	margin-right: 10px;
+}
 
 .contact-info i {
 	font-size: 1.2rem;
