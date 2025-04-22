@@ -9913,5 +9913,3166 @@
 			]
 		},
 		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "CSS'dagi 'display' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'display' property in CSS?",
+			"ru": "Для чего используется свойство 'display' в CSS?"
+		},
+		"options": {
+			"uz": [
+				"Elementning ko'rinish tarzini belgilaydi",
+				"Matn rangini o'zgartiradi",
+				"Elementning joylashuvini aniqlaydi",
+				"Elementning shaffofligini sozlaydi"
+			],
+			"en": [
+				"Defines how an element is displayed",
+				"Changes the text color",
+				"Sets the element's position",
+				"Adjusts the element's opacity"
+			],
+			"ru": [
+				"Определяет, как отображается элемент",
+				"Изменяет цвет текста",
+				"Устанавливает позицию элемента",
+				"Регулирует прозрачность элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'position: absolute' qanday ta'sir ko'rsatadi?",
+			"en": "What effect does 'position: absolute' have?",
+			"ru": "Какой эффект оказывает 'position: absolute'?"
+		},
+		"options": {
+			"uz": [
+				"Elementni ota elementga nisbatan joylashtiradi",
+				"Elementni sahifa oqimida qoldiradi",
+				"Elementni sahifa tepasiga yopishtiradi",
+				"Elementni avtomatik markazlashtiradi"
+			],
+			"en": [
+				"Positions the element relative to its nearest positioned ancestor",
+				"Keeps the element in the normal document flow",
+				"Sticks the element to the top of the page",
+				"Automatically centers the element"
+			],
+			"ru": [
+				"Позиционирует элемент относительно ближайшего позиционированного предка",
+				"Оставляет элемент в нормальном потоке документа",
+				"Прикрепляет элемент к верхней части страницы",
+				"Автоматически центрирует элемент"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'flex' displey turi qanday afzallik beradi?",
+			"en": "What advantage does the 'flex' display type provide?",
+			"ru": "Какое преимущество предоставляет тип отображения 'flex'?"
+		},
+		"options": {
+			"uz": [
+				"Elementlarni moslashuvchan tartibda joylashtirish",
+				"Elementlarni statik holatda saqlash",
+				"Elementlarni faqat gorizontal joylashtirish",
+				"Elementlarni yashirish"
+			],
+			"en": [
+				"Flexible arrangement of elements",
+				"Keeps elements in a static state",
+				"Positions elements only horizontally",
+				"Hides elements"
+			],
+			"ru": [
+				"Гибкое размещение элементов",
+				"Сохраняет элементы в статическом состоянии",
+				"Располагает элементы только горизонтально",
+				"Скрывает элементы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'margin' xususiyati nima uchun ishlatiladi?",
+			"en": "What is the 'margin' property used for?",
+			"ru": "Для чего используется свойство 'margin'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning tashqi chegaralari orasidagi bo'shliqni belgilaydi",
+				"Elementning ichki chegaralarini sozlaydi",
+				"Elementning rangini o'zgartiradi",
+				"Elementning balandligini aniqlaydi"
+			],
+			"en": [
+				"Sets the space outside an element's borders",
+				"Adjusts the space inside an element's borders",
+				"Changes the element's color",
+				"Defines the element's height"
+			],
+			"ru": [
+				"Устанавливает пространство вне границ элемента",
+				"Регулирует пространство внутри границ элемента",
+				"Изменяет цвет элемента",
+				"Определяет высоту элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'padding' xususiyati qanday ishlaydi?",
+			"en": "How does the 'padding' property work?",
+			"ru": "Как работает свойство 'padding'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning ichki kontenti va chegarasi orasidagi bo'shliqni belgilaydi",
+				"Elementning tashqi bo'shliqlarini sozlaydi",
+				"Elementning shaffofligini o'zgartiradi",
+				"Elementning kengligini aniqlaydi"
+			],
+			"en": [
+				"Sets the space between an element's content and its border",
+				"Adjusts the space outside an element",
+				"Changes the element's opacity",
+				"Defines the element's width"
+			],
+			"ru": [
+				"Устанавливает пространство между содержимым элемента и его границей",
+				"Регулирует пространство вне элемента",
+				"Изменяет прозрачность элемента",
+				"Определяет ширину элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'border' xususiyati qanday elementlarni o'z ichiga oladi?",
+			"en": "What elements does the 'border' property include?",
+			"ru": "Какие элементы включает свойство 'border'?"
+		},
+		"options": {
+			"uz": [
+				"Chegara kengligi, uslubi va rangi",
+				"Matn shrifti va o'lchami",
+				"Element joylashuvi va balandligi",
+				"Fon rangi va tasviri"
+			],
+			"en": [
+				"Border width, style, and color",
+				"Text font and size",
+				"Element position and height",
+				"Background color and image"
+			],
+			"ru": [
+				"Ширина, стиль и цвет границы",
+				"Шрифт и размер текста",
+				"Позиция и высота элемента",
+				"Цвет фона и изображение"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'box-sizing: border-box' qanday ta'sir ko'rsatadi?",
+			"en": "What effect does 'box-sizing: border-box' have?",
+			"ru": "Какой эффект оказывает 'box-sizing: border-box'?"
+		},
+		"options": {
+			"uz": [
+				"Kenglik va balandlikka chegara va paddingni o'z ichiga oladi",
+				"Faqat kontent kengligini hisoblaydi",
+				"Elementni markazlashtiradi",
+				"Elementning shaffofligini o'zgartiradi"
+			],
+			"en": [
+				"Includes border and padding in the width and height",
+				"Calculates only the content width",
+				"Centers the element",
+				"Changes the element's opacity"
+			],
+			"ru": [
+				"Включает границу и внутренний отступ в ширину и высоту",
+				"Рассчитывает только ширину содержимого",
+				"Центрирует элемент",
+				"Изменяет прозрачность элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'float' xususiyati qanday ishlaydi?",
+			"en": "How does the 'float' property work?",
+			"ru": "Как работает свойство 'float'?"
+		},
+		"options": {
+			"uz": [
+				"Elementni chapga yoki o'ngga suradi va boshqa kontent uning atrofida o'raladi",
+				"Elementni sahifa tepasiga yopishtiradi",
+				"Elementni markazlashtiradi",
+				"Elementni yashiradi"
+			],
+			"en": [
+				"Moves the element to the left or right, allowing content to wrap around it",
+				"Sticks the element to the top of the page",
+				"Centers the element",
+				"Hides the element"
+			],
+			"ru": [
+				"Перемещает элемент влево или вправо, позволяя содержимому обтекать его",
+				"Прикрепляет элемент к верхней части страницы",
+				"Центрирует элемент",
+				"Скрывает элемент"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'clear' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'clear' property?",
+			"ru": "Для чего используется свойство 'clear'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning suzuvchi elementlar atrofida joylashishini taqiqlaydi",
+				"Elementning rangini o'zgartiradi",
+				"Elementni markazlashtiradi",
+				"Elementning chegarasini olib tashlaydi"
+			],
+			"en": [
+				"Prevents an element from being placed next to floating elements",
+				"Changes the element's color",
+				"Centers the element",
+				"Removes the element's border"
+			],
+			"ru": [
+				"Запрещает элементу располагаться рядом с плавающими элементами",
+				"Изменяет цвет элемента",
+				"Центрирует элемент",
+				"Удаляет границу элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'z-index' xususiyati qanday ishlaydi?",
+			"en": "How does the 'z-index' property work?",
+			"ru": "Как работает свойство 'z-index'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning vertikal joylashuv tartibini belgilaydi",
+				"Elementning kengligini sozlaydi",
+				"Elementning shaffofligini o'zgartiradi",
+				"Elementning matn o'lchamini belgilaydi"
+			],
+			"en": [
+				"Sets the vertical stacking order of elements",
+				"Adjusts the element's width",
+				"Changes the element's opacity",
+				"Sets the element's text size"
+			],
+			"ru": [
+				"Устанавливает порядок наложения элементов по вертикали",
+				"Регулирует ширину элемента",
+				"Изменяет прозрачность элемента",
+				"Устанавливает размер текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'opacity' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'opacity' property have?",
+			"ru": "Какой эффект оказывает свойство 'opacity'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning shaffoflik darajasini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning joylashuvini aniqlaydi",
+				"Elementning matn rangini sozlaydi"
+			],
+			"en": [
+				"Sets the transparency level of an element",
+				"Changes the element's width",
+				"Sets the element's position",
+				"Adjusts the element's text color"
+			],
+			"ru": [
+				"Устанавливает уровень прозрачности элемента",
+				"Изменяет ширину элемента",
+				"Устанавливает позицию элемента",
+				"Регулирует цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'background-color' xususiyati nima uchun ishlatiladi?",
+			"en": "What is the 'background-color' property used for?",
+			"ru": "Для чего используется свойство 'background-color'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning fon rangini belgilaydi",
+				"Elementning matn rangini o'zgartiradi",
+				"Elementning chegarasini sozlaydi",
+				"Elementning balandligini aniqlaydi"
+			],
+			"en": [
+				"Sets the background color of an element",
+				"Changes the text color of an element",
+				"Adjusts the element's border",
+				"Defines the element's height"
+			],
+			"ru": [
+				"Устанавливает цвет фона элемента",
+				"Изменяет цвет текста элемента",
+				"Регулирует границу элемента",
+				"Определяет высоту элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'background-image' xususiyati qanday ishlaydi?",
+			"en": "How does the 'background-image' property work?",
+			"ru": "Как работает свойство 'background-image'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning foniga tasvir qo'shadi",
+				"Elementning matn shriftini o'zgartiradi",
+				"Elementning joylashuvini aniqlaydi",
+				"Elementning shaffofligini sozlaydi"
+			],
+			"en": [
+				"Adds an image to the element's background",
+				"Changes the element's text font",
+				"Sets the element's position",
+				"Adjusts the element's opacity"
+			],
+			"ru": [
+				"Добавляет изображение на фон элемента",
+				"Изменяет шрифт текста элемента",
+				"Устанавливает позицию элемента",
+				"Регулирует прозрачность элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'background-repeat' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'background-repeat' property have?",
+			"ru": "Какой эффект оказывает свойство 'background-repeat'?"
+		},
+		"options": {
+			"uz": [
+				"Fon tasvirining takrorlanishini boshqaradi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning matn rangini sozlaydi",
+				"Elementning joylashuvini aniqlaydi"
+			],
+			"en": [
+				"Controls whether the background image repeats",
+				"Changes the element's width",
+				"Adjusts the element's text color",
+				"Sets the element's position"
+			],
+			"ru": [
+				"Управляет повторением фонового изображения",
+				"Изменяет ширину элемента",
+				"Регулирует цвет текста элемента",
+				"Устанавливает позицию элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'background-position' xususiyati qanday ishlaydi?",
+			"en": "How does the 'background-position' property work?",
+			"ru": "Как работает свойство 'background-position'?"
+		},
+		"options": {
+			"uz": [
+				"Fon tasvirining joylashuvini belgilaydi",
+				"Elementning shaffofligini o'zgartiradi",
+				"Elementning matn o'lchamini sozlaydi",
+				"Elementning chegarasini aniqlaydi"
+			],
+			"en": [
+				"Sets the position of the background image",
+				"Changes the element's opacity",
+				"Adjusts the element's text size",
+				"Defines the element's border"
+			],
+			"ru": [
+				"Устанавливает позицию фонового изображения",
+				"Изменяет прозрачность элемента",
+				"Регулирует размер текста элемента",
+				"Определяет границу элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'font-family' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'font-family' property?",
+			"ru": "Для чего используется свойство 'font-family'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning shrift turini belgilaydi",
+				"Matnning rangini o'zgartiradi",
+				"Matnning joylashuvini aniqlaydi",
+				"Matnning shaffofligini sozlaydi"
+			],
+			"en": [
+				"Sets the font type for text",
+				"Changes the text color",
+				"Sets the text position",
+				"Adjusts the text opacity"
+			],
+			"ru": [
+				"Устанавливает тип шрифта для текста",
+				"Изменяет цвет текста",
+				"Устанавливает позицию текста",
+				"Регулирует прозрачность текста"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'font-size' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'font-size' property have?",
+			"ru": "Какой эффект оказывает свойство 'font-size'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning o'lchamini belgilaydi",
+				"Matnning rangini o'zgartiradi",
+				"Matnning joylashuvini aniqlaydi",
+				"Matnning shaffofligini sozlaydi"
+			],
+			"en": [
+				"Sets the size of the text",
+				"Changes the text color",
+				"Sets the text position",
+				"Adjusts the text opacity"
+			],
+			"ru": [
+				"Устанавливает размер текста",
+				"Изменяет цвет текста",
+				"Устанавливает позицию текста",
+				"Регулирует прозрачность текста"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'font-weight' xususiyati qanday ishlaydi?",
+			"en": "How does the 'font-weight' property work?",
+			"ru": "Как работает свойство 'font-weight'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning qalinligini belgilaydi",
+				"Matnning balandligini o'zgartiradi",
+				"Matnning shaffofligini sozlaydi",
+				"Matnning joylashuvini aniqlaydi"
+			],
+			"en": [
+				"Sets the boldness of the text",
+				"Changes the text height",
+				"Adjusts the text opacity",
+				"Sets the text position"
+			],
+			"ru": [
+				"Устанавливает жирность текста",
+				"Изменяет высоту текста",
+				"Регулирует прозрачность текста",
+				"Устанавливает позицию текста"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'text-align' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'text-align' property?",
+			"ru": "Для чего используется свойство 'text-align'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning gorizontal tekislanishini belgilaydi",
+				"Matnning vertikal joylashuvini sozlaydi",
+				"Matnning rangini o'zgartiradi",
+				"Matnning shaffofligini aniqlaydi"
+			],
+			"en": [
+				"Sets the horizontal alignment of text",
+				"Adjusts the vertical position of text",
+				"Changes the text color",
+				"Defines the text opacity"
+			],
+			"ru": [
+				"Устанавливает горизонтальное выравнивание текста",
+				"Регулирует вертикальное положение текста",
+				"Изменяет цвет текста",
+				"Определяет прозрачность текста"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'text-decoration' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'text-decoration' property have?",
+			"ru": "Какой эффект оказывает свойство 'text-decoration'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning bezaklarini (masalan, tagiga chizish) belgilaydi",
+				"Matnning o'lchamini o'zgartiradi",
+				"Matnning joylashuvini aniqlaydi",
+				"Matnning shaffofligini sozlaydi"
+			],
+			"en": [
+				"Sets text decorations (e.g., underline)",
+				"Changes the text size",
+				"Sets the text position",
+				"Adjusts the text opacity"
+			],
+			"ru": [
+				"Устанавливает декорации текста (например, подчеркивание)",
+				"Изменяет размер текста",
+				"Устанавливает позицию текста",
+				"Регулирует прозрачность текста"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'line-height' xususiyati qanday ishlaydi?",
+			"en": "How does the 'line-height' property work?",
+			"ru": "Как работает свойство 'line-height'?"
+		},
+		"options": {
+			"uz": [
+				"Matn qatorlari orasidagi masofani belgilaydi",
+				"Matnning rangini o'zgartiradi",
+				"Matnning shriftini sozlaydi",
+				"Matnning joylashuvini aniqlaydi"
+			],
+			"en": [
+				"Sets the distance between lines of text",
+				"Changes the text color",
+				"Adjusts the text font",
+				"Sets the text position"
+			],
+			"ru": [
+				"Устанавливает расстояние между строками текста",
+				"Изменяет цвет текста",
+				"Регулирует шрифт текста",
+				"Устанавливает позицию текста"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'color' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'color' property?",
+			"ru": "Для чего используется свойство 'color'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning rangini belgilaydi",
+				"Elementning fon rangini o'zgartiradi",
+				"Matnning o'lchamini sozlaydi",
+				"Matnning joylashuvini aniqlaydi"
+			],
+			"en": [
+				"Sets the color of the text",
+				"Changes the background color of an element",
+				"Adjusts the text size",
+				"Sets the text position"
+			],
+			"ru": [
+				"Устанавливает цвет текста",
+				"Изменяет цвет фона элемента",
+				"Регулирует размер текста",
+				"Устанавливает позицию текста"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'width' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'width' property have?",
+			"ru": "Какой эффект оказывает свойство 'width'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kengligini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the width of an element",
+				"Changes the height of an element",
+				"Adjusts the opacity of an element",
+				"Defines the text color of an element"
+			],
+			"ru": [
+				"Устанавливает ширину элемента",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'height' xususiyati qanday ishlaydi?",
+			"en": "How does the 'height' property work?",
+			"ru": "Как работает свойство 'height'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning balandligini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the height of an element",
+				"Changes the width of an element",
+				"Adjusts the opacity of an element",
+				"Defines the text color of an element"
+			],
+			"ru": [
+				"Устанавливает высоту элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'max-width' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'max-width' property?",
+			"ru": "Для чего используется свойство 'max-width'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning maksimal kengligini belgilaydi",
+				"Elementning minimal kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the maximum width of an element",
+				"Changes the minimum width of an element",
+				"Adjusts the opacity of an element",
+				"Defines the text color of an element"
+			],
+			"ru": [
+				"Устанавливает максимальную ширину элемента",
+				"Изменяет минимальную ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'min-height' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'min-height' property have?",
+			"ru": "Какой эффект оказывает свойство 'min-height'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning minimal balandligini belgilaydi",
+				"Elementning maksimal balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the minimum height of an element",
+				"Changes the maximum height of an element",
+				"Adjusts the opacity of an element",
+				"Defines the text color of an element"
+			],
+			"ru": [
+				"Устанавливает минимальную высоту элемента",
+				"Изменяет максимальную высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'overflow' xususiyati qanday ishlaydi?",
+			"en": "How does the 'overflow' property work?",
+			"ru": "Как работает свойство 'overflow'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kontenti chegaradan chiqsa nima qilishni belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls what happens when content overflows an element's boundaries",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет тем, что происходит, когда содержимое выходит за границы элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'visibility' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'visibility' property?",
+			"ru": "Для чего используется свойство 'visibility'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning ko'rinishini boshqaradi (ko'rinadimi yoki yo'qmi)",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls whether an element is visible or hidden",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет видимостью элемента (видимый или скрытый)",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'cursor' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'cursor' property have?",
+			"ru": "Какой эффект оказывает свойство 'cursor'?"
+		},
+		"options": {
+			"uz": [
+				"Element ustida sichqoncha kursorining ko'rinishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the appearance of the mouse cursor over an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает вид курсора мыши над элементом",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'transition' xususiyati qanday ishlaydi?",
+			"en": "How does the 'transition' property work?",
+			"ru": "Как работает свойство 'transition'?"
+		},
+		"options": {
+			"uz": [
+				"Xususiyatlarning silliq o'zgarishini ta'minlaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Provides smooth changes for property transitions",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Обеспечивает плавное изменение свойств",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'transform' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'transform' property?",
+			"ru": "Для чего используется свойство 'transform'?"
+		},
+		"options": {
+			"uz": [
+				"Elementni aylantirish, o'lchamini o'zgartirish yoki siljitish",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Rotates, scales, or moves an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Вращает, масштабирует или перемещает элемент",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'animation' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'animation' property have?",
+			"ru": "Какой эффект оказывает свойство 'animation'?"
+		},
+		"options": {
+			"uz": [
+				"Elementga animatsiya qo'shadi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Adds animation to an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Добавляет анимацию к элементу",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'grid' displey turi qanday afzallik beradi?",
+			"en": "What advantage does the 'grid' display type provide?",
+			"ru": "Какое преимущество предоставляет тип отображения 'grid'?"
+		},
+		"options": {
+			"uz": [
+				"Elementlarni ikki o'lchovli tarmoqda joylashtirish",
+				"Elementlarni statik holatda saqlash",
+				"Elementlarni faqat gorizontal joylashtirish",
+				"Elementlarni yashirish"
+			],
+			"en": [
+				"Arranges elements in a two-dimensional grid",
+				"Keeps elements in a static state",
+				"Positions elements only horizontally",
+				"Hides elements"
+			],
+			"ru": [
+				"Располагает элементы в двухмерной сетке",
+				"Сохраняет элементы в статическом состоянии",
+				"Располагает элементы только горизонтально",
+				"Скрывает элементы"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'grid-template-columns' xususiyati qanday ishlaydi?",
+			"en": "How does the 'grid-template-columns' property work?",
+			"ru": "Как работает свойство 'grid-template-columns'?"
+		},
+		"options": {
+			"uz": [
+				"Tarmoqning ustunlar kengligini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the width of columns in a grid",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает ширину столбцов в сетке",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'grid-gap' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'grid-gap' property?",
+			"ru": "Для чего используется свойство 'grid-gap'?"
+		},
+		"options": {
+			"uz": [
+				"Tarmoq katakchalari orasidagi bo'shliqni belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the space between grid cells",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает пространство между ячейками сетки",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'justify-content' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'justify-content' property have?",
+			"ru": "Какой эффект оказывает свойство 'justify-content'?"
+		},
+		"options": {
+			"uz": [
+				"Elementlarni gorizontal o'q bo'yicha tekislaydi",
+				"Elementlarni vertikal o'q bo'yicha tekislaydi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Aligns elements along the horizontal axis",
+				"Aligns elements along the vertical axis",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Выравнивает элементы по горизонтальной оси",
+				"Выравнивает элементы по вертикальной оси",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'align-items' xususiyati qanday ishlaydi?",
+			"en": "How does the 'align-items' property work?",
+			"ru": "Как работает свойство 'align-items'?"
+		},
+		"options": {
+			"uz": [
+				"Elementlarni vertikal o'q bo'yicha tekislaydi",
+				"Elementlarni gorizontal o'q bo'yicha tekislaydi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Aligns elements along the vertical axis",
+				"Aligns elements along the horizontal axis",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Выравнивает элементы по вертикальной оси",
+				"Выравнивает элементы по горизонтальной оси",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'flex-direction' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'flex-direction' property?",
+			"ru": "Для чего используется свойство 'flex-direction'?"
+		},
+		"options": {
+			"uz": [
+				"Elementlarning joylashish yo'nalishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the direction of element arrangement",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает направление расположения элементов",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'flex-wrap' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'flex-wrap' property have?",
+			"ru": "Какой эффект оказывает свойство 'flex-wrap'?"
+		},
+		"options": {
+			"uz": [
+				"Elementlarning bir qatorda yoki ko'p qatorda joylashishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls whether elements are placed in a single line or multiple lines",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет тем, размещаются ли элементы в одной строке или в нескольких",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'order' xususiyati qanday ishlaydi?",
+			"en": "How does the 'order' property work?",
+			"ru": "Как работает свойство 'order'?"
+		},
+		"options": {
+			"uz": [
+				"Flex yoki grid elementlarining tartibini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the order of flex or grid elements",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает порядок элементов flex или grid",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'box-shadow' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'box-shadow' property?",
+			"ru": "Для чего используется свойство 'box-shadow'?"
+		},
+		"options": {
+			"uz": [
+				"Elementga soya qo'shadi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Adds a shadow to an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Добавляет тень к элементу",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'text-shadow' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'text-shadow' property have?",
+			"ru": "Какой эффект оказывает свойство 'text-shadow'?"
+		},
+		"options": {
+			"uz": [
+				"Matnga soya qo'shadi",
+				"Matnning kengligini o'zgartiradi",
+				"Matnning shaffofligini sozlaydi",
+				"Matnning rangini aniqlaydi"
+			],
+			"en": [
+				"Adds a shadow to text",
+				"Changes the text's width",
+				"Adjusts the text's opacity",
+				"Defines the text's color"
+			],
+			"ru": [
+				"Добавляет тень к тексту",
+				"Изменяет ширину текста",
+				"Регулирует прозрачность текста",
+				"Определяет цвет текста"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'border-radius' xususiyati qanday ishlaydi?",
+			"en": "How does the 'border-radius' property work?",
+			"ru": "Как работает свойство 'border-radius'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning burchaklarini yumaloqlaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Rounds the corners of an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Закругляет углы элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'outline' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'outline' property?",
+			"ru": "Для чего используется свойство 'outline'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning tashqi konturini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets an outer outline around an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает внешний контур вокруг элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'list-style' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'list-style' property have?",
+			"ru": "Какой эффект оказывает свойство 'list-style'?"
+		},
+		"options": {
+			"uz": [
+				"Ro'yxat elementlarining belgisini va uslubini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the marker and style of list items",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает маркер и стиль элементов списка",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'vertical-align' xususiyati qanday ishlaydi?",
+			"en": "How does the 'vertical-align' property work?",
+			"ru": "Как работает свойство 'vertical-align'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning vertikal tekislanishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the vertical alignment of an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает вертикальное выравнивание элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'white-space' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'white-space' property?",
+			"ru": "Для чего используется свойство 'white-space'?"
+		},
+		"options": {
+			"uz": [
+				"Matndagi bo'shliqlar va qator uzilishlarini boshqaradi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls how whitespace and line breaks are handled in text",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет обработкой пробелов и переносов строк в тексте",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'letter-spacing' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'letter-spacing' property have?",
+			"ru": "Какой эффект оказывает свойство 'letter-spacing'?"
+		},
+		"options": {
+			"uz": [
+				"Matn harflari orasidagi masofani belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the spacing between letters in text",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает расстояние между буквами в тексте",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'word-spacing' xususiyati qanday ishlaydi?",
+			"en": "How does the 'word-spacing' property work?",
+			"ru": "Как работает свойство 'word-spacing'?"
+		},
+		"options": {
+			"uz": [
+				"Matn so'zlari orasidagi masofani belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the spacing between words in text",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает расстояние между словами в тексте",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'text-transform' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'text-transform' property?",
+			"ru": "Для чего используется свойство 'text-transform'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning katta-kichik harflarga o'zgarishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls the capitalization of text",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет преобразованием текста в верхний или нижний регистр",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'clip-path' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'clip-path' property have?",
+			"ru": "Какой эффект оказывает свойство 'clip-path'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning ko'rinadigan qismini kesib tashlaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Clips the visible portion of an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Обрезает видимую часть элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'filter' xususiyati qanday ishlaydi?",
+			"en": "How does the 'filter' property work?",
+			"ru": "Как работает свойство 'filter'?"
+		},
+		"options": {
+			"uz": [
+				"Elementga vizual effektlar (masalan, xiralashtirish) qo'shadi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Applies visual effects (e.g., blur) to an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Применяет визуальные эффекты (например, размытие) к элементу",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'object-fit' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'object-fit' property?",
+			"ru": "Для чего используется свойство 'object-fit'?"
+		},
+		"options": {
+			"uz": [
+				"Rasm yoki videoning konteynerga moslashishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets how an image or video fits within its container",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает, как изображение или видео подстраивается под контейнер",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'pointer-events' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'pointer-events' property have?",
+			"ru": "Какой эффект оказывает свойство 'pointer-events'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning sichqoncha hodisalariga javob berishini boshqaradi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls whether an element responds to mouse events",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет тем, реагирует ли элемент на события мыши",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'resize' xususiyati qanday ishlaydi?",
+			"en": "How does the 'resize' property work?",
+			"ru": "Как работает свойство 'resize'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning o'lchamini o'zgartirish imkoniyatini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets whether an element can be resized",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает, можно ли изменять размер элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'backdrop-filter' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'backdrop-filter' property?",
+			"ru": "Для чего используется свойство 'backdrop-filter'?"
+		},
+		"options": {
+			"uz": [
+				"Element orqasidagi fon uchun vizual effekt qo'shadi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Applies a visual effect to the background behind an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Применяет визуальный эффект к фону за элементом",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'place-items' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'place-items' property have?",
+			"ru": "Какой эффект оказывает свойство 'place-items'?"
+		},
+		"options": {
+			"uz": [
+				"Grid yoki flex elementlarini gorizontal va vertikal tekislaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Aligns grid or flex elements both horizontally and vertically",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Выравнивает элементы grid или flex по горизонтали и вертикали",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'gap' xususiyati qanday ishlaydi?",
+			"en": "How does the 'gap' property work?",
+			"ru": "Как работает свойство 'gap'?"
+		},
+		"options": {
+			"uz": [
+				"Flex yoki grid elementlari orasidagi bo'shliqni belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the spacing between flex or grid elements",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает расстояние между элементами flex или grid",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'aspect-ratio' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'aspect-ratio' property?",
+			"ru": "Для чего используется свойство 'aspect-ratio'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning kenglik va balandlik nisbatini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the width-to-height ratio of an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает соотношение ширины и высоты элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'scroll-behavior' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'scroll-behavior' property have?",
+			"ru": "Какой эффект оказывает свойство 'scroll-behavior'?"
+		},
+		"options": {
+			"uz": [
+				"Sahifa siljishini silliq yoki darhol qilishni belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets whether scrolling is smooth or instantaneous",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает, будет ли прокрутка плавной или мгновенной",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'contain' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'contain' property?",
+			"ru": "Для чего используется свойство 'contain'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning ichki tarkibini brauzer optimallashtirishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Specifies that an element's content is independent for browser optimization",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Указывает, что содержимое элемента независимо для оптимизации браузером",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'counter-increment' xususiyati qanday ishlaydi?",
+			"en": "How does the 'counter-increment' property work?",
+			"ru": "Как работает свойство 'counter-increment'?"
+		},
+		"options": {
+			"uz": [
+				"Hisoblagich qiymatini oshiradi yoki belgilangan qiymatga o'zgartiradi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Increments the value of a counter or sets it to a specified value",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Увеличивает значение счетчика или устанавливает его в указанное значение",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'counter-reset' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'counter-reset' property have?",
+			"ru": "Какой эффект оказывает свойство 'counter-reset'?"
+		},
+		"options": {
+			"uz": [
+				"Hisoblagichni noldan boshlaydi yoki boshqa qiymatga o'rnatadi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Resets a counter to zero or another specified value",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Сбрасывает счетчик на ноль или другое указанное значение",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'content' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'content' property?",
+			"ru": "Для чего используется свойство 'content'?"
+		},
+		"options": {
+			"uz": [
+				"Pseudo-elementlarga matn yoki boshqa tarkib qo'shadi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Adds text or other content to pseudo-elements",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Добавляет текст или другое содержимое в псевдоэлементы",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'tab-size' xususiyati qanday ishlaydi?",
+			"en": "How does the 'tab-size' property work?",
+			"ru": "Как работает свойство 'tab-size'?"
+		},
+		"options": {
+			"uz": [
+				"Matndagi tabulyatsiya belgisining kengligini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the width of a tab character in text",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает ширину символа табуляции в тексте",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'hyphens' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'hyphens' property have?",
+			"ru": "Какой эффект оказывает свойство 'hyphens'?"
+		},
+		"options": {
+			"uz": [
+				"So'zlarning qator oxirida defis bilan bo'linishini boshqaradi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls whether words are hyphenated at the end of a line",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет разделением слов дефисом в конце строки",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'text-overflow' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'text-overflow' property?",
+			"ru": "Для чего используется свойство 'text-overflow'?"
+		},
+		"options": {
+			"uz": [
+				"Matn konteynerdan chiqib ketganda qanday ko'rsatilishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Specifies how text is displayed when it overflows its container",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Указывает, как отображается текст, выходящий за пределы контейнера",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'word-break' xususiyati qanday ishlaydi?",
+			"en": "How does the 'word-break' property work?",
+			"ru": "Как работает свойство 'word-break'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning qator uzilishi qoidalarini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the rules for breaking lines of text",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает правила переноса строк текста",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'text-indent' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'text-indent' property have?",
+			"ru": "Какой эффект оказывает свойство 'text-indent'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning birinchi qatorining chekinishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the indentation of the first line of text",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает отступ первой строки текста",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'direction' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'direction' property?",
+			"ru": "Для чего используется свойство 'direction'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning yozilish yo'nalishini belgilaydi (chapdan o'ngga yoki aksincha)",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the writing direction of text (left-to-right or right-to-left)",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает направление письма текста (слева направо или справа налево)",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'unicode-bidi' xususiyati qanday ishlaydi?",
+			"en": "How does the 'unicode-bidi' property work?",
+			"ru": "Как работает свойство 'unicode-bidi'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning ikki yo'nalishli yozuvini boshqaradi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls the bidirectional text rendering",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет отображением двунаправленного текста",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'columns' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'columns' property have?",
+			"ru": "Какой эффект оказывает свойство 'columns'?"
+		},
+		"options": {
+			"uz": [
+				"Matnni bir nechta ustunlarga bo'lib joylashtiradi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Divides text into multiple columns",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Разделяет текст на несколько столбцов",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'column-gap' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'column-gap' property?",
+			"ru": "Для чего используется свойство 'column-gap'?"
+		},
+		"options": {
+			"uz": [
+				"Ustunlar orasidagi bo'shliqni belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the space between columns",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает расстояние между столбцами",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'column-rule' xususiyati qanday ishlaydi?",
+			"en": "How does the 'column-rule' property work?",
+			"ru": "Как работает свойство 'column-rule'?"
+		},
+		"options": {
+			"uz": [
+				"Ustunlar orasidagi chiziqning uslubini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the style of the line between columns",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает стиль линии между столбцами",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'break-before' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'break-before' property have?",
+			"ru": "Какой эффект оказывает свойство 'break-before'?"
+		},
+		"options": {
+			"uz": [
+				"Elementdan oldin sahifa yoki ustun uzilishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Specifies a page or column break before an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Указывает разрыв страницы или столбца перед элементом",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'break-after' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'break-after' property?",
+			"ru": "Для чего используется свойство 'break-after'?"
+		},
+		"options": {
+			"uz": [
+				"Elementdan keyin sahifa yoki ustun uzilishini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Specifies a page or column break after an element",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Указывает разрыв страницы или столбца после элемента",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'break-inside' xususiyati qanday ishlaydi?",
+			"en": "How does the 'break-inside' property work?",
+			"ru": "Как работает свойство 'break-inside'?"
+		},
+		"options": {
+			"uz": [
+				"Element ichida sahifa yoki ustun uzilishini boshqaradi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls page or column breaks within an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет разрывами страницы или столбца внутри элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'orphans' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'orphans' property have?",
+			"ru": "Какой эффект оказывает свойство 'orphans'?"
+		},
+		"options": {
+			"uz": [
+				"Sahifaning pastki qismida qoladigan minimal qatorlar sonini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the minimum number of lines that can stay at the bottom of a page",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает минимальное количество строк, остающихся внизу страницы",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'widows' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'widows' property?",
+			"ru": "Для чего используется свойство 'widows'?"
+		},
+		"options": {
+			"uz": [
+				"Sahifaning yuqori qismida qoladigan minimal qatorlar sonini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the minimum number of lines that can stay at the top of a page",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает минимальное количество строк, остающихся вверху страницы",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'page-break-before' xususiyati qanday ishlaydi?",
+			"en": "How does the 'page-break-before' property work?",
+			"ru": "Как работает свойство 'page-break-before'?"
+		},
+		"options": {
+			"uz": [
+				"Elementdan oldin sahifa uzilishini boshqaradi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls page breaks before an element",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет разрывом страницы перед элементом",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'page-break-after' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'page-break-after' property have?",
+			"ru": "Какой эффект оказывает свойство 'page-break-after'?"
+		},
+		"options": {
+			"uz": [
+				"Elementdan keyin sahifa uzilishini boshqaradi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls page breaks after an element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет разрывом страницы после элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'perspective' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'perspective' property?",
+			"ru": "Для чего используется свойство 'perspective'?"
+		},
+		"options": {
+			"uz": [
+				"3D transformatsiyalar uchun chuqurlik effektini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the depth effect for 3D transformations",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает эффект глубины для 3D-трансформаций",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'perspective-origin' xususiyati qanday ishlaydi?",
+			"en": "How does the 'perspective-origin' property work?",
+			"ru": "Как работает свойство 'perspective-origin'?"
+		},
+		"options": {
+			"uz": [
+				"3D transformatsiyalarning nuqtai nazar markazini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the vanishing point for 3D transformations",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает точку схода для 3D-трансформаций",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'backface-visibility' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'backface-visibility' property have?",
+			"ru": "Какой эффект оказывает свойство 'backface-visibility'?"
+		},
+		"options": {
+			"uz": [
+				"3D aylantirilgan elementning orqa yuzasi ko'rinishini boshqaradi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls the visibility of the back face of a 3D rotated element",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет видимостью задней стороны повернутого в 3D элемента",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'transform-style' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'transform-style' property?",
+			"ru": "Для чего используется свойство 'transform-style'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning ichki elementlari 3D fazoda qanday ko'rsatilishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets how nested elements are rendered in 3D space",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает, как вложенные элементы отображаются в 3D-пространстве",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'will-change' xususiyati qanday ishlaydi?",
+			"en": "How does the 'will-change' property work?",
+			"ru": "Как работает свойство 'will-change'?"
+		},
+		"options": {
+			"uz": [
+				"Brauzerga qaysi xususiyatlar o'zgarishi mumkinligini oldindan bildiradi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Informs the browser which properties are likely to change",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Уведомляет браузер, какие свойства могут измениться",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'shape-outside' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'shape-outside' property have?",
+			"ru": "Какой эффект оказывает свойство 'shape-outside'?"
+		},
+		"options": {
+			"uz": [
+				"Matnning element atrofida qanday o'ralishini shakl orqali belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Defines a shape around which text wraps",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Определяет форму, вокруг которой обтекает текст",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'shape-margin' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'shape-margin' property?",
+			"ru": "Для чего используется свойство 'shape-margin'?"
+		},
+		"options": {
+			"uz": [
+				"Matn o'rash shakli va element o'rtasidagi masofani belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the margin between the text wrap shape and the element",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает отступ между формой обтекания текста и элементом",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'float-reference' xususiyati qanday ishlaydi?",
+			"en": "How does the 'float-reference' property work?",
+			"ru": "Как работает свойство 'float-reference'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning suzish moslamasini (masalan, sahifa yoki ustun) belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the reference (e.g., page or column) for an element's float",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает опорную точку (например, страницу или столбец) для плавающего элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'float-offset' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'float-offset' property have?",
+			"ru": "Какой эффект оказывает свойство 'float-offset'?"
+		},
+		"options": {
+			"uz": [
+				"Suzuvchi elementning o'z moslamasiga nisbatan siljishini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the offset of a floating element relative to its reference",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает смещение плавающего элемента относительно его опорной точки",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'mix-blend-mode' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'mix-blend-mode' property?",
+			"ru": "Для чего используется свойство 'mix-blend-mode'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning pastki qatlamlar bilan ranglar aralashish usulini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets how an element's colors blend with underlying layers",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает, как цвета элемента смешиваются с нижележащими слоями",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'isolation' xususiyati qanday ishlaydi?",
+			"en": "How does the 'isolation' property work?",
+			"ru": "Как работает свойство 'isolation'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning aralash qatlamini mustaqil qilishni belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Specifies whether an element creates an independent stacking context",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Указывает, создает ли элемент независимый контекст наложения",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'mask' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'mask' property have?",
+			"ru": "Какой эффект оказывает свойство 'mask'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning ko'rinadigan qismini maska orqali belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Defines the visible portion of an element using a mask",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Определяет видимую часть элемента с помощью маски",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'mask-clip' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'mask-clip' property?",
+			"ru": "Для чего используется свойство 'mask-clip'?"
+		},
+		"options": {
+			"uz": [
+				"Maskaning qaysi hududga qo'llanilishini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the area where the mask is applied",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает область, к которой применяется маска",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'mask-composite' xususiyati qanday ishlaydi?",
+			"en": "How does the 'mask-composite' property work?",
+			"ru": "Как работает свойство 'mask-composite'?"
+		},
+		"options": {
+			"uz": [
+				"Bir nechta maskalarning qanday birlashishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets how multiple masks are combined",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает, как комбинируются несколько масок",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'mask-mode' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'mask-mode' property have?",
+			"ru": "Какой эффект оказывает свойство 'mask-mode'?"
+		},
+		"options": {
+			"uz": [
+				"Maskaning qanday turdagi tasvir sifatida ishlatilishini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the type of image used as a mask",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает тип изображения, используемого в качестве маски",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'mask-position' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'mask-position' property?",
+			"ru": "Для чего используется свойство 'mask-position'?"
+		},
+		"options": {
+			"uz": [
+				"Maskaning element ichidagi joylashuvini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the position of the mask within the element",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает позицию маски внутри элемента",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'mask-repeat' xususiyati qanday ishlaydi?",
+			"en": "How does the 'mask-repeat' property work?",
+			"ru": "Как работает свойство 'mask-repeat'?"
+		},
+		"options": {
+			"uz": [
+				"Maskaning takrorlanishini yoki takrorlanmasligini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets whether the mask image repeats or not",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает, повторяется ли изображение маски",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'mask-size' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'mask-size' property have?",
+			"ru": "Какой эффект оказывает свойство 'mask-size'?"
+		},
+		"options": {
+			"uz": [
+				"Maskaning o'lchamini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the size of the mask image",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает размер изображения маски",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'scroll-snap-type' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'scroll-snap-type' property?",
+			"ru": "Для чего используется свойство 'scroll-snap-type'?"
+		},
+		"options": {
+			"uz": [
+				"Siljishda elementlarning qanday joylashishini boshqaradi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls how elements snap during scrolling",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет тем, как элементы прилипают при прокрутке",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'scroll-snap-align' xususiyati qanday ishlaydi?",
+			"en": "How does the 'scroll-snap-align' property work?",
+			"ru": "Как работает свойство 'scroll-snap-align'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning siljishda qanday tekislanishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets how an element aligns during scroll snapping",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает, как элемент выравнивается при прилипании прокрутки",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'scroll-padding' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'scroll-padding' property have?",
+			"ru": "Какой эффект оказывает свойство 'scroll-padding'?"
+		},
+		"options": {
+			"uz": [
+				"Siljish konteynerining ichki chekinishini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the inner padding of the scroll container",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает внутренний отступ контейнера прокрутки",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'scroll-margin' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'scroll-margin' property?",
+			"ru": "Для чего используется свойство 'scroll-margin'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning siljishdagi tashqi chekinishini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the outer margin for an element during scrolling",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает внешний отступ элемента при прокрутке",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'touch-action' xususiyati qanday ishlaydi?",
+			"en": "How does the 'touch-action' property work?",
+			"ru": "Как работает свойство 'touch-action'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning sensorli ekran hodisalariga qanday javob berishini belgilaydi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets how an element responds to touch events on a touchscreen",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает, как элемент реагирует на сенсорные события",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'user-select' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'user-select' property have?",
+			"ru": "Какой эффект оказывает свойство 'user-select'?"
+		},
+		"options": {
+			"uz": [
+				"Matnni foydalanuvchi tanlay olishini boshqaradi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Controls whether a user can select text",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Управляет тем, может ли пользователь выделять текст",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'appearance' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'appearance' property?",
+			"ru": "Для чего используется свойство 'appearance'?"
+		},
+		"options": {
+			"uz": [
+				"Elementning tashqi ko'rinishini platforma uslubiga moslashtiradi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Styles an element to match the platform's native appearance",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Стилизует элемент в соответствии с нативным видом платформы",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'accent-color' xususiyati qanday ishlaydi?",
+			"en": "How does the 'accent-color' property work?",
+			"ru": "Как работает свойство 'accent-color'?"
+		},
+		"options": {
+			"uz": [
+				"Forma elementlarining aksent rangini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the accent color for form elements",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает акцентный цвет для элементов формы",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'forced-color-mode' xususiyati qanday ta'sir ko'rsatadi?",
+			"en": "What effect does the 'forced-color-mode' property have?",
+			"ru": "Какой эффект оказывает свойство 'forced-color-mode'?"
+		},
+		"options": {
+			"uz": [
+				"Ranglarning majburiy kontrast rejimini faollashtiradi",
+				"Elementning balandligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Enables a forced high-contrast color mode",
+				"Changes the element's height",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Включает принудительный режим высокой контрастности цветов",
+				"Изменяет высоту элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
+	},
+	{
+		"topic": "CSS",
+		"question": {
+			"uz": "'caret-color' xususiyati qanday maqsadda ishlatiladi?",
+			"en": "What is the purpose of the 'caret-color' property?",
+			"ru": "Для чего используется свойство 'caret-color'?"
+		},
+		"options": {
+			"uz": [
+				"Matn kiritish kursori rangini belgilaydi",
+				"Elementning kengligini o'zgartiradi",
+				"Elementning shaffofligini sozlaydi",
+				"Elementning matn rangini aniqlaydi"
+			],
+			"en": [
+				"Sets the color of the text input cursor",
+				"Changes the element's width",
+				"Adjusts the element's opacity",
+				"Defines the element's text color"
+			],
+			"ru": [
+				"Устанавливает цвет курсора ввода текста",
+				"Изменяет ширину элемента",
+				"Регулирует прозрачность элемента",
+				"Определяет цвет текста элемента"
+			]
+		},
+		"correct": 0
 	}
 ]
