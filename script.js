@@ -1,55 +1,71 @@
-let allQuestions = []
-let shuffledQuestions = []
-let currentQuestion = 0
-let userAnswers = []
-let username = ''
-let phoneNumber = ''
-let selectedTopic = ''
-let language = 'uz'
-const questionTime = 25
-let totalTime = 0
-let initialTotalTime = 0
-let questionInterval, totalInterval
-let warningShown = false
+// Global o'zgaruvchilar
+let allQuestions = [] // Barcha savollar ro'yxati (questions.json dan yuklanadi)
+let shuffledQuestions = [] // Aralashtirilgan savollar ro'yxati (tanlangan savollar soni bo'yicha)
+let currentQuestion = 0 // Joriy savol indeksi
+let userAnswers = [] // Foydalanuvchi javoblari (indekslar sifatida saqlanadi)
+let username = '' // Foydalanuvchi ismi
+let phoneNumber = '' // Foydalanuvchi telefon raqami
+let selectedTopic = '' // Tanlangan mavzu
+let language = 'uz' // Tanlangan til (standart: o'zbekcha)
+const questionTime = 25 // Har bir savol uchun berilgan vaqt (soniyalarda)
+let totalTime = 0 // Umumiy test vaqti (soniyalarda)
+let initialTotalTime = 0 // Dastlabki umumiy vaqt (qayta hisoblash uchun)
+let questionInterval, totalInterval // Savol va umumiy vaqt taymerlari uchun interval identifikatorlari
+let warningShown = false // Vaqt tugashi haqida ogohlantirish ko'rsatilganligini bildiruvchi flag
+let isQuizActive = false // Test faol holatda ekanligini bildiruvchi flag
 
-const quizContainer = document.getElementById('quiz')
-const resultContainer = document.getElementById('result')
-const nextBtn = document.getElementById('nextBtn')
-const prevBtn = document.getElementById('prevBtn')
-const progressBar = document.getElementById('progressBar')
-const totalTimerDisplay = document.getElementById('totalTimer')
+// DOM elementlari bilan bog'lanish
+const quizContainer = document.getElementById('quiz') // Savollar ko'rsatiladigan konteyner
+const resultContainer = document.getElementById('result') // Natijalar ko'rsatiladigan konteyner
+const nextBtn = document.getElementById('nextBtn') // "Keyingi" tugmasi
+const prevBtn = document.getElementById('prevBtn') // "Ortga" tugmasi
+const progressBar = document.getElementById('progressBar') // Progress bar elementi
+const totalTimerDisplay = document.getElementById('totalTimer') // Umumiy vaqtni ko'rsatuvchi element
 
-// Fisher-Yates Shuffle algoritmi
+/**
+ * Massivni tasodifiy tartibda aralashtirish uchun Fisher-Yates algoritmi
+ * @param {Array} array - Aralashtiriladigan massiv
+ * @returns {Array} - Aralashtirilgan yangi massiv
+ */
 function shuffleArray(array) {
-	const newArray = [...array]
+	const newArray = [...array] // Asl massivning nusxasini yaratish
 	for (let i = newArray.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1))
-		;[newArray[i], newArray[j]] = [newArray[j], newArray[i]]
+		const j = Math.floor(Math.random() * (i + 1)) // Tasodifiy indeks tanlash
+		;[newArray[i], newArray[j]] = [newArray[j], newArray[i]] // Elementlarni almashish
 	}
 	return newArray
 }
 
-// Vaqtni MM:SS formatiga aylantirish funksiyasi
+/**
+ * Soniyalarni HH:MM:SS formatida vaqt sifatida formatlash
+ * @param {number} seconds - Formatlanadigan soniyalar
+ * @returns {string} - HH:MM:SS formatidagi vaqt (masalan: "01:15:00" yoki "00:45:00")
+ */
 function formatTime(seconds) {
-	const minutes = Math.floor(seconds / 60)
-	const secs = seconds % 60
-	return `${minutes.toString().padStart(2, '0')}:${secs
+	const hours = Math.floor(seconds / 3600) // Soatlarni hisoblash
+	const minutes = Math.floor((seconds % 3600) / 60) // Daqiqalarni hisoblash
+	const secs = seconds % 60 // Qolgan soniyalarni hisoblash
+	return `${hours.toString().padStart(2, '0')}:${minutes
 		.toString()
-		.padStart(2, '0')}`
+		.padStart(2, '0')}:${secs.toString().padStart(2, '0')}` // Formatlangan vaqtni qaytarish
 }
 
-// Soatni HH:MM:SS AM/PM formatiga aylantirish funksiyasi
+/**
+ * Joriy vaqtni HH:MM:SS AM/PM formatida formatlash
+ * @returns {string} - HH:MM:SS AM/PM formatidagi vaqt (masalan: "02:30:45 PM")
+ */
 function formatClock() {
-	const now = new Date()
-	let hours = now.getHours()
-	const minutes = now.getMinutes().toString().padStart(2, '0')
-	const seconds = now.getSeconds().toString().padStart(2, '0')
-	const ampm = hours >= 12 ? 'PM' : 'AM'
-	hours = hours % 12 || 12
-	hours = hours.toString().padStart(2, '0')
-	return `${hours}:${minutes}:${seconds} ${ampm}`
+	const now = new Date() // Joriy vaqtni olish
+	let hours = now.getHours() // Soatlarni olish
+	const minutes = now.getMinutes().toString().padStart(2, '0') // Daqiqalarni formatlash
+	const seconds = now.getSeconds().toString().padStart(2, '0') // Soniyalarni formatlash
+	const ampm = hours >= 12 ? 'PM' : 'AM' // AM/PM ni aniqlash
+	hours = hours % 12 || 12 // 24 soat formatini 12 soat formatiga o'tkazish
+	hours = hours.toString().padStart(2, '0') // Soatlarni formatlash
+	return `${hours}:${minutes}:${seconds} ${ampm}` // Formatlangan vaqtni qaytarish
 }
 
+// Til ma'lumotlari ob'ekti (har bir til uchun matnlar)
 const langData = {
 	uz: {
 		enterName: 'Ismingizni va familyangizni kiriting',
@@ -103,15 +119,22 @@ const langData = {
 		timeSpent: 'Sarflangan vaqt:',
 		timeWarning: '⏰ Diqqat! Test vaqti tugashiga 20 soniya qoldi!',
 		contactButton: 'Bog‘lanish',
-		contactTitle: 'Dasturchi bilan bog‘lanish',
-		contactName: 'Ism va familya:',
-		contactPhone: 'Telefon:',
-		contactTelegram: 'Telegram:',
-		contactTelegramChannel: 'Telegram kanal:',
-		contactInstagram: 'Instagram:',
+		contactNameLabel: 'Ism va familya:',
+		contactPhoneLabel: 'Telefon:',
+		contactTelegramLabel: 'Telegram:',
+		contactTelegramChannelLabel: 'Telegram kanal:',
+		contactInstagramLabel: 'Instagram:',
+		contactTitle: '📬 Aloqa uchun',
+		contactMessage:
+			'Dasturchi bilan bog‘lanish uchun yuqoridagi <span class="custom-highlight">Telegram</span>, <span class="custom-highlight">Instagram</span> va boshqa ijtimoiy tarmoqlardagi rasmiy sahifalar orqali aloqaga chiqishingiz mumkin.',
+		contactChannelMessage:
+			'Shuningdek, <span class="custom-highlight">Telegram kanalimiz</span> orqali portfoliodagi loyihalarni kuzatib borishingiz va yangiliklardan muntazam xabardor bo‘lishingiz mumkin.',
 		telegramSent: 'Natija Telegram botga yuborildi!',
 		telegramError:
 			'Natijani Telegram botga yuborishda xato yuz berdi! Iltimos, tarmoq ulanishini tekshiring yoki keyinroq qayta urinib ko‘ring.',
+		leaveWarning:
+			'Test davom etmoqda! Sahifani yangilasangiz, natijangiz yo‘qotiladi. Davom etmoqchimisiz?',
+		refreshWarning: 'Test davom etmoqda! Sahifani yangilash mumkin emas.',
 	},
 	en: {
 		enterName: 'Enter your first and last name',
@@ -165,15 +188,22 @@ const langData = {
 		timeSpent: 'Time Spent:',
 		timeWarning: '⏰ Warning! Only 20 seconds left to complete the test!',
 		contactButton: 'Contact',
-		contactTitle: 'Contact the Developer',
-		contactName: 'Name:',
-		contactPhone: 'Phone:',
-		contactTelegram: 'Telegram:',
-		contactTelegramChannel: 'Telegram Channel:',
-		contactInstagram: 'Instagram:',
+		contactNameLabel: 'Name:',
+		contactPhoneLabel: 'Phone:',
+		contactTelegramLabel: 'Telegram:',
+		contactTelegramChannelLabel: 'Telegram Channel:',
+		contactInstagramLabel: 'Instagram:',
+		contactTitle: '📬 Contact Us',
+		contactMessage:
+			'You can reach the developer through the official pages on <span class="custom-highlight">Telegram</span>, <span class="custom-highlight">Instagram</span>, and other social media platforms listed above.',
+		contactChannelMessage:
+			'Additionally, you can follow our projects and stay updated with the latest news through our <span class="custom-highlight">Telegram channel</span>.',
 		telegramSent: 'Result sent to Telegram bot!',
 		telegramError:
 			'Error sending result to Telegram bot! Please check your network connection or try again later.',
+		leaveWarning:
+			'The test is in progress! If you refresh the page, your progress will be lost. Are you sure you want to continue?',
+		refreshWarning: 'The test is in progress! Refreshing the page is disabled.',
 	},
 	ru: {
 		enterName: 'Введите свое имя и фамилию',
@@ -227,37 +257,55 @@ const langData = {
 		timeSpent: 'Затраченное время:',
 		timeWarning: '⏰ Внимание! Осталось 20 секунд до завершения теста!',
 		contactButton: 'Связаться',
-		contactTitle: 'Связаться с разработчиком',
-		contactName: 'Имя и фамилия:',
-		contactPhone: 'Телефон:',
-		contactTelegram: 'Телеграм:',
-		contactTelegramChannel: 'Телеграм канал:',
-		contactInstagram: 'Инстаграм:',
+		contactNameLabel: 'Имя и фамилия:',
+		contactPhoneLabel: 'Телефон:',
+		contactTelegramLabel: 'Телеграм:',
+		contactTelegramChannelLabel: 'Телеграм канал:',
+		contactInstagramLabel: 'Инстаграм:',
+		contactTitle: '📬 Для связи',
+		contactMessage:
+			'Вы можете связаться с разработчиком через официальные страницы в <span class="custom-highlight">Telegram</span>, <span class="custom-highlight">Instagram</span> и других социальных сетях, указанных выше.',
+		contactChannelMessage:
+			'Также вы можете следить за проектами в портфолио и быть в курсе новостей через наш <span class="custom-highlight">Telegram-канал</span>.',
 		telegramSent: 'Результат отправлен в Telegram-бот!',
 		telegramError:
 			'Ошибка при отправке результата в Telegram-бот! Пожалуйста, проверьте сетевое соединение или попробуйте снова позже.',
+		leaveWarning:
+			'Тест продолжается! Если вы обновите страницу, ваши результаты будут потеряны. Вы уверены, что хотите продолжить?',
+		refreshWarning: 'Тест продолжается! Обновление страницы отключено.',
 	},
 }
 
+/**
+ * Tanlangan tilga mos matnni olish
+ * @param {string} key - Matn kaliti (langData ichidagi kalit)
+ * @param {...any} args - Agar matn funksiya bo'lsa, unga uzatiladigan argumentlar
+ * @returns {string} - Tanlangan tilga mos matn yoki kalitning o'zi (agar topilmasa)
+ */
 function getLangText(key, ...args) {
-	const val = langData[language]?.[key]
-	return typeof val === 'function' ? val(...args) : val || key
+	const val = langData[language]?.[key] // Tanlangan tildagi matnni olish
+	return typeof val === 'function' ? val(...args) : val || key // Agar funksiya bo'lsa ishlatish, aks holda matnni yoki kalitni qaytarish
 }
 
+/**
+ * Foydalanuvchiga xabar ko'rsatish uchun toast bildirishnoma yaratish
+ * @param {string} message - Ko'rsatiladigan xabar
+ * @param {string} type - Bildirishnoma turi (info, success, warning, danger)
+ */
 function showToast(message, type = 'info') {
-	const toastContainer = document.getElementById('toastContainer')
+	const toastContainer = document.getElementById('toastContainer') // Toast konteynerini olish
 	const icon =
 		{
 			success: 'check-circle-fill',
 			danger: 'exclamation-octagon-fill',
 			warning: 'exclamation-triangle-fill',
 			info: 'info-circle-fill',
-		}[type] || 'info-circle-fill'
+		}[type] || 'info-circle-fill' // Bildirishnoma turiga mos ikonkani tanlash
 
-	const toast = document.createElement('div')
-	toast.className = `toast align-items-center text-bg-${type} border-0 show mb-2`
-	toast.setAttribute('role', 'alert')
-	toast.setAttribute('aria-live', 'assertive')
+	const toast = document.createElement('div') // Yangi toast elementi yaratish
+	toast.className = `toast align-items-center text-bg-${type} border-0 show mb-2` // Toast stilini o'rnatish
+	toast.setAttribute('role', 'alert') // Rolni o'rnatish
+	toast.setAttribute('aria-live', 'assertive') // Aria atributlari
 	toast.setAttribute('aria-atomic', 'true')
 	toast.innerHTML = `
     <div class="d-flex">
@@ -266,57 +314,99 @@ function showToast(message, type = 'info') {
       </div>
       <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
-  `
-	toastContainer.appendChild(toast)
-	setTimeout(() => toast.remove(), 5000)
+  ` // Toast ichki HTML tuzilmasi
+	toastContainer.appendChild(toast) // Toastni konteynerga qo'shish
+	setTimeout(() => toast.remove(), 5000) // 5 soniyadan keyin toastni o'chirish
 }
 
-function updateContactInfo() {
-	const contactTitle = document.getElementById('contactOffcanvasLabel')
-	const contactNameLabel = document.getElementById('contactNameLabel')
-	const contactPhoneLabel = document.getElementById('contactPhoneLabel')
-	const contactTelegramLabel = document.getElementById('contactTelegramLabel')
-	const contactTelegramChannelLabel = document.getElementById(
-		'contactTelegramChannelLabel'
-	)
-	const contactInstagramLabel = document.getElementById('contactInstagramLabel')
-
-	if (contactTitle) contactTitle.innerText = getLangText('contactTitle')
-	if (contactNameLabel) contactNameLabel.innerText = getLangText('contactName')
-	if (contactPhoneLabel)
-		contactPhoneLabel.innerText = getLangText('contactPhone')
-	if (contactTelegramLabel)
-		contactTelegramLabel.innerText = getLangText('contactTelegram')
-	if (contactTelegramChannelLabel)
-		contactTelegramChannelLabel.innerText = getLangText(
-			'contactTelegramChannel'
-		)
-	if (contactInstagramLabel)
-		contactInstagramLabel.innerText = getLangText('contactInstagram')
-}
-
+/**
+ * Kontakt oynasidagi soatni yangilash
+ */
 function updateClock() {
-	const contactClock = document.getElementById('contactClock')
+	const contactClock = document.getElementById('contactClock') // Soat elementi
 	if (contactClock) {
-		contactClock.innerText = formatClock()
+		contactClock.innerText = formatClock() // Soatni formatlangan vaqt bilan yangilash
 	}
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-	const phoneInput = document.getElementById('phoneInput')
-	const usernameInput = document.getElementById('usernameInput')
-	const startButton = document.getElementById('startQuizButton')
-	const contactButton = document.querySelector('.contact-btn')
+/**
+ * Kontakt ma'lumotlarini tanlangan tilga mos yangilash va yangi HTML tarkibni qo'shish
+ */
+function updateContactInfo() {
+	const contactOffcanvasBody = document.querySelector(
+		'#contactOffcanvas .offcanvas-body'
+	) // Off-Canvas body elementi
 
+	if (contactOffcanvasBody) {
+		// Kontakt ma'lumotlari va yangi HTML tarkibni qo'shish
+		contactOffcanvasBody.innerHTML = `
+        <div class="contact-info">
+            <p><i class="bi bi-person-circle me-2"></i><strong>${getLangText(
+							'contactNameLabel'
+						)}</strong> Akmaljon Yusupov</p>
+            <p><i class="bi bi-telephone-fill me-2"></i><strong>${getLangText(
+							'contactPhoneLabel'
+						)}</strong> <a href="tel:+998885700209">+998-(88)-570-02-09</a></p>
+            <p><i class="bi bi-telegram me-2"></i><strong>${getLangText(
+							'contactTelegramLabel'
+						)}</strong> <a href="https://t.me/AkmaljonYusupov" target="_blank">@AkmaljonYusupov</a></p>
+            <p><i class="bi bi-telegram me-2"></i><strong>${getLangText(
+							'contactTelegramChannelLabel'
+						)}</strong> <a href="https://t.me/coder_ac" target="_blank">@coder_ac</a></p>
+            <p><i class="bi bi-instagram me-2"></i><strong>${getLangText(
+							'contactInstagramLabel'
+						)}</strong> <a href="https://instagram.com/coder.ac" target="_blank">@coder.ac</a></p>
+        </div>
+				<div class="contact-clock text-center mt-4 border rounded bg-primary">
+						<span id="contactClock" class="text-light" style="display: inline-block;">12:00:00 AM</span>
+				</div>
+				<div class="container my-4">
+						<div class="custom-box">
+								<div class="custom-title">${getLangText('contactTitle')}</div>
+								<p>${getLangText('contactMessage')}</p>
+								<p>${getLangText('contactChannelMessage')}</p>
+						</div>
+				</div>
+        `
+	}
+}
+
+/**
+ * Klaviatura orqali sahifani yangilashni cheklash (F5, Ctrl+R, Cmd+R)
+ * @param {KeyboardEvent} e - Klaviatura hodisasi
+ */
+function restrictRefreshKeys(e) {
+	// F5 ni bloklash
+	if (e.key === 'F5') {
+		e.preventDefault()
+		showToast(getLangText('refreshWarning'), 'warning')
+	}
+	// Ctrl+R yoki Cmd+R ni bloklash
+	if ((e.ctrlKey || e.metaKey) && e.key === 'r') {
+		e.preventDefault()
+		showToast(getLangText('refreshWarning'), 'warning')
+	}
+}
+
+/**
+ * Sahifa yuklanganda ishga tushadigan boshlang'ich sozlamalar va hodisalar
+ */
+document.addEventListener('DOMContentLoaded', () => {
+	const phoneInput = document.getElementById('phoneInput') // Telefon kiritish maydoni
+	const usernameInput = document.getElementById('usernameInput') // Ism kiritish maydoni
+	const startButton = document.getElementById('startQuizButton') // Testni boshlash tugmasi
+	const contactButton = document.querySelector('.contact-btn') // Kontakt tugmasi
+
+	// Telefon raqamiga maskani qo'llash
 	if (phoneInput) {
 		if (typeof IMask === 'undefined') {
 			console.error(
 				'IMask is not loaded. Please check the CDN or network connection.'
-			)
+			) // IMask yuklanmagan bo'lsa xato log qilish
 			showToast(
 				'Telefon raqam maskasi yuklanmadi. Iltimos, internet aloqasini tekshiring.',
 				'danger'
-			)
+			) // Xato haqida xabar ko'rsatish
 			return
 		}
 
@@ -333,317 +423,380 @@ document.addEventListener('DOMContentLoaded', () => {
 					to: 9,
 				},
 			},
-		})
+		}) // Telefon raqamiga maskani qo'llash
 
-		phoneInput.removeAttribute('readonly')
-		phoneInput.removeAttribute('disabled')
+		phoneInput.removeAttribute('readonly') // Maydonni faqat o'qish holatidan chiqarish
+		phoneInput.removeAttribute('disabled') // Maydonni faol qilish
 
+		// Til o'zgarishida placeholder yangilanishi
 		document.getElementById('languageSelect').addEventListener('change', () => {
-			phoneInput.placeholder = getLangText('enterPhone')
-			updateContactInfo()
+			phoneInput.placeholder = getLangText('enterPhone') // Telefon placeholderini yangilash
+			updateContactInfo() // Kontakt ma'lumotlarini yangilash
 			if (contactButton) {
-				const tooltip = bootstrap.Tooltip.getInstance(contactButton)
+				const tooltip = bootstrap.Tooltip.getInstance(contactButton) // Kontakt tugmasi uchun tooltip olish
 				if (tooltip) {
-					tooltip.setContent({ '.tooltip-inner': getLangText('contactButton') })
+					tooltip.setContent({ '.tooltip-inner': getLangText('contactButton') }) // Tooltip matnini yangilash
 				}
 			}
 		})
 	} else {
-		console.error('phoneInput elementi topilmadi!')
+		console.error('phoneInput elementi topilmadi!') // Telefon maydoni topilmasa xato log qilish
 	}
 
+	// Ism kiritishni tekshirish va faqat harflarni qabul qilish
 	if (usernameInput) {
 		usernameInput.addEventListener('input', () => {
-			const validInput = usernameInput.value.replace(/[^a-zA-Zа-яА-Я\s]/g, '')
+			const validInput = usernameInput.value.replace(/[^a-zA-Zа-яА-Я\s]/g, '') // Faqat harflar va bo'shliqlarni qoldirish
 			if (usernameInput.value !== validInput) {
-				usernameInput.value = validInput
-				showToast(getLangText('invalidName'), 'warning')
+				usernameInput.value = validInput // Noto'g'ri belgilarni o'chirish
+				showToast(getLangText('invalidName'), 'warning') // Xato haqida ogohlantirish
 			}
 		})
 	} else {
-		console.error('usernameInput elementi topilmadi!')
+		console.error('usernameInput elementi topilmadi!') // Ism maydoni topilmasa xato log qilish
 	}
 
+	// Testni boshlash tugmasiga hodisa qo'shish
 	if (startButton) {
 		startButton.addEventListener('click', () => {
-			startQuiz()
+			startQuiz() // Testni boshlash funksiyasini chaqirish
 		})
-		const startText = document.getElementById('startButton')
+		const startText = document.getElementById('startButton') // Tugma matni elementi
 		if (startText) {
-			startText.innerText = getLangText('start')
+			startText.innerText = getLangText('start') // Tugma matnini yangilash
 		}
 	} else {
-		console.error('startQuizButton elementi topilmadi!')
+		console.error('startQuizButton elementi topilmadi!') // Tugma topilmasa xato log qilish
 	}
 
+	// Kontakt tugmasiga tooltip qo'shish
 	if (contactButton) {
 		new bootstrap.Tooltip(contactButton, {
 			trigger: 'hover focus',
 			placement: 'right',
 			title: getLangText('contactButton'),
 			customClass: 'custom-tooltip',
-		})
+		}) // Kontakt tugmasiga tooltip qo'shish
 	}
 
-	const contactOffcanvas = document.getElementById('contactOffcanvas')
+	// Kontakt oynasi ochilganda va yopilganda soatni boshqarish
+	const contactOffcanvas = document.getElementById('contactOffcanvas') // Kontakt oynasi
 	if (contactOffcanvas) {
 		contactOffcanvas.addEventListener('shown.bs.offcanvas', () => {
-			const closeButton = contactOffcanvas.querySelector('.btn-close')
-			if (closeButton) closeButton.focus()
-			updateClock()
-			const clockInterval = setInterval(updateClock, 1000)
+			const closeButton = contactOffcanvas.querySelector('.btn-close') // Yopish tugmasi
+			if (closeButton) closeButton.focus() // Yopish tugmasiga fokus qo'yish
+			updateClock() // Soatni yangilash
+			const clockInterval = setInterval(updateClock, 1000) // Har soniyada soatni yangilash
 			contactOffcanvas.addEventListener(
 				'hidden.bs.offcanvas',
 				() => {
-					clearInterval(clockInterval)
+					clearInterval(clockInterval) // Oyna yopilganda intervalni to'xtatish
 				},
 				{ once: true }
 			)
 		})
 
 		contactOffcanvas.addEventListener('hidden.bs.offcanvas', () => {
-			if (contactButton) contactButton.focus()
+			if (contactButton) contactButton.focus() // Oyna yopilganda kontakt tugmasiga fokus qo'yish
 		})
 	}
 
-	updateContactInfo()
+	updateContactInfo() // Kontakt ma'lumotlarini dastlabki holatda yangilash
 })
 
+/**
+ * Til o'zgarishida UI elementlarini yangilash
+ */
 document.getElementById('languageSelect').addEventListener('change', () => {
-	language = document.getElementById('languageSelect').value
-	document.getElementById('enterNameText').innerText = getLangText('enterName')
-	document.getElementById('startButton').innerText = getLangText('start')
-	document.getElementById('prepTitle').innerText = getLangText('prepTitle')
-	document.getElementById('totalTimeLabel').innerText = getLangText('totalTime')
-	document.getElementById('nextBtnText').innerText = getLangText('next')
-	document.getElementById('prevBtnText').innerText = getLangText('prev')
+	language = document.getElementById('languageSelect').value // Yangi tilni olish
+	document.getElementById('enterNameText').innerText = getLangText('enterName') // Ism kiritish yorlig'ini yangilash
+	document.getElementById('startButton').innerText = getLangText('start') // Boshlash tugmasi matnini yangilash
+	document.getElementById('prepTitle').innerText = getLangText('prepTitle') // Tayyorgarlik sarlavhasini yangilash
+	document.getElementById('totalTimeLabel').innerText = getLangText('totalTime') // Umumiy vaqt yorlig'ini yangilash
+	document.getElementById('nextBtnText').innerText = getLangText('next') // "Keyingi" tugmasi matnini yangilash
+	document.getElementById('prevBtnText').innerText = getLangText('prev') // "Ortga" tugmasi matnini yangilash
 	document.getElementById('questionCountInput').placeholder =
-		getLangText('enterCount')
+		getLangText('enterCount') // Savollar soni placeholderini yangilash
 	document.getElementById('usernameInput').placeholder =
-		getLangText('enterYourName')
+		getLangText('enterYourName') // Ism placeholderini yangilash
 
-	const topicSelect = document.getElementById('topicSelect')
-	topicSelect.options[0].text = getLangText('selectTopic')
-	topicSelect.options[1].text = getLangText('topicHTML')
-	topicSelect.options[2].text = getLangText('topicCSS')
-	topicSelect.options[3].text = getLangText('topicJS')
-	topicSelect.options[4].text = getLangText('topicEnglish')
+	const topicSelect = document.getElementById('topicSelect') // Mavzular ro'yxati
+	topicSelect.options[0].text = getLangText('selectTopic') // "-- Mavzuni tanlang --"
+	topicSelect.options[1].text = getLangText('topicHTML') // "HTML"
+	topicSelect.options[2].text = getLangText('topicCSS') // "CSS"
+	topicSelect.options[3].text = getLangText('topicJS') // "JavaScript"
+	topicSelect.options[4].text = getLangText('topicEnglish') // "Ingliz tili"
 
 	const prepCountdownValue =
-		document.getElementById('prepCountdown')?.innerText || 10
-	const prepTimerSuffix = document.getElementById('prepTimerSuffix')
+		document.getElementById('prepCountdown')?.innerText || 10 // Tayyorgarlik vaqti (standart: 10)
+	const prepTimerSuffix = document.getElementById('prepTimerSuffix') // Tayyorgarlik vaqt suffiksi
 	if (prepTimerSuffix) {
-		prepTimerSuffix.textContent = getLangText('questionTimerSuffix')
+		prepTimerSuffix.textContent = getLangText('questionTimerSuffix') // Suffiksni yangilash
 	}
 	document.getElementById('prepText').innerText = getLangText(
 		'prepTimer',
 		prepCountdownValue
-	)
-	const totalTimerSuffix = document.getElementById('totalTimerSuffix')
+	) // Tayyorgarlik matnini yangilash
+	const totalTimerSuffix = document.getElementById('totalTimerSuffix') // Umumiy vaqt suffiksi
 	if (totalTimerSuffix) {
-		totalTimerSuffix.textContent = ''
+		totalTimerSuffix.textContent = '' // Suffiksni tozalash
 	}
-	updateContactInfo()
+	updateContactInfo() // Kontakt ma'lumotlarini yangilash
 })
 
+/**
+ * Testni boshlash: foydalanuvchi kiritgan ma'lumotlarni tekshirish va savollarni yuklash
+ */
 async function startQuiz() {
-	username = document.getElementById('usernameInput')?.value.trim() || ''
-	phoneNumber = document.getElementById('phoneInput')?.value.trim() || ''
-	selectedTopic = document.getElementById('topicSelect')?.value || ''
-	language = document.getElementById('languageSelect')?.value || 'uz'
-	const questionCountInput = document.getElementById('questionCountInput')
+	username = document.getElementById('usernameInput')?.value.trim() || '' // Foydalanuvchi ismini olish
+	phoneNumber = document.getElementById('phoneInput')?.value.trim() || '' // Telefon raqamini olish
+	selectedTopic = document.getElementById('topicSelect')?.value || '' // Tanlangan mavzuni olish
+	language = document.getElementById('languageSelect')?.value || 'uz' // Tanlangan tilni olish
+	const questionCountInput = document.getElementById('questionCountInput') // Savollar soni maydoni
 	const questionCount = questionCountInput
 		? parseInt(questionCountInput.value)
-		: 0
+		: 0 // Savollar sonini olish
 
+	// Ismni tekshirish (faqat harflar va bo'shliqlar, uzunligi 10+ belgi)
 	const nameRegex = /^[a-zA-Zа-яА-Я\s]+$/
 	if (!nameRegex.test(username) || username.length < 10) {
-		showToast(getLangText('invalidName'), 'warning')
+		showToast(getLangText('invalidName'), 'warning') // Xato haqida ogohlantirish
 		return
 	}
 
+	// Ism va familiya alohida bo'lishini tekshirish
 	const nameParts = username.split(' ').filter(part => part.length > 0)
 	if (nameParts.length < 2) {
-		showToast(getLangText('invalidName'), 'warning')
+		showToast(getLangText('invalidName'), 'warning') // Xato haqida ogohlantirish
 		return
 	}
 
+	// Telefon raqamini tekshirish
 	const phoneRegex = /^\+998-\(\d{2}\)-\d{3}-\d{2}-\d{2}$/
 	if (!phoneRegex.test(phoneNumber)) {
-		showToast(getLangText('invalidPhone'), 'warning')
+		showToast(getLangText('invalidPhone'), 'warning') // Xato haqida ogohlantirish
 		return
 	}
 
+	// Mavzu tanlanganligini tekshirish
 	if (!selectedTopic) {
-		showToast(getLangText('invalidTopic'), 'warning')
+		showToast(getLangText('invalidTopic'), 'warning') // Xato haqida ogohlantirish
 		return
 	}
 
+	// Savollar sonini tekshirish (1 yoki undan ko'p)
 	if (isNaN(questionCount) || questionCount <= 0) {
-		showToast(getLangText('invalidCount'), 'warning')
+		showToast(getLangText('invalidCount'), 'warning') // Xato haqida ogohlantirish
 		return
 	}
 
 	try {
-		const res = await fetch('/questions.json')
+		const res = await fetch('/questions.json') // Savollarni yuklash
 		if (!res.ok) {
 			throw new Error(
 				`Failed to fetch questions.json: ${res.status} ${res.statusText}`
-			)
+			) // Yuklashda xato bo'lsa xatolik tashlash
 		}
-		const data = await res.json()
+		const data = await res.json() // JSON formatiga aylantirish
 		allQuestions = data.filter(q => {
 			return (
-				q.topic === selectedTopic &&
-				q.question?.[language] &&
-				Array.isArray(q.options?.[language]) &&
-				q.options[language].length > 0 &&
-				typeof q.correct === 'number' &&
-				q.correct >= 0 &&
-				q.correct < q.options[language].length
+				q.topic === selectedTopic && // Tanlangan mavzuga mos savollar
+				q.question?.[language] && // Savol matni tilda mavjud
+				Array.isArray(q.options?.[language]) && // Variantlar massiv bo'lishi
+				q.options[language].length > 0 && // Variantlar bo'sh emas
+				typeof q.correct === 'number' && // To'g'ri javob indeksi raqam bo'lishi
+				q.correct >= 0 && // To'g'ri javob indeksi 0 yoki undan katta
+				q.correct < q.options[language].length // To'g'ri javob indeksi variantlar sonidan kichik
 			)
 		})
 
+		// Agar savollar topilmasa
 		if (allQuestions.length === 0) {
-			showToast(getLangText('notFound'), 'danger')
+			showToast(getLangText('notFound'), 'danger') // Xato haqida ogohlantirish
 			return
 		}
+		// Agar so'ralgan savollar soni mavjud savollardan ko'p bo'lsa
 		if (questionCount > allQuestions.length) {
-			showToast(getLangText('exceeds', allQuestions.length), 'warning')
+			showToast(getLangText('exceeds', allQuestions.length), 'warning') // Xato haqida ogohlantirish
 			return
 		}
 
+		// Savollarni tanlash va aralashtirish
 		shuffledQuestions = shuffleArray(allQuestions).slice(0, questionCount)
-		userAnswers = new Array(shuffledQuestions.length).fill(null)
-		currentQuestion = 0
-		totalTime = shuffledQuestions.length * questionTime
-		initialTotalTime = totalTime
 
-		const usernameForm = document.getElementById('usernameForm')
-		const prepOverlay = document.getElementById('prepOverlay')
-		const quizSection = document.getElementById('quizSection')
-		if (usernameForm) usernameForm.classList.add('d-none')
-		if (prepOverlay) prepOverlay.classList.remove('d-none')
-		if (quizSection) quizSection.classList.remove('d-none')
-		startPreparation()
+		// Har bir savol uchun variantlarni aralashtirish va yangi to'g'ri javob indeksini saqlash
+		shuffledQuestions = shuffledQuestions.map(q => {
+			const originalOptions = q.options[language] // Asl variantlar
+			const shuffledOptions = shuffleArray([...originalOptions]) // Variantlarni aralashtirish
+			const newCorrectIndex = shuffledOptions.indexOf(
+				originalOptions[q.correct]
+			) // Yangi to'g'ri javob indeksini aniqlash
+			return {
+				...q,
+				options: { [language]: shuffledOptions }, // Aralashtirilgan variantlarni saqlash
+				correct: newCorrectIndex, // Yangi to'g'ri javob indeksini saqlash
+			}
+		})
+
+		userAnswers = new Array(shuffledQuestions.length).fill(null) // Foydalanuvchi javoblarini boshlang'ich holatda to'ldirish
+		currentQuestion = 0 // Joriy savol indeksini 0 ga o'rnatish
+		totalTime = shuffledQuestions.length * questionTime // Umumiy vaqtni hisoblash
+		initialTotalTime = totalTime // Dastlabki umumiy vaqtni saqlash
+
+		// Sahifani yangilashni bloklash
+		isQuizActive = true // Test faol holatda ekanligini belgilash
+		window.onbeforeunload = handleBeforeUnload // beforeunload hodisa tinglovchisini qo'shish
+		document.addEventListener('keydown', restrictRefreshKeys) // Klaviatura hodisalarini bloklash
+
+		const usernameForm = document.getElementById('usernameForm') // Foydalanuvchi ma'lumotlari formasi
+		const prepOverlay = document.getElementById('prepOverlay') // Tayyorgarlik oynasi
+		const quizSection = document.getElementById('quizSection') // Test bo'limi
+		if (usernameForm) usernameForm.classList.add('d-none') // Formani yashirish
+		if (prepOverlay) prepOverlay.classList.remove('d-none') // Tayyorgarlik oynasini ko'rsatish
+		if (quizSection) quizSection.classList.remove('d-none') // Test bo'limini ko'rsatish
+		startPreparation() // Tayyorgarlikni boshlash
 	} catch (err) {
-		console.error('Error in startQuiz:', err)
+		console.error('Error in startQuiz:', err) // Xatolikni log qilish
 		showToast(
 			'Savollarni yuklab bo‘lmadi! Fayllar to‘g‘ri joylashganligini tekshiring.',
 			'danger'
-		)
+		) // Xato haqida ogohlantirish
+		isQuizActive = false // Test faol emasligini belgilash
+		window.onbeforeunload = null // beforeunload hodisa tinglovchisini o'chirish
+		document.removeEventListener('keydown', restrictRefreshKeys) // Klaviatura hodisa tinglovchisini o'chirish
 	}
 }
 
+/**
+ * Sahifani yangilash yoki yopishdan oldin ogohlantirish ko'rsatish (alert ishlatilmaydi)
+ */
+function handleBeforeUnload(e) {
+	if (isQuizActive) {
+		e.preventDefault() // Standart harakatni bekor qilish
+		showToast(getLangText('refreshWarning'), 'warning') // Ogohlantirish toast orqali ko'rsatiladi
+		e.returnValue = '' // Brauzerning standart ogohlantirishini yoqmaslik uchun bo'sh qaytarish
+		return '' // Qaytariladigan qiymat bo'sh bo'ladi
+	}
+}
+
+/**
+ * Test boshlanishidan oldin 10 soniyalik tayyorgarlik vaqtini ko'rsatish
+ */
 function startPreparation() {
-	let prepTime = 10
-	const prepCountdown = document.getElementById('prepCountdown')
-	const prepText = document.getElementById('prepText')
-	const prepTimerSuffix = document.getElementById('prepTimerSuffix')
+	let prepTime = 10 // Tayyorgarlik vaqti (soniyalarda)
+	const prepCountdown = document.getElementById('prepCountdown') // Tayyorgarlik vaqt ko'rsatgichi
+	const prepText = document.getElementById('prepText') // Tayyorgarlik matni
+	const prepTimerSuffix = document.getElementById('prepTimerSuffix') // Tayyorgarlik vaqt suffiksi
 
 	if (!prepCountdown || !prepText || !prepTimerSuffix) {
 		console.error(
 			'prepCountdown, prepText yoki prepTimerSuffix elementi topilmadi!'
-		)
+		) // Elementlar topilmasa xato log qilish
 		return
 	}
 
-	prepCountdown.textContent = prepTime
-	prepTimerSuffix.textContent = getLangText('questionTimerSuffix')
+	prepCountdown.textContent = prepTime // Vaqtni ko'rsatish
+	prepTimerSuffix.textContent = getLangText('questionTimerSuffix') // Suffiksni yangilash
 
 	const interval = setInterval(() => {
-		prepTime--
-		prepCountdown.textContent = prepTime
+		prepTime-- // Vaqtni 1 soniyaga kamaytirish
+		prepCountdown.textContent = prepTime // Yangi vaqtni ko'rsatish
 
 		if (prepTime <= 0) {
-			clearInterval(interval)
-			const prepOverlay = document.getElementById('prepOverlay')
-			const quizSection = document.getElementById('quizSection')
-			if (prepOverlay) prepOverlay.classList.add('d-none')
+			clearInterval(interval) // Intervalni to'xtatish
+			const prepOverlay = document.getElementById('prepOverlay') // Tayyorgarlik oynasi
+			const quizSection = document.getElementById('quizSection') // Test bo'limi
+			if (prepOverlay) prepOverlay.classList.add('d-none') // Tayyorgarlik oynasini yashirish
 			if (quizSection) {
-				quizSection.style.pointerEvents = 'auto'
-				quizSection.style.opacity = '1'
+				quizSection.style.pointerEvents = 'auto' // Test bo'limini faol qilish
+				quizSection.style.opacity = '1' // Test bo'limini ko'rinadigan qilish
 			}
-			startTimers()
-			loadQuestion(currentQuestion)
-			startQuestionTimer()
+			startTimers() // Taymerlarni boshlash
+			loadQuestion(currentQuestion) // Birinchi savolni yuklash
+			startQuestionTimer() // Savol taymerini boshlash
 		}
-	}, 1000)
+	}, 1000) // Har soniyada ishlaydigan interval
 }
 
+/**
+ * Umumiy vaqt taymerini boshlash va vaqt tugashi holatini boshqarish
+ */
 function startTimers() {
-	totalTimerDisplay.textContent = formatTime(totalTime)
-	const totalTimerSuffix = document.getElementById('totalTimerSuffix')
+	totalTimerDisplay.textContent = formatTime(totalTime) // Umumiy vaqtni ko'rsatish (HH:MM:SS formatida)
+	const totalTimerSuffix = document.getElementById('totalTimerSuffix') // Umumiy vaqt suffiksi
 	if (totalTimerSuffix) {
-		totalTimerSuffix.textContent = ''
+		totalTimerSuffix.textContent = '' // Suffiksni tozalash
 	}
 
-	document.title = `Quiz Test - ${formatTime(totalTime)}`
+	document.title = `Quiz Test - ${formatTime(totalTime)}` // Sahifa sarlavhasini yangilash
 
 	totalInterval = setInterval(() => {
-		totalTime--
-		totalTimerDisplay.textContent = formatTime(totalTime)
-		document.title = `Quiz Test - ${formatTime(totalTime)}`
+		totalTime-- // Umumiy vaqtni 1 soniyaga kamaytirish
+		totalTimerDisplay.textContent = formatTime(totalTime) // Yangi vaqtni ko'rsatish
+		document.title = `Quiz Test - ${formatTime(totalTime)}` // Sahifa sarlavhasini yangilash
 
 		if (totalTime === 20 && !warningShown) {
-			showToast(getLangText('timeWarning'), 'warning')
-			warningShown = true
+			showToast(getLangText('timeWarning'), 'warning') // 20 soniya qolganda ogohlantirish
+			warningShown = true // Ogohlantirish ko'rsatildi deb belgilash
 		}
 
 		if (totalTime <= 0) {
-			clearInterval(totalInterval)
-			clearInterval(questionInterval)
-			showResult(true)
+			clearInterval(totalInterval) // Umumiy taymerni to'xtatish
+			clearInterval(questionInterval) // Savol taymerini to'xtatish
+			showResult(true) // Vaqt tugashi sababli natijani ko'rsatish
 		}
-	}, 1000)
+	}, 1000) // Har soniyada ishlaydigan interval
 }
 
+/**
+ * Joriy savol uchun vaqt taymerini boshlash
+ */
 function startQuestionTimer() {
-	clearInterval(questionInterval)
-	let timeLeft = questionTime
-	const questionTimer = document.getElementById('questionTimer')
+	clearInterval(questionInterval) // Oldingi taymerni to'xtatish
+	let timeLeft = questionTime // Savol uchun vaqtni o'rnatish
+	const questionTimer = document.getElementById('questionTimer') // Savol vaqt ko'rsatgichi
 
 	if (!questionTimer) {
-		console.error('questionTimer elementi topilmadi!')
+		console.error('questionTimer elementi topilmadi!') // Element topilmasa xato log qilish
 		return
 	}
 
-	questionTimer.textContent = timeLeft
+	questionTimer.textContent = timeLeft // Vaqtni ko'rsatish
 
 	questionInterval = setInterval(() => {
-		timeLeft--
-		questionTimer.textContent = timeLeft
+		timeLeft-- // Vaqtni 1 soniyaga kamaytirish
+		questionTimer.textContent = timeLeft // Yangi vaqtni ko'rsatish
 		if (timeLeft <= 0) {
-			clearInterval(questionInterval)
-			autoNext()
+			clearInterval(questionInterval) // Taymerni to'xtatish
+			autoNext() // Keyingi savolga avtomatik o'tish
 		}
-	}, 1000)
+	}, 1000) // Har soniyada ishlaydigan interval
 }
 
+/**
+ * Savol vaqti tugaganda avtomatik ravishda keyingi savolga o'tish yoki natijani ko'rsatish
+ */
 function autoNext() {
 	if (currentQuestion < shuffledQuestions.length - 1) {
-		currentQuestion++
-		loadQuestion(currentQuestion)
+		currentQuestion++ // Joriy savol indeksini oshirish
+		loadQuestion(currentQuestion) // Keyingi savolni yuklash
 	} else {
-		showResult(false)
+		showResult(false) // Agar oxirgi savol bo'lsa, natijani ko'rsatish
 	}
 }
 
+/**
+ * Berilgan indeksdagi savolni yuklash va ko'rsatish
+ * @param {number} index - Yuklanadigan savol indeksi
+ */
 function loadQuestion(index) {
-	const q = shuffledQuestions[index]
-	const options = q.options[language]
-	const questionText = q.question[language]
-
-	// Javob variantlarini aralashtirish
-	const shuffledOptions = shuffleArray([...options])
-	const newCorrectIndex = shuffledOptions.indexOf(
-		q.options[language][q.correct]
-	)
-	shuffledQuestions[index].correct = newCorrectIndex
+	const q = shuffledQuestions[index] // Joriy savol ob'ekti
+	const options = q.options[language] // Tanlangan tildagi variantlar (qayta aralashtirilmaydi)
+	const questionText = q.question[language] // Tanlangan tildagi savol matni
 
 	quizContainer.innerHTML = `
     <div class="question">${index + 1}. ${questionText}</div>
-    ${shuffledOptions
+    ${options
 			.map(
 				(opt, i) => `
       <div class="form-check option">
@@ -665,40 +818,47 @@ function loadQuestion(index) {
 		'questionTimerSuffix'
 	)}
     </div>
-  `
+  ` // Savol va variantlarni HTML sifatida konteynerga joylashtirish
 
-	prevBtn.disabled = index === 0
+	prevBtn.disabled = index === 0 // Agar birinchi savol bo'lsa, "Ortga" tugmasini o'chirish
 	nextBtn.innerHTML =
 		index === shuffledQuestions.length - 1
-			? `<i class="bi bi-flag-fill me-1"></i>${getLangText('finish')}`
+			? `<i class="bi bi-flag-fill me-1"></i>${getLangText('finish')}` // Oxirgi savol bo'lsa "Yakunlash"
 			: `${getLangText(
 					'next'
-			  )} <i class="bi bi-arrow-right-circle-fill ms-1"></i>`
+			  )} <i class="bi bi-arrow-right-circle-fill ms-1"></i>` // Aks holda "Keyingi"
 
-	updateProgress()
-	startQuestionTimer()
-	window.scrollTo({ top: 0, behavior: 'smooth' })
+	updateProgress() // Progress barni yangilash
+	startQuestionTimer() // Savol taymerini boshlash
+	window.scrollTo({ top: 0, behavior: 'smooth' }) // Sahifani yuqoriga siljitish
 }
 
+/**
+ * Progress barni yangilash: javob berilgan savollar foizini ko'rsatish
+ */
 function updateProgress() {
-	const answered = userAnswers.filter(v => v !== null).length
-	const percent = Math.round((answered / shuffledQuestions.length) * 100)
-	progressBar.style.width = `${percent}%`
-	progressBar.innerText = `${percent}%`
+	const answered = userAnswers.filter(v => v !== null).length // Javob berilgan savollar soni
+	const percent = Math.round((answered / shuffledQuestions.length) * 100) // Foiz sifatida hisoblash
+	progressBar.style.width = `${percent}%` // Progress bar kengligini o'rnatish
+	progressBar.innerText = `${percent}%` // Foizni ko'rsatish
 }
 
+/**
+ * Test natijasini ko'rsatish
+ * @param {boolean} timeUp - Vaqt tugaganligini bildiruvchi flag
+ */
 async function showResult(timeUp) {
-	clearInterval(questionInterval)
+	clearInterval(questionInterval) // Savol taymerini to'xtatish
 	if (!timeUp) {
-		clearInterval(totalInterval)
+		clearInterval(totalInterval) // Agar vaqt tugamagan bo'lsa, umumiy taymerni to'xtatish
 	}
 
-	let score = 0
+	let score = 0 // Foydalanuvchi to'plagan ball
 	quizContainer.innerHTML = shuffledQuestions
 		.map((q, i) => {
-			const userAnswer = userAnswers[i]
-			const isCorrect = userAnswer === q.correct
-			if (isCorrect) score++
+			const userAnswer = userAnswers[i] // Foydalanuvchi tanlagan javob indeksi
+			const isCorrect = userAnswer === q.correct // Javob to'g'ri yoki noto'g'ri
+			if (isCorrect) score++ // To'g'ri javob bo'lsa ballni oshirish
 			return `
       <div class="mb-3">
         <strong>${i + 1}. ${q.question[language]}</strong><br />
@@ -711,7 +871,7 @@ async function showResult(timeUp) {
         ${getLangText('correctAnswer')}: <span class="correct">${
 				q.options[language][q.correct]
 			}</span>
-      </div>`
+      </div>` // Har bir savol va javobni HTML sifatida ko'rsatish
 		})
 		.join('')
 
@@ -734,340 +894,174 @@ async function showResult(timeUp) {
 				'download'
 			)}
     </button>
-  `
+  ` // Natija ma'lumotlarini ko'rsatish
 
-	nextBtn.style.display = 'none'
-	prevBtn.style.display = 'none'
-	progressBar.style.width = '100%'
-	progressBar.innerText = '100%'
-	totalTimerDisplay.textContent = '00:00:00'
-	document.title = `Quiz Test - ${getLangText('resultTitle')}`
+	nextBtn.style.display = 'none' // "Keyingi" tugmasini yashirish
+	prevBtn.style.display = 'none' // "Ortga" tugmasini yashirish
+	progressBar.style.width = '100%' // Progress barni 100% ga o'rnatish
+	progressBar.innerText = '100%' // Foizni 100% deb ko'rsatish
+	totalTimerDisplay.textContent = '00:00:00' // Umumiy vaqtni 0 deb ko'rsatish
+	document.title = `Quiz Test - ${getLangText('resultTitle')}` // Sahifa sarlavhasini yangilash
 
-	await sendToTelegram(score)
+	// Test tugaganidan so'ng sahifani yangilashga ruxsat berish
+	isQuizActive = false // Test faol emasligini belgilash
+	window.onbeforeunload = null // beforeunload hodisa tinglovchisini o'chirish
+	document.removeEventListener('keydown', restrictRefreshKeys) // Klaviatura hodisa tinglovchisini o'chirish
+
+	await sendToTelegram(score) // Natijani Telegramga yuborish
 }
 
-// Qayta urinish mexanizmi bilan Telegramga yuborish funksiyasi
+/**
+ * Test natijasini Telegram botga yuborish (qayta urinish mexanizmi bilan)
+ * @param {number} score - Foydalanuvchi to'plagan ball
+ * @param {number} maxRetries - Maksimal qayta urinishlar soni (standart: 3)
+ * @param {number} retryDelay - Qayta urinishlar orasidagi kechikish (ms, standart: 2000)
+ */
 async function sendToTelegram(score, maxRetries = 3, retryDelay = 2000) {
-	const botToken = '7649780620:AAHRveFJGphrW_VmL7ILdghc0oZVbn_uVcM' // Bot tokeningizni bu yerga kiriting
-	const chatId = '630353326' // Chat ID ni bu yerga kiriting
-	const now = new Date()
+	const botToken = '7649780620:AAHRveFJGphrW_VmL7ILdghc0oZVbn_uVcM' // Telegram bot tokeni
+	const chatId = '630353326' // Telegram chat ID
+	const now = new Date() // Joriy sana va vaqt
 	const formattedDate = now.toLocaleDateString(
 		language === 'uz' ? 'uz-UZ' : language === 'en' ? 'en-US' : 'ru-RU'
-	)
+	) // Sanani formatlash
 	const formattedTime = now.toLocaleTimeString(
 		language === 'uz' ? 'uz-UZ' : language === 'en' ? 'en-US' : 'ru-RU'
-	)
-	const languageName = getLangText(`lang_${language}`)
-	const timeSpent = initialTotalTime - totalTime
-	const minutes = Math.floor(timeSpent / 60)
-	const seconds = timeSpent % 60
-	const formattedTimeSpent =
-		minutes > 0
-			? `${minutes} ${getLangText('minuteLabel')} ${seconds} ${getLangText(
-					'secondLabel'
-			  )}`
-			: `${seconds} ${getLangText('secondLabel')}`
+	) // Vaqtni formatlash
+	const languageName = getLangText(`lang_${language}`) // Tanlangan til nomini olish
+	const timeSpent = initialTotalTime - totalTime // Sarflangan vaqtni hisoblash
+	const formattedTimeSpent = formatTime(timeSpent) // Sarflangan vaqtni HH:MM:SS formatida ko'rsatish
 
 	const message = `
-📋 *${getLangText('downloadTitle')}*  
-👤 ${getLangText('name')} ${username}  
-📞 ${getLangText('phone')} ${phoneNumber}  
-📚 ${getLangText('topic')} ${selectedTopic}  
-🌐 ${getLangText('language')} ${languageName}  
-📅 ${getLangText('date')} ${formattedDate}  
-⏰ ${getLangText('time')} ${formattedTime}  
-🏆 ${getLangText('score')} ${score}/${shuffledQuestions.length}  
-⏱ ${getLangText('timeSpent')} ${formattedTimeSpent}
-`
+📋 *${getLangText('downloadTitle')}*
 
-	// Qayta urinish mexanizmi
-	for (let attempt = 1; attempt <= maxRetries; attempt++) {
+👤 *${getLangText('name')}* ${username}
+📞 *${getLangText('phone')}* ${phoneNumber}
+📚 *${getLangText('topic')}* ${getLangText(`topic${selectedTopic}`)}
+🌐 *${getLangText('language')}* ${languageName}
+📅 *${getLangText('date')}* ${formattedDate}
+⏰ *${getLangText('time')}* ${formattedTime}
+🏆 *${getLangText('score')}* ${score}/${shuffledQuestions.length}
+⏳ *${getLangText('timeSpent')}* ${formattedTimeSpent}
+  ` // Telegramga yuboriladigan xabar
+
+	const url = `https://api.telegram.org/bot${botToken}/sendMessage` // Telegram API manzili
+
+	let retries = 0 // Qayta urinishlar soni
+	while (retries < maxRetries) {
 		try {
-			const controller = new AbortController()
-			const timeoutId = setTimeout(() => controller.abort(), 5000) // 5 soniya vaqt chegarasi
+			const response = await fetch(url, {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({
+					chat_id: chatId,
+					text: message,
+					parse_mode: 'Markdown',
+				}),
+			})
 
-			const res = await fetch(
-				`https://api.telegram.org/bot${botToken}/sendMessage`,
-				{
-					method: 'POST',
-					headers: { 'Content-Type': 'application/json' },
-					body: JSON.stringify({
-						chat_id: chatId,
-						text: message,
-						parse_mode: 'Markdown',
-					}),
-					signal: controller.signal,
-				}
-			)
-
-			clearTimeout(timeoutId)
-
-			if (res.ok) {
-				showToast(getLangText('telegramSent'), 'success')
-				return // Muvaffaqiyatli bo'lsa funksiyadan chiqamiz
+			if (response.ok) {
+				showToast(getLangText('telegramSent'), 'success') // Muvaffaqiyatli yuborilganligi haqida xabar
+				return
 			} else {
-				throw new Error(
-					`Telegram API response not OK: ${res.status} ${res.statusText}`
-				)
+				throw new Error(`Telegram API error: ${response.status}`) // API xatosi
 			}
 		} catch (err) {
-			console.error(
-				`Telegramga yuborishda xato (Urinish ${attempt}/${maxRetries}):`,
-				err
-			)
-			if (attempt === maxRetries) {
-				showToast(getLangText('telegramError'), 'danger')
-			} else {
-				// Qayta urinishdan oldin kechikish
-				await new Promise(resolve => setTimeout(resolve, retryDelay))
+			retries++ // Qayta urinishlar sonini oshirish
+			if (retries === maxRetries) {
+				console.error('Failed to send to Telegram after retries:', err) // Xatolikni log qilish
+				showToast(getLangText('telegramError'), 'danger') // Xato haqida ogohlantirish
+				return
 			}
+			await new Promise(resolve => setTimeout(resolve, retryDelay)) // Qayta urinishdan oldin kechikish
 		}
 	}
 }
 
+/**
+ * Test natijasini PDF sifatida yuklab olish
+ */
 function downloadPDF() {
-	const now = new Date()
+	const { jsPDF } = window.jspdf // jsPDF kutubxonasini olish
+	const doc = new jsPDF() // Yangi PDF hujjatini yaratish
+	const now = new Date() // Joriy sana va vaqt
 	const formattedDate = now.toLocaleDateString(
 		language === 'uz' ? 'uz-UZ' : language === 'en' ? 'en-US' : 'ru-RU'
-	)
+	) // Sanani formatlash
 	const formattedTime = now.toLocaleTimeString(
 		language === 'uz' ? 'uz-UZ' : language === 'en' ? 'en-US' : 'ru-RU'
-	)
+	) // Vaqtni formatlash
+	const languageName = getLangText(`lang_${language}`) // Tanlangan til nomini olish
 
-	const score = userAnswers.filter(
-		(ans, i) => ans === shuffledQuestions[i].correct
-	).length
-	const languageName = getLangText(`lang_${language}`)
-	const developerLabel =
-		language === 'uz'
-			? 'Dasturchi'
-			: language === 'en'
-			? 'Developer'
-			: 'Разработчик'
-	const timeSpent = initialTotalTime - totalTime
+	doc.setFontSize(16) // Shrift o'lchamini o'rnatish
+	doc.text(getLangText('downloadTitle'), 10, 10) // Sarlavha qo'shish
 
-	const minutes = Math.floor(timeSpent / 60)
-	const seconds = timeSpent % 60
-	const formattedTimeSpent =
-		minutes > 0
-			? `${minutes} ${getLangText('minuteLabel')} ${seconds} ${getLangText(
-					'secondLabel'
-			  )}`
-			: `${seconds} ${getLangText('secondLabel')}`
+	doc.setFontSize(12) // Shrift o'lchamini kichiklashtirish
+	let y = 20 // Matnning vertikal joylashuvi
+	doc.text(`${getLangText('name')} ${username}`, 10, y) // Ismni qo'shish
+	y += 10
+	doc.text(`${getLangText('phone')} ${phoneNumber}`, 10, y) // Telefonni qo'shish
+	y += 10
+	doc.text(
+		`${getLangText('topic')} ${getLangText(`topic${selectedTopic}`)}`,
+		10,
+		y
+	) // Mavzuni qo'shish
+	y += 10
+	doc.text(`${getLangText('language')} ${languageName}`, 10, y) // Tilni qo'shish
+	y += 10
+	doc.text(`${getLangText('date')} ${formattedDate}`, 10, y) // Sanani qo'shish
+	y += 10
+	doc.text(`${getLangText('time')} ${formattedTime}`, 10, y) // Vaqtni qo'shish
+	y += 10
 
-	const questionsPerPage = 10
-	const tableChunks = []
-	for (let i = 0; i < shuffledQuestions.length; i += questionsPerPage) {
-		const chunk = shuffledQuestions.slice(i, i + questionsPerPage)
-		const chunkRows = chunk
-			.map((q, index) => {
-				const globalIndex = i + index
-				const userAnswer = userAnswers[globalIndex]
-				const isCorrect = userAnswer === q.correct
-				const questionText = q.question[language] || 'Savol mavjud emas'
-				const userAnswerText =
-					q.options[language][userAnswer] || getLangText('noAnswer')
-				const correctAnswerText =
-					q.options[language][q.correct] || 'Javob mavjud emas'
+	let score = 0 // Ballni qayta hisoblash
+	shuffledQuestions.forEach((q, i) => {
+		if (userAnswers[i] === q.correct) score++ // To'g'ri javoblar sonini hisoblash
+	})
 
-				return `
-        <tr style="border-bottom: 1px solid #e0e0e0;">
-          <td style="padding: 12px; word-wrap: break-word; max-width: 320px; font-size: 12px; line-height: 1.6; vertical-align: top;">
-            <strong style="color: #2c3e50;">${
-							globalIndex + 1
-						}. ${questionText}</strong>
-          </td>
-          <td style="padding: 12px; word-wrap: break-word; max-width: 180px; font-size: 12px; line-height: 1.6; vertical-align: top;">
-            <span style="color: ${
-							isCorrect ? '#27ae60' : '#e74c3c'
-						}; font-weight: 500;">
-              <i class="bi ${
-								isCorrect ? 'bi-check-circle-fill' : 'bi-x-circle-fill'
-							} me-1"></i>
-              ${userAnswerText}
-            </span>
-          </td>
-          <td style="padding: 12px; word-wrap: break-word; max-width: 180px; font-size: 12px; line-height: 1.6; vertical-align: top;">
-            <span style="color: #27ae60; font-weight: 500;">
-              <i class="bi bi-check-circle-fill me-1"></i>
-              ${correctAnswerText}
-            </span>
-          </td>
-        </tr>
-      `
-			})
-			.join('')
-		tableChunks.push(chunkRows)
-	}
+	doc.text(
+		`${getLangText('score')} ${score}/${shuffledQuestions.length}`,
+		10,
+		y
+	) // Ballni qo'shish
+	y += 10
 
-	const tableSections = tableChunks
-		.map(
-			(chunkRows, index) => `
-    <div class="table-section" style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); margin-bottom: 30px; page-break-before: ${
-			index === 0 ? 'avoid' : 'always'
-		};">
-      <h3 style="font-size: 20px; color: #2c3e50; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 10px; font-weight: 700;">
-        ${
-					language === 'uz'
-						? 'Savollar va Javoblar'
-						: language === 'en'
-						? 'Questions and Answers'
-						: 'Вопросы и Ответы'
-				} 
-        (${index * questionsPerPage + 1}-${Math.min(
-				(index + 1) * questionsPerPage,
-				shuffledQuestions.length
-			)})
-      </h3>
-      <table style="width: 100%; border-collapse: collapse; font-size: 12px;">
-        <thead>
-          <tr style="background: #3498db; color: #ffffff; font-weight: 600;">
-            <th style="padding: 14px; text-align: left; border-bottom: 2px solid #2980b9; font-size: 13px;">
-              ${
-								language === 'uz'
-									? 'Savol'
-									: language === 'en'
-									? 'Question'
-									: 'Вопрос'
-							}
-            </th>
-            <th style="padding: 14px; text-align: left; border-bottom: 2px solid #2980b9; font-size: 13px;">
-              ${getLangText('yourAnswer')}
-            </th>
-            <th style="padding: 14px; text-align: left; border-bottom: 2px solid #2980b9; font-size: 13px;">
-              ${getLangText('correctAnswer')}
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          ${chunkRows}
-        </tbody>
-      </table>
-    </div>
-  `
-		)
-		.join('')
+	const timeSpent = initialTotalTime - totalTime // Sarflangan vaqtni hisoblash
+	const formattedTimeSpent = formatTime(timeSpent) // Sarflangan vaqtni HH:MM:SS formatida ko'rsatish
+	doc.text(`${getLangText('timeSpent')} ${formattedTimeSpent}`, 10, y) // Sarflangan vaqtni qo'shish
 
-	const element = document.createElement('div')
-	element.innerHTML = `
-    <div style="font-family: 'Poppins', sans-serif; font-size: 12px; color: #2c3e50; padding: 25px; background: linear-gradient(135deg, #f5f7fa 0%, #dfe4ea 100%); max-width: 900px; margin: 0 auto;">
-      <div style="background: linear-gradient(90deg, #3498db 0%, #2980b9 100%); color: #ffffff; padding: 25px; border-radius: 12px; text-align: center; margin-bottom: 30px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); position: relative; page-break-after: avoid;">
-        <h2 style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: 1.2px;">
-          <span style="font-size: 30px; margin-right: 12px;">📋</span> ${getLangText(
-						'downloadTitle'
-					)}
-        </h2>
-        <p style="margin: 8px 0 0; font-size: 15px; opacity: 0.9;">QuizTest - Bilimlaringizni sinang!</p>
-      </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 25px; margin-bottom: 30px; page-break-inside: avoid;">
-        <div style="flex: 1; min-width: 280px; background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); border-left: 5px solid #3498db;">
-          <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-person-circle me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-						'name'
-					)}</strong> ${username}</p>
-          <p style="margin: 10px 0; font-size: 15px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><i class="bi bi-telephone-fill me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-						'phone'
-					)}</strong> ${phoneNumber}</p>
-          <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-book-fill me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-						'topic'
-					)}</strong> ${selectedTopic}</p>
-        </div>
-        <div style="flex: 1; min-width: 220px; background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); border-left: 5px solid #3498db;">
-          <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-globe me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-						'language'
-					)}</strong> ${languageName}</p>
-          <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-calendar-date me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-						'date'
-					)}</strong> ${formattedDate}</p>
-          <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-clock-fill me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-						'time'
-					)}</strong> ${formattedTime}</p>
-        </div>
-        <div style="flex: 1; min-width: 180px; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); text-align: center; border: 2px solid #3498db;">
-          <p style="margin: 10px 0; font-size: 20px; font-weight: 700; color: #27ae60;"><i class="bi bi-trophy-fill me-2" style="color: #f1c40f; font-size: 22px;"></i><strong>${getLangText(
-						'score'
-					)}</strong> ${score} / ${shuffledQuestions.length}</p>
-          <p style="margin: 10px 0; font-size: 18px; font-weight: 600; color: #3498db;"><i class="bi bi-hourglass-split me-2" style="color: #3498db; font-size: 18px;"></i><strong>${getLangText(
-						'timeSpent'
-					)}</strong> ${formattedTimeSpent}</p>
-          <p style="margin: 10px 0; font-size: 13px; color: #7f8c8d;"><a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #3498db; font-weight: 500;">quiztest-uz.vercel.app</a></p>
-        </div>
-      </div>
-      ${tableSections}
-      <div style="text-align: center; font-size: 12px; color: #7f8c8d; margin-top: 35px; border-top: 2px solid #3498db; padding-top: 20px; page-break-before: avoid;">
-        <p style="margin: 0; font-weight: 500;">© ${new Date().getFullYear()} <a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #3498db; font-weight: 600;">QuizTest</a> | ${formattedDate}</p>
-        <div style="display: inline-block; background: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); margin-top: 20px;">
-          <p style="margin: 0; font-size: 13px; font-weight: 600; color: #2c3e50;">
-            <strong>${developerLabel}: </strong><strong style="color: #3498db;">Akmaljon Yusupov</strong>
-            <span style="margin-left: 20px;">
-              <i class="bi bi-telephone-fill" style="color: #3498db; font-size: 14px; margin-right: 6px;"></i>
-              <span style="color: #2c3e50;">+998-(88)-570-02-09</span>
-            </span>
-            <span style="margin-left: 20px;">
-              <i class="bi bi-telegram" style="color: #0088cc; font-size: 14px; margin-right: 6px;"></i>
-              <a href="https://t.me/AkmaljonYusupov" style="color: #0088cc; text-decoration: none;">@AkmaljonYusupov</a>
-            </span>
-            <span style="margin-left: 20px;">
-              <i class="bi bi-telegram" style="color: #0088cc; font-size: 14px; margin-right: 6px;"></i>
-              <a href="https://t.me/coder_ac" style="color: #0088cc; text-decoration: none;">@coder_ac</a>
-            </span>
-            <span style="margin-left: 20px;">
-              <i class="bi bi-instagram" style="color: #e91e63; font-size: 14px; margin-right: 6px;"></i>
-              <a href="https://instagram.com/coder.ac" style="color: #e91e63; text-decoration: none;">@coder.ac</a>
-            </span>
-          </p>
-        </div>
-      </div>
-    </div>
-  `
-
-	html2pdf()
-		.set({
-			margin: [15, 15, 15, 15],
-			filename: `${username}_${selectedTopic}_quiz_result.pdf`,
-			image: { type: 'jpeg', quality: 0.98 },
-			html2canvas: {
-				scale: 2,
-				useCORS: true,
-				logging: true,
-				scrollY: 0,
-				windowHeight: 842,
-			},
-			jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-			pagebreak: {
-				mode: ['css', 'legacy'],
-				avoid: ['tr', 'div'],
-				before: '.break-before',
-				after: '.break-after',
-			},
-		})
-		.from(element)
-		.save()
-		.catch(err => {
-			console.error('PDF generatsiyasida xato:', err)
-			showToast('PDFni yuklashda xato yuz berdi!', 'danger')
-		})
+	doc.save('quiz-result.pdf') // PDFni yuklab olish
 }
 
+/**
+ * Foydalanuvchi javobini saqlash va keyingi savolga o'tish
+ */
 nextBtn.addEventListener('click', () => {
-	const selected = document.querySelector('input[name="question"]:checked')
-	if (!selected) {
-		showToast(getLangText('noSelection'), 'danger')
+	const selectedOption = document.querySelector(
+		'input[name="question"]:checked'
+	) // Tanlangan variantni olish
+	if (!selectedOption) {
+		showToast(getLangText('noSelection'), 'warning') // Tanlov yo'qligi haqida ogohlantirish
 		return
 	}
-	userAnswers[currentQuestion] = parseInt(selected.value)
-	clearInterval(questionInterval)
+
+	userAnswers[currentQuestion] = parseInt(selectedOption.value) // Tanlangan javobni saqlash
+	updateProgress() // Progress barni yangilash
 
 	if (currentQuestion < shuffledQuestions.length - 1) {
-		currentQuestion++
-		loadQuestion(currentQuestion)
+		currentQuestion++ // Keyingi savolga o'tish
+		loadQuestion(currentQuestion) // Keyingi savolni yuklash
 	} else {
-		showResult(false)
+		showResult(false) // Agar oxirgi savol bo'lsa, natijani ko'rsatish
 	}
 })
 
+/**
+ * Oldingi savolga qaytish
+ */
 prevBtn.addEventListener('click', () => {
 	if (currentQuestion > 0) {
-		currentQuestion--
-		loadQuestion(currentQuestion)
+		currentQuestion-- // Oldingi savolga qaytish
+		loadQuestion(currentQuestion) // Oldingi savolni yuklash
 	}
 })
