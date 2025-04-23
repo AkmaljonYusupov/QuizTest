@@ -19,6 +19,16 @@ const prevBtn = document.getElementById('prevBtn')
 const progressBar = document.getElementById('progressBar')
 const totalTimerDisplay = document.getElementById('totalTimer')
 
+// Fisher-Yates Shuffle algoritmi
+function shuffleArray(array) {
+	const newArray = [...array]
+	for (let i = newArray.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1))
+		;[newArray[i], newArray[j]] = [newArray[j], newArray[i]]
+	}
+	return newArray
+}
+
 // Vaqtni MM:SS formatiga aylantirish funksiyasi
 function formatTime(seconds) {
 	const minutes = Math.floor(seconds / 60)
@@ -35,7 +45,7 @@ function formatClock() {
 	const minutes = now.getMinutes().toString().padStart(2, '0')
 	const seconds = now.getSeconds().toString().padStart(2, '0')
 	const ampm = hours >= 12 ? 'PM' : 'AM'
-	hours = hours % 12 || 12 // 0 ni 12 ga aylantirish
+	hours = hours % 12 || 12
 	hours = hours.toString().padStart(2, '0')
 	return `${hours}:${minutes}:${seconds} ${ampm}`
 }
@@ -100,7 +110,8 @@ const langData = {
 		contactTelegramChannel: 'Telegram kanal:',
 		contactInstagram: 'Instagram:',
 		telegramSent: 'Natija Telegram botga yuborildi!',
-		telegramError: 'Natijani Telegram botga yuborishda xato yuz berdi!',
+		telegramError:
+			'Natijani Telegram botga yuborishda xato yuz berdi! Iltimos, tarmoq ulanishini tekshiring yoki keyinroq qayta urinib ko‘ring.',
 	},
 	en: {
 		enterName: 'Enter your first and last name',
@@ -161,7 +172,8 @@ const langData = {
 		contactTelegramChannel: 'Telegram Channel:',
 		contactInstagram: 'Instagram:',
 		telegramSent: 'Result sent to Telegram bot!',
-		telegramError: 'Error sending result to Telegram bot!',
+		telegramError:
+			'Error sending result to Telegram bot! Please check your network connection or try again later.',
 	},
 	ru: {
 		enterName: 'Введите свое имя и фамилию',
@@ -222,7 +234,8 @@ const langData = {
 		contactTelegramChannel: 'Телеграм канал:',
 		contactInstagram: 'Инстаграм:',
 		telegramSent: 'Результат отправлен в Telegram-бот!',
-		telegramError: 'Ошибка при отправке результата в Telegram-бот!',
+		telegramError:
+			'Ошибка при отправке результата в Telegram-бот! Пожалуйста, проверьте сетевое соединение или попробуйте снова позже.',
 	},
 }
 
@@ -247,13 +260,13 @@ function showToast(message, type = 'info') {
 	toast.setAttribute('aria-live', 'assertive')
 	toast.setAttribute('aria-atomic', 'true')
 	toast.innerHTML = `
-        <div class="d-flex">
-            <div class="toast-body">
-                <i class="bi bi-${icon} me-2"></i>${message}
-            </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-    `
+    <div class="d-flex">
+      <div class="toast-body">
+        <i class="bi bi-${icon} me-2"></i>${message}
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  `
 	toastContainer.appendChild(toast)
 	setTimeout(() => toast.remove(), 5000)
 }
@@ -479,7 +492,17 @@ async function startQuiz() {
 			)
 		}
 		const data = await res.json()
-		allQuestions = data.filter(q => q.topic === selectedTopic)
+		allQuestions = data.filter(q => {
+			return (
+				q.topic === selectedTopic &&
+				q.question?.[language] &&
+				Array.isArray(q.options?.[language]) &&
+				q.options[language].length > 0 &&
+				typeof q.correct === 'number' &&
+				q.correct >= 0 &&
+				q.correct < q.options[language].length
+			)
+		})
 
 		if (allQuestions.length === 0) {
 			showToast(getLangText('notFound'), 'danger')
@@ -490,9 +513,7 @@ async function startQuiz() {
 			return
 		}
 
-		shuffledQuestions = allQuestions
-			.sort(() => 0.5 - Math.random())
-			.slice(0, questionCount)
+		shuffledQuestions = shuffleArray(allQuestions).slice(0, questionCount)
 		userAnswers = new Array(shuffledQuestions.length).fill(null)
 		currentQuestion = 0
 		totalTime = shuffledQuestions.length * questionTime
@@ -613,31 +634,38 @@ function loadQuestion(index) {
 	const options = q.options[language]
 	const questionText = q.question[language]
 
+	// Javob variantlarini aralashtirish
+	const shuffledOptions = shuffleArray([...options])
+	const newCorrectIndex = shuffledOptions.indexOf(
+		q.options[language][q.correct]
+	)
+	shuffledQuestions[index].correct = newCorrectIndex
+
 	quizContainer.innerHTML = `
-        <div class="question">${index + 1}. ${questionText}</div>
-        ${options
-					.map(
-						(opt, i) => `
-            <div class="form-check option">
-                <input class="form-check-input" type="radio" name="question" id="opt${i}" value="${i}" ${
-							userAnswers[index] === i ? 'checked' : ''
-						}>
-                <label class="form-check-label" for="opt${i}">${String.fromCharCode(
-							65 + i
-						)}) ${opt}</label>
-            </div>
-        `
-					)
-					.join('')}
-        <div class="question-timer-box">
-            <i class="bi bi-hourglass-split text-warning me-2"></i>
-            ${getLangText(
-							'timeLeft'
-						)}: <span id="questionTimer">${questionTime}</span> ${getLangText(
+    <div class="question">${index + 1}. ${questionText}</div>
+    ${shuffledOptions
+			.map(
+				(opt, i) => `
+      <div class="form-check option">
+        <input class="form-check-input" type="radio" name="question" id="opt${i}" value="${i}" ${
+					userAnswers[index] === i ? 'checked' : ''
+				}>
+        <label class="form-check-label" for="opt${i}">${String.fromCharCode(
+					65 + i
+				)}) ${opt}</label>
+      </div>
+    `
+			)
+			.join('')}
+    <div class="question-timer-box">
+      <i class="bi bi-hourglass-split text-warning me-2"></i>
+      ${getLangText(
+				'timeLeft'
+			)}: <span id="questionTimer">${questionTime}</span> ${getLangText(
 		'questionTimerSuffix'
 	)}
-        </div>
-    `
+    </div>
+  `
 
 	prevBtn.disabled = index === 0
 	nextBtn.innerHTML =
@@ -672,41 +700,41 @@ async function showResult(timeUp) {
 			const isCorrect = userAnswer === q.correct
 			if (isCorrect) score++
 			return `
-            <div class="mb-3">
-                <strong>${i + 1}. ${q.question[language]}</strong><br />
-                ${getLangText('yourAnswer')}: <span class="${
+      <div class="mb-3">
+        <strong>${i + 1}. ${q.question[language]}</strong><br />
+        ${getLangText('yourAnswer')}: <span class="${
 				isCorrect ? 'correct' : 'wrong'
 			}">
-                ${
-									q.options[language][userAnswer] || getLangText('noAnswer')
-								}</span><br />
-                ${getLangText('correctAnswer')}: <span class="correct">${
+        ${
+					q.options[language][userAnswer] || getLangText('noAnswer')
+				}</span><br />
+        ${getLangText('correctAnswer')}: <span class="correct">${
 				q.options[language][q.correct]
 			}</span>
-            </div>`
+      </div>`
 		})
 		.join('')
 
 	resultContainer.innerHTML = `
-        <h5><i class="bi bi-patch-check-fill text-success me-2"></i><strong>${username}</strong>, ${getLangText(
+    <h5><i class="bi bi-patch-check-fill text-success me-2"></i><strong>${username}</strong>, ${getLangText(
 		'resultTitle'
 	)}</h5>
-        ${
-					timeUp
-						? `<span class='text-danger'><i class='bi bi-alarm-fill me-1'></i>${getLangText(
-								'timeUp'
-						  )}</span><br>`
-						: ''
-				}
-        ${getLangText('resultText')} <strong>${score}/${
+    ${
+			timeUp
+				? `<span class='text-danger'><i class='bi bi-alarm-fill me-1'></i>${getLangText(
+						'timeUp'
+				  )}</span><br>`
+				: ''
+		}
+    ${getLangText('resultText')} <strong>${score}/${
 		shuffledQuestions.length
 	}</strong> <i class="bi bi-trophy-fill text-warning ms-2"></i><br>
-        <button class="btn btn-outline-danger mt-3" onclick="downloadPDF()">
-            <i class="bi bi-file-earmark-arrow-down-fill me-1"></i>${getLangText(
-							'download'
-						)}
-        </button>
-    `
+    <button class="btn btn-outline-danger mt-3" onclick="downloadPDF()">
+      <i class="bi bi-file-earmark-arrow-down-fill me-1"></i>${getLangText(
+				'download'
+			)}
+    </button>
+  `
 
 	nextBtn.style.display = 'none'
 	prevBtn.style.display = 'none'
@@ -715,13 +743,13 @@ async function showResult(timeUp) {
 	totalTimerDisplay.textContent = '00:00:00'
 	document.title = `Quiz Test - ${getLangText('resultTitle')}`
 
-	// Test tugagach avtomatik Telegramga yuborish
 	await sendToTelegram(score)
 }
 
-async function sendToTelegram(score) {
-	const botToken = '7649780620:AAHRveFJGphrW_VmL7ILdghc0oZVbn_uVcM' // Telegram bot tokeningizni bu yerga kiriting
-	const chatId = '630353326' // Natijalarni yubormoqchi bo'lgan chat ID
+// Qayta urinish mexanizmi bilan Telegramga yuborish funksiyasi
+async function sendToTelegram(score, maxRetries = 3, retryDelay = 2000) {
+	const botToken = '7649780620:AAHRveFJGphrW_VmL7ILdghc0oZVbn_uVcM' // Bot tokeningizni bu yerga kiriting
+	const chatId = '630353326' // Chat ID ni bu yerga kiriting
 	const now = new Date()
 	const formattedDate = now.toLocaleDateString(
 		language === 'uz' ? 'uz-UZ' : language === 'en' ? 'en-US' : 'ru-RU'
@@ -752,28 +780,48 @@ async function sendToTelegram(score) {
 ⏱ ${getLangText('timeSpent')} ${formattedTimeSpent}
 `
 
-	try {
-		const res = await fetch(
-			`https://api.telegram.org/bot${botToken}/sendMessage`,
-			{
-				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({
-					chat_id: chatId,
-					text: message,
-					parse_mode: 'Markdown',
-				}),
-			}
-		)
+	// Qayta urinish mexanizmi
+	for (let attempt = 1; attempt <= maxRetries; attempt++) {
+		try {
+			const controller = new AbortController()
+			const timeoutId = setTimeout(() => controller.abort(), 5000) // 5 soniya vaqt chegarasi
 
-		if (res.ok) {
-			showToast(getLangText('telegramSent'), 'success')
-		} else {
-			throw new Error('Telegram API response not OK')
+			const res = await fetch(
+				`https://api.telegram.org/bot${botToken}/sendMessage`,
+				{
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({
+						chat_id: chatId,
+						text: message,
+						parse_mode: 'Markdown',
+					}),
+					signal: controller.signal,
+				}
+			)
+
+			clearTimeout(timeoutId)
+
+			if (res.ok) {
+				showToast(getLangText('telegramSent'), 'success')
+				return // Muvaffaqiyatli bo'lsa funksiyadan chiqamiz
+			} else {
+				throw new Error(
+					`Telegram API response not OK: ${res.status} ${res.statusText}`
+				)
+			}
+		} catch (err) {
+			console.error(
+				`Telegramga yuborishda xato (Urinish ${attempt}/${maxRetries}):`,
+				err
+			)
+			if (attempt === maxRetries) {
+				showToast(getLangText('telegramError'), 'danger')
+			} else {
+				// Qayta urinishdan oldin kechikish
+				await new Promise(resolve => setTimeout(resolve, retryDelay))
+			}
 		}
-	} catch (err) {
-		console.error('Error sending to Telegram:', err)
-		showToast(getLangText('telegramError'), 'danger')
 	}
 }
 
@@ -807,7 +855,7 @@ function downloadPDF() {
 			  )}`
 			: `${seconds} ${getLangText('secondLabel')}`
 
-	const questionsPerPage = 10 // Har bir sahifada 10 ta savol
+	const questionsPerPage = 10
 	const tableChunks = []
 	for (let i = 0; i < shuffledQuestions.length; i += questionsPerPage) {
 		const chunk = shuffledQuestions.slice(i, i + questionsPerPage)
@@ -823,32 +871,30 @@ function downloadPDF() {
 					q.options[language][q.correct] || 'Javob mavjud emas'
 
 				return `
-                <tr style="border-bottom: 1px solid #e0e0e0;">
-                    <td style="padding: 12px; word-wrap: break-word; max-width: 320px; font-size: 12px; line-height: 1.6; vertical-align: top;">
-                        <strong style="color: #2c3e50;">${
-													globalIndex + 1
-												}. ${questionText}</strong>
-                    </td>
-                    <td style="padding: 12px; word-wrap: break-word; max-width: 180px; font-size: 12px; line-height: 1.6; vertical-align: top;">
-                        <span style="color: ${
-													isCorrect ? '#27ae60' : '#e74c3c'
-												}; font-weight: 500;">
-                            <i class="bi ${
-															isCorrect
-																? 'bi-check-circle-fill'
-																: 'bi-x-circle-fill'
-														} me-1"></i>
-                            ${userAnswerText}
-                        </span>
-                    </td>
-                    <td style="padding: 12px; word-wrap: break-word; max-width: 180px; font-size: 12px; line-height: 1.6; vertical-align: top;">
-                        <span style="color: #27ae60; font-weight: 500;">
-                            <i class="bi bi-check-circle-fill me-1"></i>
-                            ${correctAnswerText}
-                        </span>
-                    </td>
-                </tr>
-            `
+        <tr style="border-bottom: 1px solid #e0e0e0;">
+          <td style="padding: 12px; word-wrap: break-word; max-width: 320px; font-size: 12px; line-height: 1.6; vertical-align: top;">
+            <strong style="color: #2c3e50;">${
+							globalIndex + 1
+						}. ${questionText}</strong>
+          </td>
+          <td style="padding: 12px; word-wrap: break-word; max-width: 180px; font-size: 12px; line-height: 1.6; vertical-align: top;">
+            <span style="color: ${
+							isCorrect ? '#27ae60' : '#e74c3c'
+						}; font-weight: 500;">
+              <i class="bi ${
+								isCorrect ? 'bi-check-circle-fill' : 'bi-x-circle-fill'
+							} me-1"></i>
+              ${userAnswerText}
+            </span>
+          </td>
+          <td style="padding: 12px; word-wrap: break-word; max-width: 180px; font-size: 12px; line-height: 1.6; vertical-align: top;">
+            <span style="color: #27ae60; font-weight: 500;">
+              <i class="bi bi-check-circle-fill me-1"></i>
+              ${correctAnswerText}
+            </span>
+          </td>
+        </tr>
+      `
 			})
 			.join('')
 		tableChunks.push(chunkRows)
@@ -857,129 +903,122 @@ function downloadPDF() {
 	const tableSections = tableChunks
 		.map(
 			(chunkRows, index) => `
-        <div class="table-section" style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); margin-bottom: 30px; page-break-before: ${
-					index === 0 ? 'avoid' : 'always'
-				};">
-            <h3 style="font-size: 20px; color: #2c3e50; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 10px; font-weight: 700;">
-                ${
-									language === 'uz'
-										? 'Savollar va Javoblar'
-										: language === 'en'
-										? 'Questions and Answers'
-										: 'Вопросы и Ответы'
-								} 
-                (${index * questionsPerPage + 1}-${Math.min(
+    <div class="table-section" style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); margin-bottom: 30px; page-break-before: ${
+			index === 0 ? 'avoid' : 'always'
+		};">
+      <h3 style="font-size: 20px; color: #2c3e50; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 10px; font-weight: 700;">
+        ${
+					language === 'uz'
+						? 'Savollar va Javoblar'
+						: language === 'en'
+						? 'Questions and Answers'
+						: 'Вопросы и Ответы'
+				} 
+        (${index * questionsPerPage + 1}-${Math.min(
 				(index + 1) * questionsPerPage,
 				shuffledQuestions.length
 			)})
-            </h3>
-            <table style="width: 100%; border-collapse: collapse; font-size: 12px;">
-                <thead>
-                    <tr style="background: #3498db; color: #ffffff; font-weight: 600;">
-                        <th style="padding: 14px; text-align: left; border-bottom: 2px solid #2980b9; font-size: 13px;">
-                            ${
-															language === 'uz'
-																? 'Savol'
-																: language === 'en'
-																? 'Question'
-																: 'Вопрос'
-														}
-                        </th>
-                        <th style="padding: 14px; text-align: left; border-bottom: 2px solid #2980b9; font-size: 13px;">
-                            ${getLangText('yourAnswer')}
-                        </th>
-                        <th style="padding: 14px; text-align: left; border-bottom: 2px solid #2980b9; font-size: 13px;">
-                            ${getLangText('correctAnswer')}
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${chunkRows}
-                </tbody>
-            </table>
-        </div>
-    `
+      </h3>
+      <table style="width: 100%; border-collapse: collapse; font-size: 12px;">
+        <thead>
+          <tr style="background: #3498db; color: #ffffff; font-weight: 600;">
+            <th style="padding: 14px; text-align: left; border-bottom: 2px solid #2980b9; font-size: 13px;">
+              ${
+								language === 'uz'
+									? 'Savol'
+									: language === 'en'
+									? 'Question'
+									: 'Вопрос'
+							}
+            </th>
+            <th style="padding: 14px; text-align: left; border-bottom: 2px solid #2980b9; font-size: 13px;">
+              ${getLangText('yourAnswer')}
+            </th>
+            <th style="padding: 14px; text-align: left; border-bottom: 2px solid #2980b9; font-size: 13px;">
+              ${getLangText('correctAnswer')}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          ${chunkRows}
+        </tbody>
+      </table>
+    </div>
+  `
 		)
 		.join('')
 
 	const element = document.createElement('div')
 	element.innerHTML = `
-        <div style="font-family: 'Poppins', sans-serif; font-size: 12px; color: #2c3e50; padding: 25px; background: linear-gradient(135deg, #f5f7fa 0%, #dfe4ea 100%); max-width: 900px; margin: 0 auto;">
-            <!-- Header -->
-            <div style="background: linear-gradient(90deg, #3498db 0%, #2980b9 100%); color: #ffffff; padding: 25px; border-radius: 12px; text-align: center; margin-bottom: 30px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); position: relative; page-break-after: avoid;">
-                <h2 style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: 1.2px;">
-                    <span style="font-size: 30px; margin-right: 12px;">📋</span> ${getLangText(
-											'downloadTitle'
-										)}
-                </h2>
-                <p style="margin: 8px 0 0; font-size: 15px; opacity: 0.9;">QuizTest - Bilimlaringizni sinang!</p>
-            </div>
-
-            <!-- User Info Section -->
-            <div style="display: flex; flex-wrap: wrap; gap: 25px; margin-bottom: 30px; page-break-inside: avoid;">
-                <div style="flex: 1; min-width: 280px; background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); border-left: 5px solid #3498db;">
-                    <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-person-circle me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-											'name'
-										)}</strong> ${username}</p>
-                    <p style="margin: 10px 0; font-size: 15px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><i class="bi bi-telephone-fill me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-											'phone'
-										)}</strong> ${phoneNumber}</p>
-                    <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-book-fill me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-											'topic'
-										)}</strong> ${selectedTopic}</p>
-                </div>
-                <div style="flex: 1; min-width: 220px; background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); border-left: 5px solid #3498db;">
-                    <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-globe me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-											'language'
-										)}</strong> ${languageName}</p>
-                    <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-calendar-date me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-											'date'
-										)}</strong> ${formattedDate}</p>
-                    <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-clock-fill me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
-											'time'
-										)}</strong> ${formattedTime}</p>
-                </div>
-                <div style="flex: 1; min-width: 180px; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); text-align: center; border: 2px solid #3498db;">
-                    <p style="margin: 10px 0; font-size: 20px; font-weight: 700; color: #27ae60;"><i class="bi bi-trophy-fill me-2" style="color: #f1c40f; font-size: 22px;"></i><strong>${getLangText(
-											'score'
-										)}</strong> ${score} / ${shuffledQuestions.length}</p>
-                    <p style="margin: 10px 0; font-size: 18px; font-weight: 600; color: #3498db;"><i class="bi bi-hourglass-split me-2" style="color: #3498db; font-size: 18px;"></i><strong>${getLangText(
-											'timeSpent'
-										)}</strong> ${formattedTimeSpent}</p>
-                    <p style="margin: 10px 0; font-size: 13px; color: #7f8c8d;"><a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #3498db; font-weight: 500;">quiztest-uz.vercel.app</a></p>
-                </div>
-            </div>
-
-            <!-- Questions and Answers Sections -->
-            ${tableSections}
-
-            <!-- Footer -->
-            <div style="text-align: center; font-size: 12px; color: #7f8c8d; margin-top: 35px; border-top: 2px solid #3498db; padding-top: 20px; page-break-before: avoid;">
-                <p style="margin: 0; font-weight: 500;">© ${new Date().getFullYear()} <a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #3498db; font-weight: 600;">QuizTest</a> | ${formattedDate}</p>
-                <div style="display: inline-block; background: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); margin-top: 20px;">
-                    <p style="margin: 0; font-size: 13px; font-weight: 600; color: #2c3e50;">
-                        <strong>${developerLabel}: </strong><strong style="color: #3498db;">Akmaljon Yusupov</strong>
-                        <span style="margin-left: 20px;">
-                            <i class="bi bi-telephone-fill" style="color: #3498db; font-size: 14px; margin-right: 6px;"></i>
-                            <span style="color: #2c3e50;">+998-(88)-570-02-09</span>
-                        </span>
-                        <span style="margin-left: 20px;">
-                            <i class="bi bi-telegram" style="color: #0088cc; font-size: 14px; margin-right: 6px;"></i>
-                            <a href="https://t.me/AkmaljonYusupov" style="color: #0088cc; text-decoration: none;">@AkmaljonYusupov</a>
-                        </span>
-                        <span style="margin-left: 20px;">
-                            <i class="bi bi-telegram" style="color: #0088cc; font-size: 14px; margin-right: 6px;"></i>
-                            <a href="https://t.me/coder_ac" style="color: #0088cc; text-decoration: none;">@coder_ac</a>
-                        </span>
-                        <span style="margin-left: 20px;">
-                            <i class="bi bi-instagram" style="color: #e91e63; font-size: 14px; margin-right: 6px;"></i>
-                            <a href="https://instagram.com/coder.ac" style="color: #e91e63; text-decoration: none;">@coder.ac</a>
-                        </span>
-                    </p>
-                </div>
-            </div>
+    <div style="font-family: 'Poppins', sans-serif; font-size: 12px; color: #2c3e50; padding: 25px; background: linear-gradient(135deg, #f5f7fa 0%, #dfe4ea 100%); max-width: 900px; margin: 0 auto;">
+      <div style="background: linear-gradient(90deg, #3498db 0%, #2980b9 100%); color: #ffffff; padding: 25px; border-radius: 12px; text-align: center; margin-bottom: 30px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); position: relative; page-break-after: avoid;">
+        <h2 style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: 1.2px;">
+          <span style="font-size: 30px; margin-right: 12px;">📋</span> ${getLangText(
+						'downloadTitle'
+					)}
+        </h2>
+        <p style="margin: 8px 0 0; font-size: 15px; opacity: 0.9;">QuizTest - Bilimlaringizni sinang!</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 25px; margin-bottom: 30px; page-break-inside: avoid;">
+        <div style="flex: 1; min-width: 280px; background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); border-left: 5px solid #3498db;">
+          <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-person-circle me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
+						'name'
+					)}</strong> ${username}</p>
+          <p style="margin: 10px 0; font-size: 15px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><i class="bi bi-telephone-fill me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
+						'phone'
+					)}</strong> ${phoneNumber}</p>
+          <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-book-fill me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
+						'topic'
+					)}</strong> ${selectedTopic}</p>
         </div>
-    `
+        <div style="flex: 1; min-width: 220px; background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); border-left: 5px solid #3498db;">
+          <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-globe me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
+						'language'
+					)}</strong> ${languageName}</p>
+          <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-calendar-date me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
+						'date'
+					)}</strong> ${formattedDate}</p>
+          <p style="margin: 10px 0; font-size: 15px; font-weight: 500;"><i class="bi bi-clock-fill me-2" style="color: #3498db; font-size: 16px;"></i><strong style="color: #2c3e50;">${getLangText(
+						'time'
+					)}</strong> ${formattedTime}</p>
+        </div>
+        <div style="flex: 1; min-width: 180px; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); padding: 25px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); text-align: center; border: 2px solid #3498db;">
+          <p style="margin: 10px 0; font-size: 20px; font-weight: 700; color: #27ae60;"><i class="bi bi-trophy-fill me-2" style="color: #f1c40f; font-size: 22px;"></i><strong>${getLangText(
+						'score'
+					)}</strong> ${score} / ${shuffledQuestions.length}</p>
+          <p style="margin: 10px 0; font-size: 18px; font-weight: 600; color: #3498db;"><i class="bi bi-hourglass-split me-2" style="color: #3498db; font-size: 18px;"></i><strong>${getLangText(
+						'timeSpent'
+					)}</strong> ${formattedTimeSpent}</p>
+          <p style="margin: 10px 0; font-size: 13px; color: #7f8c8d;"><a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #3498db; font-weight: 500;">quiztest-uz.vercel.app</a></p>
+        </div>
+      </div>
+      ${tableSections}
+      <div style="text-align: center; font-size: 12px; color: #7f8c8d; margin-top: 35px; border-top: 2px solid #3498db; padding-top: 20px; page-break-before: avoid;">
+        <p style="margin: 0; font-weight: 500;">© ${new Date().getFullYear()} <a href="https://quiztest-uz.vercel.app" style="text-decoration: none; color: #3498db; font-weight: 600;">QuizTest</a> | ${formattedDate}</p>
+        <div style="display: inline-block; background: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1); margin-top: 20px;">
+          <p style="margin: 0; font-size: 13px; font-weight: 600; color: #2c3e50;">
+            <strong>${developerLabel}: </strong><strong style="color: #3498db;">Akmaljon Yusupov</strong>
+            <span style="margin-left: 20px;">
+              <i class="bi bi-telephone-fill" style="color: #3498db; font-size: 14px; margin-right: 6px;"></i>
+              <span style="color: #2c3e50;">+998-(88)-570-02-09</span>
+            </span>
+            <span style="margin-left: 20px;">
+              <i class="bi bi-telegram" style="color: #0088cc; font-size: 14px; margin-right: 6px;"></i>
+              <a href="https://t.me/AkmaljonYusupov" style="color: #0088cc; text-decoration: none;">@AkmaljonYusupov</a>
+            </span>
+            <span style="margin-left: 20px;">
+              <i class="bi bi-telegram" style="color: #0088cc; font-size: 14px; margin-right: 6px;"></i>
+              <a href="https://t.me/coder_ac" style="color: #0088cc; text-decoration: none;">@coder_ac</a>
+            </span>
+            <span style="margin-left: 20px;">
+              <i class="bi bi-instagram" style="color: #e91e63; font-size: 14px; margin-right: 6px;"></i>
+              <a href="https://instagram.com/coder.ac" style="color: #e91e63; text-decoration: none;">@coder.ac</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  `
 
 	html2pdf()
 		.set({
