@@ -6,7 +6,7 @@ let username = ''
 let phoneNumber = ''
 let selectedTopic = ''
 let language = 'uz'
-const questionTime = 15
+const questionTime = 25
 let totalTime = 0
 let initialTotalTime = 0
 let questionInterval, totalInterval
@@ -70,8 +70,8 @@ const langData = {
 		minuteLabel: 'daqiqa',
 		secondLabel: 'soniya',
 		questionLabel: 'Savol',
-		yourAnswer: 'Sizning javobingiz:',
-		correctAnswer: 'To‘g‘ri javob:',
+		yourAnswer: 'Sizning javobingiz',
+		correctAnswer: 'To‘g‘ri javob',
 		resultTitle: 'Sizning natijangiz:',
 		timeUp: '⏰ Umumiy vaqt tugadi!',
 		resultText: 'Natija:',
@@ -132,8 +132,8 @@ const langData = {
 		minuteLabel: 'minutes',
 		secondLabel: 'seconds',
 		questionLabel: 'Question',
-		yourAnswer: 'Your answer:',
-		correctAnswer: 'Correct answer:',
+		yourAnswer: 'Your answer',
+		correctAnswer: 'Correct answer',
 		resultTitle: 'Your result:',
 		timeUp: '⏰ Time is up!',
 		resultText: 'Result:',
@@ -194,8 +194,8 @@ const langData = {
 		minuteLabel: 'минут',
 		secondLabel: 'секунд',
 		questionLabel: 'Вопрос',
-		yourAnswer: 'Ваш ответ:',
-		correctAnswer: 'Правильный ответ:',
+		yourAnswer: 'Ваш ответ',
+		correctAnswer: 'Правильный ответ',
 		resultTitle: 'Ваш результат:',
 		timeUp: '⏰ Время вышло!',
 		resultText: 'Результат:',
